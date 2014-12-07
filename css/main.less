@@ -1,0 +1,29 @@
+@import "library";
+
+//************************************************************************
+// Variables used in the file (In order)
+// -- Fonts
+// -- Colours
+// -- Font Size
+//************************************************************************
+
+@header-font: 'Open Sans';
+
+@color-white: #fff;
+@color-light-grey: #ddd;
+
+
+.navbar {
+  background: @color-white;
+  border-bottom: 1px solid @color-light-grey;
+  font-family: @header-font, sans;
+  height: 125px;
+
+  .nav {
+    padding-top: 50px;
+    a {
+      font-size: 18px;
+    }
+  }
+}
+
