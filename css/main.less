@@ -1,0 +1,101 @@
+@import "library";
+
+//************************************************************************
+// Variables used in the file (In order)
+// -- Fonts
+// -- Font Size
+// -- Colours
+//************************************************************************
+
+@header-font: 'Raleway';
+@header-size: 16px;
+
+@color-white: #fff; ;
+@color-light-grey: #ddd;
+@color-light-blue: #367ee9;
+@color-header-grey: #777;
+
+//**********************************************************************
+// This file is structured top -> down
+//  -- NAVBAR
+//    -- contains navigation control and logo
+//    -- is the white bar at thr top
+//**********************************************************************
+
+//**********************************************************************
+// RANDOM FIXES
+//**********************************************************************
+// Active and hovered over links
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:hover, .navbar-default .navbar-nav>.active>a:focus, #collapse-menu .navbar-nav  li a:hover {
+  color: @color-light-blue;
+  background: transparent;
+  .transition(0.35s);
+}
+
+// No background on dropdown click
+.navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:hover, .navbar-default .navbar-nav>.open>a:focus {
+  color: @color-light-blue;
+  background: transparent;
+}
+
+// Stops color change on click of dropdown-toggle button
+.navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>li>a:focus {
+  color: @color-header-grey;
+  background: transparent;
+}
+
+//Show dropdown menus on hover
+ul.nav li.dropdown:hover > ul.dropdown-menu {
+  display: block;    
+}
+
+//**********************************************************************
+//  NAVBAR
+//**********************************************************************
+
+//Navbar is top menu, logo + navigation bar
+//overwriting in bootstrap.min.css
+.navbar-default {
+  background: @color-white;
+  border-bottom: 1px solid @color-light-grey;
+  font-family: @header-font, sans;
+  height: 125px;
+
+  .navbar-nav {
+    padding-top: 50px;
+    li {
+      //change color of each navigation element
+      a {
+
+        //i = icons in navbar
+        i {
+          padding-right: 5px;
+        }
+
+        color: @color-header-grey;
+        font-size: @header-size;
+        font-weight: 700;
+
+        &:hover {
+          color: @color-light-blue;
+          .transition(0.35s);
+        }
+
+        //when active (page)change color to blue
+        &.active {
+          color: @color-light-blue
+        }
+      }
+    }
+    //Dropdown menu
+    .dropdown {
+        padding-bottom: 25px;
+      .dropdown-menu {
+      }
+    }
+
+  } // end of navbar-nav
+} //end of navbar default
+
+
+
