@@ -49,6 +49,10 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
   display: block;    
 }
 
+.navbar-right .dropdown-menu {
+  right: auto;
+}
+
 //**********************************************************************
 //  NAVBAR
 //**********************************************************************
@@ -59,10 +63,10 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
   background: @color-white;
   border-bottom: 1px solid @color-light-grey;
   font-family: @header-font, sans;
-  height: 125px;
+  height: 75px;
 
   .navbar-nav {
-    padding-top: 50px;
+    padding-top: 20px;
     li {
       //change color of each navigation element
       a {
@@ -89,11 +93,21 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
     }
     //Dropdown menu
     .dropdown {
-        padding-bottom: 25px;
-      .dropdown-menu {
-      }
-    }
+      padding-bottom: 5px;
 
+      &:hover {
+        
+        //keep navbar element highlighted even when 
+        //going into dropdown menu
+        .dropdown-toggle {
+          color: @color-light-blue;
+        }
+      }
+
+      .dropdown-menu {
+        color: lighten(#fff, 80%);
+      }
+    } //end of dropdown
   } // end of navbar-nav
 } //end of navbar default
 

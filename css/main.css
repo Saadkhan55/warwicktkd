@@ -94,14 +94,17 @@
 ul.nav li.dropdown:hover > ul.dropdown-menu {
   display: block;
 }
+.navbar-right .dropdown-menu {
+  right: auto;
+}
 .navbar-default {
   background: #ffffff;
   border-bottom: 1px solid #dddddd;
   font-family: 'Raleway', sans;
-  height: 125px;
+  height: 75px;
 }
 .navbar-default .navbar-nav {
-  padding-top: 50px;
+  padding-top: 20px;
 }
 .navbar-default .navbar-nav li a {
   color: #777777;
@@ -123,5 +126,11 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
   color: #367ee9;
 }
 .navbar-default .navbar-nav .dropdown {
-  padding-bottom: 25px;
+  padding-bottom: 5px;
+}
+.navbar-default .navbar-nav .dropdown:hover .dropdown-toggle {
+  color: #367ee9;
+}
+.navbar-default .navbar-nav .dropdown .dropdown-menu {
+  color: #ffffff;
 }
