@@ -34,79 +34,6 @@
           </div>    
         </div><!--End of row-->
 
-        <h2>SUBSCRIBE</h2>
-        <div class="about">
-          <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing 
-          elit. In diam lorem, mattis non rhoncus quis, mollis a arcu. 
-          Etiam vulputate ut tellus et maximus. Praesent eu arcu at sapien 
-          </p>
-
-          <div class="input-group">
-            <input class="form-control" type="text" placeholder="Email Address">
-            <button type="button" class="subscribe-button">Subscribe</button>
-          </div>
-        </div> <!-- End of about-->
-      </div> <!--End of first col-->
-
-      <div class="col-sm-4">
-
-        <h2>RECENT POSTS </h2>
-        <div class="blog-post">
-          <ul class="unlisted">
-
-            <li>
-              <a href="#">
-                  <img class="img-reponsive blog-thumbnail" src="images/blog/thumbnails/bird.jpg"> 
-              </a>
-              <div class="heading">
-                <p>
-                  <a href="#"> Lorem ipsum dolor sit amet</a>
-                  <small> 23rd March 2014</small>
-                </p>
-              </div>
-            </li>
-
-            <li>
-              <a href="#">
-                  <img class="img-reponsive blog-thumbnail" src="images/blog/thumbnails/boat.jpg"> 
-              </a>
-              <div class="heading">
-                <p>
-                  <a href="#"> Lorem ipsum dolor sit amet</a>
-                  <small> 23rd March 2014</small>
-                </p>
-              </div>
-            </li>
-
-            <li>
-              <a href="#">
-                  <img class="img-reponsive blog-thumbnail" src="images/blog/thumbnails/track.jpg"> 
-              </a>
-              <div class="heading">
-                <p>
-                  <a href="#"> Lorem ipsum dolor sit amet</a>
-                  <small> 23rd March 2014</small>
-                </p>
-              </div>
-            </li>
-
-          </ul>
-        </div><!--End of blog post -->
-      </div> <!--End of second col-->
-
-      <div class="col-sm-4">
-        <div class="address">
-          <h2>CONTACT US</h2>
-          <p> 
-            100, LOREM ISPUM, LENG <br>
-            LONDON, UK <br>
-            PHONE: 020 1345 6789 <br>
-            FAX: 020 1345 6789 <br>
-            EMAIL: test@test.com <br>
-          </p>
-        </div> <!--End of address-->
-
         <div class="social">
           <h2>SOCIAL</h2>
           <div class="social-button">
@@ -116,12 +43,10 @@
             <img src="images/social/twitter.png" alt="">
             <img src="images/social/youtube.png" alt="">
           </div> <!--End of social buttons -->
-        </div>
-      </div> <!--End of third col-->
-
+        </div> <!-- End of social -->
+      </div> <!--End of first col-->
+    <div class="credits col-md-8">Warwick Tae Kwon Do &copy 2014. All rights reserved.</div> <!-- End of second --> 
     </div> <!-- end of row -->
- </div>
-    <div class="credits">Turbo Drive &copy 2014. All rights reserved.</div>
 </div><!--End of footer-->
 
 <!-- jQuery and bootstrap for plugins with local fallbacks-->

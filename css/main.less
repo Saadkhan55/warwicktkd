@@ -5,21 +5,62 @@
 // -- Fonts
 // -- Font Size
 // -- Colours
+// -- Media Queries
 //************************************************************************
 
 @header-font: 'Raleway';
 @header-size: 16px;
+@footer-font: 'Open Sans';
+@footer-size: 14px;
 
 @color-white: #fff; ;
 @color-light-grey: #ddd;
 @color-light-blue: #367ee9;
 @color-header-grey: #777;
 
+//Pre collapsed menu 
+@pre-collapse: ~"(min-width: 768px)";
+//Post collapsed menu
+@post-collapse: ~"(max-width: 767px)";
+
+//**********************************************************************
+// General Styles such as headers etc
+//**********************************************************************
+
+h1 {
+  font-size: 36px;
+}
+
+h2 {
+  font-size: 30px;
+}
+
+h3 {
+  font-size: 26px;
+}
+
+h4 {
+  font-size: 22px
+}
+
+h5 {
+  font-size: 18px;
+}
+
+h6 {
+  font-size: 16px;
+}
+
+//No bullets points for lists
+.unlisted {
+  list-style-type: none;
+}
+
 //**********************************************************************
 // This file is structured top -> down
 //  -- NAVBAR
 //    -- contains navigation control and logo
-//    -- is the white bar at thr top
+//    -- is the white bar at the top
 //**********************************************************************
 
 //**********************************************************************
@@ -44,33 +85,79 @@
   background: transparent;
 }
 
-//Show dropdown menus on hover
-ul.nav li.dropdown:hover > ul.dropdown-menu {
-  display: block;    
+//before menu has collapsed show dropdown menu on hover
+@media @pre-collapse {
+  //Show dropdown menus on hover
+  ul.nav li.dropdown:hover > ul.dropdown-menu {
+    display: block;    
+  }
 }
 
+//dropdown menu slightly more towards the right
 .navbar-right .dropdown-menu {
   right: auto;
 }
 
+html,body {
+  height: 100%;
+}
+
+//**********************************************************************
+//  WRAPPER -> CONTAINS HEADER CONTENT FOOTER
+//**********************************************************************
+#wrapper {
+  //for sticky footer 
+  min-height: 100%;
+  margin: 0 auto -350px;
+  padding: 0 0 350px;
+
+  //larger footer on collapsed navbar
+  @media @post-collapse {
+    margin: 0 auto -1120px;
+    padding: 0 0 1120px;
+  }
+} // end of wrapper
+
+
 //**********************************************************************
 //  NAVBAR
 //**********************************************************************
-
 //Navbar is top menu, logo + navigation bar
 //overwriting in bootstrap.min.css
+
 .navbar-default {
   background: @color-white;
-  border-bottom: 1px solid @color-light-grey;
   font-family: @header-font, sans;
   height: 75px;
 
+  //navbar show and collapse button (3 bars)
+  .navbar-toggle {
+    border-color: transparent;
+    background: transparent;
+
+    //collapse button on hover
+    &:hover, &:focus {
+      background: transparent;
+      color: @color-light-blue;
+      .transition(0.35s);
+    }
+  }
+
+  //logo (top left)
+  .navbar-brand {
+    padding: 15px 0;
+    img {
+      height: 50px;
+      width: 120px;
+    }
+  }
+
   .navbar-nav {
     padding-top: 20px;
+    //each element of the navbar
     li {
       //change color of each navigation element
       a {
-
         //i = icons in navbar
         i {
           padding-right: 5px;
@@ -78,11 +165,12 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
 
         color: @color-header-grey;
         font-size: @header-size;
-        font-weight: 700;
+        font-weight: 500;
 
+        //on hover change color of navbar element
         &:hover {
           color: @color-light-blue;
-          .transition(0.35s);
+          .transition(0.35s); // a member in library less take a single parameter which is time of transition
         }
 
         //when active (page)change color to blue
@@ -91,12 +179,12 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
         }
       }
     }
+
     //Dropdown menu
     .dropdown {
       padding-bottom: 5px;
 
       &:hover {
-        
         //keep navbar element highlighted even when 
         //going into dropdown menu
         .dropdown-toggle {
@@ -104,12 +192,104 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
         }
       }
 
+      //dropdown menu shown on hover
       .dropdown-menu {
-        color: lighten(#fff, 80%);
+        background: #000;
+        opacity: 0.75;
+        padding: 0;
+
+        //each element inside the dropdown menu
+        li {
+            padding: 0;
+          a {
+            padding: 10px 10px 10px 20px;
+            color: #fff;
+            border-bottom: 1px solid #2a3034;
+
+            &:hover {
+              color: darken(@color-light-blue, 10%) !important;
+              .transition(0.35s);
+            }
+          }
+        }// end of list element
+      } // end of dropdown menu
+    } // end of dropdown
+  }
+
+  //when menu has collapsed
+  .navbar-collapse {
+    border-color: transparent;
+  }
+} // end of navbar-default
+
+//Footer (Sticky at the bottom)
+#footer {
+  background: #333;
+  height: 350px;
+  font-family: @footer-font,sans;
+  font-size: @footer-size;
+  color: #fff;
+
+  .row {
+    padding-top: 10px;
+  }
+
+  //headers inside the footer (i.e. sitemap, social)
+  h2 {
+    font-weight: 300;
+    padding-bottom: 20px;
+  }
+
+  //back to top page icon
+  i {
+    z-index: 1100;
+    color: @color-white;
+    font-size: 2em;
+    padding: 20px;
+    position: fixed;
+    bottom: 10px;
+    right: 20px;
+    display: none;
+    background: rgba(0,0,0, 0.60);
+
+    &:hover {
+      background: rgba(0,0,0, 0.8);
+      .transition(0.35s);
+      cursor: pointer;
+    }
+  }
+
+  //Site map i.e. left column (TOP)
+  .sitemap {
+    div {
+      width: 33%;
+      display: inline;
+      float: left;
+      padding: 0;
+      margin: 0;
+
+      //on hover of sitemap elements
+      a {
+        &:hover {
+          text-decoration: none;
+          color: #fff;
+          .transition(0.25s);
+        }
       }
-    } //end of dropdown
-  } // end of navbar-nav
-} //end of navbar default
 
+      &:first-child {
+        margin-left: -20px;
+      }
 
+      &:nth-child(2) {
+        margin: 0 15px 0 -20px;
+      }
+    }
+  } //end of sitemap
+
+  //rigth hand column
+  .credits {
+
+  }
+} // end of footer
 
