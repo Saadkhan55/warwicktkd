@@ -16,12 +16,13 @@
 @color-white: #fff; ;
 @color-light-grey: #ddd;
 @color-light-blue: #367ee9;
+@color-lighter-blue: #4ecff8;
 @color-header-grey: #777;
 
 //Pre collapsed menu 
-@pre-collapse: ~"(min-width: 768px)";
+@pre-collapse: ~"(min-width: 1024px)";
 //Post collapsed menu
-@post-collapse: ~"(max-width: 767px)";
+@post-collapse: ~"(max-width: 1023px)";
 
 //**********************************************************************
 // General Styles such as headers etc
@@ -108,13 +109,13 @@ html,body {
 #wrapper {
   //for sticky footer 
   min-height: 100%;
-  margin: 0 auto -350px;
-  padding: 0 0 350px;
+  margin: 0 auto -450px;
+  padding: 0 0 450px;
 
-  //larger footer on collapsed navbar
+  //on collapse of menu bigger footer
   @media @post-collapse {
-    margin: 0 auto -1120px;
-    padding: 0 0 1120px;
+    margin: 0 auto -900px;
+    padding: 0 0 900px;
   }
 } // end of wrapper
 
@@ -222,16 +223,30 @@ html,body {
   }
 } // end of navbar-default
 
+//**********************************************************************
+//  Footer at the bottom (STICKY)
+//**********************************************************************
+
 //Footer (Sticky at the bottom)
 #footer {
   background: #333;
-  height: 350px;
+  height: 450px;
   font-family: @footer-font,sans;
   font-size: @footer-size;
   color: #fff;
 
-  .row {
-    padding-top: 10px;
+  @media @post-collapse {
+    height: 900px;
+  }
+
+  //on hover of links inside the footer, change color to white
+  a {
+    color: @color-lighter-blue;
+    &:hover {
+      text-decoration: none;
+      color: #fff;
+      .transition(0.25s);
+    }
   }
 
   //headers inside the footer (i.e. sitemap, social)
@@ -243,13 +258,12 @@ html,body {
   //back to top page icon
   i {
     z-index: 1100;
-    color: @color-white;
+    color: #fff;
     font-size: 2em;
     padding: 20px;
     position: fixed;
     bottom: 10px;
     right: 20px;
-    display: none;
     background: rgba(0,0,0, 0.60);
 
     &:hover {
@@ -268,15 +282,6 @@ html,body {
       padding: 0;
       margin: 0;
 
-      //on hover of sitemap elements
-      a {
-        &:hover {
-          text-decoration: none;
-          color: #fff;
-          .transition(0.25s);
-        }
-      }
-
       &:first-child {
         margin-left: -20px;
       }
@@ -287,9 +292,72 @@ html,body {
     }
   } //end of sitemap
 
-  //rigth hand column
-  .credits {
+  //Recent posts
+  .blog-post {
+    //unordered list
+    ul {
+      margin-left: -29px;
+    }
 
+    //list element
+    li {
+      margin-bottom: 20px;
+
+      //heading inside blog post
+      .heading {
+        display: inline;
+        float: right;
+        margin-right: 30px;
+        position: absolute;
+
+        //anchor elements
+        a {
+          font-size: 16px;
+        }
+
+        //small for date
+        small {
+          font-style: italic;
+          display: block;
+          font-size: 16px;
+          margin-top: 10px
+        }
+      } 
+
+      //anchor element inside blog post
+      a {
+        //images inside RECENT POSTS
+        img {
+          width: 75px;
+          height: 75px;
+          margin-right: 15px;
+        }
+      }
+    } //end of list elements
+  }
+
+  //social buttons
+  .social {
+    margin-bottom: 10px;
+
+    //each social button
+    img {
+      width: 48px;
+      height: 48px;
+
+      //each image on hover
+      &:hover {
+        border-radius: 25px;
+        .transition(0.35s);
+      }
+    }
+  } // End of social
+
+  //credits at button
+  .credits {
+    border-top: 1px solid @color-header-grey;
+    text-align: center;
+    padding: 15px 0 0 0;
   }
 } // end of footer
 
