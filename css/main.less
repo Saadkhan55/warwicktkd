@@ -3,27 +3,378 @@
 //************************************************************************
 // Variables used in the file (In order)
 // -- Fonts
-// -- Colours
 // -- Font Size
+// -- Colours
+// -- Media Queries
 //************************************************************************
 
-@header-font: 'Open Sans';
+@header-font: 'Raleway';
+@header-size: 16px;
+@footer-font: 'Open Sans';
+@footer-size: 14px;
 
-@color-white: #fff;
+@color-white: #fff; ;
 @color-light-grey: #ddd;
+@color-light-blue: #367ee9;
+@color-lighter-blue: #4ecff8;
+@color-header-grey: #777;
+
+//Pre collapsed menu 
+@pre-collapse: ~"(min-width: 1024px)";
+//Post collapsed menu
+@post-collapse: ~"(max-width: 1023px)";
+
+//**********************************************************************
+// General Styles such as headers etc
+//**********************************************************************
+
+h1 {
+  font-size: 36px;
+}
+
+h2 {
+  font-size: 30px;
+}
+
+h3 {
+  font-size: 26px;
+}
+
+h4 {
+  font-size: 22px
+}
+
+h5 {
+  font-size: 18px;
+}
+
+h6 {
+  font-size: 16px;
+}
+
+//No bullets points for lists
+.unlisted {
+  list-style-type: none;
+}
+
+//**********************************************************************
+// This file is structured top -> down
+//  -- NAVBAR
+//    -- contains navigation control and logo
+//    -- is the white bar at the top
+//  -- FOOTER
+//    -- contains 3 columns (SITEMAP, SOCIAL)
+//    -- RECENT POSTS, CONTACT US
+//    -- footer at the bottom (black background)
+//  -- INDEX PAGE
+//    -- NEWSLIDER -> Shows recent news 
+//**********************************************************************
+
+//**********************************************************************
+// RANDOM FIXES
+//**********************************************************************
+// Active and hovered over links
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:hover, .navbar-default .navbar-nav>.active>a:focus, #collapse-menu .navbar-nav  li a:hover {
+  color: @color-light-blue;
+  background: transparent;
+  .transition(0.35s);
+}
+
+// No background on dropdown click
+.navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:hover, .navbar-default .navbar-nav>.open>a:focus {
+  color: @color-light-blue;
+  background: transparent;
+}
+
+// Stops color change on click of dropdown-toggle button
+.navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>li>a:focus {
+  color: @color-header-grey;
+  background: transparent;
+}
+
+//before menu has collapsed show dropdown menu on hover
+@media @pre-collapse {
+  //Show dropdown menus on hover
+  ul.nav li.dropdown:hover > ul.dropdown-menu {
+    display: block;    
+  }
+}
+
+//dropdown menu slightly more towards the right
+.navbar-right .dropdown-menu {
+  right: auto;
+}
+
+html,body {
+  height: 100%;
+}
+
+//**********************************************************************
+//  WRAPPER -> CONTAINS HEADER CONTENT FOOTER
+//**********************************************************************
+#wrapper {
+  //for sticky footer 
+  min-height: 100%;
+  margin: 0 auto -450px;
+  padding: 0 0 450px;
+
+  //on collapse of menu bigger footer
+  @media @post-collapse {
+    margin: 0 auto -900px;
+    padding: 0 0 900px;
+  }
+} // end of wrapper
 
 
-.navbar {
+//**********************************************************************
+//  NAVBAR
+//**********************************************************************
+//Navbar is top menu, logo + navigation bar
+//overwriting in bootstrap.min.css
+
+.navbar-default {
   background: @color-white;
-  border-bottom: 1px solid @color-light-grey;
   font-family: @header-font, sans;
-  height: 125px;
+  height: 75px;
 
-  .nav {
-    padding-top: 50px;
-    a {
-      font-size: 18px;
+  //navbar show and collapse button (3 bars)
+  .navbar-toggle {
+    border-color: transparent;
+    background: transparent;
+
+    //collapse button on hover
+    &:hover, &:focus {
+      background: transparent;
+      color: @color-light-blue;
+      .transition(0.35s);
     }
   }
+
+  //logo (top left)
+  .navbar-brand {
+    padding: 15px 0;
+    img {
+      height: 50px;
+      width: 120px;
+    }
+  }
+
+  .navbar-nav {
+    padding-top: 20px;
+    //each element of the navbar
+    li {
+      //change color of each navigation element
+      a {
+        //i = icons in navbar
+        i {
+          padding-right: 5px;
+        }
+
+        color: @color-header-grey;
+        font-size: @header-size;
+        font-weight: 500;
+
+        //on hover change color of navbar element
+        &:hover {
+          color: @color-light-blue;
+          .transition(0.35s); // a member in library less take a single parameter which is time of transition
+        }
+
+        //when active (page)change color to blue
+        &.active {
+          color: @color-light-blue
+        }
+      }
+    }
+
+    //Dropdown menu
+    .dropdown {
+      padding-bottom: 5px;
+
+      &:hover {
+        //keep navbar element highlighted even when 
+        //going into dropdown menu
+        .dropdown-toggle {
+          color: @color-light-blue;
+        }
+      }
+
+      //dropdown menu shown on hover
+      .dropdown-menu {
+        background: #000;
+        opacity: 0.75;
+        padding: 0;
+
+        //each element inside the dropdown menu
+        li {
+            padding: 0;
+          a {
+            padding: 10px 10px 10px 20px;
+            color: #fff;
+            border-bottom: 1px solid #2a3034;
+
+            &:hover {
+              color: darken(@color-light-blue, 10%) !important;
+              .transition(0.35s);
+            }
+          }
+        }// end of list element
+      } // end of dropdown menu
+    } // end of dropdown
+  }
+
+  //when menu has collapsed
+  .navbar-collapse {
+    border-color: transparent;
+  }
+} // end of navbar-default
+
+//**********************************************************************
+//  Footer at the bottom (STICKY)
+//**********************************************************************
+
+//Footer (Sticky at the bottom)
+#footer {
+  background: #333;
+  height: 450px;
+  font-family: @footer-font,sans;
+  font-size: @footer-size;
+  color: #fff;
+  border-top: 5px solid @color-light-blue;
+
+  @media @post-collapse {
+    height: 900px;
+  }
+
+  //on hover of links inside the footer, change color to white
+  a {
+    color: @color-lighter-blue;
+    &:hover {
+      text-decoration: none;
+      color: #fff;
+      .transition(0.25s);
+    }
+  }
+
+  //headers inside the footer (i.e. sitemap, social)
+  h2 {
+    font-weight: 300;
+    padding-bottom: 20px;
+  }
+
+  //back to top page icon
+  i {
+    z-index: 1100;
+    color: #fff;
+    font-size: 2em;
+    padding: 20px;
+    position: fixed;
+    bottom: 10px;
+    right: 20px;
+    background: rgba(0,0,0, 0.60);
+
+    &:hover {
+      background: rgba(0,0,0, 0.8);
+      .transition(0.35s);
+      cursor: pointer;
+    }
+  }
+
+  //Site map i.e. left column (TOP)
+  .sitemap {
+    div {
+      width: 33%;
+      display: inline;
+      float: left;
+      padding: 0;
+      margin: 0;
+
+      &:first-child {
+        margin-left: -20px;
+      }
+
+      &:nth-child(2) {
+        margin: 0 15px 0 -20px;
+      }
+    }
+  } //end of sitemap
+
+  //Recent posts
+  .blog-post {
+    //unordered list
+    ul {
+      margin-left: -29px;
+    }
+
+    //list element
+    li {
+      margin-bottom: 20px;
+
+      //heading inside blog post
+      .heading {
+        display: inline;
+        float: right;
+        margin-right: 30px;
+        position: absolute;
+
+        //anchor elements
+        a {
+          font-size: 16px;
+        }
+
+        //small for date
+        small {
+          font-style: italic;
+          display: block;
+          font-size: 16px;
+          margin-top: 10px
+        }
+      } 
+
+      //anchor element inside blog post
+      a {
+        //images inside RECENT POSTS
+        img {
+          width: 75px;
+          height: 75px;
+          margin-right: 15px;
+        }
+      }
+    } //end of list elements
+  }
+
+  //social buttons
+  .social {
+    margin-bottom: 10px;
+
+    //each social button
+    img {
+      width: 48px;
+      height: 48px;
+
+      //each image on hover
+      &:hover {
+        border-radius: 25px;
+        .transition(0.35s);
+      }
+    }
+  } // End of social
+
+  //credits at button
+  .credits {
+    border-top: 1px solid @color-header-grey;
+    text-align: center;
+    padding: 15px 0 0 0;
+  }
+} // end of footer
+
+//**********************************************************************
+// INDEX PAGE
+//  --CAROUSEL (NEWSLIDER)
+//**********************************************************************
+
+.carousel {
+  width: 100%;
+  height: 500px;
 }
 

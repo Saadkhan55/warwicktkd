@@ -1,7 +1,7 @@
 <div id="header">
   <div class="navbar navbar-default navbar-static-top" role="navigation">
       <div class="container">
-        <!--Navbar toggle and logo -->
+        <!--Navbar logo -->
         <div class="navbar-header">
           <!--For collapsing menu -->
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapse-menu">
@@ -13,12 +13,12 @@
         <div class="navbar-collapse navbar-right collapse" id="collapse-menu">
           <ul class="nav navbar-nav ">
             <!--Active Element-->
-            <li><a href="index.php"><i class="fa fa-home"></i>HOME</a></li>
+            <li><a class="home" href="index.php"><i class="fa fa-home"></i>HOME</a></li>
 
             <li class="dropdown"> 
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-file-code-o"></i>NEWS</a>
+              <a href="#" class="dropdown-toggle news" data-toggle="dropdown"><i class="fa fa-newspaper-o"></i>NEWS</a>
               <ul class="dropdown-menu" role="menu">
-                <li><a href="#">Stories</a></li>
+                <li><a href="#">News</a></li>
                 <li><a href="#">Gallery</a></li>
                 <li><a href="#">Calendar</a></li>
               </ul>
@@ -26,7 +26,7 @@
 
             <!-- Start of dropdown menu -->
             <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-cogs"></i>ABOUT US</a>
+              <a href="#" class="dropdown-toggle about" data-toggle="dropdown"><i class="fa fa-info"></i>ABOUT US</a>
               <ul class="dropdown-menu" role="menu">
                 <li><a href="#">Beginners</a></li>
                 <li><a href="#">Socials</a></li>
@@ -37,7 +37,7 @@
             <!-- end of dropdown menu -->
 
             <li class="dropdown"> 
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-file-code-o"></i>STUDENTS</a>
+              <a href="#" class="dropdown-toggle students" data-toggle="dropdown"><i class="fa fa-group"></i>STUDENTS</a>
               <ul class="dropdown-menu" role="menu">
                 <li><a href="#">White Belt</a></li>
                 <li><a href="#">Yellow Tag</a></li>
@@ -51,7 +51,7 @@
                 <li><a href="#">Black Tag</a></li> 
               </ul>
             </li> 
-            <li><a href="#"><i class="fa fa-comment-o"></i>CONTACT</a></li>
+            <li><a class = "contact" href="#"><i class="fa fa-comment-o"></i>CONTACT</a></li>
             <li>
           </ul>
       </div>
