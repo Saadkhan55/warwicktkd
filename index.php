@@ -12,6 +12,7 @@
 
       <!-- Carousel, newslider recent news -->
       <div id="newslider" class="carousel slide" data-ride="carousel">
+        <img class="carousel-background img-responsive" src="images/background.jpg">
         <!-- Indicators -->
         <ol class="carousel-indicators">
           <li data-target="#newslider" data-slide-to="0" class="active"></li>
@@ -28,14 +29,14 @@
               ...
             </div>
           </div> <!-- End of item -->
+          <?php 
+            //recent posts need to access db
+            require('database.php');
 
-          <div class="item">
-            <img src="..." alt="...">
-            <div class="carousel-caption">
-              ...
-            </div>
-          </div> <!-- End of item -->
-          ...
+            $db = new Database();
+            //select latest 3 articles
+            $result = $db->query("SELECT * FROM Articles ORDER BY ID DESC LIMIT 3");
+          ?>
         </div> <!-- End of carousel inner -->
 
         <!-- Controls -->

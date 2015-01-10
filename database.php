@@ -21,6 +21,7 @@ class Database {
 
     //else if connection not established return an error 
     else if(!self::$conn) {
+      echo 'LOOOL';
       return false;
     }
     return self::$conn;

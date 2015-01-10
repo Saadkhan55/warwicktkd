@@ -104,14 +104,13 @@ h6 {
 .navbar-right .dropdown-menu {
   right: auto;
 }
-
+//**********************************************************************
+//  WRAPPER -> CONTAINS HEADER CONTENT FOOTER
+//**********************************************************************
 html,body {
   height: 100%;
 }
 
-//**********************************************************************
-//  WRAPPER -> CONTAINS HEADER CONTENT FOOTER
-//**********************************************************************
 #wrapper {
   //for sticky footer 
   min-height: 100%;
@@ -136,6 +135,17 @@ html,body {
   background: @color-white;
   font-family: @header-font, sans;
   height: 75px;
+
+  //on collapse of menu get rid of padding
+  .container {
+    @media @post-collapse {
+      padding: 0;
+    }
+
+    .navbar-collapse {
+      margin: 0;
+    }
+  }
 
   //navbar show and collapse button (3 bars)
   .navbar-toggle {
@@ -223,9 +233,13 @@ html,body {
     } // end of dropdown
   }
 
-  //when menu has collapsed
-  .navbar-collapse {
-    border-color: transparent;
+  @media @post-collapse {
+    //when menu has collapsed
+    .navbar-collapse {
+      border-color: transparent;
+      width: 100%;
+      background: #fff;
+    }
   }
 } // end of navbar-default
 
@@ -375,6 +389,11 @@ html,body {
 
 .carousel {
   width: 100%;
-  height: 500px;
+  height: 800px;
+
+  .carousel-background {
+    width: 100%;
+
+  }
 }
 

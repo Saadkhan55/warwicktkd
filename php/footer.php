@@ -49,40 +49,40 @@
         **
       -->
       <?php 
-      //recent posts need to access db
-      require('database.php');
+        //recent posts need to access db
+        require_once('database.php');
 
-      $db = new Database();
-      //select latest 3 articles
-      $result = $db->query("SELECT * FROM Articles ORDER BY ID DESC LIMIT 3");
-      //print out html 'like normal'
-      echo '<div class="col-sm-4">
-              <h2>RECENT POSTS </h2>
-              <div class="blog-post">
-                <ul class="unlisted">';
+        $db = new Database();
+        //select latest 3 articles
+        $result = $db->query("SELECT * FROM Articles ORDER BY ID DESC LIMIT 3");
+        //print out html 'like normal'
+        echo '<div class="col-sm-4">
+                <h2>RECENT POSTS </h2>
+                <div class="blog-post">
+                  <ul class="unlisted">';
 
-      //get result, then for each row create a mini story
-      while($row = $result -> fetch_assoc()) {
-        $id = $row['Id'];
-        $date = $row['Date'];
-        $photo = $row['Photo'];
-        $title = $row['Title'];
+        //get result, then for each row create a mini story
+        while($row = $result -> fetch_assoc()) {
+          $id = $row['Id'];
+          $date = $row['Date'];
+          $photo = $row['Photo'];
+          $title = $row['Title'];
 
-        echo '
-          <li>
-            <a href="news.php?Id='.$id.'"><img src="'.$photo.'"></a> 
-            <div class="heading">
-              <p>
-                <a href="news?Id='.$id.'">'.$title.'</a>
-                <small> '.$date.'</small>
-              </p>
-            </div>
-          </li>';
-      }
+          echo '
+            <li>
+              <a href="news.php?Id='.$id.'"><img src="'.$photo.'"></a> 
+              <div class="heading">
+                <p>
+                  <a href="news?Id='.$id.'">'.$title.'</a>
+                  <small> '.$date.'</small>
+                </p>
+              </div>
+            </li>';
+        }
 
-      echo '</ul>
-          </div> 
-        </div>';
+        echo '</ul>
+            </div> 
+          </div>';
       ?>
 
       <!-- Third column -->
