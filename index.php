@@ -3,58 +3,99 @@
   <head>
     <!--Add header data (such as import stylesheets) -->
     <?php include 'php/head.php' ?>
-<title>Home Page</title>
+    <title>Home Page</title>
   </head>
   <body>
     <div id="wrapper">
     <!--Add header including logo, and navbar elements -->
       <?php include 'php/header.php' ?>
-
-      <!-- Carousel, newslider recent news -->
-      <div id="newslider" class="carousel slide" data-ride="carousel">
-        <img class="carousel-background img-responsive" src="images/background.jpg">
-        <!-- Indicators -->
+      <div id="carousel" class="carousel slide" data-ride="carousel">
+        <!-- Indicators, dots at the bottom -->
         <ol class="carousel-indicators">
-          <li data-target="#newslider" data-slide-to="0" class="active"></li>
-          <li data-target="#newslider" data-slide-to="1"></li>
-          <li data-target="#newslider" data-slide-to="2"></li>
+          <li data-target="#carousel" data-slide-to="0" class="active"></li>
+          <li data-target="#carousel" data-slide-to="1"></li>
+          <li data-target="#carousel" data-slide-to="2"></li>
         </ol>
 
-        <!-- Wrapper for slides -->
-        <div class="carousel-inner" role="listbox">
+        <div class="carousel-inner">
 
           <div class="item active">
-            <img src="..." alt="...">
-            <div class="carousel-caption">
-              ...
-            </div>
-          </div> <!-- End of item -->
-          <?php 
-            //recent posts need to access db
-            require('database.php');
+            <div class="container">
+              <div class="row">
 
-            $db = new Database();
-            //select latest 3 articles
-            $result = $db->query("SELECT * FROM Articles ORDER BY ID DESC LIMIT 3");
-          ?>
-        </div> <!-- End of carousel inner -->
+                <div class="col-md-6 col-xs-12">
+                  <div class="carousel-caption">
+                    <h1 class="title">Title</h1>
+                    <p class="carousel-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam risus massa, pellentesque quis enim non, laoreet semper risus. Vestibulum at interdum urna. Nulla dui mauris, placerat nec gravida vitae, fringilla ut neque. Donec accumsan faucibus nunc, ut elementum erat. Aliquam non odio dui. Mauris non elit ac libero tempor fermentum ut faucibus arcu. Phasellus venenatis nisl nec ex tempus cursus.</p>
+                  </div>
+                </div> <!--End of col-md-6 -->
 
-        <!-- Controls -->
-        <a class="left carousel-control" href="#newslider" role="button" data-slide="prev">
-          <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-          <span class="sr-only">Previous</span>
+                <div class="col-md-6 col-sm-4 hidden-xs">
+                  <div class="carousel-image">
+                    <img class="img-responsive" src="images/placeholder.png" width="250px" height="250px">
+                  </div> <!--End of carousel-image -->
+                </div> <!--End of carousel-image -->
+
+              </div> <!--End of row -->
+            </div> <!--End of container -->
+          </div> <!--End of first item-->
+
+          <div class="item">
+            <div class="container">
+              <div class="row">
+
+                <div class="col-md-6 col-xs-12">
+                  <div class="carousel-caption">
+                    <h1 class="title">Title</h1>
+                    <p class="carousel-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam risus massa, pellentesque quis enim non, laoreet semper risus. Vestibulum at interdum urna. Nulla dut elementum erat. Aliquam non odio dui. Mauris non elit ac libero tempor fermentum ut faucibus arcu. Phasellus venenatis nisl nec ex tempus cursus.</p>
+                  </div>
+                </div> <!--End of col-md-6 -->
+
+                <div class="col-md-6 col-sm-4 hidden-xs">
+                  <div class="carousel-image">
+                    <img class="img-responsive" src="images/placeholder.png" width="250px" height="250px">
+                  </div> <!--End of carousel-image -->
+                </div> <!--End of carousel-image -->
+
+              </div> <!--End of row -->
+            </div> <!--End of container -->
+          </div> <!--End of second item-->
+
+          <div class="item">
+            <div class="container">
+              <div class="row">
+
+                <div class="col-md-6 col-xs-12">
+                  <div class="carousel-caption">
+                    <h1 class="title">Title</h1>
+                    <p class="carousel-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam risus massa, pellentesque quis enim non, laoreet semper risus. Vestibulum at interdum urna. Nulla dueque. Donec accumsan faucibus nunc, ut elementum erat. Aliquam non odio dui. Mauris non elit ac libero tempor fermentum ut faucibus arcu. Phasellus venenatis nisl nec ex tempus cursus.</p>
+                  </div>
+                </div> <!--End of col-md-6 -->
+
+                <div class="col-md-6 col-sm-4 hidden-xs">
+                  <div class="carousel-image">
+                    <img class="img-responsive" src="images/placeholder.png" width="250px" height="250px">
+                  </div> <!--End of carousel-image -->
+                </div> <!--End of carousel-image -->
+
+              </div> <!--End of row -->
+            </div> <!--End of container -->
+          </div> <!--End of third item-->
+
+        </div> <!-- End of carousel-inner -->
+
+        <!-- Controls - navigation buttons -->
+        <a class="left carousel-control animated bounceInLeft" href="#carousel" role="button" data-slide="prev">
+          <span class="glyphicon glyphicon-chevron-left"></span>
         </a>
-        <a class="right carousel-control" href="#newslider" role="button" data-slide="next">
-          <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-          <span class="sr-only">Next</span>
+        <a class="right carousel-control animated bounceInRight" href="#carousel" role="button" data-slide="next">
+          <span class="glyphicon glyphicon-chevron-right"></span>
         </a>
-      </div> <!-- End of newslider -->
+      </div><!--End of newslider(carousel) -->
 
     </div><!--End of wrapper -->
     <!--Add footer, contains 3 columns layout Add footer data, such as jquery, boostrap javascript -->
     <?php include 'php/footer.php' ?>
   </body>
 </html>
-
-
 

@@ -14,8 +14,6 @@ class Database {
 
     //if connection not set establish connection (note self used instead of this ->, because conn is static variable)
     if(!isset(self::$conn)) {
-      //using config file like an array
-      /* $config = parse_ini_file('./config.ini'); */
       self::$conn = new mysqli('localhost', 'root', 'root', 'warwickTkd');
     }
 
