@@ -93,6 +93,32 @@
         </a>
       </div><!--End of newslider(carousel) -->
 
+      <div class="three-story">
+        <div class="container">
+          <div class="row">
+
+            <div class="col-md-4">
+              <i class="fa fa-user"></i>
+               <h2>Beginner Guide</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ac mauris eu velit euismod sodales. Nullam ipsum leo, volutpat vitae accumsan quis, ornare vel diam. </p>
+            </div> <!-- End of first story -->
+
+            <div class="col-md-4">
+              <i class="fa fa-info"></i>
+               <h2>About Us</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ac mauris eu velit euismod sodales. Nullam ipsum leo, volutpat vitae accumsan quis, ornare vel diam. </p>
+            </div> <!-- End of second story -->
+
+            <div class="col-md-4">
+              <i class="fa fa-users"></i>
+               <h2>Exec Team</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ac mauris eu velit euismod sodales. Nullam ipsum leo, volutpat vitae accumsan quis, ornare vel diam. </p>
+            </div> <!-- End of third story -->
+
+          </div> <!-- End of row -->
+        </div> <!-- End of container -->
+      </div> <!-- End of three stories -->
+
     </div><!--End of wrapper -->
     <!--Add footer, contains 3 columns layout Add footer data, such as jquery, boostrap javascript -->
     <?php include 'php/footer.php' ?>

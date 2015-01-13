@@ -10,6 +10,7 @@
 
 @header-font: 'Raleway';
 @header-size: 16px;
+@wrapper-font: 'Open Sans';
 @carousel-font: 'Open Sans';
 @footer-font: 'Open Sans';
 @footer-size: 14px;
@@ -106,13 +107,15 @@ h6 {
   right: auto;
 }
 //**********************************************************************
-//  WRAPPER -> CONTAINS HEADER CONTENT FOOTER
+//  WRAPPER -> CONTAINS CONTENT
 //**********************************************************************
 html,body {
   height: 100%;
 }
 
 #wrapper {
+  background: lighten(#eee, 5%);
+  font-family: @wrapper-font, sans;
   //for sticky footer 
   min-height: 100%;
   margin: 0 auto -450px;
@@ -386,8 +389,10 @@ html,body {
 //**********************************************************************
 // INDEX PAGE
 //  --CAROUSEL (NEWSLIDER)
+//  --3 COLUMS OF "STORIES"
 //**********************************************************************
 
+//newslider displays 3 "articles"
 .carousel {
   background: @color-light-blue;
   width: 100%;
@@ -410,6 +415,23 @@ html,body {
       .title {
         margin-bottom: 35px;
       }
+    }
+  }
+}
+
+// three 'stories' in a column
+.three-story {
+  margin-bottom: 20px;
+
+  .col-md-4 {
+    text-align: center;
+
+    i {
+      font-size: 4em;
+    }
+
+    h2 {
+      font-weight: 800;
     }
   }
 }
