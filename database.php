@@ -14,12 +14,13 @@ class Database {
 
     //if connection not set establish connection (note self used instead of this ->, because conn is static variable)
     if(!isset(self::$conn)) {
-      self::$conn = new mysqli('localhost', 'root', 'root', 'warwickTkd');
+      //get login information from config file outside root
+      $config = parse_ini_file('../config.ini');
+      self::$conn = new mysqli($config['host'], $config['username'], $config['password'], $config['dbname']);
     }
 
     //else if connection not established return an error 
     else if(!self::$conn) {
-      echo 'LOOOL';
       return false;
     }
     return self::$conn;
