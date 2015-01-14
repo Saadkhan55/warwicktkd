@@ -134,8 +134,8 @@ body {
   background: #fbfbfb;
   font-family: 'Open Sans', sans;
   min-height: 100%;
-  margin: 0 auto -450px;
-  padding: 0 0 450px;
+  margin: 0 auto -370px;
+  padding: 0 0 370px;
 }
 @media (max-width: 1023px) {
   #wrapper {
@@ -235,7 +235,7 @@ body {
 }
 #footer {
   background: #333;
-  height: 450px;
+  height: 370px;
   font-family: 'Open Sans', sans;
   font-size: 14px;
   color: #fff;
@@ -347,6 +347,7 @@ body {
   height: 500px;
   margin-bottom: 20px;
   font-family: 'Open Sans', sans;
+  font-size: 16px;
 }
 @media (max-width: 1023px) {
   .carousel {
@@ -429,4 +430,30 @@ body {
 }
 .recent-news .container .row .summary-news img {
   margin-bottom: 20px;
+}
+.panel-group .panel-default .panel-heading {
+  background: #367ee9;
+  color: #ffffff;
+  padding: 0;
+}
+.panel-group .panel-default .panel-heading i {
+  padding-right: 10px;
+}
+.panel-group .panel-default .panel-heading .fa-minus {
+  display: none;
+}
+.panel-group .panel-default .panel-heading a {
+  display: block;
+  padding: 20px 15px;
+}
+.panel-group .panel-default .panel-heading a:hover,
+.panel-group .panel-default .panel-heading a:focus {
+  background: #1f6fe6;
+  text-decoration: none;
+}
+.panel-group .panel-default .panel-heading .open a .fa-minus {
+  display: inline;
+}
+.panel-group .panel-default .panel-heading .open a .fa-plus {
+  display: none;
 }

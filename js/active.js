@@ -21,7 +21,14 @@ $(document).ready(function() {
       $(".news").addClass("active");
       break;
 
+
+    /* 
+     */
     case "about.php" :
+      $(".about").addClass("active");
+      break;
+
+    case "beginners.php" :
       $(".about").addClass("active");
       break;
 

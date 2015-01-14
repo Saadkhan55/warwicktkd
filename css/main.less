@@ -9,10 +9,12 @@
 //************************************************************************
 
 @header-font: 'Raleway';
-@header-size: 16px;
 @wrapper-font: 'Open Sans';
 @carousel-font: 'Open Sans';
 @footer-font: 'Open Sans';
+
+@header-size: 16px;
+@carousel-size: 16px;
 @footer-size: 14px;
 
 @color-white: #fff; 
@@ -78,7 +80,11 @@ a {
 //    -- RECENT POSTS, CONTACT US
 //    -- footer at the bottom (black background)
 //  -- INDEX PAGE
-//    -- NEWSLIDER -> Shows recent news 
+//    -- NEWSLIDER
+//    -- 3 STORIES 
+//    -- RECENT NEWS
+//  -- BEGINNERS
+//    --ACCORDION
 //**********************************************************************
 
 //**********************************************************************
@@ -127,8 +133,8 @@ html,body {
   font-family: @wrapper-font, sans;
   //for sticky footer 
   min-height: 100%;
-  margin: 0 auto -450px;
-  padding: 0 0 450px;
+  margin: 0 auto -370px;
+  padding: 0 0 370px;
 
   //on collapse of menu bigger footer
   @media @post-collapse {
@@ -263,7 +269,7 @@ html,body {
 //Footer (Sticky at the bottom)
 #footer {
   background: #333;
-  height: 450px;
+  height: 370px;
   font-family: @footer-font,sans;
   font-size: @footer-size;
   color: #fff;
@@ -410,6 +416,7 @@ html,body {
   height: 500px;
   margin-bottom: 20px;
   font-family: @carousel-font, sans;
+  font-size: @carousel-size;
 
   //after collapse change margin bottom
   @media @post-collapse {
@@ -515,3 +522,52 @@ html,body {
   }
 }
 
+//**********************************************************************
+// BEGINNERS PAGE
+//  --ACCORDION 
+//**********************************************************************
+// The accordion 
+.panel-group {
+  .panel-default {
+    //panel headings background
+    .panel-heading {
+      background: @color-light-blue;
+      color: @color-white;
+      padding: 0;
+
+      //pad left icons 
+      i {
+        padding-right: 10px;
+      }
+
+      //initially hide fa minus
+      .fa-minus {
+        display: none;
+      }
+
+      //anchor links i.e. (blue background), hide text decoration
+      a {
+        display: block;
+        padding: 20px 15px;
+
+        &:hover, &:focus{
+          background: darken(@color-light-blue, 5%);
+          text-decoration: none;
+        }
+      }
+
+      //When accordion is open show minus and hide plus
+      .open {
+        a {
+          .fa-minus {
+            display: inline;
+          }
+
+          .fa-plus {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+}
