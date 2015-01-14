@@ -15,7 +15,8 @@
 @footer-font: 'Open Sans';
 @footer-size: 14px;
 
-@color-white: #fff; ;
+@color-white: #fff; 
+@color-black: #000; 
 @color-light-grey: #ddd;
 @color-light-blue: #367ee9;
 @color-lighter-blue: #4ecff8;
@@ -59,6 +60,14 @@ h6 {
   list-style-type: none;
 }
 
+// No anchor links with text-decoration
+a {
+  color: lighten(@color-black, 20%);
+
+  &:hover {
+    text-decoration: none;
+  }
+}
 //**********************************************************************
 // This file is structured top -> down
 //  -- NAVBAR
@@ -390,6 +399,7 @@ html,body {
 // INDEX PAGE
 //  --CAROUSEL (NEWSLIDER)
 //  --3 COLUMS OF "STORIES"
+//  --3 RECENT NEWS
 //**********************************************************************
 
 //newslider displays 3 "articles"
@@ -400,6 +410,11 @@ html,body {
   margin-bottom: 20px;
   font-family: @carousel-font, sans;
 
+  //after collapse change margin bottom
+  @media @post-collapse {
+    margin-bottom: 0px;
+  }
+
   //drop all content down by 200 ish pixels
   .container {
     padding-top: 100px;
@@ -408,6 +423,7 @@ html,body {
       position: relative;
       left: -20%;
 
+      //change on collapse, left -2% so doesn't go off the screen
       @media @post-collapse {
         left: -2%;
       }
@@ -421,10 +437,28 @@ html,body {
 
 // three 'stories' in a column
 .three-story {
-  margin-bottom: 20px;
+  margin-bottom: 20px; 
 
+  //each story is an anchor link to another page
+  a {
+    color: lighten(@color-black, 20%);
+    
+    &:hover {
+      text-decoration: none;
+    }
+  }
+
+  //for each 'story'
   .col-md-4 {
+    padding-top: 20px;
     text-align: center;
+
+    &:hover {
+      background: @color-light-blue;
+      .transition(0.25s);
+      color: @color-white;
+      cursor: pointer;
+    }
 
     i {
       font-size: 4em;
@@ -432,6 +466,50 @@ html,body {
 
     h2 {
       font-weight: 800;
+    }
+  }
+}
+
+/** recent news stories shows 3 most recent news stories 
+ ** Has a title (h2) with a date (small)
+ ** and a summary in a column of size 9 (col-sm-9)
+ ** and a picture on the left (col-sm-3)
+ **/
+.recent-news {
+  margin-bottom: 20px;
+
+  .container {
+
+    //on hover of row change color to blue
+    .row {
+      &:hover {
+        background: @color-light-blue;
+        .transition(0.25s);
+        color: @color-white;
+        cursor: pointer;
+
+        //on hover of article change color of small (date)
+        small {
+          color: @color-white;
+        }
+      }
+
+      //for each article
+      .summary-news {
+        padding: 0 20px;
+
+        h2 {
+          text-align: center;
+
+          small {
+            padding-left: 20px;
+          }
+        }
+
+        img {
+          margin-bottom: 20px;
+        }
+      }
     }
   }
 }

@@ -89,6 +89,12 @@ h6 {
 .unlisted {
   list-style-type: none;
 }
+a {
+  color: #333333;
+}
+a:hover {
+  text-decoration: none;
+}
 .navbar-default .navbar-nav > .active > a,
 .navbar-default .navbar-nav > .active > a:hover,
 .navbar-default .navbar-nav > .active > a:focus,
@@ -341,6 +347,11 @@ body {
   margin-bottom: 20px;
   font-family: 'Open Sans', sans;
 }
+@media (max-width: 1023px) {
+  .carousel {
+    margin-bottom: 0px;
+  }
+}
 .carousel .container {
   padding-top: 100px;
 }
@@ -359,12 +370,62 @@ body {
 .three-story {
   margin-bottom: 20px;
 }
+.three-story a {
+  color: #333333;
+}
+.three-story a:hover {
+  text-decoration: none;
+}
 .three-story .col-md-4 {
+  padding-top: 20px;
   text-align: center;
+}
+.three-story .col-md-4:hover {
+  background: #367ee9;
+  transition: 0.25s;
+  -webkit-transition: 0.25s;
+  -moz-transition: 0.25s;
+  -ms-transition: 0.25s;
+  -o-transition: 0.25s;
+  color: #ffffff;
+  cursor: pointer;
 }
 .three-story .col-md-4 i {
   font-size: 4em;
 }
 .three-story .col-md-4 h2 {
   font-weight: 800;
+}
+/** recent news stories shows 3 most recent news stories 
+ ** Has a title (h2) with a date (small)
+ ** and a summary in a column of size 9 (col-sm-9)
+ ** and a picture on the left (col-sm-3)
+ **/
+.recent-news {
+  margin-bottom: 20px;
+}
+.recent-news .container .row:hover {
+  background: #367ee9;
+  transition: 0.25s;
+  -webkit-transition: 0.25s;
+  -moz-transition: 0.25s;
+  -ms-transition: 0.25s;
+  -o-transition: 0.25s;
+  color: #ffffff;
+  cursor: pointer;
+}
+.recent-news .container .row:hover small {
+  color: #ffffff;
+}
+.recent-news .container .row .summary-news {
+  padding: 0 20px;
+}
+.recent-news .container .row .summary-news h2 {
+  text-align: center;
+}
+.recent-news .container .row .summary-news h2 small {
+  padding-left: 20px;
+}
+.recent-news .container .row .summary-news img {
+  margin-bottom: 20px;
 }

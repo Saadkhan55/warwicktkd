@@ -93,31 +93,80 @@
         </a>
       </div><!--End of newslider(carousel) -->
 
+      <!-- "Three Story" -->
       <div class="three-story">
         <div class="container">
           <div class="row">
 
-            <div class="col-md-4">
-              <i class="fa fa-user"></i>
-               <h2>Beginner Guide</h2>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ac mauris eu velit euismod sodales. Nullam ipsum leo, volutpat vitae accumsan quis, ornare vel diam. </p>
-            </div> <!-- End of first story -->
+            <a href="#">
+              <div class="col-md-4">
+                <i class="fa fa-user"></i>
+                 <h2>Beginner Guide</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ac mauris eu velit euismod sodales. Nullam ipsum leo, volutpat vitae accumsan quis, ornare vel diam. </p>
+              </div>
+            </a> <!-- End of first story -->
 
-            <div class="col-md-4">
-              <i class="fa fa-info"></i>
-               <h2>About Us</h2>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ac mauris eu velit euismod sodales. Nullam ipsum leo, volutpat vitae accumsan quis, ornare vel diam. </p>
-            </div> <!-- End of second story -->
+            <a href="#">
+              <div class="col-md-4">
+                <i class="fa fa-info"></i>
+                 <h2>About Us</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ac mauris eu velit euismod sodales. Nullam ipsum leo, volutpat vitae accumsan quis, ornare vel diam. </p>
+              </div>
+            </a> <!-- End of second story -->
 
-            <div class="col-md-4">
-              <i class="fa fa-users"></i>
-               <h2>Exec Team</h2>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ac mauris eu velit euismod sodales. Nullam ipsum leo, volutpat vitae accumsan quis, ornare vel diam. </p>
-            </div> <!-- End of third story -->
+            <a href="#">
+              <div class="col-md-4">
+                <i class="fa fa-users"></i>
+                 <h2>Exec Team</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ac mauris eu velit euismod sodales. Nullam ipsum leo, volutpat vitae accumsan quis, ornare vel diam. </p>
+              </div>
+            </a> <!-- End of third story -->
 
           </div> <!-- End of row -->
         </div> <!-- End of container -->
       </div> <!-- End of three stories -->
+
+      <!--Shows most recent news-->
+      <div class="recent-news">
+        <div class="container">
+
+            
+            <!-- Gets summaries of 3 latest news articles-->
+            <?php 
+              require_once("database.php");
+              $db = new Database();
+              //select latest 3 articles
+              $result = $db->query("SELECT * FROM Articles ORDER BY ID DESC LIMIT 3");
+
+              //get result, then for each row create a mini story
+              while($row = $result -> fetch_assoc()) {
+                $id = $row['Id'];
+                $date = $row['Date'];
+                $photo = $row['Photo'];
+                $title = $row['Title'];
+                $summary = $row['Summary'];
+
+                //Create each article show title summary and picture
+                echo '
+                  <a href="news.php?Id='.$id.'"> <!-- Article links to news equivalent -->
+                    <div class="row">
+                      <div class="summary-news">
+                       <h2>'.$title.'<small>'.$date.'</small></h2>
+                       <div class="col-sm-3">
+                          '.$photo.'
+                        </div> <!-- End of picture -->
+
+                        <div class="col-sm-9">
+                          <p>'.$summary.'</p>
+                        </div> <!-- End of main summary --> 
+                      </div> <!-- End of summary -->
+                    </div> <!-- End of row -->
+                  </a>';
+              }
+
+            ?>
+        </div> <!-- End of container -->
+      </div> <!-- End of recent news -->
 
     </div><!--End of wrapper -->
     <!--Add footer, contains 3 columns layout Add footer data, such as jquery, boostrap javascript -->
