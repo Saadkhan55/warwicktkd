@@ -525,6 +525,7 @@ html,body {
 //**********************************************************************
 // BEGINNERS PAGE
 //  --ACCORDION 
+//  --TAB PANELS
 //**********************************************************************
 // The accordion 
 .panel-group {
@@ -568,6 +569,65 @@ html,body {
           }
         }
       }
+    }
+  }
+}
+
+//tab panels each separate part of tae kwon do
+.tab-panels {
+  margin-bottom: 20px;
+  //nav tabs -> navigation for tabs
+  .nav-tabs {
+    border-bottom: none;
+
+    //first element give a border to left
+    &:first-child {
+      border-left: 1px solid #bbb;
+    }
+
+    li {
+      border-right: 1px solid #bbb;
+      border-top: 1px solid #bbb;
+      border-bottom: 1px solid #bbb;
+
+      a {
+        border-radius: 0;
+        padding: 12px 22px;
+        margin-right: 0;
+        background: lighten(#ddd, 5%);
+
+        &:hover {
+          background: lighten(#ddd, 5%);
+        }
+      }
+    }
+
+    //for the active link (opened tabbed)
+    .active {
+      border-right: 3px solid @color-light-blue;
+      border-bottom: none;
+      border-top: none;
+      border-left: none;
+
+      a {
+        background: @color-white;
+
+        &:hover {
+          background: @color-white;
+        
+        }
+      }
+    }
+  }
+
+  //tab content
+  .tab-content {
+    border: 1px solid #ddd;
+    padding: 20px;
+
+    //videos margin around them
+    .embed-responsive {
+      margin: 10px;
     }
   }
 }

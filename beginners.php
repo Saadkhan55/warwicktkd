@@ -62,13 +62,54 @@
         </div> <!-- End of row -->
       </div> <!-- End of container -->
 
-      <!-- Scrollspy showing off different parts of tkd -->
-      
+      <div class="tab-panels" role="tabpanel">
+        <div class="container">
+          <div class="row">
+            <!-- Nav tabs -->
+            <ul class="nav nav-tabs" role="tablist">
+              <li role="presentation" class="active"><a href="#Patterns" aria-controls="Patterns" role="tab" data-toggle="tab">Patterns</a></li>
+              <li role="presentation"><a href="#SetSparring" aria-controls="SetSparring" role="tab" data-toggle="tab">Set Sparring</a></li>
+              <li role="presentation"><a href="#LineWork" aria-controls="LineWork" role="tab" data-toggle="tab">Line Work</a></li>
+              <li role="presentation"><a href="#Sparring" aria-controls="Sparring" role="tab" data-toggle="tab">Sparring</a></li>
+            </ul> <!-- Navbar linking to tabs -->
+
+            <!-- tab panels  -->
+            <div class="tab-content">
+
+              <div role="tabpanel" class="tab-pane fade in active" id="Patterns">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent sollicitudin fringilla justo ut dictum. Donec dignissim dui tortor, ac vulputate justo tincidunt vitae. Aenean risus dui, porttitor et lectus vel, ornare vulputate lectus. Quisque dolor lorem, molestie non urna et, aliquet suscipit mi. Maecenas leo eros, venenatis nec blandit et, egestas quis mauris. Duis vitae magna dictum leo ultricies commodo. In tincidunt venenatis elementum.
+
+                Nulla ac interdum est, vitae elementum risus. Pellentesque tortor mauris, vestibulum at magna ut, aliquam malesuada augue. Suspendisse eleifend sapien magna, feugiat interdum urna iaculis nec. Donec sed urna sed tortor varius scelerisque. Morbi feugiat sem non bibendum ultricies. Praesent volutpat lectus in mi suscipit ornare. Integer id orci sed est cursus vestibulum. Suspendisse eget quam efficitur diam ornare aliquam et in urna. Vivamus at consectetur lectus. Nunc aliquet sollicitudin egestas. Phasellus scelerisque sem sit amet justo tempor, eget vehicula ante efficitur. Sed ac ornare augue, vitae posuere quam. Sed non porttitor justo, nec posuere felis. Fusce sem est, molestie id posuere sit amet, ullamcorper sed est. Fusce eget sodales ipsum, et euismod enim.
+              </div> <!-- End of tab panel -->
+
+              <div role="tabpanel" class="tab-pane fade " id="SetSparring">
+               Curabitur suscipit tristique sem sit amet rhoncus. Duis eu ultricies est, luctus fermentum velit. Quisque sed cursus augue. Morbi vel aliquam mi, vel blandit quam. Curabitur tempor sit amet metus vel porttitor. Proin semper ligula nec enim tristique, in fringilla ex posuere. Donec tortor nisl, iaculis nec vehicula nec, lacinia nec magna.
+
+              Pellentesque ac nisi consequat ex luctus ultrices id nec ex. Vivamus dolor orci, molestie quis risus eleifend, bibendum finibus ligula. Donec sit amet ipsum elit. Quisque lobortis sed tortor vel mollis. Integer rutrum tellus dolor, vel lobortis velit auctor at. Sed pretium risus vitae quam eleifend, nec imperdiet dui luctus. 
+            </div> <!-- End of tab panel -->
+
+              <div role="tabpanel" class="tab-pane fade" id="LineWork">
+                 Quisque eget dolor luctus, fringilla ipsum in, efficitur ex. Integer a semper leo. Praesent sed nunc ut dui luctus molestie. Curabitur feugiat mi non dui hendrerit, et tristique dolor fringilla. Fusce rutrum nulla eget mi interdum congue. Phasellus aliquam gravida mattis. Nunc ultricies metus id purus tristique, non ultricies neque pharetra. Vestibulum eget enim velit.
+
+                 Duis nec ipsum eros. Nulla consequat lorem at finibus placerat. Sed ut iaculis orci. Mauris iaculis quam quam, vel lobortis tellus vehicula vel. Mauris accumsan nibh in turpis dignissim, sit amet ultricies quam maximus. Etiam posuere ultricies mauris id vehicula. Sed id laoreet dolor, in posuere lorem.
+               </div> <!-- End of tab panel -->
+
+              <div role="tabpanel" class="tab-pane fade" id="Sparring">
+                Duis nec ipsum eros. Nulla consequat lorem at finibus placerat. Sed ut iaculis orci. Mauris iaculis quam quam, vel lobortis tellus vehicula vel. Mauris accumsan nibh in turpis dignissim, sit amet ultricies quam maximus. Etiam posuere ultricies mauris id vehicula. Sed id laoreet dolor, in posuere lorem. Duis maximus rutrum sem. Fusce nisl lorem, consectetur ac bibendum sed, molestie et justo. Suspendisse laoreet, leo sed volutpat tristique, eros tellus viverra risus, vel hendrerit velit libero a turpis. Duis dignissim in metus non varius. Integer finibus magna tortor, eget molestie sapien viverra eget. Proin ullamcorper, purus ut ultricies facilisis, eros ipsum vestibulum lorem, in fringilla turpis dolor auctor urna. Curabitur in ullamcorper arcu, in posuere dui. Morbi eget ipsum quam. Nunc sed gravida libero, ac convallis neque.
+                <div class="embed-responsive embed-responsive-16by9">
+                  <iframe class="embed-responsive-item" src="//www.youtube.com/embed/iuq6EzUpCMw" frameborder="0" allowfullscreen></iframe>
+                </div> <!-- End of embedded video -->
+              </div> <!-- End of tab panel -->
+
+            </div> <!-- End of tab content -->
+          </div> <!-- End of container -->
+        </div> <!-- End of row -->
+      </div> <!-- End of tab panel -->
 
     </div><!--End of wrapper -->
     <!--Add footer, contains 3 columns layout Add footer data, such as jquery, boostrap javascript -->
     <?php include 'php/footer.php' ?>
-    <script src="js/accordion.js"></script>
+    <script src="js/accordion.js"></script> <!-- Changes class to add plus and minus effect on accordion when open/closed -->
   </body>
 </html>
 

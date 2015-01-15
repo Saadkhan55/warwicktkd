@@ -457,3 +457,45 @@ body {
 .panel-group .panel-default .panel-heading .open a .fa-plus {
   display: none;
 }
+.tab-panels {
+  margin-bottom: 20px;
+}
+.tab-panels .nav-tabs {
+  border-bottom: none;
+}
+.tab-panels .nav-tabs:first-child {
+  border-left: 1px solid #bbb;
+}
+.tab-panels .nav-tabs li {
+  border-right: 1px solid #bbb;
+  border-top: 1px solid #bbb;
+  border-bottom: 1px solid #bbb;
+}
+.tab-panels .nav-tabs li a {
+  border-radius: 0;
+  padding: 12px 22px;
+  margin-right: 0;
+  background: #eaeaea;
+}
+.tab-panels .nav-tabs li a:hover {
+  background: #eaeaea;
+}
+.tab-panels .nav-tabs .active {
+  border-right: 3px solid #367ee9;
+  border-bottom: none;
+  border-top: none;
+  border-left: none;
+}
+.tab-panels .nav-tabs .active a {
+  background: #ffffff;
+}
+.tab-panels .nav-tabs .active a:hover {
+  background: #ffffff;
+}
+.tab-panels .tab-content {
+  border: 1px solid #ddd;
+  padding: 20px;
+}
+.tab-panels .tab-content .embed-responsive {
+  margin: 10px;
+}
