@@ -15,6 +15,7 @@
 
 @header-size: 16px;
 @carousel-size: 16px;
+@larger-font: 16.5px;
 @footer-size: 14px;
 
 @color-white: #fff; 
@@ -57,19 +58,34 @@ h6 {
   font-size: 16px;
 }
 
+//All anchor links
+a {
+  color: @color-light-blue;
+
+  &:hover {
+    .transition(0.35s);
+    color: darken(@color-light-blue, 20%);
+    text-decoration: none;
+  }
+}
+
+//section for headers
+.section {
+  padding-bottom: 20px;
+  border-bottom: 2px solid @color-light-blue;
+  display: inline;
+}
+
 //No bullets points for lists
 .unlisted {
   list-style-type: none;
 }
 
-// No anchor links with text-decoration
-a {
-  color: lighten(@color-black, 20%);
-
-  &:hover {
-    text-decoration: none;
-  }
+//larger font paragraphs
+.larger-font {
+  font-size: @larger-font;
 }
+
 //**********************************************************************
 // This file is structured top -> down
 //  -- NAVBAR
@@ -85,6 +101,9 @@ a {
 //    -- RECENT NEWS
 //  -- BEGINNERS
 //    --ACCORDION
+//    --PANEL TABS
+//  -- TRAINING
+//   --TEXT
 //**********************************************************************
 
 //**********************************************************************
@@ -585,6 +604,7 @@ html,body {
       border-left: 1px solid #bbb;
     }
 
+    //each navbar element
     li {
       border-right: 1px solid #bbb;
       border-top: 1px solid #bbb;
@@ -614,7 +634,7 @@ html,body {
 
         &:hover {
           background: @color-white;
-        
+
         }
       }
     }
@@ -631,3 +651,55 @@ html,body {
     }
   }
 }
+//
+//**********************************************************************
+// TRAINING PAGE contains all training information such as time 
+// and cost
+//**********************************************************************
+//training section
+.training {
+  .section {
+    .font-weight(300);
+    padding-right: 30px;
+  }
+
+  h3 {
+     margin-top: 50px;
+    .font-weight(300);
+  }
+}
+//**********************************************************************
+// TEAM PAGE contains all the exec team members contains rows of two 
+// team members at a time
+//**********************************************************************o
+.team {
+  margin-bottom: 20px;
+  .section {
+    .font-weight(300);
+    padding-right: 30px;
+    margin-left: 150px;
+  }
+
+  //each individual team member
+  .individual {
+    margin-top: 50px;
+
+    small {
+      padding-left: 10px;
+    }
+
+    //float images left, add border radius
+    img {
+      float: left;
+      margin: 20px;
+      .border-radius(50%);
+    }
+
+    //paragraph margin -left
+    p {
+      margin-left: 195px;
+    }
+  }
+}
+
+

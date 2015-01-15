@@ -86,14 +86,28 @@ h5 {
 h6 {
   font-size: 16px;
 }
+a {
+  color: #367ee9;
+}
+a:hover {
+  transition: 0.35s;
+  -webkit-transition: 0.35s;
+  -moz-transition: 0.35s;
+  -ms-transition: 0.35s;
+  -o-transition: 0.35s;
+  color: #124ea7;
+  text-decoration: none;
+}
+.section {
+  padding-bottom: 20px;
+  border-bottom: 2px solid #367ee9;
+  display: inline;
+}
 .unlisted {
   list-style-type: none;
 }
-a {
-  color: #333333;
-}
-a:hover {
-  text-decoration: none;
+.larger-font {
+  font-size: 16.5px;
 }
 .navbar-default .navbar-nav > .active > a,
 .navbar-default .navbar-nav > .active > a:hover,
@@ -498,4 +512,39 @@ body {
 }
 .tab-panels .tab-content .embed-responsive {
   margin: 10px;
+}
+.training .section {
+  font-weight: 300;
+  padding-right: 30px;
+}
+.training h3 {
+  margin-top: 50px;
+  font-weight: 300;
+}
+.team {
+  margin-bottom: 20px;
+}
+.team .section {
+  font-weight: 300;
+  padding-right: 30px;
+  margin-left: 150px;
+}
+.team .individual {
+  margin-top: 50px;
+}
+.team .individual small {
+  padding-left: 10px;
+}
+.team .individual img {
+  float: left;
+  margin: 20px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+}
+.team .individual p {
+  margin-left: 195px;
 }
