@@ -458,6 +458,10 @@ body {
 .recent-news {
   margin-bottom: 20px;
 }
+.recent-news .container .row .col-sm-9,
+.recent-news .container .row h2 {
+  color: #1a1a1a;
+}
 .recent-news .container .row:hover {
   background: #367ee9;
   transition: 0.25s;
@@ -465,10 +469,13 @@ body {
   -moz-transition: 0.25s;
   -ms-transition: 0.25s;
   -o-transition: 0.25s;
-  color: #ffffff;
   cursor: pointer;
 }
 .recent-news .container .row:hover small {
+  color: #ffffff;
+}
+.recent-news .container .row:hover .col-sm-9,
+.recent-news .container .row:hover h2 {
   color: #ffffff;
 }
 .recent-news .container .row .summary-news {

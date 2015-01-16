@@ -5,35 +5,27 @@
 //wait for document to load/page to get ready
 $(document).ready(function() {
   //get page name (current), uses regex to match
-  var pageName = document.location.pathname.match(/\/|[^\/]+$/ig)[0];
+  var pageName = $(document).find("title").text();
 
   //for each case work out which navbar element to add class active to
   switch (pageName) {
-    case "/" :
+    case "Home Page" :
       $(".home").addClass("active");
       break;
 
-    case "index.php" :
-      $(".home").addClass("active");
-      break;
-
-    case "news.php" :
+    case "News" :
       $(".news").addClass("active");
       break;
 
-    case "about.php" :
+    case "Beginners" :
       $(".about").addClass("active");
       break;
 
-    case "beginners.php" :
+    case "Training" :
       $(".about").addClass("active");
       break;
 
-    case "training.php" :
-      $(".about").addClass("active");
-      break;
-
-    case "team.php" :
+    case "Exec Team" :
       $(".about").addClass("active");
       break;
 

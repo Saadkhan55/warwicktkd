@@ -556,14 +556,22 @@ html,body {
 
     //on hover of row change color to blue
     .row {
+
+      .col-sm-9, h2{
+        color: lighten(@color-black, 10%);
+      }
+
       &:hover {
         background: @color-light-blue;
         .transition(0.25s);
-        color: @color-white;
         cursor: pointer;
 
         //on hover of article change color of small (date)
         small {
+          color: @color-white;
+        }
+
+        .col-sm-9, h2{
           color: @color-white;
         }
       }
