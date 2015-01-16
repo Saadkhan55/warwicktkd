@@ -98,6 +98,9 @@ a:hover {
   color: #124ea7;
   text-decoration: none;
 }
+small {
+  padding-left: 10px;
+}
 .section {
   padding-bottom: 20px;
   border-bottom: 2px solid #367ee9;
@@ -567,9 +570,6 @@ body {
 .team .individual {
   margin-top: 50px;
 }
-.team .individual small {
-  padding-left: 10px;
-}
 .team .individual img {
   float: left;
   margin: 20px;
@@ -594,6 +594,20 @@ body {
 .syllabus h2 {
   padding-right: 20px;
 }
-.syllabus small {
-  padding-left: 10px;
+.syllabus .btn {
+  margin-left: 10px;
+}
+.syllabus .korean-hide {
+  max-width: 50%;
+}
+.syllabus .korean-hide th:nth-child(2),
+.syllabus .korean-hide td:nth-child(2) {
+  display: none;
+}
+.syllabus th,
+.syllabus td {
+  text-align: center;
+}
+.syllabus .title td {
+  font-weight: 700;
 }

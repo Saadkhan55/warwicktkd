@@ -72,6 +72,11 @@ a {
   }
 }
 
+//small away from heading
+small {
+  padding-left: 10px;
+}
+
 //section for headers
 .section {
   padding-bottom: 20px;
@@ -121,6 +126,7 @@ a {
 //    --PANEL TABS
 //  -- TRAINING
 //   --TEXT
+//  -- STUDENT
 //**********************************************************************
 
 //**********************************************************************
@@ -725,10 +731,6 @@ html,body {
   .individual {
     margin-top: 50px;
 
-    small {
-      padding-left: 10px;
-    }
-
     //float images left, add border radius
     img {
       float: left;
@@ -761,8 +763,31 @@ html,body {
     padding-right: 20px;
   }
 
-  small {
-    padding-left: 10px;
+  //button margin away from heading/title
+  .btn {
+    margin-left: 10px;
+  }
+
+  //when hide korean button is clicked
+  .korean-hide {
+    max-width: 50%;
+    th,td{
+      &:nth-child(2) {
+        display: none;
+      }
+    }
+  }
+
+  //center all theory
+  th,td {
+    text-align: center;
+  }
+
+  
+  .title {
+    td {
+      font-weight: 700;
+    }
   }
 }
 
