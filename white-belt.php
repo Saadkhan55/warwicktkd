@@ -13,6 +13,39 @@
         <div class="row">
           <h2 class="section">White Belt</h2>
 
+          <h3>Grading Requirements</h3>
+          <p class="larger-font">
+            <b>Techniques</b> <br><br>
+            Press Ups (10) Momtong Bachim <br>
+            (Flat Hand Up to 17 years/over 40 – Adults Knuckles)<br><br>
+
+            Sitting Stance – Middle Punching (10) <br>
+            Annun Sogi - Kaunde Ap Joomuk Jirugi<br>
+
+            Gunnun Sogi - Kaunde Bakat Palmok Makgi / Bandae Jirugi<br>
+
+            Front Snap Kick Apcha Busigi<br><br>
+
+            <b>Pattern</b><br><br>
+            Four Direction Block Saju Makgi<br>
+
+            Four Direction Punch Saju Jirugi<br><br>
+
+            <b>Sparring</b><br><br>
+            3 Step Footwork Sambo Matsogi<br>
+            Semi Free Sparring Banjayu Matsogi<br><br>
+
+            <b>Destruction</b><br><br>
+            No destruction required<br><br>
+
+            <b>Theory</b><br><br>
+            Korean Terminology for Your Grade<br><br>
+
+            <b>Application of Technique</b><br><br>
+            Releases from single wrist grab<br>
+          
+          </p> <!-- End of grading requirement -->
+
           <h3>Saju Jirugi <small>Four Directional Punch</small></h3>
           <img src="images/pattern/10th_kup.png" alt="" width="150px" height="150px">
 
