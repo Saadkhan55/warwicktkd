@@ -23,10 +23,12 @@
             <div class="container">
               <div class="row">
 
-                <div class="col-md-6 col-xs-12">
-                  <div class="carousel-caption">
-                    <h1 class="title">Title</h1>
-                    <p class="carousel-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam risus massa, pellentesque quis enim non, laoreet semper risus. Vestibulum at interdum urna. Nulla dui mauris, placerat nec gravida vitae, fringilla ut neque. Donec accumsan faucibus nunc, ut elementum erat. Aliquam non odio dui. Mauris non elit ac libero tempor fermentum ut faucibus arcu. Phasellus venenatis nisl nec ex tempus cursus.</p>
+                <div class="col-md-6 col-xs-12"> <!-- Each newslider element -->
+                  <div class="carousel-caption"> 
+                    <h1 class="title">Beginners Guide</h1> <!-- Newslider title -->
+                    <p class="carousel-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam risus massa, pellentesque quis enim non, laoreet semper risus. Vestibulum at interdum urna. Nulla dui mauris, placerat nec gravida vitae, fringilla ut neque. Donec accumsan faucibus nunc, ut elementum erat. Aliquam non odio dui. Mauris non elit ac libero tempor fermentum ut faucibus arcu. Phasellus venenatis nisl nec ex tempus cursus.</p> <!-- newslider text -->
+
+                    <a href="#"><button type="button" class="btn btn-danger btn-lg">Learn More</button></a> <!-- newslider button -->
                   </div>
                 </div> <!--End of col-md-6 -->
 
@@ -46,9 +48,28 @@
 
                 <div class="col-md-6 col-xs-12">
                   <div class="carousel-caption">
-                    <h1 class="title">Title</h1>
+                    <h1 class="title">Students</h1>
                     <p class="carousel-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam risus massa, pellentesque quis enim non, laoreet semper risus. Vestibulum at interdum urna. Nulla dut elementum erat. Aliquam non odio dui. Mauris non elit ac libero tempor fermentum ut faucibus arcu. Phasellus venenatis nisl nec ex tempus cursus.</p>
-                  </div>
+
+                    <div class="btn-group dropup"> <!-- Link of kup grades (dropdown menu) -->
+                      <button type="button" class="btn btn-danger btn-lg dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                        Grade <span class="caret"></span>
+                      </button>
+                      <ul class="dropdown-menu scrollable-menu" role="menu">
+                        <li><a href="#">10th Kup</a></li>
+                        <li><a href="#">9th Kup</a></li>
+                        <li><a href="#">8th Kup</a></li>
+                        <li><a href="#">7th Kup</a></li>
+                        <li><a href="#">6th Kup</a></li>
+                        <li><a href="#">5th Kup</a></li>
+                        <li><a href="#">4th Kup</a></li>
+                        <li><a href="#">3rd Kup</a></li>
+                        <li><a href="#">2nd Kup</a></li>
+                        <li><a href="#">1st Kup</a></li>
+                      </ul>
+                    </div> <!-- End of btn group-->
+
+                  </div> <!-- End of caption -->
                 </div> <!--End of col-md-6 -->
 
                 <div class="col-md-6 col-sm-4 hidden-xs">

@@ -109,6 +109,20 @@ a:hover {
 .larger-font {
   font-size: 16.5px;
 }
+.btn {
+  border-radius: 0;
+}
+.btn-danger {
+  color: #ffffff;
+}
+.btn-danger:hover {
+  transition: 0.25s;
+  -webkit-transition: 0.25s;
+  -moz-transition: 0.25s;
+  -ms-transition: 0.25s;
+  -o-transition: 0.25s;
+  background: #d43f3a;
+}
 .navbar-default .navbar-nav > .active > a,
 .navbar-default .navbar-nav > .active > a:hover,
 .navbar-default .navbar-nav > .active > a:focus,
@@ -371,6 +385,9 @@ body {
 .carousel .container {
   padding-top: 100px;
 }
+.carousel .container .btn {
+  margin-top: 20px;
+}
 .carousel .container .carousel-caption {
   position: relative;
   left: -20%;
@@ -379,6 +396,24 @@ body {
   .carousel .container .carousel-caption {
     left: -2%;
   }
+}
+.carousel .container .carousel-caption .dropdown-menu {
+  margin: 0;
+  padding: 0;
+  border-radius: 0;
+  font-size: 16.5px;
+}
+.carousel .container .carousel-caption .dropdown-menu li {
+  border-top: 1px solid #bbb;
+}
+.carousel .container .carousel-caption .dropdown-menu li a:hover {
+  background: #367ee9;
+  transition: 0.25s;
+  -webkit-transition: 0.25s;
+  -moz-transition: 0.25s;
+  -ms-transition: 0.25s;
+  -o-transition: 0.25s;
+  color: #ffffff;
 }
 .carousel .container .carousel-caption .title {
   margin-bottom: 35px;
@@ -547,4 +582,18 @@ body {
 }
 .team .individual p {
   margin-left: 195px;
+}
+.syllabus {
+  margin-bottom: 40px;
+}
+.syllabus h3 {
+  margin-top: 50px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.syllabus h2 {
+  padding-right: 20px;
+}
+.syllabus small {
+  padding-left: 10px;
 }

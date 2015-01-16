@@ -21,14 +21,19 @@ $(document).ready(function() {
       $(".news").addClass("active");
       break;
 
-
-    /* 
-     */
     case "about.php" :
       $(".about").addClass("active");
       break;
 
     case "beginners.php" :
+      $(".about").addClass("active");
+      break;
+
+    case "training.php" :
+      $(".about").addClass("active");
+      break;
+
+    case "team.php" :
       $(".about").addClass("active");
       break;
 

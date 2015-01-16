@@ -25,6 +25,9 @@
 @color-lighter-blue: #4ecff8;
 @color-header-grey: #777;
 
+//button colours
+@color-danger: #d9534f;
+
 //Pre collapsed menu 
 @pre-collapse: ~"(min-width: 1024px)";
 //Post collapsed menu
@@ -84,6 +87,20 @@ a {
 //larger font paragraphs
 .larger-font {
   font-size: @larger-font;
+}
+
+//all buttons
+.btn {
+ border-radius: 0; 
+}
+
+.btn-danger {
+  color: @color-white;
+
+  &:hover {
+    .transition(0.25s);
+     background: darken(@color-danger, 5%);
+  }
 }
 
 //**********************************************************************
@@ -446,6 +463,10 @@ html,body {
   .container {
     padding-top: 100px;
 
+    .btn {
+      margin-top: 20px;
+    }
+
     .carousel-caption {
       position: relative;
       left: -20%;
@@ -453,6 +474,26 @@ html,body {
       //change on collapse, left -2% so doesn't go off the screen
       @media @post-collapse {
         left: -2%;
+      }
+
+      //dropdown menu in carousel 
+      .dropdown-menu {
+        margin: 0;
+        padding: 0;
+        border-radius: 0;
+        font-size: @larger-font;
+        
+        li {
+          border-top: 1px solid #bbb;
+          
+          a {
+            &:hover {
+              background: @color-light-blue;
+              .transition(0.25s);
+              color: @color-white;
+            }
+          }
+        }
       }
 
       .title {
@@ -702,4 +743,26 @@ html,body {
   }
 }
 
+
+//**********************************************************************
+// SYLLABUS PAGES - Including patterns sparring and theory
+//**********************************************************************
+
+.syllabus {
+  margin-bottom: 40px;
+
+  h3 {
+    margin-top:50px;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  h2 {
+    padding-right: 20px;
+  }
+
+  small {
+    padding-left: 10px;
+  }
+}
 

@@ -28,10 +28,9 @@
             <li class="dropdown">
               <a href="#" class="dropdown-toggle about" data-toggle="dropdown"><i class="fa fa-info"></i>ABOUT US</a>
               <ul class="dropdown-menu" role="menu">
-                <li><a href="#">Beginners</a></li>
-                <li><a href="#">Socials</a></li>
-                <li><a href="#">Training</a></li>
-                <li><a href="#">Exec Team</a></li>
+                <li><a href="beginners.php">Beginners</a></li>
+                <li><a href="training.php">Training</a></li>
+                <li><a href="team.php">Exec Team</a></li>
               </ul>
             </li>
             <!-- end of dropdown menu -->
