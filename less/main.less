@@ -9,15 +9,25 @@
 //************************************************************************
 
 @header-font: 'Raleway';
-@header-size: 16px;
+@wrapper-font: 'Open Sans';
+@carousel-font: 'Open Sans';
 @footer-font: 'Open Sans';
+
+@header-size: 16px;
+@carousel-size: 16px;
+@larger-font: 16.5px;
 @footer-size: 14px;
 
-@color-white: #fff; ;
+@color-white: #fff; 
+@color-black: #000; 
 @color-light-grey: #ddd;
 @color-light-blue: #367ee9;
 @color-lighter-blue: #4ecff8;
 @color-header-grey: #777;
+
+//button colours
+@color-danger: #d9534f;
+@color-success: #449d44;
 
 //Pre collapsed menu 
 @pre-collapse: ~"(min-width: 1024px)";
@@ -52,9 +62,51 @@ h6 {
   font-size: 16px;
 }
 
+//All anchor links
+a {
+  color: @color-light-blue;
+
+  &:hover {
+    .transition(0.35s);
+    color: darken(@color-light-blue, 20%);
+    text-decoration: none;
+  }
+}
+
+//small away from heading
+small {
+  padding-left: 10px;
+}
+
+//section for headers
+.section {
+  padding-bottom: 20px;
+  border-bottom: 2px solid @color-light-blue;
+  display: inline;
+}
+
 //No bullets points for lists
 .unlisted {
   list-style-type: none;
+}
+
+//larger font paragraphs
+.larger-font {
+  font-size: @larger-font;
+}
+
+//all buttons
+.btn {
+ border-radius: 0; 
+}
+
+.btn-danger {
+  color: @color-white;
+
+  &:hover {
+    .transition(0.25s);
+     background: darken(@color-danger, 5%);
+  }
 }
 
 //**********************************************************************
@@ -67,7 +119,22 @@ h6 {
 //    -- RECENT POSTS, CONTACT US
 //    -- footer at the bottom (black background)
 //  -- INDEX PAGE
-//    -- NEWSLIDER -> Shows recent news 
+//    -- NEWSLIDER
+//    -- 3 STORIES 
+//    -- RECENT NEWS
+//
+//  -- BEGINNERS
+//    --ACCORDION
+//    --PANEL TABS
+//
+//  -- TRAINING
+//   --TEXT
+//
+//  -- STUDENT
+//   --TABLES
+//
+//  -- CONTACT
+//   --FORMS
 //**********************************************************************
 
 //**********************************************************************
@@ -105,17 +172,19 @@ h6 {
   right: auto;
 }
 //**********************************************************************
-//  WRAPPER -> CONTAINS HEADER CONTENT FOOTER
+//  WRAPPER -> CONTAINS CONTENT
 //**********************************************************************
 html,body {
   height: 100%;
 }
 
 #wrapper {
+  background: lighten(#eee, 5%);
+  font-family: @wrapper-font, sans;
   //for sticky footer 
   min-height: 100%;
-  margin: 0 auto -450px;
-  padding: 0 0 450px;
+  margin: 0 auto -370px;
+  padding: 0 0 370px;
 
   //on collapse of menu bigger footer
   @media @post-collapse {
@@ -250,7 +319,7 @@ html,body {
 //Footer (Sticky at the bottom)
 #footer {
   background: #333;
-  height: 450px;
+  height: 370px;
   font-family: @footer-font,sans;
   font-size: @footer-size;
   color: #fff;
@@ -315,7 +384,7 @@ html,body {
 
   //Recent posts
   .blog-post {
-    //unordered list
+    //unordered list -> lists news articles
     ul {
       margin-left: -29px;
     }
@@ -331,7 +400,7 @@ html,body {
         margin-right: 30px;
         position: absolute;
 
-        //anchor elements
+        //anchor elements (title)
         a {
           font-size: 16px;
         }
@@ -349,9 +418,10 @@ html,body {
       a {
         //images inside RECENT POSTS
         img {
-          width: 75px;
-          height: 75px;
+          width: 50px;
+          height: 50px;
           margin-right: 15px;
+          display: inline;
         }
       }
     } //end of list elements
@@ -385,14 +455,396 @@ html,body {
 //**********************************************************************
 // INDEX PAGE
 //  --CAROUSEL (NEWSLIDER)
+//  --3 COLUMS OF "STORIES"
+//  --3 RECENT NEWS
 //**********************************************************************
 
+//newslider displays 3 "articles"
 .carousel {
+  background: @color-light-blue;
   width: 100%;
-  height: auto;
+  height: 500px;
+  margin-bottom: 20px;
+  font-family: @carousel-font, sans;
+  font-size: @carousel-size;
 
-  .carousel-background {
-    width: 100%;
+  //after collapse change margin bottom
+  @media @post-collapse {
+    margin-bottom: 0px;
+  }
+
+  //drop all content down by 200 ish pixels
+  .container {
+    padding-top: 100px;
+
+    .btn {
+      margin-top: 20px;
+    }
+
+    .carousel-caption {
+      position: relative;
+      left: -20%;
+
+      //change on collapse, left -2% so doesn't go off the screen
+      @media @post-collapse {
+        left: -2%;
+      }
+
+      //dropdown menu in carousel 
+      .dropdown-menu {
+        margin: 0;
+        padding: 0;
+        border-radius: 0;
+        font-size: @larger-font;
+        
+        li {
+          border-top: 1px solid #bbb;
+          
+          a {
+            &:hover {
+              background: @color-light-blue;
+              .transition(0.25s);
+              color: @color-white;
+            }
+          }
+        }
+      }
+
+      .title {
+        margin-bottom: 35px;
+      }
+    }
   }
 }
 
+// three 'stories' in a column
+.three-story {
+  margin-bottom: 20px; 
+
+  //each story is an anchor link to another page
+  a {
+    color: lighten(@color-black, 20%);
+    
+    &:hover {
+      text-decoration: none;
+    }
+  }
+
+  //for each 'story'
+  .col-md-4 {
+    padding-top: 20px;
+    text-align: center;
+
+    &:hover {
+      background: @color-light-blue;
+      .transition(0.25s);
+      color: @color-white;
+      cursor: pointer;
+    }
+
+    i {
+      font-size: 4em;
+    }
+
+    h2 {
+      font-weight: 800;
+    }
+  }
+}
+
+/** recent news stories shows 3 most recent news stories 
+ ** Has a title (h2) with a date (small)
+ ** and a summary in a column of size 9 (col-sm-9)
+ ** and a picture on the left (col-sm-3)
+ **/
+.recent-news {
+  margin-bottom: 20px;
+
+  .container {
+
+    //on hover of row change color to blue
+    .row {
+
+      .col-sm-9, h2{
+        color: lighten(@color-black, 10%);
+      }
+
+      &:hover {
+        background: @color-light-blue;
+        .transition(0.25s);
+        cursor: pointer;
+
+        //on hover of article change color of small (date)
+        small {
+          color: @color-white;
+        }
+
+        .col-sm-9, h2{
+          color: @color-white;
+        }
+      }
+
+      //for each article
+      .summary-news {
+        padding: 0 20px;
+
+        h2 {
+          text-align: center;
+
+          small {
+            padding-left: 20px;
+          }
+        }
+
+        img {
+          margin-bottom: 20px;
+        }
+      }
+    }
+  }
+}
+
+//**********************************************************************
+// BEGINNERS PAGE
+//  --ACCORDION 
+//  --TAB PANELS
+//**********************************************************************
+// The accordion 
+.panel-group {
+  .panel-default {
+    //panel headings background
+    .panel-heading {
+      background: @color-light-blue;
+      color: @color-white;
+      padding: 0;
+
+      //pad left icons 
+      i {
+        padding-right: 10px;
+      }
+
+      //initially hide fa minus
+      .fa-minus {
+        display: none;
+      }
+
+      //anchor links i.e. (blue background), hide text decoration
+      a {
+        display: block;
+        padding: 20px 15px;
+
+        &:hover, &:focus{
+          background: darken(@color-light-blue, 5%);
+          text-decoration: none;
+        }
+      }
+
+      //When accordion is open show minus and hide plus
+      .open {
+        a {
+          .fa-minus {
+            display: inline;
+          }
+
+          .fa-plus {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+}
+
+//tab panels each separate part of tae kwon do
+.tab-panels {
+  margin-bottom: 20px;
+  //nav tabs -> navigation for tabs
+  .nav-tabs {
+    border-bottom: none;
+
+    //first element give a border to left
+    &:first-child {
+      border-left: 1px solid #bbb;
+    }
+
+    //each navbar element
+    li {
+      border-right: 1px solid #bbb;
+      border-top: 1px solid #bbb;
+      border-bottom: 1px solid #bbb;
+
+      a {
+        border-radius: 0;
+        padding: 12px 22px;
+        margin-right: 0;
+        background: lighten(#ddd, 5%);
+
+        &:hover {
+          background: lighten(#ddd, 5%);
+        }
+      }
+    }
+
+    //for the active link (opened tabbed)
+    .active {
+      border-right: 3px solid @color-light-blue;
+      border-bottom: none;
+      border-top: none;
+      border-left: none;
+
+      a {
+        background: @color-white;
+
+        &:hover {
+          background: @color-white;
+
+        }
+      }
+    }
+  }
+
+  //tab content
+  .tab-content {
+    border: 1px solid #ddd;
+    padding: 20px;
+
+    //videos margin around them
+    .embed-responsive {
+      margin: 10px;
+    }
+  }
+}
+//
+//**********************************************************************
+// TRAINING PAGE contains all training information such as time 
+// and cost
+//**********************************************************************
+//training section
+.training {
+  .section {
+    .font-weight(300);
+    padding-right: 30px;
+  }
+
+  h3 {
+     margin-top: 50px;
+    .font-weight(300);
+  }
+}
+//**********************************************************************
+// TEAM PAGE contains all the exec team members contains rows of two 
+// team members at a time
+//**********************************************************************o
+.team {
+  margin-bottom: 20px;
+  .section {
+    .font-weight(300);
+    padding-right: 30px;
+    margin-left: 150px;
+  }
+
+  //each individual team member
+  .individual {
+    margin-top: 50px;
+
+    //float images left, add border radius
+    img {
+      float: left;
+      margin: 20px;
+      .border-radius(50%);
+    }
+
+    //paragraph margin -left
+    p {
+      margin-left: 195px;
+    }
+  }
+}
+
+
+//**********************************************************************
+// SYLLABUS PAGES - Including patterns sparring and theory
+//**********************************************************************
+
+.syllabus {
+  margin-bottom: 40px;
+
+  h3 {
+    margin-top:50px;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  h2 {
+    padding-right: 20px;
+  }
+
+  //button margin away from heading/title
+  .btn {
+    margin-left: 10px;
+  }
+
+  //when hide korean button is clicked
+  .korean-hide {
+    max-width: 50%;
+    th,td{
+      &:nth-child(2) {
+        display: none;
+      }
+    }
+  }
+
+  //center all theory
+  th,td {
+    text-align: center;
+  }
+
+  
+  .title {
+    td {
+      font-weight: 700;
+    }
+  }
+}
+
+//**********************************************************************
+// CONTACT US PAGE - FORM to sent contact 
+//**********************************************************************
+
+.form-horizontal {
+  i {
+    color: @color-light-blue;
+    font-size: 2.5em;
+  }
+
+  .form-control  {
+    border-radius: 0;
+
+    //on click of focus
+    &:focus {
+      border-color: @color-light-blue;
+      box-shadow: none;
+
+      .placeholder({
+        color: transparent;
+        .transition(0.5s);
+      });
+
+    }
+  }
+}
+
+.error {
+  border-color: @color-danger;
+}
+
+.error-list {
+  text-align: center;
+  color: @color-danger;
+}
+
+.sucess {
+  color: @color-success;
+  text-align: center;
+  font-weight: 300;
+}

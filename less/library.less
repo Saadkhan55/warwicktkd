@@ -69,6 +69,29 @@
   .delay(1.0s);
 }
 
+//placeholder for forms
+.placeholder(@rules) {
+
+    &::-webkit-input-placeholder {
+        @rules();
+    }
+    &:-moz-placeholder {
+        @rules();
+    }
+    &::-moz-placeholder {
+        @rules();
+    }
+    &:-ms-input-placeholder {
+        @rules();
+    }
+}
+
+
+//change font weight 
+.font-weight(@weight) {
+  font-weight: @weight;
+}
+
 //user select
 .user-select(@args) {
   -webkit-user-select: @args;

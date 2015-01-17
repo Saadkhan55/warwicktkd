@@ -604,13 +604,6 @@ body {
 .syllabus .btn {
   margin-left: 10px;
 }
-.syllabus .korean-hide {
-  max-width: 50%;
-}
-.syllabus .korean-hide th:nth-child(2),
-.syllabus .korean-hide td:nth-child(2) {
-  display: none;
-}
 .syllabus th,
 .syllabus td {
   text-align: center;
