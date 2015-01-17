@@ -1,5 +1,5 @@
 <div id="footer">
-  <a href="#header"><i class="fa fa-chevron-up"></i></a> <!-- End of up button -->
+  <a id="up" href="#header"><i class="fa fa-chevron-up"></i></a> <!-- End of up button -->
   <div class="container">
     <div class="row">
       <div class="col-sm-4">      
@@ -110,4 +110,5 @@
 <script src="js/vendor/bootstrap.min.js"></script>
 <!-- Own Created JS files-->
 <script src="js/active.js"></script> <!-- Change active navbar link depending on page -->
+<script src="js/scroll.js"></script> <!-- Allow smooth scroll to an anchor link using jquery -->
 

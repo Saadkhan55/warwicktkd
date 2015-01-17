@@ -38,7 +38,7 @@
             <li class="dropdown"> 
               <a href="#" class="dropdown-toggle students" data-toggle="dropdown"><i class="fa fa-group"></i>STUDENTS</a>
               <ul class="dropdown-menu" role="menu">
-                <li><a href="#">White Belt</a></li>
+                <li><a href="white-belt.php">White Belt</a></li>
                 <li><a href="#">Yellow Tag</a></li>
                 <li><a href="#">Yellow Belt</a></li>
                 <li><a href="#">Green Tag</a></li>
@@ -50,7 +50,7 @@
                 <li><a href="#">Black Tag</a></li> 
               </ul>
             </li> 
-            <li><a class = "contact" href="#"><i class="fa fa-comment-o"></i>CONTACT</a></li>
+            <li><a class = "contact" href="contact.php"><i class="fa fa-comment-o"></i>CONTACT</a></li>
             <li>
           </ul>
       </div>

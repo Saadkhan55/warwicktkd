@@ -29,7 +29,11 @@ $(document).ready(function() {
       $(".about").addClass("active");
       break;
 
-    case "contact.php" :
+    case "White Belt (10th Kup)" :
+      $(".students").addClass("active");
+      break;
+
+    case "Contact Us" :
       $(".contact").addClass("active");
       break;
   }

@@ -61,7 +61,7 @@
     if(!$error) {
       $to = "me@haseebmajid.com";
       $subject = "contact form ";
-      $msgcontent = "Namei: $name<br> Email: $email <br>Message: $message";
+      $msgcontent = "Name: $name<br> Email: $email <br>Message: $message";
       $headers = "MIME_Version: 1.0 \r\n";
       $headers .= "Content-type: text/html; charset=iso-8859-1 \r\n";
       $headers .= "From: $name <$email> \r\n";
