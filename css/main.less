@@ -799,3 +799,33 @@ html,body {
   }
 }
 
+//**********************************************************************
+// CONTACT US PAGE - FORM to sent contact 
+//**********************************************************************
+
+.form-horizontal {
+  i {
+    color: @color-light-blue;
+    font-size: 2.5em;
+  }
+
+  .form-control  {
+    border-radius: 0;
+
+    //on click of focus
+    &:focus {
+      border-color: @color-light-blue;
+      box-shadow: none;
+
+      .placeholder({
+        color: transparent;
+        .transition(0.5s);
+      });
+
+    }
+  }
+}
+
+.error {
+  border-color: @color-danger;
+}
