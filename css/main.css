@@ -664,3 +664,12 @@ body {
 .error {
   border-color: #d9534f;
 }
+.error-list {
+  text-align: center;
+  color: #d9534f;
+}
+.sucess {
+  color: #449d44;
+  text-align: center;
+  font-weight: 300;
+}
