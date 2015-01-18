@@ -114,10 +114,12 @@ small {
 //  -- NAVBAR
 //    -- contains navigation control and logo
 //    -- is the white bar at the top
+//
 //  -- FOOTER
 //    -- contains 3 columns (SITEMAP, SOCIAL)
 //    -- RECENT POSTS, CONTACT US
 //    -- footer at the bottom (black background)
+//
 //  -- INDEX PAGE
 //    -- NEWSLIDER
 //    -- 3 STORIES 
@@ -135,6 +137,9 @@ small {
 //
 //  -- CONTACT
 //   --FORMS
+//
+//  -- NEWS PAGE
+//    --
 //**********************************************************************
 
 //**********************************************************************
@@ -837,4 +842,79 @@ html,body {
   color: @color-success;
   text-align: center;
   font-weight: 300;
+}
+
+//**********************************************************************
+// NEWS PAGE - Shows news element from url and also a sidebar to navigate
+// previous articles
+//**********************************************************************
+
+.news-story {
+  margin-bottom: 50px;
+
+  .title {
+    text-align:center;
+    margin-bottom: 20px;
+  }
+
+  img {
+    max-width: 350px;
+    margin: 30px;
+    float: left;
+  }
+
+  .row {
+    //text columns color
+    .col-sm-9, h2{
+      color: lighten(@color-black, 10%);
+    }
+
+    //on hover of 
+    &:hover {
+      background: @color-light-blue;
+      .transition(0.25s);
+      cursor: pointer;
+
+      //on hover of article change color of small (date)
+      small {
+        color: @color-white;
+      }
+
+      .col-sm-9, h2{
+        color: @color-white;
+      }
+    }
+
+    //for each article
+    .summary-news {
+      padding: 0 20px;
+
+      h2 {
+        text-align: center;
+
+        small {
+          padding-left: 20px;
+        }
+      }
+
+      img 
+        margin-bottom: 20px;
+        max-width: 200px;
+      }
+    }
+  }
+
+  //for pagination
+  .pagination {
+    //no border radius for first and last child
+    &:first-child, &:last-child {
+      a {
+        border-radius: 0;
+      }
+    }
+
+    .active {
+      color: @color-light-blue;
+    }
+  }
 }

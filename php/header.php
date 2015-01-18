@@ -18,7 +18,7 @@
             <li class="dropdown"> 
               <a href="#" class="dropdown-toggle news" data-toggle="dropdown"><i class="fa fa-newspaper-o"></i>NEWS</a>
               <ul class="dropdown-menu" role="menu">
-                <li><a href="#">News</a></li>
+                <li><a href="news.php">News</a></li>
                 <li><a href="#">Gallery</a></li>
                 <li><a href="#">Calendar</a></li>
               </ul>

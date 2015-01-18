@@ -13,7 +13,7 @@ $(document).ready(function() {
       $(".home").addClass("active");
       break;
 
-    case "News" :
+    case "News Page" :
       $(".news").addClass("active");
       break;
 

@@ -39,7 +39,6 @@ class Database {
     return $result;
   }
 
-
   /**
    * Fetch rows from the database (SELECT query)
    *
@@ -56,6 +55,10 @@ class Database {
       $rows[] = $row;
     }
     return $rows;
+  }
+
+  public function close() {
+    $conn -> close();
   }
 }
 ?>
