@@ -11,9 +11,9 @@
   //if sent button was clicked with method sent to post
   if(isset($_POST['submit'])) {
     //trim the fields and remove html character to escape them
-    $name = trim(htmlspecialchars($_POST['name'], ENT_QUOTES));
+    $name = filter_input(INPUT_POST, 'name', FILTER_SANITIZE_STRING);
     $email = trim($_POST['email']);
-    $message = trim(htmlspecialchars($_POST['message'], ENT_QUOTES));
+    $message = filter_input(INPUT_POST, 'message', FILTER_SANITIZE_STRING);
 
     $fieldsArray = array (
       'name' => $name,
