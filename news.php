@@ -41,14 +41,37 @@
         }
         // else if no news id in url display 5 news stories per page
         else {
-          //cast p (url) to an int, filter input
-          $val = filter_input(INPUT_GET, 'p', FILTER_SANITIZE_STRING);
-          $page_val = (int) $val;
 
-          //if page val equals 0 the url not an integer so therefore page number to 1
+          //filter input, and sanitize the string $_GET['p']
+          $val = filter_input(INPUT_GET, 'p', FILTER_SANITIZE_STRING);
+          //cast val to page_val
+          $page_val = (int) $val;
+          
+          //get number of articles to display in pagination (later on)
+          $result = $db->query("SELECT COUNT(*) FROM Articles");
+          $article_number = 0;
+          while($row = $result -> fetch_assoc()) {
+            $article_number = $row['COUNT(*)'];
+          }
+
+          //work out the max number of pages needed for pagination as 5 pages are displayed per page
+          if($article_number % 5 === 0) {
+            $max_pages = ($article_number/5);
+          }
+          else {
+            $max_pages = (int) (($article_number/5) + 1);
+          }
+
+          //if page val equals 0 then url not an integer so therefore set page number to 1
           if($page_val == 0) {
             $page_number = 1;
           }
+          //else if page value is greater than maximum number of pages
+          else if($page_val > $max_pages) {
+            //set page number to max number of pages
+            $page_number = $max_pages;
+          }
+          //else set page number to value
           else {
             $page_number = $val;
           }
@@ -57,58 +80,11 @@
           $current_page = $page_number;
           //page_number will be offset so multiple by 5, (need to subtract one as on first page should be no offset)
           $page_number = ($page_number - 1) * 5;
-          //get 5 summary articles depending on page number (offset will change)
-          $stmt = $conn -> prepare("SELECT Id, Title, Date, Photo, Summary FROM Articles ORDER BY Id DESC LIMIT 5 OFFSET ? ");
 
-          //bind results and execute query
-          $stmt->bind_param("s",  $page_number);
+          require_once("articles.php");
+          echo getSummaries($page_number, $conn);
+          echo getPagination($current_page ,$article_number);
 
-          if($stmt->execute()) {
-            //bind result to variables
-            $stmt->bind_result($id, $title, $date, $photo, $summary);
-
-            //while there are result fetch them
-            while($stmt->fetch()) {
-              //echo out html similar to on index page
-              echo '
-                <a href="news.php?Id='.$id.'"> <!-- Article links to news equivalent -->
-                <div class="row">
-                <div class="summary-news">
-                <h2>'.$title.'<small>'.$date.'</small></h2>
-                <div class="col-sm-3">
-                '.$photo.'
-                </div> <!-- End of picture -->
-
-                <div class="col-sm-9">
-                <p>'.$summary.'</p>
-                </div> <!-- End of main summary --> 
-                </div> <!-- End of summary -->
-                </div> <!-- End of row -->
-                </a>';
-
-            }
-          }
-          //get number of articles to displasy in pagination
-          $result = $db->query("SELECT COUNT(*) FROM Articles");
-          $article_number = 0;
-          while($row = $result -> fetch_assoc()) {
-            $article_number = $row['COUNT(*)'];
-          }
-
-          echo '<div class="text-center">';
-
-          //set up pagination
-          require_once("php/vendor/pagination.php");
-          $pg = new bootPagination();
-          $pg->pagenumber = $current_page;
-          $pg->pagesize = 5;
-          $pg->totalrecords = $article_number;
-          $pg->paginationcss = "pagination-larger";
-          $pg->paginationstyle = 0;
-          $pg->defaultUrl = "news.php";
-          $pg->paginationUrl = "news.php?p=[p]";
-          echo $pg->process();
-          echo '</div>';
         }
       ?>
       </div> <!-- End of container -->

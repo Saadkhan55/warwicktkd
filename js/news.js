@@ -1,29 +1,55 @@
-//This script changes pages without need to refesh i.e. instead of using php uses AJAX. 
+//This will dynamically load pages instead of using php 
+//will do it using AJAX for the news.php web page.
+//
+
 $(document).ready(function() {
-  //on click of a pagination link
-  $(".pagination li").click(function(e) { 
-    //remove current active class and give it to newly
-    //clicked link
-    $(".pagination .active").removeClass("active");
-    $(this).addClass("active");
-
-    //stop default action (i.e. link to another page), otherwise page
-    //will refresh so pointless
+  $("body").on('click', '.pagination li ', function(e) {
     e.preventDefault();
-    var number = 1;
-    var test1 = 2;
 
+    //remove active class from current element
+    $(".pagination .active").removeClass("active");
 
-    $.ajax({ 
-      url: "ajax_news.php", 
-      type: "post",
+    //get href page link to see which page to show (dynamically)
+    var href = $(this).children().attr("href");
+
+    //will store page number user is trying to see
+    var pageNumber;
+    //if href has no ?p=number, then make it equal to 1
+    if(href == "news.php") {
+      pageNumber = 1;
+    }
+    //else get number from href
+    else {
+      pageNumber = href.match("[0-9]+");
+    }
+
+   //current page used in pagination to determine
+   //what pages to show besides it
+    var currentPage = pageNumber;
+   // as this will be used for offset, (if only 5 articles);
+   // then page number -1  = 0, 0 *5 = 0
+   // offset in query will be 0. 
+    pageNumber = (pageNumber - 1) * 5; 
+
+    //using ajax sent pagenumber to php file which will return what
+    //articles to display
+    $.ajax ({
+      type: "POST", 
+      url: "ajax_news.php",
+      dataType: 'json', 
       data: {
-        "number": number,
-        "test1": test1
+        "pageNumber" : pageNumber,
+        "currentPage" : currentPage
       },
-      success: function (data) {
-         $(".container").remove();
+      success: function(html) {
+        //remove everything inside news-story div
+        $(".news-story").empty();
+        //apend html to div
+        $(".news-story").append(html);
       }
     });
+    
+    //and add active class to clicked pagination
+    $(this).addClass("active");
   });
 });
