@@ -22,7 +22,7 @@ $(document).ready(function() {
         "test1": test1
       },
       success: function (data) {
-         console.log("TEST");
+         $(".container").remove();
       }
     });
   });
