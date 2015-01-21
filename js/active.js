@@ -17,6 +17,10 @@ $(document).ready(function() {
       $(".news").addClass("active");
       break;
 
+    case "Gallery" :
+      $(".news").addClass("active");
+      break;
+
     case "Beginners" :
       $(".about").addClass("active");
       break;

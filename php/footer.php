@@ -73,7 +73,7 @@
               <a href="news.php?Id='.$id.'">'.$photo.'</a> 
               <div class="heading">
                 <p>
-                  <a href="news?Id='.$id.'">'.$title.'</a>
+                  <a href="news.php?Id='.$id.'">'.$title.'</a>
                   <small> '.$date.'</small>
                 </p>
               </div>

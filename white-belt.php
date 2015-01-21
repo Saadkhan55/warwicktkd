@@ -424,7 +424,7 @@
               I shall build a more peaceful world<br><br>
 
               To Hide or show korean click this button to help you study
-              <button class="btn btn-primary">Show</button>
+              <button class="btn btn-primary">Hide</button>
               </p><br><br>
 
             <!-- Korean theory with english translation -->

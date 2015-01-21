@@ -35,7 +35,7 @@ $(document).ready(function() {
     //articles to display
     $.ajax ({
       type: "POST", 
-      url: "ajax_news.php",
+      url: "getArticles.php",
       dataType: 'json', 
       data: {
         "pageNumber" : pageNumber,
