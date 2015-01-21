@@ -139,7 +139,10 @@ small {
 //   --FORMS
 //
 //  -- NEWS PAGE
-//    --
+//    -- SUMMARIES
+//    -- PAGINATION
+//  -- GALLERY PAGE
+//    -- LIGHTBOX
 //**********************************************************************
 
 //**********************************************************************
@@ -848,7 +851,6 @@ html,body {
 // NEWS PAGE - Shows news element from url and also a sidebar to navigate
 // previous articles
 //**********************************************************************
-
 .news-story {
   margin-bottom: 50px;
 
@@ -882,6 +884,7 @@ html,body {
 
       .col-sm-9, h2{
         color: @color-white;
+
       }
     }
 
@@ -897,24 +900,60 @@ html,body {
         }
       }
 
-      img 
+      img {
         margin-bottom: 20px;
         max-width: 200px;
       }
     }
-  }
+    //for pagination
+    .pagination {
+      //no border radius for first and last child
+      &:first-child, &:last-child {
+        a {
+          border-radius: 0;
+        }
+      }
 
-  //for pagination
-  .pagination {
-    //no border radius for first and last child
-    &:first-child, &:last-child {
-      a {
-        border-radius: 0;
+      .active {
+
+        color: @color-light-blue;
       }
     }
+  }
+}
 
-    .active {
-      color: @color-light-blue;
+//**********************************************************************
+// GALLERY PAGE - GALLERY page 4 pictures per row
+//**********************************************************************
+.gallery-set {
+  margin-bottom: 25px;
+
+  h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .row {
+    img {
+      max-width: 200px;
+      margin-bottom: 20px;;
     }
+  }
+}
+
+//lightbox 
+#lightbox {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  background: rgba(0, 0, 0, 0.8);
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  display: none;
+
+  img {
+    max-width: 900px;
   }
 }

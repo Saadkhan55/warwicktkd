@@ -20,7 +20,7 @@ $(document).ready(function() {
     }
     //else get number from href
     else {
-      pageNumber = href.match("[0-9]+");
+      pageNumber = parseInt(href.match("[0-9]+"), 10);
     }
 
    //current page used in pagination to determine
