@@ -109,15 +109,34 @@ small {
   }
 }
 
+//form elements general styling
+.form-control  {
+  border-radius: 0;
+
+  //on click of focus
+  &:focus {
+    border-color: @color-light-blue;
+    box-shadow: none;
+
+    .placeholder({
+      color: transparent;
+      .transition(0.5s);
+    });
+
+  }
+}
+
 //**********************************************************************
 // This file is structured top -> down
 //  -- NAVBAR
 //    -- contains navigation control and logo
 //    -- is the white bar at the top
+//
 //  -- FOOTER
 //    -- contains 3 columns (SITEMAP, SOCIAL)
 //    -- RECENT POSTS, CONTACT US
 //    -- footer at the bottom (black background)
+//
 //  -- INDEX PAGE
 //    -- NEWSLIDER
 //    -- 3 STORIES 
@@ -135,6 +154,12 @@ small {
 //
 //  -- CONTACT
 //   --FORMS
+//
+//  -- NEWS PAGE
+//    -- SUMMARIES
+//    -- PAGINATION
+//  -- GALLERY PAGE
+//    -- LIGHTBOX
 //**********************************************************************
 
 //**********************************************************************
@@ -496,6 +521,7 @@ html,body {
         padding: 0;
         border-radius: 0;
         font-size: @larger-font;
+        text-shadow: 0;
         
         li {
           border-top: 1px solid #bbb;
@@ -784,16 +810,6 @@ html,body {
     margin-left: 10px;
   }
 
-  //when hide korean button is clicked
-  .korean-hide {
-    max-width: 50%;
-    th,td{
-      &:nth-child(2) {
-        display: none;
-      }
-    }
-  }
-
   //center all theory
   th,td {
     text-align: center;
@@ -816,22 +832,6 @@ html,body {
     color: @color-light-blue;
     font-size: 2.5em;
   }
-
-  .form-control  {
-    border-radius: 0;
-
-    //on click of focus
-    &:focus {
-      border-color: @color-light-blue;
-      box-shadow: none;
-
-      .placeholder({
-        color: transparent;
-        .transition(0.5s);
-      });
-
-    }
-  }
 }
 
 .error {
@@ -848,3 +848,178 @@ html,body {
   text-align: center;
   font-weight: 300;
 }
+
+//**********************************************************************
+// NEWS PAGE - Shows news element from url and also a sidebar to navigate
+// previous articles
+//**********************************************************************
+.news-story {
+  margin-bottom: 50px;
+
+  .title {
+    text-align:center;
+    margin-bottom: 20px;
+  }
+
+  img {
+    max-width: 350px;
+    margin: 30px;
+    float: left;
+  }
+
+  .row {
+    //text columns color
+    .col-sm-9, h2{
+      color: lighten(@color-black, 10%);
+    }
+
+    //on hover of 
+    &:hover {
+      background: @color-light-blue;
+      .transition(0.25s);
+      cursor: pointer;
+
+      //on hover of article change color of small (date)
+      small {
+        color: @color-white;
+      }
+
+      .col-sm-9, h2{
+        color: @color-white;
+
+      }
+    }
+
+    //for each article
+    .summary-news {
+      padding: 0 20px;
+
+      h2 {
+        text-align: center;
+
+        small {
+          padding-left: 20px;
+        }
+      }
+
+      img {
+        margin-bottom: 20px;
+        max-width: 200px;
+      }
+    }
+    //for pagination
+    .pagination {
+      //no border radius for first and last child
+      &:first-child, &:last-child {
+        a {
+          border-radius: 0;
+        }
+      }
+
+      .active {
+
+        color: @color-light-blue;
+      }
+    }
+  }
+}
+
+//**********************************************************************
+// GALLERY PAGE - GALLERY page 4 pictures per row, lightbox styling
+//**********************************************************************
+.gallery-set {
+  margin-bottom: 25px;
+
+  h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .row {
+    img {
+      max-width: 200px;
+      margin-bottom: 20px;;
+    }
+  }
+}
+
+//lightbox 
+#lightbox {
+  padding-top: 2%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1100;
+  background: rgba(0, 0, 0, 0.8);
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  display: none;
+  cursor: pointer;
+  .user-select(none);
+
+  img {
+    max-width: 900px;
+    max-width: 70%;
+
+    @media @post-collapse {
+      max-width: 95%;
+      height: auto;
+    }
+  }
+
+  //right, left icons (navigation)
+  .fa {
+    font-size: 2em;
+    color: @color-white;
+    position: absolute;
+    top: 50%;
+    z-index: 1101;
+    padding: 20px 20px;
+
+    &:hover {
+      color: darken(@color-white, 10%);
+      .transition(0.2s);
+      font-size: 5em;
+    }
+  }
+
+  //icons
+  .fa-chevron-right {
+    right: 0;
+  }
+  
+  //icons
+  .fa-chevron-left {
+    left: 0;
+  }
+}
+//**********************************************************************
+// QUIZ PAGE - jQuery & css quiz, styling each question
+//**********************************************************************
+#quiz-container {
+  margin-bottom: 20px;
+  border: 1px solid @color-light-grey;
+
+  //introduction first page before starting quiz
+  .intro {
+    text-align: center;
+
+    h2, h4 {
+      color: @color-light-blue;
+      margin-bottom: 30px;
+    }
+
+    //select element used to pick grade
+    .select {
+      margin-bottom: 20px;
+    }
+
+    //start button link to start quiz
+    .start {
+      height: 200px;
+      width: 400px;
+    }
+  }
+}
+

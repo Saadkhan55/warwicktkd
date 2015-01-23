@@ -3,8 +3,8 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Generation Time: Jan 21, 2015 at 10:13 PM
--- Server version: 5.5.40-0ubuntu0.14.04.1
+-- Generation Time: Jan 23, 2015 at 05:31 PM
+-- Server version: 5.5.41-0ubuntu0.14.04.1
 -- PHP Version: 5.5.9-1ubuntu4.5
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
@@ -53,6 +53,42 @@ INSERT INTO `Articles` (`Id`, `Title`, `Date`, `Photo`, `Article`, `Summary`) VA
 (10, 'Curabitur dictum iaculis', '2015-01-22', '<img class="img-responsive" src="images/placeholder.png" height="150px" width="150px">  ', 'Pellentesque in scelerisque quam. Integer viverra molestie posuere. Sed tempor rhoncus cursus. Maecenas purus odio, bibendum quis ex ac, convallis accumsan magna. Suspendisse in velit faucibus, posuere odio interdum, lacinia erat. In eu ipsum sit amet turpis ullamcorper vehicula. Proin non urna et sapien congue vestibulum eget vel lacus. Maecenas ac ex quis turpis euismod eleifend a ut nisl. Nunc scelerisque consequat massa, sit amet placerat nibh fringilla nec. Maecenas vitae tristique eros. Etiam commodo erat lectus, ut fermentum est aliquet et. Nunc egestas aliquam orci, sit amet finibus est eleifend cursus. Vestibulum semper nunc varius justo rutrum pretium. Nunc sodales ipsum vitae lacus tincidunt ullamcorper. In venenatis euismod erat, sed porta tellus ultricies ac.\n\nInteger vitae lectus aliquam, posuere lorem eu, suscipit justo. Nunc porta neque nunc, vel gravida libero elementum et. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. In ac ipsum eu odio dictum facilisis quis quis justo. Suspendisse facilisis mi id consectetur condimentum. Integer in dolor pretium, rutrum turpis vitae, ullamcorper turpis. Suspendisse ullamcorper consequat est quis ultrices. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Morbi vel cursus justo.', 'Integer vitae lectus aliquam, posuere lorem eu, suscipit justo. Nunc porta neque nunc, vel gravida libero elementum et. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. In ac ipsum eu odio dictum facilisis quis quis justo. Suspendisse facilisis mi id consectetur condimentum. Integer in dolor pretium, rutrum turpis vitae, ullamcorper turpis. Suspendisse ullamcorper consequat est quis ultrices. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Morbi vel cursus justo.'),
 (11, 'Curabitur dictum iaculis', '2015-01-22', '<img class="img-responsive" src="images/placeholder.png" height="150px" width="150px">  ', 'Pellentesque in scelerisque quam. Integer viverra molestie posuere. Sed tempor rhoncus cursus. Maecenas purus odio, bibendum quis ex ac, convallis accumsan magna. Suspendisse in velit faucibus, posuere odio interdum, lacinia erat. In eu ipsum sit amet turpis ullamcorper vehicula. Proin non urna et sapien congue vestibulum eget vel lacus. Maecenas ac ex quis turpis euismod eleifend a ut nisl. Nunc scelerisque consequat massa, sit amet placerat nibh fringilla nec. Maecenas vitae tristique eros. Etiam commodo erat lectus, ut fermentum est aliquet et. Nunc egestas aliquam orci, sit amet finibus est eleifend cursus. Vestibulum semper nunc varius justo rutrum pretium. Nunc sodales ipsum vitae lacus tincidunt ullamcorper. In venenatis euismod erat, sed porta tellus ultricies ac.\n\nInteger vitae lectus aliquam, posuere lorem eu, suscipit justo. Nunc porta neque nunc, vel gravida libero elementum et. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. In ac ipsum eu odio dictum facilisis quis quis justo. Suspendisse facilisis mi id consectetur condimentum. Integer in dolor pretium, rutrum turpis vitae, ullamcorper turpis. Suspendisse ullamcorper consequat est quis ultrices. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Morbi vel cursus justo.', 'Integer vitae lectus aliquam, posuere lorem eu, suscipit justo. Nunc porta neque nunc, vel gravida libero elementum et. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. In ac ipsum eu odio dictum facilisis quis quis justo. Suspendisse facilisis mi id consectetur condimentum. Integer in dolor pretium, rutrum turpis vitae, ullamcorper turpis. Suspendisse ullamcorper consequat est quis ultrices. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Morbi vel cursus justo.'),
 (12, 'Curabitur dictum iaculis', '2015-01-22', '<img class="img-responsive" src="images/placeholder.png" height="150px" width="150px">  ', 'Pellentesque in scelerisque quam. Integer viverra molestie posuere. Sed tempor rhoncus cursus. Maecenas purus odio, bibendum quis ex ac, convallis accumsan magna. Suspendisse in velit faucibus, posuere odio interdum, lacinia erat. In eu ipsum sit amet turpis ullamcorper vehicula. Proin non urna et sapien congue vestibulum eget vel lacus. Maecenas ac ex quis turpis euismod eleifend a ut nisl. Nunc scelerisque consequat massa, sit amet placerat nibh fringilla nec. Maecenas vitae tristique eros. Etiam commodo erat lectus, ut fermentum est aliquet et. Nunc egestas aliquam orci, sit amet finibus est eleifend cursus. Vestibulum semper nunc varius justo rutrum pretium. Nunc sodales ipsum vitae lacus tincidunt ullamcorper. In venenatis euismod erat, sed porta tellus ultricies ac.\n\nInteger vitae lectus aliquam, posuere lorem eu, suscipit justo. Nunc porta neque nunc, vel gravida libero elementum et. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. In ac ipsum eu odio dictum facilisis quis quis justo. Suspendisse facilisis mi id consectetur condimentum. Integer in dolor pretium, rutrum turpis vitae, ullamcorper turpis. Suspendisse ullamcorper consequat est quis ultrices. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Morbi vel cursus justo.', 'Integer vitae lectus aliquam, posuere lorem eu, suscipit justo. Nunc porta neque nunc, vel gravida libero elementum et. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. In ac ipsum eu odio dictum facilisis quis quis justo. Suspendisse facilisis mi id consectetur condimentum. Integer in dolor pretium, rutrum turpis vitae, ullamcorper turpis. Suspendisse ullamcorper consequat est quis ultrices. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Morbi vel cursus justo.');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `quiz`
+--
+
+CREATE TABLE IF NOT EXISTS `quiz` (
+  `Id` int(11) NOT NULL,
+  `Grade` int(11) NOT NULL,
+  `Question` text NOT NULL,
+  `Choice1` text NOT NULL,
+  `Choice2` text NOT NULL,
+  `Choice3` text NOT NULL,
+  `Choice4` text NOT NULL,
+  `Correct` text NOT NULL COMMENT 'Correct answer from 4 choice',
+  PRIMARY KEY (`Id`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `quiz`
+--
+
+INSERT INTO `quiz` (`Id`, `Grade`, `Question`, `Choice1`, `Choice2`, `Choice3`, `Choice4`, `Correct`) VALUES
+(1, 1, 'What does Saju Jirugi Mean?', 'Four Directional Punch', 'First Pattern', 'Direction Punch', 'Random Korean Words', 'Choice1'),
+(2, 1, 'Which of the following is not a tenets of Tae Kwon Do?', 'Loyalty', 'Courtesy', 'Integrity', 'Self Control', 'Choice1'),
+(3, 1, 'What does "Charyot" mean?', 'Bow', 'Stance', 'Relax', 'Attention', 'Choice4'),
+(4, 1, 'What is sitting stance in korean?', 'Gunnun Sogi', 'Annun Sogi', 'Charyot Sogi ', 'Chunbi Sogi', 'Choice2'),
+(5, 1, 'What is Junbi Sogi in English?', 'Sitting Stance', 'Walking Stance', 'Front Kick', 'Ready Stance', 'Choice4'),
+(6, 1, 'What is Obverse Punch in korean?', 'Saju Jirugi', 'Ap Chagi', 'Baro Jirugi', 'Gunnun Sogi', 'Choice3'),
+(7, 1, 'What is Najunde in english?', 'Low', 'Kick', 'Stance', 'High', 'Choice1'),
+(8, 1, 'What is Three in Korean', 'Hanna', 'Chagi', 'Jirugi', 'Net', 'Choice4'),
+(9, 1, 'What is Outer Forearm Block in korean?', 'Ap Chagi', 'Bandae Jirugi', 'Bakat Palmok Makgi', 'Sonkal Makgi', 'Choice3'),
+(10, 1, 'What is Four Directional Block in korean', 'Saju Jirugi', 'Ap Chagi', 'An Palmok Makgi', 'Saju Makgi', 'Choice4'),
+(11, 1, 'What is Turning Kick in korean?', 'Ap Chagi', 'Yop Chagi', 'Dollyo Chagi', 'Jirugi', 'Choice3'),
+(12, 1, 'What "Swiyo" in english?', 'Relax', 'Attention', 'Bow', 'Punch', 'Choice1');
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;

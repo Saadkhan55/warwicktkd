@@ -788,15 +788,24 @@ body {
 #quiz-container .intro {
   text-align: center;
 }
-#quiz-container .intro h2,
-#quiz-container .intro h4 {
+#quiz-container .intro h2 {
   color: #367ee9;
   margin-bottom: 30px;
+}
+#quiz-container .intro h4 {
+  margin-bottom: 25px;
 }
 #quiz-container .intro .select {
   margin-bottom: 20px;
 }
 #quiz-container .intro .start {
-  height: 200px;
-  width: 400px;
+  margin-bottom: 20px;
+  height: 50px;
+  width: 200px;
+}
+#quiz-container .question h3 {
+  text-align: center;
+}
+#quiz-container .question .radio {
+  padding: 10px;
 }

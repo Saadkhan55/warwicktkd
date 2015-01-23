@@ -3,14 +3,14 @@
 $(document).ready(function() {
   $(".btn").click(function() {
     //if button has text show
-    if($(".btn").html() == "Show") {
+    if($(".btn").html() == "Hide") {
       //change hide second table
-      $(".btn").html("Hide");
+      $(".btn").html("Show");
       $(".theory tr :nth-child(2)").fadeOut("500");
     }
     else {
       //else do opposite
-      $(".btn").html("Show");
+      $(".btn").html("Hide");
       $(".theory tr :nth-child(2)").fadeIn("1000");
     }
   });
