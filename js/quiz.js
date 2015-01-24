@@ -59,7 +59,7 @@ $(document).ready(function() {
     }
     //get next question
     getNextQuestion(gradeNumber);
-    $(".intro").hide();
+    $(".intro").fadeOut(800).empty();
 
   });
 
@@ -86,25 +86,25 @@ $(document).ready(function() {
     var html = "<h3>" + array.question  + "</h3>";
 
     html += '<div class="radio">' + 
-              '<label>' + '<input type="radio" name="Choices" id="Choice1" value="option1" checked>' + 
+              '<label>' + '<input type="radio" name="Choices" classs="choice" id="Choice1" value="option1" checked>' + 
                 array.choice1 + 
                '</label>' + 
               '</div>';
 
     html += '<div class="radio">' + 
-              '<label>' + '<input type="radio" name="Choices" id="Choice2" value="option2">' + 
+              '<label>' + '<input type="radio" name="Choices" class="choice" id="Choice2" value="option2">' + 
                 array.choice2 + 
                '</label>' + 
               '</div>';
 
     html += '<div class="radio">' + 
-              '<label>' + '<input type="radio" name="Choices" id="Choice3" value="option3">' + 
+              '<label>' + '<input type="radio" name="Choices" class="choice" id="Choice3" value="option3">' + 
                 array.choice3 + 
                '</label>' + 
               '</div>';
 
     html += '<div class="radio">' + 
-              '<label>' + '<input type="radio" name="Choices" id="Choice4" value="option4">' + 
+              '<label>' + '<input type="radio" name="Choices" class="choice" id="Choice4" value="option4">' + 
                 array.choice4 + 
                '</label>' + 
               '</div>';
@@ -116,12 +116,14 @@ $(document).ready(function() {
     return html;
   }
 
+  //last section -> end
   function getEnd() {
     $(".question").empty();
     $("#quiz-container").append("Number of correct answers " + correctAnswers);
   }
 
-  $("body").on('click','.next' , function() {
+  
+  function next() {
     //get choice selected 
     var choice = $(".question input[type='radio']:checked").attr("id");
     //if answer is correct increment correct answers by 1
@@ -129,9 +131,26 @@ $(document).ready(function() {
       correctAnswers++;
     }
 
+    if(!$(".question").find(".correct").length) {  
+      //for all radios
+      $(".question input[type='radio']").each(function() {
+        var current = $(this).attr("id");
+        //if current radio is correct answer
+        if(current == correct) {
+          $(this).parent().append("<i class='correct fa fa-check'></i>").fadeIn(500);
+        }
+        else {
+          $(this).parent().append("<i class='wrong fa fa-remove'></i>").fadeIn(500);
+        }
+      });
+    }
+  }
+
+  $("body").on('click','.next' , function(e) {
+    next();
     if(questionNo < 10) {
       //get next question
-      getNextQuestion(gradeNumber);
+      setTimeout(function() {getNextQuestion(gradeNumber)}, 1300);
     }
     else {
       getEnd();

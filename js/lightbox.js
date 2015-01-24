@@ -2,6 +2,7 @@ $(document).ready(function() {
   //on click of a gallery object
   $('.gallery-set .gallery').click(function(e) {
       e.preventDefault();
+<<<<<<< HEAD
       //get image src
       var image_src = $(this).find("img").attr("src");
       //append this image to lightbox
@@ -9,6 +10,14 @@ $(document).ready(function() {
       $('#content').append('<i class="fa fa-chevron-right"></i>');
       $('#content').append('<i class="fa fa-chevron-left"></i>');
       //show lightbox
+=======
+      //Get location of picture in project directory
+      var image_src = $(this).find("img").attr("src");
+      
+      //add this picture to the lightbox, (inside content)
+      $('#content').append('<img src="' + image_src + '" /> ');
+      //show lightbox div
+>>>>>>> 653043c4c02a732334e8c747110eceea9a6543f8
       $('#lightbox').fadeIn("500");
 
       //array to store all images inside gallery-set
@@ -65,6 +74,7 @@ $(document).ready(function() {
       image_src = images[index];
       });
   });
+<<<<<<< HEAD
 
   //click anywhere to close lightbox
   $('#lightbox').on('click', function() {
@@ -85,4 +95,11 @@ $(document).ready(function() {
     }
     return -1;
   }
+=======
+  
+  //click anywhere to close lightbox
+  $("#lightbox").live("click", function()  {
+    $("#lightbox").hide();
+  });
+>>>>>>> 653043c4c02a732334e8c747110eceea9a6543f8
 });

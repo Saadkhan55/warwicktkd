@@ -31,9 +31,7 @@
           <button class="btn btn-danger start">Start </button>
         </div> <!-- Introduction page -->
         <div class="question">
-          
         </div><!-- End of question --> 
-
       </div><!-- End of quiz container -->
     </div><!--End of wrapper -->
     <!--Add footer, contains 3 columns layout Add footer data, such as jquery, boostrap javascript -->

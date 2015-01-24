@@ -809,3 +809,9 @@ body {
 #quiz-container .question .radio {
   padding: 10px;
 }
+#quiz-container .question .correct {
+  color: #449d44;
+}
+#quiz-container .question .wrong {
+  color: #d9534f;
+}
