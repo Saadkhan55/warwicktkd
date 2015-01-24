@@ -4,7 +4,7 @@ $(document).ready(function() {
   //number used in db to associate with grade i.e. white belt = 1 and black tag = 10;
   var gradeNumber;
   //store correct answer
-  var correcti = 0;
+  var correct = 0;
   //current question number
   var questionNo = 1;
   //number of correct answer
@@ -60,7 +60,6 @@ $(document).ready(function() {
     //get next question
     getNextQuestion(gradeNumber);
     $(".intro").fadeOut(800).empty();
-
   });
 
   //gets a random next question for grade or any grade under it
@@ -76,6 +75,7 @@ $(document).ready(function() {
         $(".question").empty();
         var html = getQuestion(quiz);
         $(".question").append(html);
+        $(".warning").hide();
       }
     });
     questionNo++;
@@ -84,9 +84,10 @@ $(document).ready(function() {
   //turn question date into html
   function getQuestion(array) {
     var html = "<h3>" + array.question  + "</h3>";
+    html += "<h4 class='warning'>Please select an option</h4>";
 
     html += '<div class="radio">' + 
-              '<label>' + '<input type="radio" name="Choices" classs="choice" id="Choice1" value="option1" checked>' + 
+              '<label>' + '<input type="radio" name="Choices" classs="choice" id="Choice1" value="option1">' + 
                 array.choice1 + 
                '</label>' + 
               '</div>';
@@ -122,15 +123,21 @@ $(document).ready(function() {
     $("#quiz-container").append("Number of correct answers " + correctAnswers);
   }
 
+  //checks if option is selected
+  function optionSelected() {
+    var checked = false;
+      $(".question input[type='radio']").each(function() {
+        if($(this).is(':checked')) {
+          checked = true;
+        }
+      });
+    return checked;
+  }
+
   
   function next() {
-    //get choice selected 
-    var choice = $(".question input[type='radio']:checked").attr("id");
-    //if answer is correct increment correct answers by 1
-    if(choice == correct) {
-      correctAnswers++;
-    }
 
+    //if no correct icon has been added yet add one if not don't -> i.e. stops multiple icons from appearing when next button is pressed
     if(!$(".question").find(".correct").length) {  
       //for all radios
       $(".question input[type='radio']").each(function() {
@@ -146,14 +153,30 @@ $(document).ready(function() {
     }
   }
 
-  $("body").on('click','.next' , function(e) {
-    next();
-    if(questionNo < 10) {
-      //get next question
-      setTimeout(function() {getNextQuestion(gradeNumber)}, 1300);
+  //on click of next body
+  $("body").on('click','.next' , function() {
+    //if option is selected
+    if(optionSelected()) {
+      $(".warning").hide();
+      //get choice selected 
+      var choice = $(".question input[type='radio']:checked").attr("id");
+      //if answer is correct increment correct answers by 1
+      if(choice == correct) {
+        correctAnswers++;
+      }
+
+      next();
+      if(questionNo < 10) {
+        //get next question
+        setTimeout(function() {getNextQuestion(gradeNumber)}, 1000);
+      }
+      else {
+        getEnd();
+      }
     }
+    //else if no option selected
     else {
-      getEnd();
+     $(".warning").fadeIn(800); 
     }
   });
 });
