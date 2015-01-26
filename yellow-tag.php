@@ -31,7 +31,7 @@
             Yop Cha Jirug <br><br>
 
             <b>Pattern</b><br><br>
-            Chon Ji Tul <br>
+            Chon Ji Tul <br><br>
 
             <b>Sparring</b><br><br>
             3 Step sparring No 1 Sambo Matsogi<br>
