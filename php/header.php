@@ -19,7 +19,7 @@
               <a href="#" class="dropdown-toggle news" data-toggle="dropdown"><i class="fa fa-newspaper-o"></i>NEWS</a>
               <ul class="dropdown-menu" role="menu">
                 <li><a href="news.php">News</a></li>
-                <li><a href="#">Gallery</a></li>
+                <li><a href="gallery.php">Gallery</a></li>
                 <li><a href="#">Calendar</a></li>
               </ul>
             </li> 
@@ -38,8 +38,9 @@
             <li class="dropdown"> 
               <a href="#" class="dropdown-toggle students" data-toggle="dropdown"><i class="fa fa-group"></i>STUDENTS</a>
               <ul class="dropdown-menu" role="menu">
+                <li><a href="quiz.php">Theory Quiz</a></li>
                 <li><a href="white-belt.php">White Belt</a></li>
-                <li><a href="#">Yellow Tag</a></li>
+                <li><a href="yellow-tag.php">Yellow Tag</a></li>
                 <li><a href="#">Yellow Belt</a></li>
                 <li><a href="#">Green Tag</a></li>
                 <li><a href="#">Green Belt</a></li>

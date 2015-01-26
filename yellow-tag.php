@@ -290,17 +290,6 @@
             <h3>Theory</h3>
             <p class="larger-font">
               Note: You may be asked questions on lower grade theory, so make sure you know it.<br> <br>
-              <b>Tae kwon Do</b> – means Kicking & Punching Art; or foot fist way of life. <br>
-              <b>Founder of TaeKwon Do</b> – Grand Master Choi Hong Hi 9th Degree Black belt <br>
-              <b>President & Chief of GTUK</b> – Master Oldham 8th Degree Black belt <br><br>
-
-              <b>GTUK OATH Tenets</b> <br>
-              As a member of the GTUK <br>
-              I shall observe the tenets of TaeKwon-Do<br> 
-              I shall respect the instructors & seniors<br> 
-              I shall never misuse TaeKwon-Do<br> 
-              I shall be a champion of freedom and justice<br> 
-              I shall build a more peaceful world<br><br>
 
               To Hide or show korean click this button to help you study
               <button class="btn btn-primary">Hide</button>
@@ -322,69 +311,25 @@
                 </tr>
 
                 <tr>
-                  <td>Attention</td>
-                  <td>Charyot</td>
+                  <td>In Your Own Time</td>
+                  <td>Kooryongopshi</td>
                 </tr>
 
                 <tr>
-                  <td>Bow</td>
-                  <td>Kyonge-ye</td>
+                  <td>In My Time</td>
+                  <td>Kooryongymacho</td>
                 </tr>
 
                 <tr>
-                  <td>Relax</td>
-                  <td>Swiyo</td>
+                  <td>Dismiss</td>
+                  <td>Hae San</td>
                 </tr>
 
                 <tr>
-                  <td>Ready</td>
-                  <td>Junbi</td>
+                  <td>Continue</td>
+                  <td>Gaesok</td>
                 </tr>
 
-                <tr>
-                  <td>Start</td>
-                  <td>Si Jak</td>
-                </tr>
-
-                <tr>
-                  <td>Back to Mark</td>
-                  <td>Baro</td>
-                </tr>
-
-                <tr>
-                  <td>Stop</td>
-                  <td>Goman</td>
-                </tr>
-
-                <tr class="title">
-                  <td>Tenets</td>
-                  <td>Tenents</td>
-                </tr>
-
-                <tr>
-                  <td>Courtesy</td>
-                  <td>Ye Ui</td>
-                </tr>
-
-                <tr>
-                  <td>Integrity</td>
-                  <td>Yom Chi</td>
-                </tr>
-
-                <tr>
-                  <td>Perserverance</td>
-                  <td>In Nae</td>
-                </tr>
-
-                <tr>
-                  <td>Self Control</td>
-                  <td>Guk Gi</td>
-                </tr>
-
-                <tr>
-                  <td>Indomitable Spirit</td>
-                  <td>Baekjul Boolgool</td>
-                </tr>
 
                 <tr class="title">
                   <td>Stance</td>
@@ -392,18 +337,8 @@
                 </tr>
 
                 <tr>
-                  <td>Sitting Stance</td>
-                  <td>Annun Sogi</td>
-                </tr>
-
-                <tr>
-                  <td>Walking Stance</td>
-                  <td>Gunnun Sogi</td>
-                </tr>
-
-                <tr>
-                  <td>Parallel Ready Stance</td>
-                  <td>Narani Junbi Sogi</td>
+                  <td>L Stance</td>
+                  <td>Niunja Sogi</td>
                 </tr>
 
                 <tr class="title">
@@ -412,18 +347,13 @@
                 </tr>
 
                 <tr>
-                  <td>Front Kick</td>
-                  <td>Ap Chagi</td>
+                  <td>Front Snap Kick</td>
+                  <td>Ap Cha Busigi</td>
                 </tr>
 
                 <tr>
-                  <td>Side Kick</td>
-                  <td>Yop Chagi</td>
-                </tr>
-
-                <tr>
-                  <td>Turning Kick</td>
-                  <td>Dollyo Chagi</td>
+                  <td>Side Piercing Kick</td>
+                  <td>Yop Cha Chagi</td>
                 </tr>
 
                 <tr class="title">
@@ -432,58 +362,43 @@
                 </tr>
 
                 <tr>
-                  <td>Outer Forearm Block</td>
-                  <td>Bakat Palmok Makgi</td>
-                </tr>
-
-                <tr>
-                  <td>Inner Forearm Block</td>
-                  <td>An Palmok Makgi</td>
-                </tr>
-
-                <tr>
-                  <td>Knifehand Low Block</td>
-                  <td>Sonkal Najunde Makgi</td>
+                  <td>Guarding Block</td>
+                  <td>Daebi Makgi</td>
                 </tr>
 
                 <tr class="title">
-                  <td>Section</td>
-                  <td>Section</td>
+                  <td>Foot Parts</td>
+                  <td>Foot Parts</td>
                 </tr>
 
                 <tr>
-                  <td>Low</td>
-                  <td>Najunde</td>
+                  <td>Ball Of The Foot</td>
+                  <td>Ap Kumchi</td>
                 </tr>
 
                 <tr>
-                  <td>Middle</td>
-                  <td>Kaunde</td>
-                </tr>
-
-                <tr>
-                  <td>High</td>
-                  <td>Nopunde</td>
+                  <td>Footsword</td>
+                  <td>Balkal</td>
                 </tr>
 
                 <tr class="title">
-                  <td>Punch</td>
-                  <td>Jirugi</td>
+                  <td>Hand Parts</td>
+                  <td>Hand Parts</td>
                 </tr>
 
                 <tr>
-                  <td>Obverse Punch</td>
-                  <td>Baro Jirugi</td>
+                  <td>Fist</td>
+                  <td>Joomuk</td>
                 </tr>
 
                 <tr>
-                  <td>Reverse Punch</td>
-                  <td>Bandae Jirugi</td>
+                  <td>Knifehand</td>
+                  <td>Sonkal</td>
                 </tr>
 
                 <tr>
-                  <td>Fore Fist Punch</td>
-                  <td>Ap Joomuk Jirugi</td>
+                  <td>Forearm</td>
+                  <td>Palmok</td>
                 </tr>
 
                 <tr class="title">
@@ -492,26 +407,19 @@
                 </tr>
 
                 <tr>
-                  <td>Training Hall</td>
-                  <td>Dojang</td>
+                  <td>Suit Trousers</td>
+                  <td>Baj-I</td>
                 </tr>
 
                 <tr>
-                  <td>Suit</td>
-                  <td>Dobok</td>
+                  <td>Dobok Jacket</td>
+                  <td>Jeogori</td>
                 </tr>
 
                 <tr>
-                  <td>Belt</td>
-                  <td>Tie</td>
+                  <td>Pattern</td>
+                  <td>Tul</td>
                 </tr>
-
-                <tr>
-                  <td>Kup</td>
-                  <td>Simsa</td>
-                </tr>
-
-
 
                 <tr class="title">
                   <td>Numbers</td>
@@ -519,28 +427,28 @@
                 </tr>
 
                 <tr>
-                  <td>1</td>
-                  <td>Hana</td>
+                  <td>6</td>
+                  <td>Yaset</td>
                 </tr>
 
                 <tr>
-                  <td>2</td>
-                  <td>Dool</td>
+                  <td>7</td>
+                  <td>Ilgop</td>
                 </tr>
 
                 <tr>
-                  <td>3</td>
-                  <td>Set</td>
+                  <td>8</td>
+                  <td>Yadul</td>
                 </tr>
 
                 <tr>
-                  <td>4</td>
-                  <td>Net</td>
+                  <td>9</td>
+                  <td>Ahop</td>
                 </tr>
 
                 <tr>
-                  <td>5</td>
-                  <td>Tasot</td>
+                  <td>10</td>
+                  <td>Yul</td>
                 </tr>
               </tbody>
             </table> <!-- End of table -->

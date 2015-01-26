@@ -13,7 +13,7 @@ $(document).ready(function() {
       $(".home").addClass("active");
       break;
 
-    case "News Page" :
+    case "News" :
       $(".news").addClass("active");
       break;
 
@@ -33,7 +33,15 @@ $(document).ready(function() {
       $(".about").addClass("active");
       break;
 
+    case "Theory Game" :
+      $(".students").addClass("active");
+      break;
+
     case "White Belt (10th Kup)" :
+      $(".students").addClass("active");
+      break;
+
+    case "Yellow Tag (9th Kup)" :
       $(".students").addClass("active");
       break;
 
