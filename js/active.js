@@ -45,6 +45,22 @@ $(document).ready(function() {
       $(".students").addClass("active");
       break;
 
+    case "Yellow Belt (8th Kup)" :
+      $(".students").addClass("active");
+      break;
+
+    case "Green Tag (7th Kup)" :
+      $(".students").addClass("active");
+      break;
+
+    case "Green Belt (6th Kup)" :
+      $(".students").addClass("active");
+      break;
+
+    case "Blue Tag (5th Kup)" :
+      $(".students").addClass("active");
+      break;
+
     case "Contact Us" :
       $(".contact").addClass("active");
       break;
