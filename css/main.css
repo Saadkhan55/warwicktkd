@@ -633,6 +633,9 @@ body {
 .syllabus {
   margin-bottom: 40px;
 }
+.syllabus img {
+  margin: 20px;
+}
 .syllabus h3 {
   margin-top: 50px;
   text-align: center;

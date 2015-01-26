@@ -3,7 +3,7 @@
   <head>
     <!--Add header data (such as import stylesheets) -->
     <?php include 'php/head.php' ?>
-    <title>White Belt (10th Kup)</title>
+    <title>Yellow Tag (9th Kup)</title>
   </head>
   <body>
     <div id="wrapper">
@@ -11,30 +11,31 @@
       <?php include 'php/header.php' ?>
       <div class="container syllabus">
         <div class="row">
-          <h2 class="section">White Belt</h2>
+          <h2 class="section">Yellow Tag</h2>
 
           <h3>Grading Requirements</h3>
           <p class="larger-font">
             <b>Techniques</b> <br><br>
-            Press Ups (10) Momtong Bachim <br>
-            (Flat Hand Up to 17 years/over 40 – Adults Knuckles)<br><br>
 
-            Sitting Stance – Middle Punching (10) <br>
-            Annun Sogi - Kaunde Ap Joomuk Jirugi<br><br>
+            Sitting Stance Double Punching – Middle & High (10) <br>
+            Annun Sogi - Doo Jirugi - Nopunde & Kaunde <br><br>
 
-            Walking Stance – Middle Outer Forearm Block/Reverse Punch<br>
-            Gunnun Sogi - Kaunde Bakat Palmok Makgi / Bandae Jirugi<br><br>
+            Walking Stance – Front Snap Kick / Double Punch <br>
+            Gunnun Sogi – Ap Cha Busigi / Doo Jirugi <br><br>
+            L-Stance – Forearm Guarding Block <br>
+            Niunja Sogi –Palmok Daebi Makgi <br><br>
+            L-Stance – Middle Inner Forearm Block <br>
+            Niunja Sogi – Kaunde An Palmok Bandae Makgi <br><br>
 
-            Front Snap Kick Apcha Busigi<br><br>
+            Side Piercing Kick <br>
+            Yop Cha Jirug <br><br>
 
             <b>Pattern</b><br><br>
-            Four Direction Block Saju Makgi<br>
-
-            Four Direction Punch Saju Jirugi<br><br>
+            Chon Ji Tul <br>
 
             <b>Sparring</b><br><br>
-            3 Step Footwork Sambo Matsogi<br>
-            Semi Free Sparring Banjayu Matsogi<br><br>
+            3 Step sparring No 1 Sambo Matsogi<br>
+            Free Sparring Jayu Matsogi<br><br>
 
             <b>Destruction</b><br><br>
             No destruction required<br><br>
@@ -43,11 +44,22 @@
             Korean Terminology for Your Grade<br><br>
 
             <b>Application of Technique</b><br><br>
-            Releases from single wrist grab<br>
+            Releases from double font wrist grab<br>
           
           </p> <!-- End of grading requirement -->
 
-          <h3>Saju Jirugi <small>Four Directional Punch</small></h3>
+          <h3>Chon-Ji Tul <small>Heaven & Earth</small></h3>
+
+          <p class="larger-font">
+            <b>  Meaning </b> <br> <br>
+            CHON-JI literally means “the Heaven the Earth”, which in the Orient is interpreted as the
+            creation of the world or the beginning of human history, this is why it is the initial pattern
+            performed by the beginner. This pattern consists of two parts; one to represent the
+            Heaven and the other the Earth.<br><br>
+
+            <b> Number of moves: 19 </b>
+          </p>
+
           <img src="images/pattern/10th_kup.png" alt="" width="150px" height="150px">
 
           <!-- Table showing off moves for the pattern -->
@@ -72,302 +84,167 @@
 
             <tr>
               <td><p>1</p></td>
-              <td><p>Step to C (Right Foot)</p></td>
-              <td><p>Walking</p></td>
-              <td><p>Mid</p></td>
-              <td><p>Obverse Punch</p></td>
-            </tr>
-
-            <tr>
-              <td><p>2</p></td>
               <td><p>Turn to A</p></td>
               <td><p>Walking</p></td>
               <td><p>Low</p></td>
-              <td><p>Outer forearm block</p></td>
-            </tr>
+              <td><p>Outer Forearm Block</p></td>
+            </tr> <!-- Each move -->
 
             <tr>
-              <td><p>3</p></td>
+              <td><p>2</p></td>
               <td><p>Step to A</p></td>
               <td><p>Walking</p></td>
               <td><p>Mid</p></td>
               <td><p>Obverse Punch</p></td>
-            </tr>
+            </tr> <!-- Each move -->
 
             <tr>
-              <td><p >4</p></td>
-              <td><p >Turn to D</p></td>
-              <td><p >Walking</p></td>
-              <td><p >Low</p></td>
-              <td ><p >Outer Forearm Block</p></td>
-            </tr>
-
-            <tr>
-              <td ><p >5</p></td>
-              <td ><p >Step to D</p></td>
-              <td ><p >Walking</p></td>
-              <td ><p >Mid</p></td>
-              <td ><p >Obverse Punch</p></td>
-            </tr>
-
-            <tr>
-              <td><p >6</p></td>
-              <td><p >Turn to B</p></td>
-              <td><p >Walking</p></td>
-              <td><p >Low</p></td>
-              <td ><p >Outer Forearm Block</p></td>
-            </tr>
-
-            <tr>
-              <td><p >7</p></td>
-              <td><p >Step to B</p></td>
-              <td><p >Walking</p></td>
-              <td><p >Mid</p></td>
-              <td ><p >Obverse Punch</p></td>
-            </tr>
-
-            <tr>
-              <td><p ></p></td>
-              <td><p >To End</p></td>
-              <td><p >Parallel Ready</p></td>
-              <td><p ></p></td>
-              <td ><p>Right foot moves</p></td>
-            </tr>
-
-            <tr>
-              <td><p>1</p></td>
-              <td><p>Step to C (Left Foot)</p></td>
-              <td><p>Walking</p></td>
-              <td><p>mid</p></td>
-              <td><p>obverse punch</p></td>
-            </tr>
-
-            <tr>
-              <td><p>2</p></td>
+              <td><p>3</p></td>
               <td><p>Turn to B</p></td>
               <td><p>Walking</p></td>
               <td><p>Low</p></td>
               <td><p>Outer Forearm Block</p></td>
-            </tr>
+            </tr> <!-- Each move -->
 
             <tr>
-              <td><p>3</p></td>
+              <td><p>4</p></td>
               <td><p>Step to B</p></td>
               <td><p>Walking</p></td>
               <td><p>Mid</p></td>
               <td><p>Obverse Punch</p></td>
-            </tr>
+            </tr> <!-- Each move -->
 
             <tr>
-              <td><p>4</p></td>
+              <td><p>5</p></td>
+              <td><p>Turn to C</p></td>
+              <td><p>Walking</p></td>
+              <td><p>Low</p></td>
+              <td><p>Outer Forearm Block</p></td>
+            </tr> <!-- Each move -->
+
+            <tr>
+              <td><p>6</p></td>
+              <td><p>Step to C</p></td>
+              <td><p>Walking</p></td>
+              <td><p>Mid</p></td>
+              <td><p>Obverse Punch</p></td>
+            </tr> <!-- Each move -->
+
+            <tr>
+              <td><p>7</p></td>
               <td><p>Turn to D</p></td>
               <td><p>Walking</p></td>
               <td><p>Low</p></td>
               <td><p>Outer Forearm Block</p></td>
-            </tr>
+            </tr> <!-- Each move -->
 
             <tr>
-              <td><p>5</p></td>
+              <td><p>8</p></td>
               <td><p>Step to D</p></td>
               <td><p>Walking</p></td>
               <td><p>Mid</p></td>
               <td><p>Obverse Punch</p></td>
-            </tr>
+            </tr> <!-- Each move -->
 
             <tr>
-              <td><p>6</p></td>
-              <td><p>Turn to A</p></td>
+              <td><p>9</p></td>
+              <td><p>Turn to B</p></td>
+              <td><p>L</p></td>
+              <td><p>Mid</p></td>
+              <td><p>Inner Forearm Block</p></td>
+            </tr> <!-- Each move -->
+
+            <tr>
+              <td><p>10</p></td>
+              <td><p>Step to B</p></td>
               <td><p>Walking</p></td>
-              <td><p>Low</p></td>
-              <td><p>Outer Forearm Block</p></td>
-            </tr>
+              <td><p>Mid</p></td>
+              <td><p>Obverse Punch</p></td>
+            </tr> <!-- Each move -->
 
             <tr>
-              <td><p>7</p></td>
+              <td><p>11</p></td>
+              <td><p>Turn to A</p></td>
+              <td><p>L</p></td>
+              <td><p>Mid</p></td>
+              <td><p>Inner Forearm Block</p></td>
+            </tr> <!-- Each move -->
+
+            <tr>
+              <td><p>12</p></td>
               <td><p>Step to A</p></td>
               <td><p>Walking</p></td>
               <td><p>Mid</p></td>
               <td><p>Obverse Punch</p></td>
-            </tr>
+            </tr> <!-- Each move -->
 
             <tr>
-              <td></td>
-              <td<p>To End</p></td>
+              <td><p>13</p></td>
+              <td><p>Turn to D</p></td>
+              <td><p>L</p></td>
+              <td><p>Mid</p></td>
+              <td><p>Inner Forearm Block</p></td>
+            </tr> <!-- Each move -->
+
+            <tr>
+              <td><p>14</p></td>
+              <td><p>Step to D</p></td>
+              <td><p>Walking</p></td>
+              <td><p>Mid</p></td>
+              <td><p>Obverse Punch</p></td>
+            </tr> <!-- Each move -->
+
+            <tr>
+              <td><p>15</p></td>
+              <td><p>Turn to C</p></td>
+              <td><p>L</p></td>
+              <td><p>Mid</p></td>
+              <td><p>Inner Forearm Block</p></td>
+            </tr> <!-- Each move -->
+
+            <tr>
+              <td><p>16</p></td>
+              <td><p>Step to C</p></td>
+              <td><p>Walking</p></td>
+              <td><p>Mid</p></td>
+              <td><p>Obverse Punch</p></td>
+            </tr> <!-- Each move -->
+
+            <tr>
+              <td><p>17</p></td>
+              <td><p>Step to C</p></td>
+              <td><p>Walking</p></td>
+              <td><p>Mid</p></td>
+              <td><p>Obverse Punch</p></td>
+            </tr> <!-- Each move -->
+
+            <tr>
+              <td><p>18</p></td>
+              <td><p>Step to D</p></td>
+              <td><p>Walking</p></td>
+              <td><p>Mid</p></td>
+              <td><p>Obverse Punch</p></td>
+            </tr> <!-- Each move -->
+
+            <tr>
+              <td><p>19</p></td>
+              <td><p>Step to C</p></td>
+              <td><p>Walking</p></td>
+              <td><p>Mid</p></td>
+              <td><p>Obverse Punch</p></td>
+            </tr> <!-- Each move -->
+
+            <tr>
+              <td><p></p></td>
+              <td><p>To End</p></td>
               <td><p>Parallel Ready</p></td>
               <td><p></p></td>
-              <td><p>Left Foot Moves</p></td>
-              <td><p></p></td>
-            </tr>
+              <td><p>Left Foote Moves</p></td>
+            </tr> <!-- Each move -->
+
             </tbody> 
-          </table> <!-- End of sajo jirugi pattern -->
+          </table> <!-- End of Chon-Ji pattern -->
 
-          <h3>Saju Magki <small>Four Directional Block</small></h3>
-          <table class="table table-hover">
-
-            <thead>
-              <tr>
-                <th><p>No</p></th>
-                <th><p>Move</p></th>
-                <th><p>Stance</p></th>
-                <th><p>Section</p></th>
-                <th><p>Action</p></th>
-              </tr>
-            </thead>
-
-            <tbody>
-              <tr>
-                <td><p></p></td>
-                <td><p>To Begin</p></td>
-                <td><p>Parallel Ready</p></td>
-                <td><p></p></td>
-                <td><p></p></td>
-              </tr>
-              
-              <tr>
-                <td><p>1</p></td>
-                <td><p>Step Right Foot</p></td>
-                <td><p>Walking</p></td>
-                <td><p>Low</p></td>
-                <td><p>Knifehand Block</p></td>
-              </tr>
-              
-              <tr>
-                <td><p>2</p></td>
-                <td><p>Step to C</p></td>
-                <td><p>Walking</p></td>
-                <td><p>Mid</p></td>
-                <td><p>Inner Forearm Block</p></td>
-              </tr>
-              
-              <tr>
-                <td><p>3</p></td>
-                <td><p>Turn to A</p></td>
-                <td><p>Walking</p></td>
-                <td><p>Low</p></td>
-                <td><p>Knifehand Block</p></td>
-              </tr>
-              
-              <tr>
-                <td><p>4</p></td>
-                <td><p>Step to A</p></td>
-                <td><p>Walking</p></td>
-                <td><p>Mid</p></td>
-                <td><p>Inner Forearm Block</p></td>
-              </tr>
-              
-              <tr>
-                <td><p>5</p></td>
-                <td><p>Turn to D</p></td>
-                <td><p>Walking</p></td>
-                <td><p>Low</p></td>
-                <td><p>Knifehand Block</p></td>
-              </tr>
-              
-              <tr>
-                <td><p>6</p></td>
-                <td><p>Step to D</p></td>
-                <td><p>Walking</p></td>
-                <td><p>Mid</p></td>
-                <td><p>Inner Forearm Block</p></td>
-              </tr>
-              
-              <tr>
-                <td><p>7</p></td>
-                <td><p>Turn to B</p></td>
-                <td><p>Walking</p></td>
-                <td><p>Low</p></td>
-                <td><p>Knifehand Block</p></td>
-              </tr>
-              
-              <tr>
-                <td><p>8</p></td>
-                <td><p>Step to B</p></td>
-                <td><p>Walking</p></td>
-                <td><p>Mid</p></td>
-                <td><p>Inner Forearm Block</p></td>
-              </tr>
-              
-              <tr>
-                <td><p></p></td>
-                <td><p>To End</p></td>
-                <td><p>Parallel Ready</p></td>
-                <td><p></p></td>
-                <td><p>Right Foot Moves</p></td>
-              </tr>
-              
-              <tr>
-                <td><p>1</p></td>
-                <td><p>Step Left Foot Back</p></td>
-                <td><p>Walking</p></td>
-                <td><p>Low</p></td>
-                <td ><p>Knifehand Block</p></td>
-              </tr>
-              
-              <tr>
-                <td><p>2</p></td>
-                <td><p>Step to C</p></td>
-                <td><p>Walking</p></td>
-                <td><p>Mid</p></td>
-                <td><p>Inner Forearm Block</p></td>
-              </tr>
-              
-              <tr>
-                <td><p>3</p></td>
-                <td><p>Turn to B</p></td>
-                <td><p>Walking</p></td>
-                <td><p>Low</p></td>
-                <td><p>Knifehand Block</p></td>
-              </tr>
-              
-              <tr>
-                <td><p>4</p></td>
-                <td><p>Step to B</p></td>
-                <td><p>Walking</p></td>
-                <td><p>Mid</p></td>
-                <td><p>Inner Forearm Block</p></td>
-              </tr>
-              
-              <tr>
-                <td><p>5</p></td>
-                <td><p>Turn to D</p></td>
-                <td><p>Walking</p></td>
-                <td><p>Low</p></td>
-                <td><p>Knifehand Block</p></td>
-              </tr>
-              
-              <tr>
-                <td><p>6</p></td>
-                <td><p>Step to D</p></td>
-                <td><p>Walking</p></td>
-                <td><p>Mid</p></td>
-                <td><p>Inner Forearm Block</p></td>
-              </tr>
-              
-              <tr>
-                <td><p>7</p></td>
-                <td><p>Turn to A</p></td>
-                <td><p>Walking</p></td>
-                <td><p>Low</p></td>
-                <td><p>Knifehand Block</p></td>
-              </tr>
-              
-              <tr>
-                <td><p>8</p></td>
-                <td><p>Step to A</p></td>
-                <td><p>Walking</p></td>
-                <td><p>Mid</p></td>
-                <td><p>Inner Forearm Block</p></td>
-              </tr>
-              
-              <tr>
-                <td><p></p></td>
-                <td><p>To End</p></td>
-                <td><p>Parallel Ready</p></td>
-                <td><p></p></td>
-                <td><p>Left Foot Moves</p></td>
-              </tr>
-            </tbody>
-          </table> <!-- End of saju magki -->
 
           <div class="sparring">
             <h3>Sambo Matsogi <small>Three Step Sparring</small></h3>
@@ -388,30 +265,31 @@
               of front foot in walking stance next to heel of defenders foot while in Parallel Ready Stance.
               Attacker kihaps when ready to attack, the defender then kihaps when ready.<br> <br>
 
-              <b>Footwork </b><br><br>
-              <b>Attacker:</b> steps forward into right walking stance.<br>
-              <b>Defender:</b> steps back into a left walking stance. <br>
-              <b>Attacker:</b> steps forward into a left walking stance. <br>
-              <b>Defender:</b> steps back into a right walking stance.<br>
-              <b>Attacker:</b> steps forward into a right walking stance.<br>
-              <b>Defender:</b> steps back into a left walking stance. <br>
+              <b>Number 1</b><br><br>
+              <b>Attacker:</b> steps forward into right walking stance, obverse middle punch. <br>
+              <b>Defender:</b> steps back into a left walking stance performing middle inside inner forearm block
+              with the left hand. <br>
+              <b>Attacker:</b> steps forward into a left walking stance, middle obverse punch. <br>
+              <b>Defender:</b> steps back into a right walking stance performing middle inside inner forearm
+              block with the right hand.<br>
+              <b>Attacker:</b> steps forward into a right walking stance middle obverse punch.<br>
+              <b>Defender:</b> steps back into a left walking stance performing middle inside inner forearm block
+              with the left hand. Counters with a reverse punch with the right hand to the point of the chin.
+              Kihap on this punch.<br>
             </p>
 
-            <h3>Banjayu Matsogi <small>Semi-Free Sparring</small></h3>
-
+            <h3>Jayu Matsogi <small>Free Sparring</small></h3>
             <p class="larger-font">
-              Ready position for both attacker and defender move right leg back to L-stance forearm
-              guarding block. <br><br>
-              <b>Attacker</b> kihaps when ready to attack, the defender then kihaps when ready. <br>
-              <b>Attacker:</b> steps forward with three kicks and finishes in guarding block.<br>
-              <b>Defender:</b> steps back blocking or moving out the way of the kicks. Counters with a kick and
-              lands in forearm guarding block. Kihap on finish.
+              The sporting side of Taekwon-Do, use of controlled techniques in open combat, with no prearranged
+              format. No or light contact depending on protective pads worn, no attacking to the
+              back or below belt level.
             </p>
         </div> <!-- End of sparring -->
       
           <div class="theory">
             <h3>Theory</h3>
             <p class="larger-font">
+              Note: You may be asked questions on lower grade theory, so make sure you know it.<br> <br>
               <b>Tae kwon Do</b> – means Kicking & Punching Art; or foot fist way of life. <br>
               <b>Founder of TaeKwon Do</b> – Grand Master Choi Hong Hi 9th Degree Black belt <br>
               <b>President & Chief of GTUK</b> – Master Oldham 8th Degree Black belt <br><br>
