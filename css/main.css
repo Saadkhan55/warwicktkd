@@ -548,6 +548,7 @@ body {
 .panel-group .panel-default .panel-heading a:hover,
 .panel-group .panel-default .panel-heading a:focus {
   background: #1f6fe6;
+  color: #ffffff;
   text-decoration: none;
 }
 .panel-group .panel-default .panel-heading .open a .fa-minus {

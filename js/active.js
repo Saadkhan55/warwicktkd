@@ -13,11 +13,15 @@ $(document).ready(function() {
       $(".home").addClass("active");
       break;
 
-    case "News" :
+    case "News Page" :
       $(".news").addClass("active");
       break;
 
     case "Gallery" :
+      $(".news").addClass("active");
+      break;
+
+    case "Calendar" :
       $(".news").addClass("active");
       break;
 
@@ -61,7 +65,23 @@ $(document).ready(function() {
       $(".students").addClass("active");
       break;
 
-    case "Contact Us" :
+    case "Blue Belt (4th Kup)" :
+      $(".students").addClass("active");
+      break;
+
+    case "Red Tag (3rd Kup)" :
+      $(".students").addClass("active");
+      break;
+
+    case "Red Belt (2nd Kup)" :
+      $(".students").addClass("active");
+      break;
+
+    case "Black Tag (1st Kup)" :
+      $(".students").addClass("active");
+      break;
+
+    case "contact.php" :
       $(".contact").addClass("active");
       break;
   }
