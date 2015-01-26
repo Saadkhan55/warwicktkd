@@ -192,7 +192,7 @@
 
             <tr>
               <td></td>
-              <td<p>To End</p></td>
+              <td><p>To End</p></td>
               <td><p>Parallel Ready</p></td>
               <td><p></p></td>
               <td><p>Left Foot Moves</p></td>

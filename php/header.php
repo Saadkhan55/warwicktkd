@@ -41,10 +41,10 @@
                 <li><a href="quiz.php">Theory Quiz</a></li>
                 <li><a href="white-belt.php">White Belt</a></li>
                 <li><a href="yellow-tag.php">Yellow Tag</a></li>
-                <li><a href="#">Yellow Belt</a></li>
-                <li><a href="#">Green Tag</a></li>
-                <li><a href="#">Green Belt</a></li>
-                <li><a href="#">Green Tag</a></li>
+                <li><a href="yellow-belt.php">Yellow Belt</a></li>
+                <li><a href="green-tag.php">Green Tag</a></li>
+                <li><a href="green-belt.php">Green Belt</a></li>
+                <li><a href="blue-tag.php">Blue Tag</a></li>
                 <li><a href="#">Blue Belt</a></li> 
                 <li><a href="#">Red Tag</a></li> 
                 <li><a href="#">Red Belt</a></li> 
