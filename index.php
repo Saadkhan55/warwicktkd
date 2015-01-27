@@ -120,27 +120,27 @@
         <div class="container">
           <div class="row">
 
-            <a href="#">
+            <a href="beginners.php">
               <div class="col-md-4">
                 <i class="fa fa-user"></i>
                  <h2>Beginner Guide</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ac mauris eu velit euismod sodales. Nullam ipsum leo, volutpat vitae accumsan quis, ornare vel diam. </p>
+                <p>New to the club, or looking to start Tae Kwon Do. Have a look at our beginners guide to help answer some of your questions.</p>
               </div>
             </a> <!-- End of first story -->
 
-            <a href="#">
+            <a href="training.php">
               <div class="col-md-4">
                 <i class="fa fa-info"></i>
                  <h2>About Us</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ac mauris eu velit euismod sodales. Nullam ipsum leo, volutpat vitae accumsan quis, ornare vel diam. </p>
+                <p>Learn more about what are training times and where we train. Also learn the cost of joining the club</p>
               </div>
             </a> <!-- End of second story -->
 
-            <a href="#">
+            <a href="team.php">
               <div class="col-md-4">
                 <i class="fa fa-users"></i>
                  <h2>Exec Team</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ac mauris eu velit euismod sodales. Nullam ipsum leo, volutpat vitae accumsan quis, ornare vel diam. </p>
+                <p>Get to know all the great people that run the club. Learn a bit about them and what they do.</p>
               </div>
             </a> <!-- End of third story -->
 
