@@ -315,43 +315,29 @@
 
 
           <div class="sparring">
-            <h3>Sambo Matsogi <small>Three Step Sparring</small></h3>
+            <h3>Ilbo Matsogi <small>One Step Sparring</small></h3>
 
             <p class="larger-font">
-              <b>General Points <br></b> <br>
-              The attacker steps forward three times in a walking stance. The defender steps back three
-              times in a walking stance. The pattern of the feet should go, attackers foot outside, inside,
-              outside. <br><br>
+              <b>Number 3</b><br><br>
+              Step back on your left leg to form a left L-stance while performing a right middle
+              inward inside outer forearm block.<br><br>
 
-              <b>Line up by: <br><br></b>
-              Attacker placing front foot of walking stance parallel to defenders foot while in Parallel Ready
-              Stance for partners of the same height. <br>
+              Straighten your back leg and chamber the hands, as you sit back down into the stance
+              perform a back fist strike to the nose or temple. Kihap on this technique.<br><br>
 
-              If the attacker is taller then the walking stance should be in front of the defender (toes of
-              walking stance next to toes of defenders foot while in Parallel Ready Stance.
-              If the attacker is shorter then the walking stance should be to the back of the defender (heel
-              of front foot in walking stance next to heel of defenders foot while in Parallel Ready Stance.
-              Attacker kihaps when ready to attack, the defender then kihaps when ready.<br> <br>
+              Swap for left attack.<br><br>
 
-              <b>Number 1</b><br><br>
-              <b>Attacker:</b> steps forward into right walking stance, obverse middle punch. <br>
-              <b>Defender:</b> steps back into a left walking stance performing middle inside inner forearm block
-              with the left hand. <br>
-              <b>Attacker:</b> steps forward into a left walking stance, middle obverse punch. <br>
-              <b>Defender:</b> steps back into a right walking stance performing middle inside inner forearm
-              block with the right hand.<br>
-              <b>Attacker:</b> steps forward into a right walking stance middle obverse punch.<br>
-              <b>Defender:</b> steps back into a left walking stance performing middle inside inner forearm block
-              with the left hand. Counters with a reverse punch with the right hand to the point of the chin.
-              Kihap on this punch.<br>
-            </p>
+              <b>Number 4</b><br><br>
+              Slip your left leg off on 45 degrees to the outside of the attack to form a sitting stance,
+              while performing a palm block with the left hand, connecting just above the elbow.<br><br>
 
-            <h3>Jayu Matsogi <small>Free Sparring</small></h3>
-            <p class="larger-font">
-              The sporting side of Taekwon-Do, use of controlled techniques in open combat, with no prearranged
-              format. No or light contact depending on protective pads worn, no attacking to the
-              back or below belt level.
-            </p>
+              Counter, remaining in sitting stance with a punch to the head and then to the ribs.<br><br>
+              Kihap on the last punch. 
+
+              Swap for left attack.<br><br>
+
+          </p>
+
         </div> <!-- End of sparring -->
       
           <div class="theory">

@@ -394,7 +394,7 @@
 
 
           <div class="sparring">
-            <h3>Sambo Matsogi <small>Three Step Sparring</small></h3>
+            <h3>Ilbo Matsogi <small>One Step Sparring</small></h3>
 
             <p class="larger-font">
               <b>Number 5</b><br><br>
