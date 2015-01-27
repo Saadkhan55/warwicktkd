@@ -44,7 +44,7 @@
           
           </p> <!-- End of grading requirement -->
 
-          <h3>Joong-Gun<small>An Joong Gun</small></h3>
+          <h3>Hwa-Rang<small>Youth Group</small></h3>
 
           <p class="larger-font">
             <b>  Meaning </b> <br> <br>

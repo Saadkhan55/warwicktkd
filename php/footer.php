@@ -9,24 +9,24 @@
           <div class="left">
              <ul class="unlisted">
                 <li><a href="index.php">HOME</a></li>
-                <li><a href="#">NEWS</a></li>
-                <li><a href="#">CALENDAR</a></li>
+                <li><a href="news.php">NEWS</a></li>
+                <li><a href="calendar">CALENDAR</a></li>
              </ul> 
           </div>    
 
           <div class="middle">
              <ul class="unlisted">
-                <li><a href="#">GALLERY</a></li>
-                <li><a href="#">BEGINNERS</a></li>
-                <li><a href="#">SOCIALS</a></li>
+                <li><a href="gallery.php">GALLERY</a></li>
+                <li><a href="beginners.php">BEGINNERS</a></li>
+                <li><a href="quiz.php">Quiz</a></li>
              </ul> 
           </div>  
 
           <div class="right">
              <ul class="unlisted">
-                <li><a href="#">EXEC TEAM</a></li>
-                <li><a href="#">TRAINING</a></li>
-                <li><a href="#">CONTACT</a></li>
+                <li><a href="team.php">EXEC TEAM</a></li>
+                <li><a href="training.php">TRAINING</a></li>
+                <li><a href="contact.php">CONTACT</a></li>
              </ul> 
           </div>    
         </div><!--End of row-->
@@ -34,11 +34,18 @@
         <div class="social">
           <h2>SOCIAL</h2>
           <div class="social-button">
-            <img src="images/social/facebook.png" alt="">
-            <img src="images/social/google+.png" alt="">
-            <img src="images/social/instagram.png" alt="">
-            <img src="images/social/twitter.png" alt="">
-            <img src="images/social/youtube.png" alt="">
+            <a href="https://www.facebook.com/groups/warwicktkd" target="_blank">
+              <img src="images/social/facebook.png" alt="Facebook">
+            </a>
+            <a href="https://www.google.com/calendar/embed?src=taekwondowarwick%40gmail.com" target="_blanK">
+              <img src="images/social/google+.png" alt="Google Calendar" target="_blanK">
+            </a>
+            <a href="https://twitter.com/warwicktkd" target="_blanK">
+              <img src="images/social/twitter.png" alt="Twitter">
+            </a>
+            <a href="https://www.youtube.com/channel/UC926iPSTDZ-m5TgpTiXdn4Q" target="_blanK">
+              <img src="images/social/youtube.png" alt="Youtube">
+            </a>
           </div> <!--End of social buttons -->
         </div> <!-- End of social -->
       </div> <!--End of first col-->
