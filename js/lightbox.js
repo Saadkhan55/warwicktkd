@@ -9,12 +9,6 @@ $(document).ready(function() {
       $('#content').append('<i class="fa fa-chevron-right"></i>');
       $('#content').append('<i class="fa fa-chevron-left"></i>');
       //show lightbox
-
-      //Get location of picture in project directory
-      var image_src = $(this).find("img").attr("src");
-      
-      //add this picture to the lightbox, (inside content)
-      $('#content').append('<img src="' + image_src + '" /> ');
       //show lightbox div
       $('#lightbox').fadeIn("500");
 
