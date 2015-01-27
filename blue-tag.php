@@ -40,11 +40,11 @@
 
             <b>Application of Technique</b><br><br>
             Releases from single rear shoulder grab<br>
-            Releases fronm double front chest grab<br><br>
+            Releases from double front chest grab<br><br>
           
           </p> <!-- End of grading requirement -->
 
-          <h3>Won-Hyo Tul <small>Monk</small></h3>
+          <h3>Yul-Gok Tul <small>Yi</small></h3>
 
           <p class="larger-font">
             <b>  Meaning </b> <br> <br>
@@ -384,9 +384,9 @@
             <tr>
               <td><p></p></td>
               <td><p>To End</p></td>
-              <td><p>Close Ready A</p></td>
+              <td><p>Parallel Ready</p></td>
               <td><p></p></td>
-              <td><p>Right Foot Moves</p></td>
+              <td><p>Left Foot Moves</p></td>
             </tr> <!-- Each move -->
 
             </tbody> 
