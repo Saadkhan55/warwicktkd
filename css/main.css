@@ -124,7 +124,7 @@ small {
   -moz-transition: 0.25s;
   -ms-transition: 0.25s;
   -o-transition: 0.25s;
-  background: #d43f3a;
+  background: #c9302c;
 }
 .form-control {
   border-radius: 0;
@@ -216,7 +216,7 @@ body {
 .navbar-default {
   background: #ffffff;
   font-family: 'Raleway', sans;
-  height: 75px;
+  height: 100px;
 }
 @media (max-width: 1023px) {
   .navbar-default .container {
@@ -244,11 +244,11 @@ body {
   padding: 15px 0;
 }
 .navbar-default .navbar-brand img {
-  height: 50px;
-  width: 120px;
+  height: 80px;
+  width: 110px;
 }
 .navbar-default .navbar-nav {
-  padding-top: 20px;
+  padding-top: 40px;
 }
 .navbar-default .navbar-nav li a {
   color: #777777;
@@ -332,7 +332,10 @@ body {
   font-weight: 300;
   padding-bottom: 20px;
 }
-#footer i {
+#footer h2 i {
+  font-size: 0.8em;
+}
+#footer .fa-chevron-up {
   z-index: 1100;
   color: #fff;
   font-size: 2em;
@@ -342,7 +345,7 @@ body {
   right: 20px;
   background: rgba(0, 0, 0, 0.6);
 }
-#footer i:hover {
+#footer .fa-chevron-up:hover {
   background: rgba(0, 0, 0, 0.8);
   transition: 0.35s;
   -webkit-transition: 0.35s;
@@ -796,22 +799,223 @@ body {
   color: #367ee9;
   margin-bottom: 30px;
 }
-#quiz-container .intro h4 {
-  margin-bottom: 25px;
-}
-#quiz-container .intro .select {
-  margin-bottom: 20px;
-}
 #quiz-container .intro .start {
   margin-bottom: 20px;
-  height: 50px;
+  height: 70px;
   width: 200px;
+  font-size: 36px;
+  font-weight: 100;
+}
+#quiz-container .intro .radio-inline + .radio-inline {
+  margin-left: 0;
+}
+#quiz-container .intro .radio-inline {
+  height: 70px;
+  width: 170px;
+  text-align: center;
+  padding-top: 20px;
+  font-size: 22px;
+  border: 1px solid #ddd;
+  padding-right: 20px;
+  margin-right: 10px;
+}
+@media (max-width: 1023px) {
+  #quiz-container .intro .radio-inline {
+    display: block;
+    width: 100%;
+  }
+}
+#quiz-container .intro .radio-inline .fa {
+  display: none;
+  font-size: 4em;
+  position: relative;
+  top: -55px;
+  opacity: 0.95;
+  color: #ffffff;
+}
+#quiz-container .intro .radio-inline .grade {
+  -webkit-appearance: button;
+  /* WebKit */
+  -moz-appearance: button;
+  /* Mozilla */
+  -o-appearance: button;
+  /* Opera */
+  -ms-appearance: button;
+  /* Internet Explorer */
+  appearance: button;
+  /* CSS3 */
+}
+#quiz-container .intro .radio-inline .grade:checked + .fa {
+  display: block;
+  transition: 0.35s;
+  -webkit-transition: 0.35s;
+  -moz-transition: 0.35s;
+  -ms-transition: 0.35s;
+  -o-transition: 0.35s;
+}
+#quiz-container .intro .white {
+  background: #ffffff;
+}
+#quiz-container .intro .white:hover,
+#quiz-container .intro .white.active {
+  transition: 0.25s;
+  -webkit-transition: 0.25s;
+  -moz-transition: 0.25s;
+  -ms-transition: 0.25s;
+  -o-transition: 0.25s;
+  background: #e6e6e6;
+}
+#quiz-container .intro .yellow {
+  background: #ffd600;
+}
+#quiz-container .intro .yellow:hover,
+#quiz-container .intro .yellow.active {
+  transition: 0.25s;
+  -webkit-transition: 0.25s;
+  -moz-transition: 0.25s;
+  -ms-transition: 0.25s;
+  -o-transition: 0.25s;
+  background: #ffde33;
+}
+#quiz-container .intro .yellow-darker {
+  background: #ffd600;
+}
+#quiz-container .intro .yellow-darker:hover,
+#quiz-container .intro .yellow-darker.active {
+  transition: 0.45s;
+  -webkit-transition: 0.45s;
+  -moz-transition: 0.45s;
+  -ms-transition: 0.45s;
+  -o-transition: 0.45s;
+  background: #edB800;
+}
+#quiz-container .intro .green {
+  background: #449d44;
+  color: #ffffff;
+}
+#quiz-container .intro .green:hover,
+#quiz-container .intro .green.active {
+  transition: 0.45s;
+  -webkit-transition: 0.45s;
+  -moz-transition: 0.45s;
+  -ms-transition: 0.45s;
+  -o-transition: 0.45s;
+  background: #5cb85c;
+}
+#quiz-container .intro .green-darker {
+  background: #449d44;
+  color: #ffffff;
+}
+#quiz-container .intro .green-darker:hover,
+#quiz-container .intro .green-darker.active {
+  transition: 0.45s;
+  -webkit-transition: 0.45s;
+  -moz-transition: 0.45s;
+  -ms-transition: 0.45s;
+  -o-transition: 0.45s;
+  background: #2d682d;
+}
+#quiz-container .intro .blue {
+  background: #367ee9;
+  color: #ffffff;
+}
+#quiz-container .intro .blue:hover,
+#quiz-container .intro .blue.active {
+  transition: 0.45s;
+  -webkit-transition: 0.45s;
+  -moz-transition: 0.45s;
+  -ms-transition: 0.45s;
+  -o-transition: 0.45s;
+  background: #649cee;
+}
+#quiz-container .intro .blue-darker {
+  background: #367ee9;
+  color: #ffffff;
+}
+#quiz-container .intro .blue-darker:hover,
+#quiz-container .intro .blue-darker.active {
+  transition: 0.45s;
+  -webkit-transition: 0.45s;
+  -moz-transition: 0.45s;
+  -ms-transition: 0.45s;
+  -o-transition: 0.45s;
+  background: #1559be;
+}
+#quiz-container .intro .red {
+  background: #ff3530;
+  color: #ffffff;
+}
+#quiz-container .intro .red:hover,
+#quiz-container .intro .red.active {
+  transition: 0.45s;
+  -webkit-transition: 0.45s;
+  -moz-transition: 0.45s;
+  -ms-transition: 0.45s;
+  -o-transition: 0.45s;
+  background: #ff6763;
+}
+#quiz-container .intro .red-darker {
+  background: #ff120c;
+  color: #ffffff;
+}
+#quiz-container .intro .red-darker:hover,
+#quiz-container .intro .red-darker.active {
+  transition: 0.45s;
+  -webkit-transition: 0.45s;
+  -moz-transition: 0.45s;
+  -ms-transition: 0.45s;
+  -o-transition: 0.45s;
+  background: #c90500;
+}
+#quiz-container .intro .black {
+  background: #454545;
+  color: #ffffff;
+}
+#quiz-container .intro .black:hover,
+#quiz-container .intro .black.active {
+  transition: 0.45s;
+  -webkit-transition: 0.45s;
+  -moz-transition: 0.45s;
+  -ms-transition: 0.45s;
+  -o-transition: 0.45s;
+  background: #111111;
+}
+#quiz-container .intro .row {
+  margin-bottom: 30px;
+}
+#quiz-container .question .row {
+  text-align: center;
 }
 #quiz-container .question h3 {
   text-align: center;
 }
-#quiz-container .question .radio {
-  padding: 10px;
+#quiz-container .question .number {
+  padding-top: 20px;
+  margin-top: 10px;
+  height: 80px;
+  width: 100px;
+  background: #333;
+  color: #ffffff;
+}
+#quiz-container .question label {
+  font-size: 22px;
+  height: 80px;
+  width: 350px;
+  background: #4d4d4d;
+  padding-top: 20px;
+  color: #ffffff;
+}
+#quiz-container .question label .choice {
+  -webkit-appearance: button;
+  /* WebKit */
+  -moz-appearance: button;
+  /* Mozilla */
+  -o-appearance: button;
+  /* Opera */
+  -ms-appearance: button;
+  /* Internet Explorer */
+  appearance: button;
+  /* CSS3 */
 }
 #quiz-container .question .correct {
   color: #449d44;

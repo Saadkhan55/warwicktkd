@@ -12,21 +12,60 @@
       <div id="quiz-container" class="container">
         <div class="intro">
           <h2>Tae Kwon Do - Theory Quiz</h2>
-          <h4>Select Grade</h4>
 
-          <select class="form-control select">
-            <option>White Belt</option>
-            <option>Yellow Tag</option>
-            <option>Yellow Belt</option>
-            <option>Green Tag</option>
-            <option>Green Belt</option>
-            <option>Blue Tag</option>
-            <option>Blue Belt</option>
-            <option>Red Tag</option>
-            <option>Red Belt</option>
-            <option>Black Tag</option>
-            <option>Black Belt</option>
-          </select> <!-- Select option to pick which grade questions user wants -->
+          <div class="row">
+            <label class="radio-inline white active">
+              <input type="radio" name="option" class="grade" id="inlineRadio1" value="1" checked> White Belt
+              <i class="fa fa-check"></i>
+            </label>
+            
+            <label class="radio-inline yellow">
+              <input type="radio" name="option"  class="grade" id="inlineRadio2" value="2"> Yellow Tag
+              <i class="fa fa-check"></i>
+            </label>
+            
+            <label class="radio-inline yellow-darker">
+              <input type="radio" name="option" class="grade" id="inlineRadio3" value="3"> Yellow Belt
+              <i class="fa fa-check"></i>
+            </label>
+            
+            <label class="radio-inline green">
+              <input type="radio" name="option" class="grade" id="inlineRadio4" value="4"> Green Tag
+              <i class="fa fa-check"></i>
+            </label>
+            
+            <label class="radio-inline green-darker">
+              <input type="radio" name="option" class="grade" id="inlineRadio5" value="5"> Green Belt
+              <i class="fa fa-check"></i>
+            </label>
+          </div> <!-- End of row -->
+
+          <div class="row">
+            <label class="radio-inline blue">
+              <input type="radio" name="option" class="grade" id="inlineRadio6" value="6"> Blue Tag
+              <i class="fa fa-check"></i>
+            </label>
+            
+            <label class="radio-inline blue-darker">
+              <input type="radio" name="option" class="grade" id="inlineRadio7" value="7"> Blue Belt
+              <i class="fa fa-check"></i>
+            </label>
+            
+            <label class="radio-inline red">
+              <input type="radio" name="option" class="grade" id="inlineRadio8" value="8"> Red Tag
+              <i class="fa fa-check"></i>
+            </label>
+            
+            <label class="radio-inline red-darker">
+              <input type="radio" name="option" class="grade" id="inlineRadio9" value="9"> Red Belt
+              <i class="fa fa-check"></i>
+            </label>
+            
+            <label class="radio-inline black">
+              <input type="radio" name="option" class="grade" id="inlineRadio10" value="10"> Black Tag
+              <i class="fa fa-check"></i>
+            </label>
+          </div> <!-- End of row -->
 
           <button class="btn btn-danger start">Start </button>
         </div> <!-- Introduction page -->

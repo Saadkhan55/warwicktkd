@@ -81,7 +81,7 @@ $(document).ready(function() {
       $(".students").addClass("active");
       break;
 
-    case "contact.php" :
+    case "Contact Us" :
       $(".contact").addClass("active");
       break;
   }

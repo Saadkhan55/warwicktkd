@@ -3,60 +3,27 @@ $(document).ready(function() {
 
   //number used in db to associate with grade i.e. white belt = 1 and black tag = 10;
   var gradeNumber;
-  //store correct answer
-  var correct = 0;
   //current question number
   var questionNo = 1;
   //number of correct answer
   var correctAnswers = 0;
+  //choice
+  var correct;
+
+  //on click on a radio button on intro screen
+  $(".radio-inline").click(function() {
+    //remove current active class
+    $("#quiz-container .radio-inline").removeClass("active")
+    $(this).addClass("active");
+  });
 
   //on click of start button
   $(".start").click(function() {
-    //get grade for questions
-    var select = $(".select").val();
+    //get selected radio button
+    var selected = $("input[type='radio']:checked");
+    //value of button is grade number so get value
+    gradeNumber = selected.val();
 
-    //switch turn name of grade to number i.e. white belt to 1
-    switch(select) {
-      case 'White Belt': 
-        gradeNumber = 1;
-        break;
-
-      case 'Yellow Tag': 
-        gradeNumber = 2;
-        break;
-
-      case 'Yellow Belt': 
-        gradeNumber = 3;
-        break;
-
-      case 'Green Tag': 
-        gradeNumber = 4;
-        break;
-
-      case 'Green Belt': 
-        gradeNumber = 5;
-        break;
-
-      case 'Blue Tag': 
-        gradeNumber = 6;
-        break;
-
-      case 'Blue Belt': 
-        gradeNumber = 7;
-        break;
-
-      case 'Red Tag': 
-        gradeNumber = 8;
-        break;
-
-      case 'Red Belt': 
-        gradeNumber = 9;
-        break;
-
-      case 'Black Tag': 
-        gradeNumber = 10;
-        break;
-    }
     //get next question
     getNextQuestion(gradeNumber);
     $(".intro").fadeOut(800).empty();
@@ -85,34 +52,43 @@ $(document).ready(function() {
   function getQuestion(array) {
     var html = "<h3>" + array.question  + "</h3>";
     html += "<h4 class='warning'>Please select an option</h4>";
+    html += "<div class='container'> <div class='row'>";
 
-    html += '<div class="radio">' + 
-              '<label>' + '<input type="radio" name="Choices" classs="choice" id="Choice1" value="option1">' + 
+
+    html += '<div class="number col-md-2">1</div>';
+    html += '<div class="radio col-md-4">' + 
+              '<label>' + '<input type="radio" name="Choices" class="choice" id="Choice1" value="option1">' + 
                 array.choice1 + 
                '</label>' + 
               '</div>';
 
-    html += '<div class="radio">' + 
+    html += '<div class="number col-md-2">2</div>';
+    html += '<div class="radio col-md-4">' + 
               '<label>' + '<input type="radio" name="Choices" class="choice" id="Choice2" value="option2">' + 
                 array.choice2 + 
                '</label>' + 
-              '</div>';
+              '</div>' + 
+            '</div>'; // end of row
 
-    html += '<div class="radio">' + 
+    html += '<div class="row">'
+
+    html += '<div class="number col-md-2">3</div>';
+    html += '<div class="radio col-md-4">' + 
               '<label>' + '<input type="radio" name="Choices" class="choice" id="Choice3" value="option3">' + 
                 array.choice3 + 
                '</label>' + 
               '</div>';
 
-    html += '<div class="radio">' + 
+    html += '<div class="number col-md-2">4</div>';
+    html += '<div class="radio col-md-4">' + 
               '<label>' + '<input type="radio" name="Choices" class="choice" id="Choice4" value="option4">' + 
                 array.choice4 + 
                '</label>' + 
-              '</div>';
+              '</div>' +
+              '</div>'; // end of row
 
-   html += '<button type="button" class="btn btn-danger next">Next</button>';
-   
-   //store correct answer
+    html += '</div>'; // end of container
+
     correct = array.correct;
     return html;
   }
@@ -136,7 +112,6 @@ $(document).ready(function() {
 
   
   function next() {
-
     //if no correct icon has been added yet add one if not don't -> i.e. stops multiple icons from appearing when next button is pressed
     if(!$(".question").find(".correct").length) {  
       //for all radios
@@ -154,12 +129,12 @@ $(document).ready(function() {
   }
 
   //on click of next body
-  $("body").on('click','.next' , function() {
+  $("body").on('click','label' , function() {
     //if option is selected
     if(optionSelected()) {
       $(".warning").hide();
       //get choice selected 
-      var choice = $(".question input[type='radio']:checked").attr("id");
+      var choice = $(this).children('.choice').attr("id");
       //if answer is correct increment correct answers by 1
       if(choice == correct) {
         correctAnswers++;

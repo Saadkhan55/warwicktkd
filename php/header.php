@@ -7,7 +7,7 @@
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapse-menu">
             <i class="fa fa-bars fa-2x"></i>
           </button>
-          <a class="navbar-brand" href="#"><img src="images/logo.png"></a>
+          <a class="navbar-brand" href="index.php"><img src="images/logo.png"></a>
         </div><!--End of navbar header -->
         <!--Contains navigation items -->
         <div class="navbar-collapse navbar-right collapse" id="collapse-menu">
@@ -16,7 +16,7 @@
             <li><a class="home" href="index.php"><i class="fa fa-home"></i>HOME</a></li>
 
             <li class="dropdown"> 
-              <a href="#" class="dropdown-toggle news" data-toggle="dropdown"><i class="fa fa-newspaper-o"></i>NEWS</a>
+              <a href="#" class="dropdown-toggle news" data-toggle="dropdown"><i class="fa fa-file"></i>NEWS</a>
               <ul class="dropdown-menu" role="menu">
                 <li><a href="news.php">News</a></li>
                 <li><a href="gallery.php">Gallery</a></li>

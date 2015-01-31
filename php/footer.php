@@ -18,7 +18,7 @@
              <ul class="unlisted">
                 <li><a href="gallery.php">GALLERY</a></li>
                 <li><a href="beginners.php">BEGINNERS</a></li>
-                <li><a href="quiz.php">Quiz</a></li>
+                <li><a href="quiz.php">QUIZ</a></li>
              </ul> 
           </div>  
 
@@ -98,11 +98,10 @@
         <div class="address">
           <h2>CONTACT US</h2>
           <p> 
-            100, LOREM ISPUM, LENG <br>
-            LONDON, UK <br>
-            PHONE: 020 1345 6789 <br>
-            FAX: 020 1345 6789 <br>
-            EMAIL: test@test.com <br>
+            Westwood Games Hall <br>
+            University Of Warwick <br>
+            CV4 7AL <br>
+            Email: warwick@test.com <br>
           </p>
         </div> <!--End of address-->
       </div> <!--End of third col-->

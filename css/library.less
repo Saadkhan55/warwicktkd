@@ -101,6 +101,15 @@
   user-select: @args; 
 }
 
+//appearnace 
+.appearance(@param) {
+  -webkit-appearance: @param; /* WebKit */
+  -moz-appearance: @param; /* Mozilla */
+  -o-appearance: @param; /* Opera */
+  -ms-appearance: @param; /* Internet Explorer */
+  appearance: @param; /* CSS3 */
+}
+
 //CSS3 mixins
 .text-shadow (@string: 0 1px 3px rgba(0, 0, 0, 0.25)) {
 	text-shadow: @string;

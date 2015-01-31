@@ -10,7 +10,9 @@
     <!--Add header including logo, and navbar elements -->
       <?php include 'php/header.php' ?>
       <div class="container">
-        <iframe src="https://www.google.com/calendar/embed?src=taekwondowarwick%40gmail.com&ctz=Europe/London%22" width="800" height="600" scrolling="no">
+        <div class="embed-responsive embed-responsive-16by9">
+          <iframe src="https://www.google.com/calendar/embed?src=taekwondowarwick%40gmail.com&ctz=Europe/London%22" width="800" height="600" scrolling="no">
+        </div> <!-- End of repsonsive embed -->
         </iframe> <!-- Google calendar -->
       </div> <!-- End of container -->
     </div><!--End of wrapper -->

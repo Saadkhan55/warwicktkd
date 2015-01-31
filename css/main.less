@@ -19,6 +19,9 @@
 @footer-size: 14px;
 
 @color-white: #fff; 
+@color-yellow: #ffd600; 
+@color-green: #449d44;
+@color-red: #ff3530;
 @color-black: #000; 
 @color-light-grey: #ddd;
 @color-light-blue: #367ee9;
@@ -105,7 +108,7 @@ small {
 
   &:hover {
     .transition(0.25s);
-     background: darken(@color-danger, 5%);
+     background: darken(@color-danger, 10%);
   }
 }
 
@@ -161,6 +164,7 @@ small {
 //
 //  -- GALLERY PAGE
 //    -- LIGHTBOX
+//
 //  -- QUIZ
 //    --JQuery
 //**********************************************************************
@@ -231,7 +235,7 @@ html,body {
 .navbar-default {
   background: @color-white;
   font-family: @header-font, sans;
-  height: 75px;
+  height: 100px;
 
   //on collapse of menu get rid of padding
   .container {
@@ -261,13 +265,13 @@ html,body {
   .navbar-brand {
     padding: 15px 0;
     img {
-      height: 50px;
-      width: 120px;
+      height: 80px;
+      width: 110px;
     }
   }
 
   .navbar-nav {
-    padding-top: 20px;
+    padding-top: 40px;
     //each element of the navbar
     li {
       //change color of each navigation element
@@ -371,10 +375,14 @@ html,body {
   h2 {
     font-weight: 300;
     padding-bottom: 20px;
+
+    i {
+      font-size: 0.8em;
+    }
   }
 
   //back to top page icon
-  i {
+  .fa-chevron-up {
     z-index: 1100;
     color: #fff;
     font-size: 2em;
@@ -1019,30 +1027,191 @@ html,body {
       margin-bottom: 30px;
     }
 
-    h4 {
-      margin-bottom: 25px;
-    }
-
-    .select {
-      margin-bottom: 20px;
-    }
-
     //start button link to start quiz
     .start {
       margin-bottom: 20px;
-      height: 50px;
+      height: 70px;
       width: 200px;
+      font-size: 36px;
+      font-weight:100;
+    }
+
+    .radio-inline+.radio-inline {
+       margin-left: 0;
+    }
+
+
+    .radio-inline {
+      height: 70px;
+      width: 170px;
+      text-align: center;
+      padding-top: 20px;
+      font-size: 22px;
+      border: 1px solid #ddd;
+      padding-right: 20px;
+      margin-right: 10px;
+
+      @media @post-collapse {
+        display: block;
+        width: 100%;
+      }
+
+      //hide tick icon on all radios that are not selected i.e. showing at most one element.
+      .fa {
+        display: none;
+        font-size: 4em;
+        position: relative;
+        top:-55px;
+        opacity: 0.95;
+        color: @color-white;
+      }
+
+      .grade {
+        .appearance(button);
+
+        //when checked is changed to another radio button, show tick icon
+        &:checked+.fa {
+          display: block;
+          .transition(0.35s);
+        }
+      }
+    }
+
+    //colors for different grades lighter for tags and darker for full belts
+    .white {
+      background: @color-white;
+
+      //on hover or iff had active class make darker or lighter
+      &:hover, &.active{
+        .transition(0.25s);
+        background: darken(@color-white, 10%);
+      }
+    }
+
+    .yellow {
+      background: @color-yellow;
+
+      &:hover , &.active{
+        .transition(0.25s);
+        background: lighten(@color-yellow, 10%);
+      }
+    }
+
+    .yellow-darker {
+      background: @color-yellow;
+
+      &:hover , &.active{
+        .transition(0.45s);
+        background:#edB800;
+      }
+    }
+
+    .green {
+      background: @color-green;
+      color: @color-white;
+
+      &:hover , &.active{
+        .transition(0.45s);
+        background: lighten(@color-green, 10%);
+      }
+    }
+
+    .green-darker {
+      background: @color-green;
+      color: @color-white;
+
+      &:hover , &.active{
+        .transition(0.45s);
+        background: darken(@color-green, 15%);
+      }
+    }
+
+    .blue {
+      background: @color-light-blue;
+      color: @color-white;
+
+      &:hover , &.active{
+        .transition(0.45s);
+        background: lighten(@color-light-blue, 10%);
+      }
+    }
+
+    .blue-darker {
+      background: @color-light-blue;
+      color: @color-white;
+
+      &:hover , &.active{
+        .transition(0.45s);
+        background: darken(@color-light-blue, 15%);
+      }
+    }
+
+    .red {
+      background: @color-red;
+      color: @color-white;
+
+      &:hover , &.active{
+        .transition(0.45s);
+        background: lighten(@color-red, 10%);
+      }
+    }
+
+    .red-darker {
+      background: darken(@color-red, 7%);
+      color: @color-white;
+
+      &:hover , &.active{
+        .transition(0.45s);
+        background: darken(@color-red, 20%);
+      }
+    }
+
+    .black {
+      background: lighten(#333, 7%);
+      color: @color-white;
+
+      &:hover , &.active{
+        .transition(0.45s);
+        background: darken(#444, 20%);
+      }
+    }
+
+    .row {
+      margin-bottom: 30px;
     }
   }
 
-  //each question
+  //each question in the quiz
   .question {
+    .row {
+      text-align: center;
+    }
+
     h3 {
       text-align: center;
     }
 
-    .radio {
-      padding: 10px;
+    .number {
+      padding-top: 20px;
+      margin-top: 10px;
+      height: 80px;
+      width: 100px;
+      background: #333;
+      color: @color-white;
+    }
+
+    //each choice inside the question
+    label {
+      font-size: 22px;
+      height: 80px;
+      width: 350px;
+      background: lighten( #333, 10%);
+      padding-top: 20px;
+      color: @color-white;
+
+      .choice {
+        .appearance(button);
+      }
     }
 
     //correct answer
