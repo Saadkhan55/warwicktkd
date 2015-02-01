@@ -1087,6 +1087,8 @@ body {
 @media (max-width: 1023px) {
   #quiz-container .question .option .radio label {
     width: 60%;
+    font-size: 20px;
+    padding-top: 23px;
   }
 }
 #quiz-container .question .option .radio label:hover {

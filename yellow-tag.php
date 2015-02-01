@@ -353,7 +353,7 @@
 
                 <tr>
                   <td>Side Piercing Kick</td>
-                  <td>Yop Cha Chagi</td>
+                  <td>Yop Cha Jirugi</td>
                 </tr>
 
                 <tr class="title">
