@@ -45,47 +45,54 @@ $(document).ready(function() {
         $(".warning").hide();
       }
     });
-    questionNo++;
   }
 
   //turn question date into html
   function getQuestion(array) {
     var html = "<h3>" + array.question  + "</h3>";
-    html += "<h4 class='warning'>Please select an option</h4>";
     html += "<div class='container'> <div class='row'>";
+    html += '<div class="question-no"> <div class="question-title">Questions</div> '
+         + questionNo +'/10</div>';
 
-
-    html += '<div class="number col-md-2">1</div>';
-    html += '<div class="radio col-md-4">' + 
+    html += '<div class="option col-md-6">';
+    html += '<div class="number">1</div>';
+    html += '<div class="radio">' + 
               '<label>' + '<input type="radio" name="Choices" class="choice" id="Choice1" value="option1">' + 
                 array.choice1 + 
                '</label>' + 
-              '</div>';
+            '</div>' +
+          '</div>';
 
-    html += '<div class="number col-md-2">2</div>';
-    html += '<div class="radio col-md-4">' + 
+    html += '<div class="option col-md-6">';
+    html += '<div class="number">2</div>';
+    html += '<div class="radio">' + 
               '<label>' + '<input type="radio" name="Choices" class="choice" id="Choice2" value="option2">' + 
                 array.choice2 + 
                '</label>' + 
               '</div>' + 
-            '</div>'; // end of row
+            '</div>' +  // end of options
+          '</div>'; // end of row
 
     html += '<div class="row">'
 
-    html += '<div class="number col-md-2">3</div>';
-    html += '<div class="radio col-md-4">' + 
+    html += '<div class="option col-md-6">';
+    html += '<div class="number">3</div>';
+    html += '<div class="radio">' + 
               '<label>' + '<input type="radio" name="Choices" class="choice" id="Choice3" value="option3">' + 
                 array.choice3 + 
                '</label>' + 
-              '</div>';
+             '</div>' +  
+            '</div>'; //end of option
 
-    html += '<div class="number col-md-2">4</div>';
-    html += '<div class="radio col-md-4">' + 
+    html +=  '<div class="option col-md-6">';
+    html +=  '<div class="number">4</div>';
+    html += '<div class="radio">' + 
               '<label>' + '<input type="radio" name="Choices" class="choice" id="Choice4" value="option4">' + 
                 array.choice4 + 
                '</label>' + 
-              '</div>' +
-              '</div>'; // end of row
+            '</div>' +
+          '</div>' + //end of option
+        '</div>'; // end of row
 
     html += '</div>'; // end of container
 
@@ -96,18 +103,16 @@ $(document).ready(function() {
   //last section -> end
   function getEnd() {
     $(".question").empty();
-    $("#quiz-container").append("Number of correct answers " + correctAnswers);
-  }
-
-  //checks if option is selected
-  function optionSelected() {
-    var checked = false;
-      $(".question input[type='radio']").each(function() {
-        if($(this).is(':checked')) {
-          checked = true;
-        }
-      });
-    return checked;
+    var html = '<div class="container end">' + 
+                '<div class="row">' + 
+                  '<div class="question-no">' + 
+                    '<div class="question-title">Correct Answers</div>' + 
+                    correctAnswers +  '/10' +
+                  '</div>' + 
+                  '<button class="reset btn btn-danger">Reset</button>' +
+              '</div>' + 
+             '</div>';
+    $('.question').append(html);
   }
 
   
@@ -120,38 +125,47 @@ $(document).ready(function() {
         //if current radio is correct answer
         if(current == correct) {
           $(this).parent().append("<i class='correct fa fa-check'></i>").fadeIn(500);
+          $(this).parent().addClass("correct-answer");
         }
         else {
           $(this).parent().append("<i class='wrong fa fa-remove'></i>").fadeIn(500);
+          $(this).parent().addClass("wrong-answer");
         }
       });
     }
   }
 
   //on click of next body
-  $("body").on('click','label' , function() {
-    //if option is selected
-    if(optionSelected()) {
-      $(".warning").hide();
+  $("body").on('click','.option' , function() {
       //get choice selected 
-      var choice = $(this).children('.choice').attr("id");
+      var choice = $(this).find('.choice').attr("id");
       //if answer is correct increment correct answers by 1
       if(choice == correct) {
         correctAnswers++;
       }
 
       next();
+      //set timeout runs twice so for 10 questions
       if(questionNo < 10) {
         //get next question
+        questionNo++;
         setTimeout(function() {getNextQuestion(gradeNumber)}, 1000);
+        
+        //stop multiple running
+        return false;
       }
       else {
-        getEnd();
+        setTimeout(function() {getEnd()}, 1000);
+        return false;
       }
-    }
-    //else if no option selected
-    else {
-     $(".warning").fadeIn(800); 
-    }
+
+  });
+
+  //on click of next body
+  $("body").on('click','.reset' , function() {
+    correctAnswers = 0;
+    questionNo = 1;
+    $('.end').empty();
+    getNextQuestion(gradeNumber);
   });
 });

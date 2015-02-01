@@ -9,7 +9,7 @@
     <div id="wrapper">
     <!--Add header including logo, and navbar elements -->
       <?php include 'php/header.php' ?>
-      <div id="quiz-container" class="container">
+      <div id="quiz-container">
         <div class="intro">
           <h2>Tae Kwon Do - Theory Quiz</h2>
 

@@ -1016,7 +1016,6 @@ html,body {
 //**********************************************************************
 #quiz-container {
   margin-bottom: 20px;
-  border: 1px solid @color-light-grey;
 
   //introduction first page before starting quiz
   .intro {
@@ -1029,7 +1028,7 @@ html,body {
 
     //start button link to start quiz
     .start {
-      margin-bottom: 20px;
+      margin: 20px 0;
       height: 70px;
       width: 200px;
       font-size: 36px;
@@ -1178,49 +1177,141 @@ html,body {
 
     .row {
       margin-bottom: 30px;
+
+      @media @post-collapse {
+        margin-bottom: 0;
+      }
     }
   }
 
-  //each question in the quiz
+  //each question in the quiz whole container
   .question {
     .row {
+      margin-bottom: 25px;
+    }
+
+    //end of quiz
+    .end {
       text-align: center;
+
+      .question-no {
+        display: inline-block;
+        margin-right: 20px;
+      }
     }
 
     h3 {
       text-align: center;
+      margin-bottom: 30px;
     }
 
-    .number {
-      padding-top: 20px;
-      margin-top: 10px;
-      height: 80px;
-      width: 100px;
-      background: #333;
+    //question number
+    .question-no {
+      height: auto;
+      width: 180px;
+      font-size: 26px;
+      font-weight: 400;
+      text-align: center;
+      .border-radius(5px);
+      margin-bottom: 35px;
+      background: #444;
       color: @color-white;
-    }
+      padding-bottom: 10px;
 
-    //each choice inside the question
-    label {
-      font-size: 22px;
-      height: 80px;
-      width: 350px;
-      background: lighten( #333, 10%);
-      padding-top: 20px;
-      color: @color-white;
-
-      .choice {
-        .appearance(button);
+      .question-title {
+        border-top: 1px solid @color-light-grey;
+        margin-bottom: 10px;
+        background: #333;
+        .border-radius(5px);
+        padding: 5px 0;
       }
     }
+
+    //reset button
+    .reset {
+      height: 50px;
+      width: 100px;
+      font-size: 22px;
+    }
+
+    //each number and answers choice
+    .option {
+      color: @color-white;
+      font-size: 22px;
+
+      @media @post-collapse {
+        margin-bottom: 20px;
+      }
+
+      .number {
+        .border-radius(5px);
+        padding-top: 20px;
+        padding-left: 45px;
+        margin-top: 10px;
+        height: 80px;
+        width: 100px;
+        background: #333;
+        display: inline-block;
+
+        @media @post-collapse {
+          width: 22%;
+          padding-left: 2%;
+        }
+      }
+
+      .radio {
+        padding-left: 0;
+        margin-left: -13px;
+        display: inline;
+        font-size: 26px;
+        
+        //each choice inside the question
+        label {
+          .border-radius(5px);
+          height: 80px;
+          width: 350px;
+          background: lighten( #444, 10%);
+          padding-top: 16px;
+          color: @color-white;
+
+          @media @post-collapse {
+            width: 60%;
+          }
+
+          &:hover {
+            background: #333;
+            .transition(0.25s);
+          }
+
+          .choice {
+            .appearance(button);
+          }
+        }
+      }
+    }
+
 
     //correct answer
     .correct {
       color: @color-success;
+      float: left;
+      padding-right: 20px;
+    }
+
+    //correct answer change color
+    .correct-answer {
+      color: @color-success !important;
+    }
+
+    //wrong answer change color 
+    .wrong-answer {
+      color: @color-danger !important;
     }
     
     .wrong {
       color: @color-danger;
+      float: left;
+      padding-right: 20px;
     }
   }
 }

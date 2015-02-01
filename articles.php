@@ -1,5 +1,4 @@
 <?php
-
   /**
    * Returns 5 summaries in the form similar to index page, 
    * the summary will include photo, title, date and 
@@ -12,14 +11,11 @@
   function getSummaries($page_number, $conn) {
     //get 5 summary articles depending on page number (offset will change)
     $stmt = $conn -> prepare("SELECT Id, Title, Date, Photo, Summary FROM Articles ORDER BY Id DESC LIMIT 5 OFFSET ? ");
-
     //bind results and execute query
     $stmt->bind_param("s",  $page_number);
-
     if($stmt->execute()) {
       //bind result to variables
       $stmt->bind_result($id, $title, $date, $photo, $summary);
-
       //while there are result fetch them
       while($stmt->fetch()) {
         //$html = out html similar to on index page
@@ -31,20 +27,16 @@
           <div class="col-sm-3">
           '.$photo.'
           </div> <!-- End of picture -->
-
           <div class="col-sm-9">
           <p>'.$summary.'</p>
           </div> <!-- End of main summary --> 
           </div> <!-- End of summary -->
           </div> <!-- End of row -->
           </a>';
-
       }
     }
-
     return $html;
   }
-
   /** 
    * Creates a pagination, page navigation, which will have the correct number of 
    * pages etc.
@@ -54,7 +46,6 @@
    **/
   function getPagination($current_page ,$article_number) {
     $html .= '<div class="text-center">';
-
     //set up pagination using pagination
     require_once("php/vendor/pagination.php");
     $pg = new bootPagination();
@@ -67,9 +58,6 @@
     $pg->paginationUrl = "news.php?p=[p]";
     $html .= $pg->process();
     $html .= '</div>';
-
     return $html;
-
   }
-
 ?>
