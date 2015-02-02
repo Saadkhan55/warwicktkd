@@ -1,5 +1,13 @@
-//For theory pages when user clicks on hide korean button
-//will give class korean-hide to table and hide korean column
+//***********************************************
+// theory.js
+//
+// Hides/shows the korean theory when the
+// hide/show button is pressed.
+//
+// Starts of with hide and when clicked
+// hide the second column of the theory
+// otherwise shows the second column
+//**********************************************
 $(document).ready(function() {
   $(".btn").click(function() {
     //if button has text show

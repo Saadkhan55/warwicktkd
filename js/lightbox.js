@@ -54,6 +54,18 @@ $(document).ready(function() {
         getNext(index, 1);
 
       });
+
+      //left or right navigation arrow key is pressed down
+      $(document).keydown(function(e) {
+        if( e.which == 37) { // left
+          var index = getIndex(images, image_src)
+          getNext(index, 0);
+        }
+        else if(e.keyCode == 39) { // right
+          var index = getIndex(images, image_src)
+          getNext(index, 1);
+        }
+      });
       
       //on click of left button
       $('.fa-chevron-left').on('click' ,function(ev) {

@@ -1,4 +1,14 @@
-//wait for document to be ready
+//***********************************************
+// quiz.js
+// Takes the grade of the user
+// then asks questions randomly from that grade
+// or below, 10 questions are asked
+// and keeps track of correct answers
+// shown at the end.
+//
+// Once finished can reset the quiz
+//**********************************************
+
 $(document).ready(function() {
 
   //number used in db to associate with grade i.e. white belt = 1 and black tag = 10;
@@ -12,7 +22,7 @@ $(document).ready(function() {
 
   //on click on a radio button on intro screen
   $(".radio-inline").click(function() {
-    //remove current active class
+    //remove current active class and add to clicked class
     $("#quiz-container .radio-inline").removeClass("active")
     $(this).addClass("active");
   });
@@ -29,7 +39,17 @@ $(document).ready(function() {
     $(".intro").fadeOut(800).empty();
   });
 
-  //gets a random next question for grade or any grade under it
+
+
+  //********************************************
+  // @summary: Uses ajax to get a new question
+  // to display. On Success deletes previous 
+  // question and adds new one to html
+  //
+  // @param: gradeNumber - what grade question
+  // should be retrieved 1 for white belt
+  // 2 for yellow tag etc
+  //********************************************
   function getNextQuestion(gradeNumber) {
     $.ajax ({
       type: "POST", 
@@ -40,6 +60,7 @@ $(document).ready(function() {
       },
       success: function(quiz) {
         $(".question").empty();
+        // get html from function in correct format
         var html = getQuestion(quiz);
         $(".question").append(html);
         $(".warning").hide();
@@ -47,7 +68,18 @@ $(document).ready(function() {
     });
   }
 
-  //turn question date into html
+  //********************************************
+  // @summary: Using the data from ajax, 
+  // generates the question in the correct
+  // format with the 4 choices and the title
+  // 
+  // @param: array - Holds all the data from database
+  // for that question such as each choice
+  // correct answer etc.
+  //
+  // @return: Returns html, for the question in 
+  // the form of title -> 4 choices.
+  //********************************************
   function getQuestion(array) {
     var html = "<h3>" + array.question  + "</h3>";
     html += "<div class='container'> <div class='row'>";
@@ -100,7 +132,12 @@ $(document).ready(function() {
     return html;
   }
 
-  //last section -> end
+  //********************************************
+  // @summary: Appends html for the final
+  // section of the quiz at the end which 
+  // shows number of correct answers and
+  // reset button to start again
+  //********************************************
   function getEnd() {
     $(".question").empty();
     var html = '<div class="container end">' + 
@@ -116,6 +153,10 @@ $(document).ready(function() {
   }
 
   
+  //********************************************
+  // @summary: Ads correct answer and 
+  // wrong answer icon then.
+  //********************************************
   function next() {
     //if no correct icon has been added yet add one if not don't -> i.e. stops multiple icons from appearing when next button is pressed
     if(!$(".question").find(".correct").length) {  
@@ -135,7 +176,8 @@ $(document).ready(function() {
     }
   }
 
-  //on click of next body
+  //on click of an option/choice from the question
+  //show correct answer and get the next question.
   $("body").on('click','.option' , function() {
       //get choice selected 
       var choice = $(this).find('.choice').attr("id");
@@ -161,7 +203,8 @@ $(document).ready(function() {
 
   });
 
-  //on click of next body
+  //When reset button is clicked reset all variable
+  //data, and get next question 
   $("body").on('click','.reset' , function() {
     correctAnswers = 0;
     questionNo = 1;

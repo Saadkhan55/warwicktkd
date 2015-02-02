@@ -1,7 +1,10 @@
-//This will dynamically load pages instead of using php 
-//will do it using AJAX for the news.php web page.
-//
-
+//***********************************************
+// news.js
+// When a pagination page is clicked
+// works out what articles would be on that
+// page then uses ajax to get those articles back
+// without needing a page refresh.
+//**********************************************
 $(document).ready(function() {
   $("body").on('click', '.pagination li ', function(e) {
     e.preventDefault();
@@ -26,13 +29,14 @@ $(document).ready(function() {
    //current page used in pagination to determine
    //what pages to show besides it
     var currentPage = pageNumber;
+
    // as this will be used for offset, (if only 5 articles);
    // then page number -1  = 0, 0 *5 = 0
    // offset in query will be 0. 
     pageNumber = (pageNumber - 1) * 5; 
 
     //using ajax sent pagenumber to php file which will return what
-    //articles to display
+    // 5 articles summaries to display on the screen
     $.ajax ({
       type: "POST", 
       url: "getArticles.php",
