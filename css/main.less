@@ -33,9 +33,9 @@
 @color-success: #449d44;
 
 //Pre collapsed menu 
-@pre-collapse: ~"(min-width: 1024px)";
+@pre-collapse: ~"(min-width: 768px)";
 //Post collapsed menu
-@post-collapse: ~"(max-width: 1023px)";
+@post-collapse: ~"(max-width: 767px)";
 
 //**********************************************************************
 // General Styles such as headers etc
@@ -783,7 +783,7 @@ html,body {
 
   //each individual team member
   .individual {
-    margin-top: 50px;
+    margin-top: 90px;
 
     //float images left, add border radius
     img {
@@ -1042,13 +1042,17 @@ html,body {
 
     .radio-inline {
       height: 70px;
-      width: 170px;
+      width: 15%;
       text-align: center;
       padding-top: 20px;
-      font-size: 22px;
+      font-size: 1.3em;
       border: 1px solid #ddd;
       padding-right: 20px;
       margin-right: 10px;
+
+      @media (max-width: 860px) {
+        padding-top: 5px;
+      }
 
       @media @post-collapse {
         display: block;
@@ -1188,6 +1192,10 @@ html,body {
   .question {
     .row {
       margin-bottom: 25px;
+
+      @media @post-collapse {
+        margin-bottom: 0;
+      }
     }
 
     //end of quiz
@@ -1248,7 +1256,7 @@ html,body {
         padding-top: 20px;
         padding-left: 45px;
         margin-top: 10px;
-        height: 80px;
+        height: 90px;
         width: 100px;
         background: #333;
         display: inline-block;
@@ -1268,8 +1276,9 @@ html,body {
         //each choice inside the question
         label {
           .border-radius(5px);
-          height: 80px;
-          width: 350px;
+          height: 90px;
+          min-width: 350px;
+          width: auto;
           background: lighten( #444, 10%);
           padding-top: 16px;
           color: @color-white;

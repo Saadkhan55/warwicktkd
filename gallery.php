@@ -16,37 +16,37 @@
           <h2 class="title">Uni Champs - 2014</h2>
           <!--3 Images per row-->
           <div class="row">
-            <div class="col-sm-3">
+            <div class="col-md-3">
               <a class="gallery" href="#"><img src="images/gallery/example/1.jpg" class="img-responsive"></a> <!--anchor link with image inside -->
             </div> <!-- End of col -->
 
-            <div class="col-sm-3">
+            <div class="col-md-3">
               <a class="gallery" href="#"><img src="images/gallery/example/2.jpg" class="img-responsive"></a> 
             </div> <!-- End of col -->
 
-            <div class="col-sm-3">
+            <div class="col-md-3">
               <a class="gallery" href="#"><img src="images/gallery/example/3.jpg" class="img-responsive"></a> 
             </div> <!-- End of col -->
 
-            <div class="col-sm-3">
+            <div class="col-md-3">
               <a class="gallery" href="#"><img src="images/gallery/example/4.jpg" class="img-responsive"></a> 
             </div> <!-- End of col -->
           </div> <!-- End of row -->
 
           <div class="row">
-            <div class="col-sm-3">
+            <div class="col-md-3">
               <a class="gallery" href="#"><img src="images/gallery/example/5.jpg" class="img-responsive"></a> <!--anchor link with image inside -->
             </div> <!-- End of col -->
 
-            <div class="col-sm-3">
+            <div class="col-md-3">
               <a class="gallery" href="#"><img src="images/gallery/example/6.jpg" class="img-responsive"></a> 
             </div> <!-- End of col -->
 
-            <div class="col-sm-3">
+            <div class="col-md-3">
               <a class="gallery" href="#"><img src="images/gallery/example/7.jpg" class="img-responsive"></a> 
             </div> <!-- End of col -->
 
-            <div class="col-sm-3">
+            <div class="col-md-3">
               <a class="gallery" href="#"><img src="images/gallery/example/8.jpg" class="img-responsive"></a> 
             </div> <!-- End of col -->
 

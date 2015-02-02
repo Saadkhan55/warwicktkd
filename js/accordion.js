@@ -1,15 +1,15 @@
 //***********************************************
-//Accordion plus icon change to minus
-//when the user clicks on that collapse panel
+// Accordion.js Changes icon next to accordion
+// when closed shows a minus, when opened by a 
+// user click it shows a plus.
+// Only one accordion can be opened at one
 //**********************************************
-//document ready (i.e. page loaded)
 $(document).ready(function() {
 
-  //Changes plus and minus icon on accordions 
   $(function() {
     //when accordion is opened
     $('.collapse').on('shown.bs.collapse','' ,function (e) {
-      //get opened div id
+      //get opened div id (is unique)
       var panelId = "#" + e.currentTarget.id;
       //select panel-title, add open to it
       $(panelId).parent().children().children().toggleClass("open");

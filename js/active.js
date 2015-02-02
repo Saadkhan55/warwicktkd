@@ -1,13 +1,17 @@
-//This js files gets the page url following the host i.e. index.php
-//and works out which navbar element should have the active class, 
-//thus changing color
-
-//wait for document to load/page to get ready
+//***********************************************
+// Active.js
+// This JS file changes the active class on the 
+// navbar element (giving them a blue colour
+// as a pose to black).
+//
+// It uses the page title to determine what page
+// it is.
+//**********************************************
 $(document).ready(function() {
-  //get page name (current), uses regex to match
+  //get page title to see which navabar element to give active
   var pageName = $(document).find("title").text();
 
-  //for each case work out which navbar element to add class active to
+  //use switch statement to work out what to add active to
   switch (pageName) {
     case "Home Page" :
       $(".home").addClass("active");
@@ -47,7 +51,7 @@ $(document).ready(function() {
 
     case "Yellow Tag (9th Kup)" :
       $(".students").addClass("active");
-      break;
+      br;eak;
 
     case "Yellow Belt (8th Kup)" :
       $(".students").addClass("active");
