@@ -1193,7 +1193,7 @@ html,body {
     .row {
       margin-bottom: 25px;
 
-      @media @post-collapse {
+      @media (max-width: 1024px) {
         margin-bottom: 0;
       }
     }
@@ -1217,7 +1217,7 @@ html,body {
     .question-no {
       height: auto;
       width: 180px;
-      font-size: 26px;
+      font-size: 22px;
       font-weight: 400;
       text-align: center;
       .border-radius(5px);
@@ -1254,10 +1254,10 @@ html,body {
       .number {
         .border-radius(5px);
         padding-top: 20px;
-        padding-left: 45px;
+        padding-left: 20px;
         margin-top: 10px;
         height: 90px;
-        width: 100px;
+        width: 80px;
         background: #333;
         display: inline-block;
 
@@ -1265,13 +1265,17 @@ html,body {
           width: 22%;
           padding-left: 2%;
         }
+
+        @media (max-width: 480px) {
+          display: none;
+        }
       }
 
       .radio {
         padding-left: 0;
         margin-left: -13px;
         display: inline;
-        font-size: 26px;
+        font-size: 22px;
         
         //each choice inside the question
         label {
@@ -1280,7 +1284,7 @@ html,body {
           min-width: 350px;
           width: auto;
           background: lighten( #444, 10%);
-          padding-top: 16px;
+          padding-top: 20px;
           color: @color-white;
 
           @media @post-collapse {

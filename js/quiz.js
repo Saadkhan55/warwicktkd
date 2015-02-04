@@ -63,7 +63,8 @@ $(document).ready(function() {
         // get html from function in correct format
         var html = getQuestion(quiz);
         $(".question").append(html);
-        $(".warning").hide();
+        //if the length of strings really big reduce size
+        checkStringLength();
       }
     });
   }
@@ -130,6 +131,28 @@ $(document).ready(function() {
 
     correct = array.correct;
     return html;
+  }
+
+  //********************************************
+  // @summary: checks the length of each label,
+  // the inside text that is, if greater than 20
+  // change the size of font and padding to make
+  // it fit.
+  //********************************************
+  function checkStringLength() {
+    $("label").each(function() {
+      var choice = $(this).text();
+      
+      //if length of text greater than 20 characters
+      if( choice.length > 20) {
+        //change css to make it smaller
+        $(this).css({
+          "font-size" : "16px",
+          "padding-top" : "27px",
+          "padding-right" : "15px"
+        });
+      }
+    });
   }
 
   //********************************************
