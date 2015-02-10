@@ -54,6 +54,22 @@ $(document).ready(function() {
         getNext(index, 1);
 
       });
+      
+      //click anywhere to close lightbox
+      $('#lightbox').on('click', function() {
+        $('#lightbox').hide();
+        $('#content').empty();
+      });
+
+      //on click of left button
+      $('.fa-chevron-left').on('click' ,function(ev) {
+        //stop event propoagation -> and closing lightbox
+        ev.stopPropagation();
+        //get index of current image
+        var index = getIndex(images, image_src);
+        //run function to get next image
+        getNext(index, 0);
+      });
 
       //left or right navigation arrow key is pressed down
       $(document).keydown(function(e) {
@@ -65,16 +81,6 @@ $(document).ready(function() {
           var index = getIndex(images, image_src)
           getNext(index, 1);
         }
-      });
-      
-      //on click of left button
-      $('.fa-chevron-left').on('click' ,function(ev) {
-        //stop event propoagation -> and closing lightbox
-        ev.stopPropagation();
-        //get index of current image
-        var index = getIndex(images, image_src);
-        //run function to get next image
-        getNext(index, 0);
       });
 
       //**************************************************
@@ -125,12 +131,6 @@ $(document).ready(function() {
         image_src = images[index];
 
       }
-  });
-
-  //click anywhere to close lightbox
-  $('#lightbox').on('click', function() {
-    $('#lightbox').hide();
-    $('#content').empty();
   });
 
   //**************************************************

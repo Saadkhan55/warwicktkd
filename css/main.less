@@ -27,15 +27,17 @@
 @color-light-blue: #367ee9;
 @color-lighter-blue: #4ecff8;
 @color-header-grey: #777;
+@color-calendar-header: #b72c0c;
 
 //button colours
 @color-danger: #d9534f;
 @color-success: #449d44;
 
-//Pre collapsed menu 
+//Media queries
 @pre-collapse: ~"(min-width: 768px)";
-//Post collapsed menu
 @post-collapse: ~"(max-width: 767px)";
+@medium-collapse: ~"(max-width: 1023px)";
+@mobile-collapse: ~"(max-width: 501px)";
 
 //**********************************************************************
 // General Styles such as headers etc
@@ -1198,7 +1200,7 @@ html,body {
       }
     }
 
-    //end of quiz
+    //end of quiz page
     .end {
       text-align: center;
 
@@ -1251,6 +1253,7 @@ html,body {
         margin-bottom: 20px;
       }
 
+      //number with choices
       .number {
         .border-radius(5px);
         padding-top: 20px;
@@ -1271,6 +1274,7 @@ html,body {
         }
       }
 
+      //radio -> label
       .radio {
         padding-left: 0;
         margin-left: -13px;
@@ -1322,7 +1326,7 @@ html,body {
     .wrong-answer {
       color: @color-danger !important;
     }
-    
+
     .wrong {
       color: @color-danger;
       float: left;
@@ -1331,3 +1335,174 @@ html,body {
   }
 }
 
+//************************************************************************
+// Calendar, jquery ui date picker
+//************************************************************************
+
+#calendar {
+  text-align: center;
+  margin-bottom: 35px;
+  width: 100%;
+
+  .ui-datepicker-header {
+    border-bottom: 1px solid #ccc;
+    padding: 20px 26px;
+    background: lighten(@color-black, 20%);
+  }
+
+  //The month title
+  .ui-datepicker-month {
+    position: relative;
+    padding-right: 15px;
+    color: #565656;
+
+    //before the month
+    &:before {
+      display: block;
+      position: absolute;
+      top: 5px;
+      right: 0;
+      width: 5px;
+      height: 5px;
+      content: '';
+      background: @color-lighter-blue;
+      .border-radius(5px);
+    }
+  }
+
+  .ui-datepicker-year {
+    padding-left: 8px;
+    color: #a8a8a8;
+  }
+  
+  //Calendar container -> has title and content
+  .ui-datepicker {
+    display: none;
+    max-width: 900px;
+    width: 90%;
+    padding: 35px;
+    cursor: default;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 200;
+    color: @color-lighter-blue;
+    background: @color-white;
+    margin: 0 auto;
+
+    //Get rid of all spacing
+    &, & table, & tr, &td, &th {
+      margin: 0 auto;
+      padding: 0;
+      border: none;
+      border-spacing: 0;
+    }
+  }
+
+  //Right and left moving icons
+  .ui-datepicker-prev,
+  .ui-datepicker-next {
+    top: -15px;
+    padding: 5px;
+    cursor: pointer;
+    position: relative;
+
+    &:hover {
+      &:before {
+        .transition(0.35s);
+        color: @color-white;
+      }
+    }
+
+    //navigation arrows
+    &:before {
+      font-family: FontAwesome;
+      font-size: 2.2em;
+
+      @media @post-collapse {
+        font-size: 1.5em;
+      }
+    }
+
+    span {
+      display: block;
+      text-indent: -9999px;
+    }
+  }
+
+  .ui-datepicker-prev {
+    float: left;
+
+    //left arrow icon from font-awesome
+    &:before {
+      content: "\f0d9";
+    }
+  }
+
+  .ui-datepicker-next {
+    float: right;
+
+    &:before {
+      content: "\f0da";
+    }
+  }
+
+  //calendar table
+  .ui-datepicker-calendar {
+    th {
+      padding: 15px 35px 10px 35px;
+      text-align: center;
+      font-weight: normal;
+      color: #a8a8a8;
+
+      @media @medium-collapse {
+        padding: 15px 10px;
+      }
+
+      @media @post-collapse {
+        padding: 15px 10px;
+      }
+
+      @media @mobile-collapse {
+        font-size: 15px;
+        padding: 15px 5px;
+      }
+    }
+
+    td {
+      padding: 20px 35px;
+      text-align: center;
+      line-height: 26px;
+
+      @media @medium-collapse {
+        padding: 20px 20px;
+      }
+
+      @media @post-collapse {
+        padding: 20px 15px;
+      }
+
+      @media @mobile-collapse {
+        padding: 15px 5px;
+      }
+    }
+
+    //regular date (i.e. not today's)
+    .ui-state-default {
+      display: block;
+      width: 26px;
+      outline: none;
+      text-decoration: none;
+      color: #a8a8a8;
+      border: 1px solid transparent;
+    }
+
+    .ui-state-active {
+      color: #6a9113;
+      border: 1px solid #6a9113;
+    }
+  }
+  //colour for other months dates
+  .ui-datepicker-other-month .ui-state-default { 
+    color: #565656; 
+  }
+}

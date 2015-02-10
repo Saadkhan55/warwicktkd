@@ -19,6 +19,9 @@
 @footer-size: 14px;
 
 @color-white: #fff; 
+@color-yellow: #ffd600; 
+@color-green: #449d44;
+@color-red: #ff3530;
 @color-black: #000; 
 @color-light-grey: #ddd;
 @color-light-blue: #367ee9;
@@ -30,9 +33,9 @@
 @color-success: #449d44;
 
 //Pre collapsed menu 
-@pre-collapse: ~"(min-width: 1024px)";
+@pre-collapse: ~"(min-width: 768px)";
 //Post collapsed menu
-@post-collapse: ~"(max-width: 1023px)";
+@post-collapse: ~"(max-width: 767px)";
 
 //**********************************************************************
 // General Styles such as headers etc
@@ -105,7 +108,7 @@ small {
 
   &:hover {
     .transition(0.25s);
-     background: darken(@color-danger, 5%);
+     background: darken(@color-danger, 10%);
   }
 }
 
@@ -158,8 +161,12 @@ small {
 //  -- NEWS PAGE
 //    -- SUMMARIES
 //    -- PAGINATION
+//
 //  -- GALLERY PAGE
 //    -- LIGHTBOX
+//
+//  -- QUIZ
+//    --JQuery
 //**********************************************************************
 
 //**********************************************************************
@@ -228,7 +235,7 @@ html,body {
 .navbar-default {
   background: @color-white;
   font-family: @header-font, sans;
-  height: 75px;
+  height: 100px;
 
   //on collapse of menu get rid of padding
   .container {
@@ -258,13 +265,13 @@ html,body {
   .navbar-brand {
     padding: 15px 0;
     img {
-      height: 50px;
-      width: 120px;
+      height: 80px;
+      width: 110px;
     }
   }
 
   .navbar-nav {
-    padding-top: 20px;
+    padding-top: 40px;
     //each element of the navbar
     li {
       //change color of each navigation element
@@ -368,10 +375,14 @@ html,body {
   h2 {
     font-weight: 300;
     padding-bottom: 20px;
+
+    i {
+      font-size: 0.8em;
+    }
   }
 
   //back to top page icon
-  i {
+  .fa-chevron-up {
     z-index: 1100;
     color: #fff;
     font-size: 2em;
@@ -661,6 +672,7 @@ html,body {
 
         &:hover, &:focus{
           background: darken(@color-light-blue, 5%);
+          color: @color-white;
           text-decoration: none;
         }
       }
@@ -771,7 +783,7 @@ html,body {
 
   //each individual team member
   .individual {
-    margin-top: 50px;
+    margin-top: 90px;
 
     //float images left, add border radius
     img {
@@ -789,11 +801,16 @@ html,body {
 
 
 //**********************************************************************
-// SYLLABUS PAGES - Including patterns sparring and theory
+// SYLLABUS PAGES - Including patterns sparring and theory, for gradings
+// and current students
 //**********************************************************************
 
 .syllabus {
   margin-bottom: 40px;
+
+  img {
+    margin: 20px;
+  }
 
   h3 {
     margin-top:50px;
@@ -999,26 +1016,317 @@ html,body {
 //**********************************************************************
 #quiz-container {
   margin-bottom: 20px;
-  border: 1px solid @color-light-grey;
 
   //introduction first page before starting quiz
   .intro {
     text-align: center;
 
-    h2, h4 {
+    h2 {
       color: @color-light-blue;
       margin-bottom: 30px;
     }
 
-    //select element used to pick grade
-    .select {
-      margin-bottom: 20px;
-    }
-
     //start button link to start quiz
     .start {
-      height: 200px;
-      width: 400px;
+      margin: 20px 0;
+      height: 70px;
+      width: 200px;
+      font-size: 36px;
+      font-weight:100;
+    }
+
+    .radio-inline+.radio-inline {
+       margin-left: 0;
+    }
+
+
+    .radio-inline {
+      height: 70px;
+      width: 15%;
+      text-align: center;
+      padding-top: 20px;
+      font-size: 1.3em;
+      border: 1px solid #ddd;
+      padding-right: 20px;
+      margin-right: 10px;
+
+      @media (max-width: 860px) {
+        padding-top: 5px;
+      }
+
+      @media @post-collapse {
+        display: block;
+        width: 100%;
+      }
+
+      //hide tick icon on all radios that are not selected i.e. showing at most one element.
+      .fa {
+        display: none;
+        font-size: 4em;
+        position: relative;
+        top:-55px;
+        opacity: 0.95;
+        color: @color-white;
+      }
+
+      .grade {
+        .appearance(button);
+
+        //when checked is changed to another radio button, show tick icon
+        &:checked+.fa {
+          display: block;
+          .transition(0.35s);
+        }
+      }
+    }
+
+    //colors for different grades lighter for tags and darker for full belts
+    .white {
+      background: @color-white;
+
+      //on hover or iff had active class make darker or lighter
+      &:hover, &.active{
+        .transition(0.25s);
+        background: darken(@color-white, 10%);
+      }
+    }
+
+    .yellow {
+      background: @color-yellow;
+
+      &:hover , &.active{
+        .transition(0.25s);
+        background: lighten(@color-yellow, 10%);
+      }
+    }
+
+    .yellow-darker {
+      background: @color-yellow;
+
+      &:hover , &.active{
+        .transition(0.45s);
+        background:#edB800;
+      }
+    }
+
+    .green {
+      background: @color-green;
+      color: @color-white;
+
+      &:hover , &.active{
+        .transition(0.45s);
+        background: lighten(@color-green, 10%);
+      }
+    }
+
+    .green-darker {
+      background: @color-green;
+      color: @color-white;
+
+      &:hover , &.active{
+        .transition(0.45s);
+        background: darken(@color-green, 15%);
+      }
+    }
+
+    .blue {
+      background: @color-light-blue;
+      color: @color-white;
+
+      &:hover , &.active{
+        .transition(0.45s);
+        background: lighten(@color-light-blue, 10%);
+      }
+    }
+
+    .blue-darker {
+      background: @color-light-blue;
+      color: @color-white;
+
+      &:hover , &.active{
+        .transition(0.45s);
+        background: darken(@color-light-blue, 15%);
+      }
+    }
+
+    .red {
+      background: @color-red;
+      color: @color-white;
+
+      &:hover , &.active{
+        .transition(0.45s);
+        background: lighten(@color-red, 10%);
+      }
+    }
+
+    .red-darker {
+      background: darken(@color-red, 7%);
+      color: @color-white;
+
+      &:hover , &.active{
+        .transition(0.45s);
+        background: darken(@color-red, 20%);
+      }
+    }
+
+    .black {
+      background: lighten(#333, 7%);
+      color: @color-white;
+
+      &:hover , &.active{
+        .transition(0.45s);
+        background: darken(#444, 20%);
+      }
+    }
+
+    .row {
+      margin-bottom: 30px;
+
+      @media @post-collapse {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  //each question in the quiz whole container
+  .question {
+    .row {
+      margin-bottom: 25px;
+
+      @media (max-width: 1024px) {
+        margin-bottom: 0;
+      }
+    }
+
+    //end of quiz
+    .end {
+      text-align: center;
+
+      .question-no {
+        display: inline-block;
+        margin-right: 20px;
+      }
+    }
+
+    h3 {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    //question number
+    .question-no {
+      height: auto;
+      width: 180px;
+      font-size: 22px;
+      font-weight: 400;
+      text-align: center;
+      .border-radius(5px);
+      margin-bottom: 35px;
+      background: #444;
+      color: @color-white;
+      padding-bottom: 10px;
+
+      .question-title {
+        border-top: 1px solid @color-light-grey;
+        margin-bottom: 10px;
+        background: #333;
+        .border-radius(5px);
+        padding: 5px 0;
+      }
+    }
+
+    //reset button
+    .reset {
+      height: 50px;
+      width: 100px;
+      font-size: 22px;
+    }
+
+    //each number and answers choice
+    .option {
+      color: @color-white;
+      font-size: 22px;
+
+      @media @post-collapse {
+        margin-bottom: 20px;
+      }
+
+      .number {
+        .border-radius(5px);
+        padding-top: 20px;
+        padding-left: 20px;
+        margin-top: 10px;
+        height: 90px;
+        width: 80px;
+        background: #333;
+        display: inline-block;
+
+        @media @post-collapse {
+          width: 22%;
+          padding-left: 2%;
+        }
+
+        @media (max-width: 480px) {
+          display: none;
+        }
+      }
+
+      .radio {
+        padding-left: 0;
+        margin-left: -13px;
+        display: inline;
+        font-size: 22px;
+        
+        //each choice inside the question
+        label {
+          .border-radius(5px);
+          height: 90px;
+          min-width: 350px;
+          width: auto;
+          background: lighten( #444, 10%);
+          padding-top: 20px;
+          color: @color-white;
+
+          @media @post-collapse {
+            width: 60%;
+            font-size: 20px;
+            padding-top: 23px;
+          }
+
+          &:hover {
+            background: #333;
+            .transition(0.25s);
+          }
+
+          .choice {
+            .appearance(button);
+          }
+        }
+      }
+    }
+
+
+    //correct answer
+    .correct {
+      color: @color-success;
+      float: left;
+      padding-right: 20px;
+    }
+
+    //correct answer change color
+    .correct-answer {
+      color: @color-success !important;
+    }
+
+    //wrong answer change color 
+    .wrong-answer {
+      color: @color-danger !important;
+    }
+    
+    .wrong {
+      color: @color-danger;
+      float: left;
+      padding-right: 20px;
     }
   }
 }

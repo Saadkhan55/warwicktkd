@@ -1,5 +1,5 @@
 //************************************
-// General styles: used throughtout
+);/ General styles: used throughtout
 // the website and various other projects
 // 
 // The file contains lots of mixins
@@ -99,6 +99,15 @@
   -moz-user-select: @args;
   -o-user-select: @args;
   user-select: @args; 
+}
+
+//appearnace 
+.appearance(@param) {
+  -webkit-appearance: @param; /* WebKit */
+  -moz-appearance: @param; /* Mozilla */
+  -o-appearance: @param; /* Opera */
+  -ms-appearance: @param; /* Internet Explorer */
+  appearance: @param; /* CSS3 */
 }
 
 //CSS3 mixins

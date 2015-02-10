@@ -11,32 +11,96 @@
 
 $(document).ready(function() {
 
-  //number used in db to associate with grade i.e. white belt = 1 and black tag = 10;
+  //*******************************************
+  // gradeNumber - white belt is 1 
+  // black tag = 10 etc, gets questions based on 
+  // grade
+  //
+  // questioNo - Keeps track of number of 
+  // questions only 10 questions per 'round'
+  //
+  // correctAnswer - Keeps track number of 
+  // correct answers, shows the user at the
+  // end
+  //
+  // correct - current correct answer in the 
+  // form Choice[nu,]
+  //
+  // clicked - checks if choice has already 
+  // clicked i.e. doesn't allow double clicks
+  //*******************************************
   var gradeNumber;
-  //current question number
   var questionNo = 1;
-  //number of correct answer
   var correctAnswers = 0;
-  //choice
   var correct;
+  var clicked = false;
 
   //on click on a radio button on intro screen
   $(".radio-inline").click(function() {
-    //remove current active class and add to clicked class
     $("#quiz-container .radio-inline").removeClass("active")
     $(this).addClass("active");
   });
 
-  //on click of start button
+  //on click of start button, get selected radio button
+  //get the value to get gradeNumber then get next question
   $(".start").click(function() {
-    //get selected radio button
     var selected = $("input[type='radio']:checked");
-    //value of button is grade number so get value
     gradeNumber = selected.val();
 
-    //get next question
     getNextQuestion(gradeNumber);
     $(".intro").fadeOut(800).empty();
+  });
+  
+  //When an option has been clicked
+  //select choice and compare with correct
+  //answer. Then show correct answer.
+  //
+  //If less than 10 questions have been 
+  //asked get next question
+  //
+  //else
+  //get end screen with correct answers
+  //and reset button
+  $("body").on('click','label' , function() {
+
+      //if the option has been clicked return
+      if(clicked) {
+        return;
+      }
+      //else user has clickec set to true
+      else {
+        clicked = true;
+      }
+
+      var choice = $(this).find('.choice').attr("id");
+      if(choice == correct) {
+        correctAnswers++;
+      }
+
+      next();
+
+      //if less than 10, get next question
+      if(questionNo < 10) {
+        questionNo++;
+        setTimeout(function() {getNextQuestion(gradeNumber)}, 1000);
+
+        return false;
+      }
+      //else get end screen
+      else {
+        setTimeout(function() {getEnd()}, 1000);
+        return false;
+      }
+
+  });
+
+  //When reset button is clicked reset all variable
+  //data, and get next question 
+  $("body").on('click','.reset' , function() {
+    correctAnswers = 0;
+    questionNo = 1;
+    $('.end').empty();
+    getNextQuestion(gradeNumber);
   });
 
 
@@ -60,11 +124,11 @@ $(document).ready(function() {
       },
       success: function(quiz) {
         $(".question").empty();
-        // get html from function in correct format
         var html = getQuestion(quiz);
         $(".question").append(html);
-        //if the length of strings really big reduce size
+
         checkStringLength();
+        clicked = false;
       }
     });
   }
@@ -199,39 +263,4 @@ $(document).ready(function() {
     }
   }
 
-  //on click of an option/choice from the question
-  //show correct answer and get the next question.
-  $("body").on('click','.option' , function() {
-      //get choice selected 
-      var choice = $(this).find('.choice').attr("id");
-      //if answer is correct increment correct answers by 1
-      if(choice == correct) {
-        correctAnswers++;
-      }
-
-      next();
-      //set timeout runs twice so for 10 questions
-      if(questionNo < 10) {
-        //get next question
-        questionNo++;
-        setTimeout(function() {getNextQuestion(gradeNumber)}, 1000);
-        
-        //stop multiple running
-        return false;
-      }
-      else {
-        setTimeout(function() {getEnd()}, 1000);
-        return false;
-      }
-
-  });
-
-  //When reset button is clicked reset all variable
-  //data, and get next question 
-  $("body").on('click','.reset' , function() {
-    correctAnswers = 0;
-    questionNo = 1;
-    $('.end').empty();
-    getNextQuestion(gradeNumber);
-  });
 });
