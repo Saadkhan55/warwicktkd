@@ -9,9 +9,7 @@
     <div id="wrapper">
     <!--Add header including logo, and navbar elements -->
       <?php include 'php/header.php' ?>
-      <div class="container">
-          <div id="calendar"></div>
-      </div> <!-- End of container -->
+      <div id="calendar"></div> <!-- contains calendar -->
     </div><!--End of wrapper -->
     <!--Add footer, contains 3 columns layout Add footer data, such as jquery, boostrap javascript -->
     <?php include 'php/footer.php' ?>
