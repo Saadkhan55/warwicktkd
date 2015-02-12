@@ -28,6 +28,7 @@
 @color-light-blue: #367ee9;
 @color-lighter-blue: #4ecff8;
 @color-header-grey: #777;
+@color-lighter-grey: #ededed;
 
 //button colours
 @color-danger: #d9534f;
@@ -1383,7 +1384,7 @@ html,body {
     width: 100%;
     padding: 35px;
     cursor: default;
-    font-size: 14px;
+    font-size: 16px;
     background: @color-white;
     margin: 0 auto;
     color: @color-black;
@@ -1454,6 +1455,7 @@ html,body {
       border: 1px solid @color-grey;
       border-top: none;
       font-weight: 400;
+      font-size: 18px;
 
       @media @medium-collapse {
         padding: 15px 10px;
@@ -1472,7 +1474,7 @@ html,body {
     //each column,row with a number i.e. date
     td {
       border: 1px solid @color-grey;
-       
+
       a {
         padding: 35px 35px;
         cursor: default;
@@ -1498,7 +1500,15 @@ html,body {
     }
 
     .ui-datepicker-current-day {
-      background: @color-light-grey;
+      background: @color-lighter-grey;
+    }
+
+    .hasEvent {
+      height: 30px;
+      width: 10px;
+      background: @color-light-blue;
+      float: right;
+      margin: 10px 10px 0 0;
     }
   }
   //colour for other months dates

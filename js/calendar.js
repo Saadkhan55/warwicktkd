@@ -16,8 +16,12 @@ $(document).ready(function() {
   getJsonObjects();
 
   //on click of next or previous button, get json objects again
-  $(document).on("click",".ui-datepicker-next, .ui-datepicker-prev, .ui-state-default" ,function() {
+  $(document).on("click",".ui-datepicker-next, .ui-datepicker-prev" ,function() {
     getJsonObjects();
+  });
+
+  $(document).on("mouseenter", "td", function() {
+    $(this).children(".event").fadeIn();
   });
 
   //*******************************************
@@ -108,7 +112,7 @@ $(document).ready(function() {
 
   //*******************************************
   // @summary - adds event to calendar
-  // appends html to calendar 
+  // appends html to td 
   //
   // @param: item - current json item
   // @param: date - current date of json object
@@ -116,13 +120,20 @@ $(document).ready(function() {
   function addEventToCalendar(item, date) {
     var day = date.split("-")[2];
     var disabled = false;
+    var hasEvent = false;
 
     //Check if td has class disabled means from previous month
-    disabled = $("td:contains("+day+")").hasClass(".ui-state-disabled");
+    disabled = $("td:contains("+day+")").hasClass("ui-state-disabled");
+    //Check if td already has class hasEvent
+    hasEvent = $("td:contains("+day+") div").hasClass("hasEvent");
 
     //if not disbaled then from current month so append event
     if(!disabled) {
-      $("td:contains("+day+") a").append("<div class='event'>" + item.summary);
+     $("td:contains("+day+") a").append("<div class='event hide'>" + item.summary + "</div>");
+     //if the date doesn't already have event icon added
+     if(!hasEvent) {
+       $("td:contains("+day+")").prepend("<div class='hasEvent'></div>");
+     }
     }
   }
 });
