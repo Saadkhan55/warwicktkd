@@ -1294,7 +1294,7 @@ body {
   display: block;
   color: #000000;
 }
-#calendar .ui-datepicker-calendar .ui-datepicker-current-day {
+#calendar .ui-datepicker-calendar .ui-datepicker-today {
   background: #ededed;
 }
 #calendar .ui-datepicker-calendar .hasEvent {
@@ -1308,9 +1308,19 @@ body {
   color: #777777;
 }
 #calendar .event {
-  margin-top: 15px;
   font-size: 18px;
-}
-#calendar .event:hover {
-  cursor: pointer;
+  display: none;
+  position: absolute;
+  background: #367ee9;
+  height: auto;
+  width: 300px;
+  color: #ffffff;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  padding-bottom: 30px;
+  z-index: 1200;
 }

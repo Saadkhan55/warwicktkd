@@ -1499,10 +1499,12 @@ html,body {
       color: @color-black;
     }
 
-    .ui-datepicker-current-day {
+    .ui-datepicker-today {
       background: @color-lighter-grey;
     }
 
+    //creates a blue box to show user there is an event 
+    //here
     .hasEvent {
       height: 30px;
       width: 10px;
@@ -1516,12 +1518,17 @@ html,body {
     color: @color-header-grey; 
   }
 
+  //the events shows on hover
   .event {
-    margin-top: 15px;
     font-size: 18px;
-
-    &:hover {
-      cursor: pointer;
-    }
+    display: none;
+    position: absolute;
+    background: @color-light-blue;
+    height: auto;
+    width: 300px;
+    color: @color-white;
+    .border-radius(5px);
+    padding-bottom: 30px;
+    z-index: 1200;
   }
 }

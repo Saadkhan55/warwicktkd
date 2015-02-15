@@ -7,22 +7,27 @@ $(document).ready(function() {
     inline: true,
     firstDay: 1,
     showOtherMonths: true,
-    dayNamesMin: ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat']
-  })
+    dayNamesMin: ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'],
+  });
 
-  $( "#calendar" ).datepicker( "option", "disabled", true );
-
-  //first time calendar loads
+  //first time load all events
   getJsonObjects();
 
-  //on click of next or previous button, get json objects again
-  $(document).on("click",".ui-datepicker-next, .ui-datepicker-prev" ,function() {
+  //on click of each date, get json objects again
+  $(document).on("mouseup",".ui-datepicker-default, .ui-state-hover, .ui-datepicker-next, .ui-datepicker-prev" ,function(e) {
     getJsonObjects();
   });
-
-  $(document).on("mouseenter", "td", function() {
-    $(this).children(".event").fadeIn();
+  
+  //on hover of an item with event
+  $(document).on("mouseover","td, .ui-state-hover" ,function() {
+    $(this).find(".event").fadeIn("500");
   });
+
+  //on hover of an item with event
+  $(document).on("mouseleave","td" ,function() {
+    $(this).find(".event").fadeOut();
+  });
+
 
   //*******************************************
   // @summary - Get all the json objects from
@@ -41,7 +46,6 @@ $(document).ready(function() {
          if(!checkEvent(getDate(item))) {
           continue;
          }
-
          //add current event to the calendar
          addEventToCalendar(item, date);
       }
@@ -112,29 +116,75 @@ $(document).ready(function() {
 
   //*******************************************
   // @summary - adds event to calendar
-  // appends html to td 
+  // appends html to td, checks for each element
+  // (date) if element date matches current date.
+  //
+  // If the element has an event
+  // appends to the div event as a pose
+  // to creating a new one.
   //
   // @param: item - current json item
   // @param: date - current date of json object
   //*******************************************
   function addEventToCalendar(item, date) {
     var day = date.split("-")[2];
-    var disabled = false;
-    var hasEvent = false;
 
-    //Check if td has class disabled means from previous month
-    disabled = $("td:contains("+day+")").hasClass("ui-state-disabled");
-    //Check if td already has class hasEvent
-    hasEvent = $("td:contains("+day+") div").hasClass("hasEvent");
+    //for each element with that day (can have dates from previous months showing)
+    $("td").each(function() {
+      //disabled - check if date is from previous month
+      //hasEvent - check if element already has an event inside it
+      //date - get date of current element
+      var disabled = $(this).hasClass("ui-state-disabled");
+      var hasEvent = $(this).children("div").hasClass("hasEvent");
+      var date = $(this).children("a").text();
 
-    //if not disbaled then from current month so append event
-    if(!disabled) {
-     $("td:contains("+day+") a").append("<div class='event hide'>" + item.summary + "</div>");
-     //if the date doesn't already have event icon added
-     if(!hasEvent) {
-       $("td:contains("+day+")").prepend("<div class='hasEvent'></div>");
-     }
+      //if day is less than 10, add to date so can check for equality
+      if(parseInt(day) < 10) {
+        date = "0" + date;
+      }
+
+      //if not disabled AND date of event equals date of day
+      if(!disabled && (date == day)) {
+        //if element doesn't have an event
+        if(!hasEvent) {
+          //add event and hasEvent ( blue box)
+          $(this).append("<div class='event'>" + getInfo(item) + "</div>");
+          $(this).prepend("<div class='hasEvent'></div>");
+        }
+        else {
+          //else prepend event to event div
+          $(this).find(".event").prepend(getInfo(item));
+        }
+      }
+    });
+  }
+
+  //*******************************************
+  // @summary - gets information to be 
+  // displayed in calendar. First
+  // tests that the value is not null
+  // if not then added to string to be 
+  // returned
+  // 
+  // @param: item - current json item
+  // @return: information - string containing
+  // information about the event such as 
+  // location.
+  //*******************************************
+  function getInfo(item) {
+    var eventLocation = item.location;
+    var eventStartTime = item.start.dateTime;
+    var eventEndTime = item.end.dateTime;
+    var information = "<br></br>" + item.summary;
+
+    if(eventLocation != null) {
+      information += "</br> Location: " + eventLocation;
     }
+    if(eventStartTime != null) {
+      information += "</br> Starts at: " + eventStartTime.substring(11,16) + "<br> Ends at: " + eventEndTime.substring(11,16);
+    }
+
+    return information;
   }
 });
 
