@@ -50,6 +50,8 @@ $(document).ready(function() {
         $(".news-story").empty();
         //apend html to div
         $(".news-story").append(html);
+        //scroll to top
+        $("html, body").animate({ scrollTop: 0 }, "slow");
       }
     });
     

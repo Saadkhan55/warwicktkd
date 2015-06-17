@@ -15,7 +15,7 @@
           <!-- Each row contains 2 individual-->
           <div class="row">
 
-            <div class="col-md-6 individual">
+            <div class="col-md-6 individual animated bounceInLeft wow">
               <img class="img-responsive" src="images/team/Chris.jpg" width="150px" height="150px">
               <h3 class="title">Chris Norman <small>President</small></h3>
               <p>
@@ -23,7 +23,7 @@
               </p>
             </div> <!-- End of individual team member -->
 
-            <div class="col-md-6 individual">
+            <div class="col-md-6 individual animated bounceInRight wow">
               <img class="img-responsive" src="images/team/Alex.jpg" width="150px" height="150px">
               <h3 class="title">Alex Shaw <small> Treasurer</small></h3>
               <p>
@@ -33,7 +33,7 @@
           </div> <!-- End of row -->
 
           <div class="row"> <!-- New row -->
-            <div class="col-md-6 individual">
+            <div class="col-md-6 individual animated bounceInLeft wow">
               <img class="img-responsive" src="images/team/Sian.jpg" width="150px" height="150px">
               <h3 class="title">Sian McDonell<small> Secretary</small></h3>
               <p>
@@ -41,7 +41,7 @@
               </p>
             </div> <!-- End of individual team member -->
 
-            <div class="col-md-6 individual">
+            <div class="col-md-6 individual animated bounceInRight wow">
               <img class="img-responsive" src="images/team/Roliver.jpg" width="150px" height="150px">
               <h3 class="title">Roliver<small> Social Sec</small></h3>
               <p>
@@ -51,7 +51,7 @@
           </div> <!-- End of row -->
 
           <div class="row">
-            <div class="col-md-6 individual">
+            <div class="col-md-6 individual animated bounceInLeft wow">
               <img class="img-responsive" src="images/team/Bendy.jpg" width="150px" height="150px">
               <h3 class="title">Ben De Ivey<small>Publicity Officer</small></h3>
               <p>
@@ -59,7 +59,7 @@
               </p>
             </div> <!-- End of individual team member -->
 
-            <div class="col-md-6 individual">
+            <div class="col-md-6 individual animated bounceInRight wow">
               <img class="img-responsive" src="images/team/Leigh.jpg" width="150px" height="150px">
               <h3 class="title">Leigh Collier<small>Captain</small></h3>
               <p>
@@ -69,7 +69,7 @@
           </div> <!-- End of row -->
 
           <div class="row">
-            <div class="col-md-6 individual">
+            <div class="col-md-6 individual animated bounceInLeft wow">
               <img class="img-responsive" src="images/team/Jess.jpg" width="150px" height="150px">
               <h3 class="title">Jess O'Brien<small>Charity</small></h3>
               <p>
@@ -77,7 +77,7 @@
               </p>
             </div> <!-- End of individual team member -->
 
-            <div class="col-md-6 individual">
+            <div class="col-md-6 individual animated bounceInRight wow">
               <img class="img-responsive" src="images/team/Sophie.jpg" width="150px" height="150px">
               <h3 class="title">Sophie Webster<small>Kit Secretary</small></h3>
               <p>

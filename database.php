@@ -1,64 +1,125 @@
 <?php  
 class Database {
 
-  //this will be the database connection variable
-  protected static $conn;
-  
-  /**
-   * Connect to the database
-   *
-   * @return bool false on failure/ MySQLi instance on success
-   * 
-   **/
-  public function connect() {
+  //dbh - database handler for connections
+  private $dbh;
+  private $error;
+  private $stmt;
 
-    //if connection not set establish connection (note self used instead of this ->, because conn is static variable)
-    if(!isset(self::$conn)) {
-      //get login information from config file outside root
-      $config = parse_ini_file('../config.ini');
-      self::$conn = new mysqli($config['host'], $config['username'], $config['password'], $config['dbname']);
-    }
+  //*******************************************
+  // @summary: constructor tries to connect
+  // to the db (persistent)
+  //*******************************************
+  public function __construct(){
+    //get login information as array from config file
+    $config = parse_ini_file('../config.ini');
 
-    //else if connection not established return an error 
-    else if(!self::$conn) {
-      return false;
+    //put information into variables
+    $host = $config['host'];
+    $dbname = $config['dbname'];
+    $username = $config['username'];
+    $password = $config['password'];
+
+    //host and db
+    $dsn = 'mysql:host=' . $host . ';dbname=' . $dbname;
+
+    //options - ATTR_PERSISTENT: persistent connection to db
+    //ATTR_ERRMODE: exception to handle errors
+    $options = array(
+      PDO::ATTR_PERSISTENT    => true,
+      PDO::ATTR_ERRMODE       => PDO::ERRMODE_EXCEPTION
+    );
+
+    //try to connect to db else catch error
+    try{
+      $this->dbh = new PDO($dsn, $username, $password, $options);
     }
-    return self::$conn;
+    catch(PDOException $e){
+      $this->error = $e->getMessage();
+    }
   }
 
-  /**
-   * Query the database
-   *
-   * @param $query - query string
-   * @return results of mysqli query() function
-   **/
-
+  //*******************************************
+  // @summary: Runs queries no prepared
+  // statements.
+  //
+  // @param: query - the query to be executed
+  //
+  // @return: all the results (rows) from 
+  // queried results
+  //*******************************************
   public function query($query) {
-    $conn = $this -> connect();
-    $result = $conn->query($query);
-    return $result;
+    $this->stmt = $this->dbh->query($query);
+    return $this->stmt->fetchAll(PDO::FETCH_ASSOC);
+  } 
+
+  //*******************************************
+  // @summary: Runs queries with the prepared
+  // statements.
+  //
+  // @param: query - the query to be executed
+  //*******************************************
+  public function prepare($query) {
+    $this->stmt = $this->dbh->prepare($query);
+  } 
+
+  //*******************************************
+  // @summary: bind variable to value 
+  // and type
+  //
+  // @param: param - parameter to bind value to
+  // @param: value - value of variable (to search)
+  // @param: type - type of variable (to search)
+  //*******************************************
+  public function bind($param, $value, $type = null){
+    if (is_null($type)) {
+      switch (true) {
+      //get type of binded variable
+      case is_int($value):
+        $type = PDO::PARAM_INT;
+        break;
+      case is_bool($value):
+        $type = PDO::PARAM_BOOL;
+        break;
+      case is_null($value):
+        $type = PDO::PARAM_NULL;
+        break;
+      default:
+        $type = PDO::PARAM_STR;
+      }
+    }
+    $this->stmt->bindValue($param, $value, $type);
   }
 
-  /**
-   * Fetch rows from the database (SELECT query)
-   *
-   * @param $query The query string
-   * @return bool False on failure / array Database rows on success
-   */
-  public function select($query) {
-    $rows = array();
-    $result = $this -> query($query);
-    if($result === false) {
-      return false;
-    }
-    while ($row = $result -> fetch_assoc()) {
-      $rows[] = $row;
-    }
-    return $rows;
+  //*******************************************
+  // @summary: Executes the prepared query
+  //
+  // @return: executred statemt
+  //*******************************************
+  public function execute(){
+    return $this->stmt->execute();
   }
 
-  public function close() {
-    $conn -> close();
+  //*******************************************
+  // @summary: Get all results multiple rows
+  //
+  // @return: returns all rows in assoc array
+  // form
+  //*******************************************
+  public function resultset(){
+    $this->execute();
+    return $this->stmt->fetchAll(PDO::FETCH_ASSOC);
+  }
+
+  //*******************************************
+  // @summary: Get a single row
+  //
+  // @return: returns single row fetched in 
+  // associative array.
+  //*******************************************
+  public function single(){
+    $this->execute();
+    return $this->stmt->fetch(PDO::FETCH_ASSOC);
   }
 }
 ?>

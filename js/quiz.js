@@ -146,12 +146,12 @@ $(document).ready(function() {
   // the form of title -> 4 choices.
   //********************************************
   function getQuestion(array) {
-    var html = "<h3>" + array.question  + "</h3>";
+    var html = "<h3 class='animated bounceInLeft wow'>" + array.question  + "</h3>";
     html += "<div class='container'> <div class='row'>";
-    html += '<div class="question-no"> <div class="question-title">Questions</div> '
+    html += '<div class="question-no animated bounceInUp wow"> <div class="question-title">Questions</div> '
          + questionNo +'/10</div>';
 
-    html += '<div class="option col-md-6">';
+    html += '<div class="option col-md-6 animated wow bounceInLeft">';
     html += '<div class="number">1</div>';
     html += '<div class="radio">' + 
               '<label>' + '<input type="radio" name="Choices" class="choice" id="Choice1" value="option1">' + 
@@ -160,7 +160,7 @@ $(document).ready(function() {
             '</div>' +
           '</div>';
 
-    html += '<div class="option col-md-6">';
+    html += '<div class="option col-md-6 animated wow bounceInRight delay-3">';
     html += '<div class="number">2</div>';
     html += '<div class="radio">' + 
               '<label>' + '<input type="radio" name="Choices" class="choice" id="Choice2" value="option2">' + 
@@ -172,7 +172,7 @@ $(document).ready(function() {
 
     html += '<div class="row">'
 
-    html += '<div class="option col-md-6">';
+    html += '<div class="option col-md-6 animated wow bounceInLeft delay-4">';
     html += '<div class="number">3</div>';
     html += '<div class="radio">' + 
               '<label>' + '<input type="radio" name="Choices" class="choice" id="Choice3" value="option3">' + 
@@ -181,7 +181,7 @@ $(document).ready(function() {
              '</div>' +  
             '</div>'; //end of option
 
-    html +=  '<div class="option col-md-6">';
+    html +=  '<div class="option col-md-6 animated wow bounceInRight delay-5">';
     html +=  '<div class="number">4</div>';
     html += '<div class="radio">' + 
               '<label>' + '<input type="radio" name="Choices" class="choice" id="Choice4" value="option4">' + 

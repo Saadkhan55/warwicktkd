@@ -23,19 +23,22 @@
 @color-green: #449d44;
 @color-red: #ff3530;
 @color-black: #000; 
+@color-grey: #ccc;
 @color-light-grey: #ddd;
 @color-light-blue: #367ee9;
 @color-lighter-blue: #4ecff8;
 @color-header-grey: #777;
+@color-lighter-grey: #ededed;
 
 //button colours
 @color-danger: #d9534f;
 @color-success: #449d44;
 
-//Pre collapsed menu 
+//Media queries
 @pre-collapse: ~"(min-width: 768px)";
-//Post collapsed menu
 @post-collapse: ~"(max-width: 767px)";
+@medium-collapse: ~"(max-width: 1023px)";
+@mobile-collapse: ~"(max-width: 501px)";
 
 //**********************************************************************
 // General Styles such as headers etc
@@ -1198,7 +1201,7 @@ html,body {
       }
     }
 
-    //end of quiz
+    //end of quiz page
     .end {
       text-align: center;
 
@@ -1251,6 +1254,7 @@ html,body {
         margin-bottom: 20px;
       }
 
+      //number with choices
       .number {
         .border-radius(5px);
         padding-top: 20px;
@@ -1271,6 +1275,7 @@ html,body {
         }
       }
 
+      //radio -> label
       .radio {
         padding-left: 0;
         margin-left: -13px;
@@ -1322,7 +1327,7 @@ html,body {
     .wrong-answer {
       color: @color-danger !important;
     }
-    
+
     .wrong {
       color: @color-danger;
       float: left;
@@ -1331,3 +1336,199 @@ html,body {
   }
 }
 
+//************************************************************************
+// Calendar, jquery ui date picker
+//************************************************************************
+
+#calendar {
+  text-align: center;
+  margin-bottom: 35px;
+  width: 100%;
+
+  .ui-datepicker-header {
+    border-bottom: 1px solid #ccc;
+    padding: 33px 26px;
+    background: lighten(@color-black, 20%);
+    color: @color-white;
+    font-size: 20px;
+  }
+
+  //The month title
+  .ui-datepicker-month {
+    position: relative;
+    padding-right: 25px;
+
+    //before the month
+    &:before {
+      display: block;
+      position: absolute;
+      top: 5px;
+      right: 0;
+      width: 10px;
+      height: 10px;
+      content: '';
+      background: @color-light-blue;
+      .border-radius(10px);
+    }
+  }
+
+  //the year
+  .ui-datepicker-year {
+    padding-left: 8px;
+    color: @color-light-grey;
+  }
+  
+  //Calendar container -> has title and content
+  .ui-datepicker {
+    display: none;
+    width: 100%;
+    padding: 35px;
+    cursor: default;
+    font-size: 16px;
+    background: @color-white;
+    margin: 0 auto;
+    color: @color-black;
+
+    //Get rid of all spacing
+    &, & table, & tr, &td, &th {
+      padding: 0;
+    }
+  }
+
+  //Right and left moving icons
+  .ui-datepicker-prev,
+  .ui-datepicker-next {
+    top: -15px;
+    cursor: pointer;
+    position: relative;
+
+    &:hover {
+      &:before {
+        .transition(0.35s);
+        color: @color-white;
+      }
+    }
+
+    //navigation arrows
+    &:before {
+      font-family: FontAwesome;
+      font-size: 2.2em;
+
+      @media @post-collapse {
+        font-size: 1.5em;
+      }
+    }
+
+    span {
+      display: none;
+    }
+  }
+
+  .ui-datepicker-prev {
+    float: left;
+
+    //left arrow icon from font-awesome
+    &:before {
+      content: "\f0d9";
+    }
+  }
+
+  .ui-datepicker-next {
+    float: right;
+
+    &:before {
+      content: "\f0da";
+    }
+  }
+
+  //calendar table
+  .ui-datepicker-calendar {
+    width: 100%;
+
+    td, th {
+      text-align: center;
+    }
+    
+    //header styling i.e. Mon, Tue etc
+    th {
+      padding: 20px 35px;
+      border: 1px solid @color-grey;
+      border-top: none;
+      font-weight: 400;
+      font-size: 18px;
+
+      @media @medium-collapse {
+        padding: 15px 10px;
+      }
+
+      @media @post-collapse {
+        padding: 15px 10px;
+      }
+
+      @media @mobile-collapse {
+        font-size: 15px;
+        padding: 15px 5px;
+      }
+    }
+
+    //each column,row with a number i.e. date
+    td {
+      border: 1px solid @color-grey;
+
+      a {
+        padding: 35px 35px;
+        cursor: default;
+
+        @media @medium-collapse {
+          padding: 20px 20px;
+        }
+
+        @media @post-collapse {
+          padding: 20px 15px;
+        }
+
+        @media @mobile-collapse {
+          padding: 15px 5px;
+        }
+      }
+    }
+
+    //regular date (i.e. not today's)
+    .ui-state-default {
+      display: block;
+      color: @color-black;
+    }
+
+    .ui-datepicker-today {
+      background: @color-lighter-grey;
+    }
+
+    //creates a blue box to show user there is an event 
+    //here
+    .hasEvent {
+      height: 30px;
+      width: 10px;
+      background: @color-light-blue;
+      float: right;
+      margin: 10px 10px 0 0;
+    }
+  }
+  //colour for other months dates
+  .ui-datepicker-other-month .ui-state-default { 
+    color: @color-header-grey; 
+  }
+
+  //the events shows on hover
+  .event {
+    font-size: 18px;
+    display: none;
+    position: absolute;
+    background: @color-light-blue;
+    height: auto;
+    width: 300px;
+    color: @color-white;
+    .border-radius(5px);
+    padding-bottom: 30px;
+    z-index: 1200;
+  }
+}

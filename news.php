@@ -14,45 +14,45 @@
 
         require_once('database.php');
         $db = new Database();
-        $conn = $db->connect();
-
         //sanitize input
         $page_id = filter_input(INPUT_GET, 'Id', FILTER_SANITIZE_STRING);
 
         //if there is an news id in the url then display that article
         if($page_id != null) {
-          //prepare statement with id from url
-          $stmt = $conn->prepare("SELECT Title, Date, Photo, Article FROM Articles WHERE Id = ?");
-          //bind parameters
-          $stmt->bind_param("s", $page_id); 
 
-          //if execution is successful
-          if($stmt->execute()) {
-            //bind result to variables
-            $stmt->bind_result($title, $date, $photo, $article);
-            //fetch results and echo (print out) html to browser
-            while($stmt->fetch()) {
-                echo "<h2 class='title'>". $title ."<small>". $date ."</small></h2>";
-                echo $photo;
-                echo "<p class='larger-font'>".$article."</p>";
-            } 
-            $stmt->close();
-          }
+          //prepare statement with id from url
+          $db->prepare("SELECT Title, Date, Photo, Article FROM Articles WHERE Id = :id");
+          //bind parameters
+          $db->bind(":id", $page_id); 
+          //Store result in variable
+          $result = $db->resultset();
+
+          //foreach row
+          foreach($result as $row ) {
+            $title = $row['Title'];
+            $date = $row['Date'];
+            $photo = $row['Photo'];
+            $article = $row['Article'];
+
+            echo "<h2 class='title'>". $title ."<small>". $date ."</small></h2>";
+            echo $photo;
+            echo "<p class='larger-font'>".$article."</p>";
+          } 
         }
+        
         // else if no news id in url display 5 news stories per page
         else {
 
           //filter input, and sanitize the string $_GET['p']
           $val = filter_input(INPUT_GET, 'p', FILTER_SANITIZE_STRING);
-          //cast val to page_val
+
+          //cast val to page_val, if it isn't an int will be cast to 0
           $page_val = (int) $val;
           
-          //get number of articles to display in pagination (later on)
-          $result = $db->query("SELECT COUNT(*) FROM Articles");
-          $article_number = 0;
-          while($row = $result -> fetch_assoc()) {
-            $article_number = $row['COUNT(*)'];
-          }
+          //Get total number of articles in the db
+          $db->prepare("SELECT COUNT(*) FROM Articles");
+          $row = $db->single();
+          $article_number = $row['COUNT(*)'];
 
           //work out the max number of pages needed for pagination as 5 pages are displayed per page
           if($article_number % 5 === 0) {
@@ -82,7 +82,7 @@
           $page_number = ($page_number - 1) * 5;
 
           require_once("articles.php");
-          echo getSummaries($page_number, $conn);
+          echo getSummaries($page_number);
           echo getPagination($current_page ,$article_number);
 
         }

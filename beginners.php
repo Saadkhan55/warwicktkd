@@ -13,7 +13,7 @@
         <div class="row">
           <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
 
-            <div class="panel panel-default">
+            <div class="panel panel-default wow animated bounceInLeft">
               <div class="panel-heading" role="tab" id="headingOne">
                 <h4 class="panel-title">
                   <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
@@ -34,7 +34,7 @@
         </div> <!-- End of row -->
       </div> <!-- End of container -->
 
-      <div class="tab-panels" role="tabpanel">
+      <div class="tab-panels wow animated delay-2 bounceInUp" role="tabpanel">
         <div class="container">
           <div class="row">
             <!-- Nav tabs -->
@@ -54,20 +54,20 @@
                 </p>
               </div> <!-- End of tab panel -->
 
-              <div role="tabpanel" class="tab-pane fade " id="SetSparring">
+              <div role="tabpanel" class="tab-pane wow animated bounceInLeft" id="SetSparring">
                 <p class="larger-font">
                   This is a sequence of pre-arranged moves between two people in which one person attacks whilst the other defends. This is used to practise proper execution of blocks and attacks against an opponent with minimal risk of injury.
                 </p>
 
             </div> <!-- End of tab panel -->
 
-              <div role="tabpanel" class="tab-pane fade" id="LineWork">
+              <div role="tabpanel" class="tab-pane wow animated bounceInLeft" id="LineWork">
                 <p class="larger-font">
                   A great way to practise specific Tae Kwon Do techniques, usually involves moving fowards and backwards doing a set move or combination attacking 'air'.
                 </p>
                </div> <!-- End of tab panel -->
 
-              <div role="tabpanel" class="tab-pane fade" id="Sparring">
+              <div role="tabpanel" class="tab-pane wow animated bounceInLeft" id="Sparring">
                 <p class="larger-font">
                   Normally consists of 2 minute rounds between two combatants. Two common types of free sparring are point-stop (where the match is paused by a referee whenever a point is scored) or continuous. Competition sparring scoring can vary, but the rules are usually fairly similiar (2 or 3 points for a kick, and 1 for a hand technique). Free sparring is effectively a controlled fight in which clean techniques are rewarding with points.
                 </p>

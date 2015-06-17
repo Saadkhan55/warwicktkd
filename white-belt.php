@@ -14,7 +14,7 @@
           <h2 class="section">White Belt</h2>
 
           <h3>Grading Requirements</h3>
-          <p class="larger-font">
+          <p class="larger-font animated bounceInLeft wow">
             <b>Techniques</b> <br><br>
             Press Ups (10) Momtong Bachim <br>
             (Flat Hand Up to 17 years/over 40 – Adults Knuckles)<br><br>
@@ -51,7 +51,7 @@
           <img src="images/pattern/10th_kup.png" alt="" width="150px" height="150px">
 
           <!-- Table showing off moves for the pattern -->
-          <table class="table table-hover">
+          <table class="table table-hover wow animated bounceInRight">
             <thead>
               <tr>
                 <th>No</th>
@@ -202,7 +202,7 @@
           </table> <!-- End of sajo jirugi pattern -->
 
           <h3>Saju Magki <small>Four Directional Block</small></h3>
-          <table class="table table-hover">
+          <table class="table table-hover wow animated bounceInRight">
 
             <thead>
               <tr>
@@ -369,7 +369,7 @@
             </tbody>
           </table> <!-- End of saju magki -->
 
-          <div class="sparring">
+          <div class="sparring wow animated bounceInRight">
             <h3>Sambo Matsogi <small>Three Step Sparring</small></h3>
 
             <p class="larger-font">
@@ -409,7 +409,7 @@
             </p>
         </div> <!-- End of sparring -->
       
-          <div class="theory">
+          <div class="theory wow animated bounceInUp">
             <h3>Theory</h3>
             <p class="larger-font">
               <b>Tae kwon Do</b> – means Kicking & Punching Art; or foot fist way of life. <br>
@@ -429,7 +429,7 @@
               </p><br><br>
 
             <!-- Korean theory with english translation -->
-            <table class="table table-hover">
+            <table class="table table-hover wow animated bounceInUp">
               <thead>
                 <tr>
                   <th>Technique</th>

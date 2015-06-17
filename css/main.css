@@ -209,8 +209,9 @@ body {
 }
 @media (max-width: 767px) {
   #wrapper {
-    margin: 0 auto -900px;
-    padding: 0 0 900px;
+    margin: 0 auto -850px;
+    padding: 0 0 850px;
+    overflow-x: hidden;
   }
 }
 .navbar-default {
@@ -313,7 +314,7 @@ body {
 }
 @media (max-width: 767px) {
   #footer {
-    height: 900px;
+    height: 850px;
   }
 }
 #footer a {
@@ -430,17 +431,16 @@ body {
 .carousel .container {
   padding-top: 100px;
 }
+@media (max-width: 1023px) {
+  .carousel .container .col-md-6 {
+    width: 100%;
+  }
+}
 .carousel .container .btn {
   margin-top: 20px;
 }
 .carousel .container .carousel-caption {
-  position: relative;
-  left: -20%;
-}
-@media (max-width: 767px) {
-  .carousel .container .carousel-caption {
-    left: -2%;
-  }
+  position: static;
 }
 .carousel .container .carousel-caption .dropdown-menu {
   margin: 0;
@@ -463,6 +463,11 @@ body {
 }
 .carousel .container .carousel-caption .title {
   margin-bottom: 35px;
+}
+@media (max-width: 1023px) {
+  .carousel .container .carousel-image {
+    display: none;
+  }
 }
 .three-story {
   margin-bottom: 20px;
@@ -737,12 +742,16 @@ body {
   max-width: 200px;
   margin-bottom: 20px;
 }
+.gallery-set .image {
+  float: left;
+  display: inline-block;
+  padding: 0 20px;
+}
 #lightbox {
-  padding-top: 2%;
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 1100;
+  z-index: 1500;
   background: rgba(0, 0, 0, 0.8);
   width: 100%;
   height: 100%;
@@ -757,12 +766,15 @@ body {
 }
 #lightbox img {
   max-width: 900px;
-  max-width: 70%;
+  max-width: 90%;
 }
 @media (max-width: 767px) {
   #lightbox img {
-    max-width: 95%;
+    max-width: 100%;
     height: auto;
+    position: absolute;
+    left: 0;
+    top: 20%;
   }
 }
 #lightbox .fa {
@@ -781,6 +793,12 @@ body {
   -ms-transition: 0.2s;
   -o-transition: 0.2s;
   font-size: 5em;
+}
+@media (max-width: 767px) {
+  #lightbox .fa {
+    top: 40%;
+    padding: 0;
+  }
 }
 #lightbox .fa-chevron-right {
   right: 0;
@@ -1315,12 +1333,9 @@ body {
   height: auto;
   width: 300px;
   color: #ffffff;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  border-radius: 5px;
-  -moz-background-clip: padding;
-  -webkit-background-clip: padding-box;
-  background-clip: padding-box;
   padding-bottom: 30px;
   z-index: 1200;
+}
+#calendar .active {
+  display: block important!;
 }

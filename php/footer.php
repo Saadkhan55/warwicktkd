@@ -2,7 +2,7 @@
   <a id="up" href="#header"><i class="fa fa-chevron-up"></i></a> <!-- End of up button -->
   <div class="container">
     <div class="row">
-      <div class="col-sm-4">      
+      <div class="col-sm-4 animated wow bounceInLeft">      
         <h2>SITEMAP</h2>
         <div class="row sitemap">
           <!-- SITEMAP left, middle and right rows -->
@@ -63,13 +63,13 @@
         //select latest 3 articles
         $result = $db->query("SELECT * FROM Articles ORDER BY ID DESC LIMIT 3");
         //print out html 'like normal'
-        echo '<div class="col-sm-4">
+        echo '<div class="col-sm-4 animated wow bounceInUp">
                 <h2>RECENT POSTS </h2>
                 <div class="blog-post">
                   <ul class="unlisted">';
 
-        //get result, then for each row create a mini story
-        while($row = $result -> fetch_assoc()) {
+        //foreach row create a mini story
+        foreach ($result as $row) {
           $id = $row['Id'];
           $date = $row['Date'];
           $photo = $row['Photo'];
@@ -94,7 +94,7 @@
       ?>
 
       <!-- Third column -->
-      <div class="col-sm-4">
+      <div class="col-sm-4 animated wow bounceInRight">
         <div class="address">
           <h2>CONTACT US</h2>
           <p> 
@@ -107,15 +107,19 @@
       </div> <!--End of third col-->
     </div> <!-- end of row -->
   </div> <!-- End of container -->
-  <div class="credits">Warwick Tae Kwon Do &copy 2014-2015. All rights reserved.</div> <!-- End of credits -->
+  <div class="credits wow animated delay-3 bounceInDown">Warwick Tae Kwon Do &copy 2014-2015. All rights reserved.</div> <!-- End of credits -->
 </div><!--End of footer-->
 
 <!-- jQuery and bootstrap for plugins with local fallbacks-->
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 <script>window.jQuery || document.write('<script src="js/vendor/jquery.min.js"><\/script>')</script> 
+<script src="js/vendor/Tocca.min.js"></script>
 <!-- Bootstrap with CDN fallbacks-->
 <script src="js/vendor/bootstrap.min.js"></script>
 <!-- Own Created JS files-->
 <script src="js/active.js"></script> <!-- Change active navbar link depending on page -->
 <script src="js/scroll.js"></script> <!-- Allow smooth scroll to an anchor link using jquery -->
-
+<script src="js/vendor/wow.min.js"></script> <!-- Allow animations when in viewpoint -->
+<script>
+  new WOW().init();
+</script>

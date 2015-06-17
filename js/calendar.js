@@ -1,3 +1,21 @@
+  //*******************************************
+  // gradeNumber - white belt is 1 
+  // black tag = 10 etc, gets questions based on 
+  // grade
+  //
+  // questioNo - Keeps track of number of 
+  // questions only 10 questions per 'round'
+  //
+  // correctAnswer - Keeps track number of 
+  // correct answers, shows the user at the
+  // end
+  //
+  // correct - current correct answer in the 
+  // form Choice[nu,]
+  //
+  // clicked - checks if choice has already 
+  // clicked i.e. doesn't allow double clicks
+  //*******************************************
 $(document).ready(function() {
   //json feed URL for calendar
   var url ='https://www.googleapis.com/calendar/v3/calendars/taekwondowarwick@gmail.com/events?key=AIzaSyA2RSOuMAEVSQ4Z7E16dl1p7RX-LEPfrGA';
@@ -14,8 +32,16 @@ $(document).ready(function() {
   getJsonObjects();
 
   //on click of each date, get json objects again
-  $(document).on("mouseup",".ui-datepicker-default, .ui-state-hover, .ui-datepicker-next, .ui-datepicker-prev" ,function(e) {
+  $(document).on("mouseup",".ui-datepicker-default, .ui-state-hover, .ui-datepicker-next, .ui-datepicker-prev" ,function() {
     getJsonObjects();
+  });
+
+  //on hover of an item with event
+  $(document).on("tap",".ui-state-default" ,function(e) {
+    getJsonObjects();
+    $target = $(e.target);
+    $target.fadeOut();
+    $target.append("HELLO");
   });
   
   //on hover of an item with event
@@ -27,7 +53,6 @@ $(document).ready(function() {
   $(document).on("mouseleave","td" ,function() {
     $(this).find(".event").fadeOut();
   });
-
 
   //*******************************************
   // @summary - Get all the json objects from

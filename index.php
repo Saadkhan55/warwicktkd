@@ -23,7 +23,7 @@
             <div class="container">
               <div class="row">
 
-                <div class="col-md-6 col-xs-12"> <!-- Each newslider element -->
+                <div class="col-md-6 animated bounceInLeft wow"> <!-- Each newslider element -->
                   <div class="carousel-caption"> 
                     <h1 class="title">Beginners Guide</h1> <!-- Newslider title -->
                     <p class="carousel-text">New to the club, or looking to start Tae Kwon Do. Have a look at our beginners guide to help answer some of your questions.</p> <!-- newslider text -->
@@ -32,7 +32,7 @@
                   </div>
                 </div> <!--End of col-md-6 -->
 
-                <div class="col-md-6 col-sm-4 hidden-xs">
+                <div class="col-md-6 animated delay-3 bounceInRight wow">
                   <div class="carousel-image">
                     <img class="img-responsive" src="images/placeholder.png" width="250px" height="250px">
                   </div> <!--End of carousel-image -->
@@ -46,7 +46,7 @@
             <div class="container">
               <div class="row">
 
-                <div class="col-md-6 col-xs-12">
+                <div class="col-md-6 animated bounceInLeft">
                   <div class="carousel-caption">
                     <h1 class="title">Students</h1>
                      <p class="carousel-text">Already a student at the club, want to revise theory or learn your patterns. Has all the information for the grading syllabus. Select appropiate grade in dropdown menu.</p>
@@ -72,7 +72,7 @@
                   </div> <!-- End of caption -->
                 </div> <!--End of col-md-6 -->
 
-                <div class="col-md-6 col-sm-4 hidden-xs">
+                <div class="col-md-6 animated delay-3 bounceInRight">
                   <div class="carousel-image">
                     <img class="img-responsive" src="images/placeholder.png" width="250px" height="250px">
                   </div> <!--End of carousel-image -->
@@ -86,7 +86,7 @@
             <div class="container">
               <div class="row">
 
-                <div class="col-md-6 col-xs-12">
+                <div class="col-md-6 animated bounceInLeft">
                   <div class="carousel-caption">
                     <h1 class="title">News</h1>
                     <p class="carousel-text">Take a look at the latest news for the club, such competitions the university has completed in or results of gradings or even on going events</p>
@@ -94,7 +94,7 @@
                   </div>
                 </div> <!--End of col-md-6 -->
 
-                <div class="col-md-6 col-sm-4 hidden-xs">
+                <div class="col-md-6 animated delay-3 bounceInRight">
                   <div class="carousel-image">
                     <img class="img-responsive" src="images/placeholder.png" width="250px" height="250px">
                   </div> <!--End of carousel-image -->
@@ -121,7 +121,7 @@
           <div class="row">
 
             <a href="beginners.php">
-              <div class="col-md-4">
+              <div class="col-md-4 animated bounceInUp delay-1 wow">
                 <i class="fa fa-user"></i>
                  <h2>Beginner Guide</h2>
                 <p>New to the club, or looking to start Tae Kwon Do. Have a look at our beginners guide to help answer some of your questions.</p>
@@ -129,7 +129,7 @@
             </a> <!-- End of first story -->
 
             <a href="training.php">
-              <div class="col-md-4">
+              <div class="col-md-4 animated bounceInUp delay-2 wow">
                 <i class="fa fa-info"></i>
                  <h2>About Us</h2>
                 <p>Learn more about what are training times and where we train. Also learn the cost of joining the club</p>
@@ -137,7 +137,7 @@
             </a> <!-- End of second story -->
 
             <a href="team.php">
-              <div class="col-md-4">
+              <div class="col-md-4 animated bounceInUp delay-3 wow">
                 <i class="fa fa-users"></i>
                  <h2>Exec Team</h2>
                 <p>Get to know all the great people that run the club. Learn a bit about them and what they do.</p>
@@ -160,8 +160,8 @@
               //select latest 3 articles
               $result = $db->query("SELECT * FROM Articles ORDER BY ID DESC LIMIT 3");
 
-              //get result, then for each row create a mini story
-              while($row = $result -> fetch_assoc()) {
+              //For each row in the query (3 in this case)
+              foreach ($result as $row) {
                 $id = $row['Id'];
                 $date = $row['Date'];
                 $photo = $row['Photo'];
@@ -171,7 +171,7 @@
                 //Create each article show title summary and picture
                 echo '
                   <a href="news.php?Id='.$id.'"> <!-- Article links to news equivalent -->
-                    <div class="row">
+                    <div class="row animated wow bounceInLeft">
                       <div class="summary-news">
                        <h2>'.$title.'<small>'.$date.'</small></h2>
                        <div class="col-sm-3">
@@ -179,7 +179,7 @@
                         </div> <!-- End of picture -->
 
                         <div class="col-sm-9">
-                          <p>'.$summary.'</p>
+                          <p class="larger-font">'.$summary.'</p>
                         </div> <!-- End of main summary --> 
                       </div> <!-- End of summary -->
                     </div> <!-- End of row -->

@@ -43,6 +43,12 @@ $(document).ready(function() {
         //add each image ot the array
         images.push($(this).attr("src"));
       });
+      
+      //click anywhere to close lightbox
+      $('#lightbox').on('click', function() {
+        $('#lightbox').hide();
+        $('#content').empty();
+      });
 
       //on click of right button
       $('.fa-chevron-right').on('click' ,function(ev) {
@@ -54,12 +60,6 @@ $(document).ready(function() {
         getNext(index, 1);
 
       });
-      
-      //click anywhere to close lightbox
-      $('#lightbox').on('click', function() {
-        $('#lightbox').hide();
-        $('#content').empty();
-      });
 
       //on click of left button
       $('.fa-chevron-left').on('click' ,function(ev) {
@@ -70,6 +70,19 @@ $(document).ready(function() {
         //run function to get next image
         getNext(index, 0);
       });
+
+
+      //running for mobile swiping right or left and do the same as the buttons
+      $(document).on('swipeleft', function() {
+        var index = getIndex(images, image_src);
+        getNext(index, 0);
+      });
+
+      $(document).on('swiperight', function() {
+        var index = getIndex(images, image_src);
+        getNext(index, 1);
+      });
+
 
       //left or right navigation arrow key is pressed down
       $(document).keydown(function(e) {
