@@ -34,7 +34,7 @@
 
                 <div class="col-md-6 animated delay-3 bounceInRight wow">
                   <div class="carousel-image">
-                    <img class="img-responsive" src="images/placeholder.png" width="250px" height="250px">
+                    <img class="img-responsive" src="images/carousel/beginners.jpg" width="350px" height="260px">
                   </div> <!--End of carousel-image -->
                 </div> <!--End of carousel-image -->
 
@@ -74,7 +74,7 @@
 
                 <div class="col-md-6 animated delay-3 bounceInRight">
                   <div class="carousel-image">
-                    <img class="img-responsive" src="images/placeholder.png" width="250px" height="250px">
+                    <img class="img-responsive" src="images/carousel/students.jpg" width="350px" height="260px">
                   </div> <!--End of carousel-image -->
                 </div> <!--End of carousel-image -->
 
@@ -88,15 +88,21 @@
 
                 <div class="col-md-6 animated bounceInLeft">
                   <div class="carousel-caption">
-                    <h1 class="title">News</h1>
-                    <p class="carousel-text">Take a look at the latest news for the club, such competitions the university has completed in or results of gradings or even on going events</p>
-                    <a href="news.php"><button type="button" class="btn btn-danger btn-lg">Read More</button></a> <!-- newslider button -->
+                    <h1 class="title">Training Times</h1>
+                    <p class="carousel-text">Training times for this year are all at Westwood Games Hall (<a href="http://campus.warwick.ac.uk/?search=Westwood+Games+Hall&slid=41357" target="_blank">Map Link</a>)
+                      <br><br>
+                      <br> Tuesday: 8:30 - 10:00 PM
+                      <br> Thursday: 7:00 - 8:30 PM
+                      <br> Saturday: 2:00 - 4:00 PM
+                      <br>
+                    </p>
+                    <a href="training.php"><button type="button" class="btn btn-danger btn-lg">Read More</button></a> <!-- newslider button -->
                   </div>
                 </div> <!--End of col-md-6 -->
 
                 <div class="col-md-6 animated delay-3 bounceInRight">
                   <div class="carousel-image">
-                    <img class="img-responsive" src="images/placeholder.png" width="250px" height="250px">
+                    <img class="img-responsive" src="images/carousel/training.jpg" width="350px" height="260px">
                   </div> <!--End of carousel-image -->
                 </div> <!--End of carousel-image -->
 
@@ -121,7 +127,7 @@
           <div class="row">
 
             <a href="beginners.php">
-              <div class="col-md-4 animated bounceInUp delay-1 wow">
+              <div class="col-md-4 ">
                 <i class="fa fa-user"></i>
                  <h2>Beginner Guide</h2>
                 <p>New to the club, or looking to start Tae Kwon Do. Have a look at our beginners guide to help answer some of your questions.</p>
@@ -129,7 +135,7 @@
             </a> <!-- End of first story -->
 
             <a href="training.php">
-              <div class="col-md-4 animated bounceInUp delay-2 wow">
+              <div class="col-md-4 ">
                 <i class="fa fa-info"></i>
                  <h2>About Us</h2>
                 <p>Learn more about what are training times and where we train. Also learn the cost of joining the club</p>
@@ -137,7 +143,7 @@
             </a> <!-- End of second story -->
 
             <a href="team.php">
-              <div class="col-md-4 animated bounceInUp delay-3 wow">
+              <div class="col-md-4 ">
                 <i class="fa fa-users"></i>
                  <h2>Exec Team</h2>
                 <p>Get to know all the great people that run the club. Learn a bit about them and what they do.</p>
@@ -171,7 +177,7 @@
                 //Create each article show title summary and picture
                 echo '
                   <a href="news.php?Id='.$id.'"> <!-- Article links to news equivalent -->
-                    <div class="row animated wow bounceInLeft">
+                    <div class="row ">
                       <div class="summary-news">
                        <h2>'.$title.'<small>'.$date.'</small></h2>
                        <div class="col-sm-3">

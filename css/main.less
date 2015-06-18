@@ -508,6 +508,17 @@ html,body {
   font-family: @carousel-font, sans;
   font-size: @carousel-size;
 
+  //anchor links in carousel
+  a {
+    color: @color-white;
+    font-weight: 700;
+
+    &:hover {
+      color: lighten(@color-red, 10%);
+      .transition(0.35s);
+    }
+  }
+
   //after collapse change margin bottom
   @media @post-collapse {
     margin-bottom: 0px;

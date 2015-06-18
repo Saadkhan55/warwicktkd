@@ -423,6 +423,18 @@ body {
   font-family: 'Open Sans', sans;
   font-size: 16px;
 }
+.carousel a {
+  color: #ffffff;
+  font-weight: 700;
+}
+.carousel a:hover {
+  color: #ff6763;
+  transition: 0.35s;
+  -webkit-transition: 0.35s;
+  -moz-transition: 0.35s;
+  -ms-transition: 0.35s;
+  -o-transition: 0.35s;
+}
 @media (max-width: 767px) {
   .carousel {
     margin-bottom: 0px;
