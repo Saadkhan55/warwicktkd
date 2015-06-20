@@ -23,7 +23,7 @@
             <div class="container">
               <div class="row">
 
-                <div class="col-md-6 animated bounceInLeft wow"> <!-- Each newslider element -->
+                <div class="col-md-6 animated bounceInLeft"> <!-- Each newslider element -->
                   <div class="carousel-caption"> 
                     <h1 class="title">Beginners Guide</h1> <!-- Newslider title -->
                     <p class="carousel-text">New to the club, or looking to start Tae Kwon Do. Have a look at our beginners guide to help answer some of your questions.</p> <!-- newslider text -->
@@ -32,7 +32,7 @@
                   </div>
                 </div> <!--End of col-md-6 -->
 
-                <div class="col-md-6 animated delay-3 bounceInRight wow">
+                <div class="col-md-6 animated delay-3 bounceInRight">
                   <div class="carousel-image">
                     <img class="img-responsive" src="images/carousel/beginners.jpg" width="350px" height="260px">
                   </div> <!--End of carousel-image -->
@@ -89,7 +89,7 @@
                 <div class="col-md-6 animated bounceInLeft">
                   <div class="carousel-caption">
                     <h1 class="title">Training Times</h1>
-                    <p class="carousel-text">Training times for this year are all at Westwood Games Hall (<a href="http://campus.warwick.ac.uk/?search=Westwood+Games+Hall&slid=41357" target="_blank">Map Link</a>)
+                    <p class="carousel-text">Training times for this year are all at Westwood Games Hall (<a class="map-link" href="http://campus.warwick.ac.uk/?search=Westwood+Games+Hall&slid=41357" target="_blank">Map Link</a>)
                       <br><br>
                       <br> Tuesday: 8:30 - 10:00 PM
                       <br> Thursday: 7:00 - 8:30 PM
