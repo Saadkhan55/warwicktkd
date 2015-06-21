@@ -116,28 +116,28 @@
                     }
                   ?>
 
-                  <div class="form-group aniamted bounceInLeft wow">
+                  <div class="form-group ">
                     <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-user bigicon"></i></span>
                     <div class="col-md-8">
                     <input id="fname" name="name" type="text" placeholder="Full Name" value="<?php echo (isset($name) ? $name : ""); ?>"class="form-control" required>
                     </div>
                   </div>
 
-                  <div class="form-group aniamted bounceInRight wow delay-2">
+                  <div class="form-group ">
                     <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-envelope-o bigicon"></i></span>
                     <div class="col-md-8">
                       <input id="email" name="email" type="text" placeholder="Email Address" value="<?php echo (isset($email) ? $email : ""); ?>" class="form-control" required>
                     </div>
                   </div>
 
-                  <div class="form-group aniamted bounceInUp wow delay-3">
+                  <div class="form-group ">
                     <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-pencil-square-o bigicon"></i></span>
                     <div class="col-md-8">
                       <textarea class="form-control" id="message" name="message" placeholder="Enter your messsage for us here" value="<?php echo (isset($message) ? $message : ""); ?>" rows="7" required></textarea>
                     </div>
                   </div>
 
-                  <div class="form-group animated wow bounceInUp delay-4">
+                  <div class="form-group ">
                     <div class="col-md-12 text-center">
                       <button  name="submit" type="submit" class="submit btn btn-primary btn-lg">Submit</button>
                     </div>

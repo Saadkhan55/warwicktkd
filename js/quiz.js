@@ -28,12 +28,16 @@ $(document).ready(function() {
   //
   // clicked - checks if choice has already 
   // clicked i.e. doesn't allow double clicks
+  //
+  // start - checks if user has clicked the 
+  // start button to begin the quiz
   //*******************************************
   var gradeNumber;
   var questionNo = 1;
   var correctAnswers = 0;
   var correct;
   var clicked = false;
+  var start = false;
 
   //on click on a radio button on intro screen
   $(".radio-inline").click(function() {
@@ -49,6 +53,7 @@ $(document).ready(function() {
 
     getNextQuestion(gradeNumber);
     $(".intro").fadeOut(800).empty();
+    start = true;
   });
   
   //When an option has been clicked
@@ -64,7 +69,7 @@ $(document).ready(function() {
   $("body").on('click','label' , function() {
 
       //if the option has been clicked return
-      if(clicked) {
+      if(clicked || !start) {
         return;
       }
       //else user has clickec set to true
@@ -146,12 +151,12 @@ $(document).ready(function() {
   // the form of title -> 4 choices.
   //********************************************
   function getQuestion(array) {
-    var html = "<h3 class='animated bounceInLeft wow'>" + array.question  + "</h3>";
+    var html = "<h3 class=''>" + array.question  + "</h3>";
     html += "<div class='container'> <div class='row'>";
-    html += '<div class="question-no animated bounceInUp wow"> <div class="question-title">Questions</div> '
+    html += '<div class="question-no"> <div class="question-title">Questions</div> '
          + questionNo +'/10</div>';
 
-    html += '<div class="option col-md-6 animated wow bounceInLeft">';
+    html += '<div class="option col-md-6">';
     html += '<div class="number">1</div>';
     html += '<div class="radio">' + 
               '<label>' + '<input type="radio" name="Choices" class="choice" id="Choice1" value="option1">' + 
@@ -160,7 +165,7 @@ $(document).ready(function() {
             '</div>' +
           '</div>';
 
-    html += '<div class="option col-md-6 animated wow bounceInRight delay-3">';
+    html += '<div class="option col-md-6 delay-3">';
     html += '<div class="number">2</div>';
     html += '<div class="radio">' + 
               '<label>' + '<input type="radio" name="Choices" class="choice" id="Choice2" value="option2">' + 
@@ -172,7 +177,7 @@ $(document).ready(function() {
 
     html += '<div class="row">'
 
-    html += '<div class="option col-md-6 animated wow bounceInLeft delay-4">';
+    html += '<div class="option col-md-6 ">';
     html += '<div class="number">3</div>';
     html += '<div class="radio">' + 
               '<label>' + '<input type="radio" name="Choices" class="choice" id="Choice3" value="option3">' + 
@@ -181,7 +186,7 @@ $(document).ready(function() {
              '</div>' +  
             '</div>'; //end of option
 
-    html +=  '<div class="option col-md-6 animated wow bounceInRight delay-5">';
+    html +=  '<div class="option col-md-6 ">';
     html +=  '<div class="number">4</div>';
     html += '<div class="radio">' + 
               '<label>' + '<input type="radio" name="Choices" class="choice" id="Choice4" value="option4">' + 

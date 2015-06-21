@@ -14,60 +14,60 @@
           <h2>Tae Kwon Do - Theory Quiz</h2>
 
           <div class="row">
-            <label class="radio-inline white active animated bounceInLeft wow">
+            <label class="radio-inline white active">
               <input type="radio" name="option" class="grade" id="inlineRadio1" value="1" checked> White Belt
               <i class="fa fa-check"></i>
             </label>
             
-            <label class="radio-inline yellow animated bounceInLeft wow delay-2">
+            <label class="radio-inline yellow ">
               <input type="radio" name="option"  class="grade" id="inlineRadio2" value="2"> Yellow Tag
               <i class="fa fa-check"></i>
             </label>
             
-            <label class="radio-inline yellow-darker animated bounceInLeft wow delay-3">
+            <label class="radio-inline yellow-darker ">
               <input type="radio" name="option" class="grade" id="inlineRadio3" value="3"> Yellow Belt
               <i class="fa fa-check"></i>
             </label>
             
-            <label class="radio-inline green animated bounceInLeft wow delay-4">
+            <label class="radio-inline green ">
               <input type="radio" name="option" class="grade" id="inlineRadio4" value="4"> Green Tag
               <i class="fa fa-check"></i>
             </label>
             
-            <label class="radio-inline green-darker animated bounceInLeft wow delay-4">
+            <label class="radio-inline green-darker ">
               <input type="radio" name="option" class="grade" id="inlineRadio5" value="5"> Green Belt
               <i class="fa fa-check"></i>
             </label>
           </div> <!-- End of row -->
 
           <div class="row">
-            <label class="radio-inline blue animated bounceInLeft wow delay-4">
+            <label class="radio-inline blue ">
               <input type="radio" name="option" class="grade" id="inlineRadio6" value="6"> Blue Tag
               <i class="fa fa-check"></i>
             </label>
             
-            <label class="radio-inline blue-darker animated bounceInLeft wow delay-4">
+            <label class="radio-inline blue-darker ">
               <input type="radio" name="option" class="grade" id="inlineRadio7" value="7"> Blue Belt
               <i class="fa fa-check"></i>
             </label>
             
-            <label class="radio-inline red animated bounceInLeft wow delay-4">
+            <label class="radio-inline red ">
               <input type="radio" name="option" class="grade" id="inlineRadio8" value="8"> Red Tag
               <i class="fa fa-check"></i>
             </label>
             
-            <label class="radio-inline red-darker animated bounceInLeft wow delay-5">
+            <label class="radio-inline red-darker ">
               <input type="radio" name="option" class="grade" id="inlineRadio9" value="9"> Red Belt
               <i class="fa fa-check"></i>
             </label>
             
-            <label class="radio-inline black animated bounceInLeft wow delay-6">
+            <label class="radio-inline black ">
               <input type="radio" name="option" class="grade" id="inlineRadio10" value="10"> Black Tag
               <i class="fa fa-check"></i>
             </label>
           </div> <!-- End of row -->
 
-          <button class="btn btn-danger start animated wow bounceInDown">Start </button>
+          <button class="btn btn-danger start ">Start </button>
         </div> <!-- Introduction page -->
         <div class="question">
         </div><!-- End of question --> 

@@ -16,7 +16,7 @@
 
           <div class="middle">
              <ul class="unlisted">
-                <li><a href="gallery.php">GALLERY</a></li>
+                <li><a href="quiz.php">QUIZ</a></li>
                 <li><a href="beginners.php">BEGINNERS</a></li>
                 <li><a href="quiz.php">QUIZ</a></li>
              </ul> 
@@ -24,7 +24,7 @@
 
           <div class="right">
              <ul class="unlisted">
-                <li><a href="team.php">EXEC TEAM</a></li>
+                <li><a href="team.php">EXEC</a></li>
                 <li><a href="training.php">TRAINING</a></li>
                 <li><a href="contact.php">CONTACT</a></li>
              </ul> 
