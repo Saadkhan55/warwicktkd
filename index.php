@@ -15,11 +15,62 @@
           <li data-target="#carousel" data-slide-to="0" class="active"></li>
           <li data-target="#carousel" data-slide-to="1"></li>
           <li data-target="#carousel" data-slide-to="2"></li>
+          <li data-target="#carousel" data-slide-to="3"></li>
         </ol>
 
         <div class="carousel-inner">
 
           <div class="item active">
+            <div class="container">
+              <div class="row">
+
+                <div class="col-md-6 animated bounceInLeft"> <!-- Each newslider element -->
+                  <div class="carousel-caption video-caption"> 
+                    <h1 class="title">My First Tae Kwon Do</h1> <!-- Newslider title -->
+                    <p class="carousel-text">Want to know what Tae Kwon Do is. Take a look at our promo footage.</p> <!-- newslider text -->
+
+                    <a href="beginners.php"><button type="button" class="btn btn-danger btn-lg">Learn More</button></a> <!-- newslider button -->
+                  </div>
+                </div> <!--End of col-md-6 -->
+
+                <div class="col-md-6 animated delay-3 bounceInRight">
+                  <div class="carousel-video">
+                    <div class="embed-responsive embed-responsive-16by9">
+                      <iframe width="560" height="315" src="https://www.youtube.com/embed/KMyrvgwDUzw" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                  </div> <!--End of carousel-image -->
+                </div> <!--End of carousel-image -->
+
+              </div> <!--End of row -->
+            </div> <!--End of container -->
+          </div> <!--End of first item-->
+
+          <div class="item">
+            <div class="container">
+              <div class="row">
+
+                <div class="col-md-6 animated bounceInLeft"> <!-- Each newslider element -->
+                  <div class="carousel-caption video-caption"> 
+                    <h1 class="title">Comic Book Promo</h1> <!-- Newslider title -->
+                    <p class="carousel-text">Learn more about the club click here</p> <!-- newslider text -->
+
+                    <a href="training.php"><button type="button" class="btn btn-danger btn-lg">Learn More</button></a> <!-- newslider button -->
+                  </div>
+                </div> <!--End of col-md-6 -->
+
+                <div class="col-md-6 animated delay-3 bounceInRight">
+                  <div class="carousel-video">
+                    <div class="embed-responsive embed-responsive-16by9">
+                      <iframe width="560" height="315" src="https://www.youtube.com/embed/7C8fK7HTbg8" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                  </div> <!--End of carousel-image -->
+                </div> <!--End of carousel-image -->
+
+              </div> <!--End of row -->
+            </div> <!--End of container -->
+          </div> <!--End of second item-->
+
+          <div class="item ">
             <div class="container">
               <div class="row">
 
@@ -40,7 +91,7 @@
 
               </div> <!--End of row -->
             </div> <!--End of container -->
-          </div> <!--End of first item-->
+          </div> <!--End of third item-->
 
           <div class="item">
             <div class="container">

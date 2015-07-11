@@ -151,54 +151,61 @@ $(document).ready(function() {
   // the form of title -> 4 choices.
   //********************************************
   function getQuestion(array) {
+
+
     var html = "<h3 class=''>" + array.question  + "</h3>";
     html += "<div class='container'> <div class='row'>";
     html += '<div class="question-no"> <div class="question-title">Questions</div> '
          + questionNo +'/10</div>';
 
-    html += '<div class="option col-md-6">';
-    html += '<div class="number">1</div>';
-    html += '<div class="radio">' + 
-              '<label>' + '<input type="radio" name="Choices" class="choice" id="Choice1" value="option1">' + 
-                array.choice1 + 
-               '</label>' + 
-            '</div>' +
+    var numbers = [1,2,3,4];
+
+
+      //for each choice (4 choices)
+      for(i = 1; i < 5; i++) {
+        
+        //randomElement = is a random index from array
+        //random = pick a random element from numbers index
+        var randomElement = Math.floor(Math.random()*numbers.length);
+        var random = numbers[randomElement];
+        //splice array to get rid of element choosen so not choosen twice
+        numbers.splice($.inArray(random, numbers),1);
+        var choice = "ERROR";
+
+        switch(random) {
+          case 1:
+            choice = array.choice1;
+            break;
+
+          case 2:
+            choice = array.choice2
+            break;
+
+          case 3:
+            choice = array.choice3;
+            break;
+
+          case 4:
+            choice = array.choice4;
+            break;
+        }
+
+        html += '<div class="option col-md-6">';
+        html += '<div class="number">'+ i +'</div>';
+        html += '<div class="radio">' + 
+          '<label>' + '<input type="radio" name="Choices" class="choice" id="Choice'+random+'" value="option"'+ random +'>' + 
+          choice + 
+          '</label>' + 
+          '</div>' +
           '</div>';
 
-    html += '<div class="option col-md-6 delay-3">';
-    html += '<div class="number">2</div>';
-    html += '<div class="radio">' + 
-              '<label>' + '<input type="radio" name="Choices" class="choice" id="Choice2" value="option2">' + 
-                array.choice2 + 
-               '</label>' + 
-              '</div>' + 
-            '</div>' +  // end of options
-          '</div>'; // end of row
-
-    html += '<div class="row">'
-
-    html += '<div class="option col-md-6 ">';
-    html += '<div class="number">3</div>';
-    html += '<div class="radio">' + 
-              '<label>' + '<input type="radio" name="Choices" class="choice" id="Choice3" value="option3">' + 
-                array.choice3 + 
-               '</label>' + 
-             '</div>' +  
-            '</div>'; //end of option
-
-    html +=  '<div class="option col-md-6 ">';
-    html +=  '<div class="number">4</div>';
-    html += '<div class="radio">' + 
-              '<label>' + '<input type="radio" name="Choices" class="choice" id="Choice4" value="option4">' + 
-                array.choice4 + 
-               '</label>' + 
-            '</div>' +
-          '</div>' + //end of option
-        '</div>'; // end of row
+    }
 
     html += '</div>'; // end of container
+        '</div>'; // end of row
 
     correct = array.correct;
+    console.log(correct);
     return html;
   }
 

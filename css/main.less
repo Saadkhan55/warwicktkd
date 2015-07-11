@@ -516,6 +516,14 @@ html,body {
   .container {
     padding-top: 100px;
 
+    @media @medium-collapse {
+      padding-top: 70px;
+    }
+
+    @media @post-collapse {
+      padding-top: 100px;
+    }
+
     .col-md-6 {
       @media @medium-collapse {
         width: 100%;
@@ -524,6 +532,13 @@ html,body {
 
     .btn {
       margin-top: 20px;
+    }
+
+
+    .video-caption {
+      @media @medium-collapse {
+        display: none;
+      }
     }
 
     .carousel-caption {
@@ -961,89 +976,6 @@ html,body {
   }
 }
 
-//**********************************************************************
-// GALLERY PAGE - GALLERY page 4 pictures per row, lightbox styling
-//**********************************************************************
-.gallery-set {
-  margin-bottom: 25px;
-
-  h2 {
-    text-align: center;
-    margin-bottom: 20px;
-  }
-
-  .row {
-    img {
-      max-width: 200px;
-      margin-bottom: 20px;;
-    }
-  }
-
-  .image {
-    float: left;
-    display: inline-block;
-    padding:0 20px;
-  }
-}
-
-//lightbox 
-#lightbox {
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 1500;
-  background: rgba(0, 0, 0, 0.8);
-  width: 100%;
-  height: 100%;
-  text-align: center;
-  display: none;
-  cursor: pointer;
-  .user-select(none);
-
-  img {
-    max-width: 900px;
-    max-width: 90%;
-
-    @media @post-collapse {
-      max-width: 100%;
-      height: auto;
-      position: absolute;
-      left: 0;
-      top: 20%;
-    }
-  }
-
-  //right, left icons (navigation)
-  .fa {
-    font-size: 2em;
-    color: @color-white;
-    position: absolute;
-    top: 50%;
-    z-index: 1101;
-    padding: 20px 20px;
-
-    &:hover {
-      color: darken(@color-white, 10%);
-      .transition(0.2s);
-      font-size: 5em;
-    }
-
-    @media @post-collapse {
-      top: 40%;
-      padding: 0;
-    }
-  }
-
-  //icons
-  .fa-chevron-right {
-    right: 0;
-  }
-  
-  //icons
-  .fa-chevron-left {
-    left: 0;
-  }
-}
 //**********************************************************************
 // QUIZ PAGE - jQuery & css quiz, styling each question
 //**********************************************************************

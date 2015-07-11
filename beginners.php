@@ -13,7 +13,7 @@
         <div class="row">
           <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
 
-            <div class="panel panel-default wow animated bounceInLeft">
+            <div class="panel panel-default ">
               <div class="panel-heading" role="tab" id="headingOne">
                 <h4 class="panel-title">
                   <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
@@ -30,11 +30,45 @@
               </div>
             </div> <!-- End of panel -->
 
+            <div class="panel panel-default ">
+              <div class="panel-heading" role="tab" id="headingOne">
+                <h4 class="panel-title">
+                  <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                    <i class="fa fa-plus"></i>  <i class="fa fa-minus"></i>Do I need to wear a dobok? 
+                  </a>
+                </h4>
+              </div>
+              <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+                <div class="panel-body">
+                  <p class="larger-font">
+                    A dobok is the white training top and bottoms students wear. As you beginner you are not required to wear a dobok to training. Just wear something comfortable where you can kick i.e. track suits with a t-shirt. DOn't forgot to bring a drink aswell.
+                  </p>
+                </div>
+              </div>
+            </div> <!-- End of panel -->
+
+            <div class="panel panel-default ">
+              <div class="panel-heading" role="tab" id="headingOne">
+                <h4 class="panel-title">
+                  <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+                    <i class="fa fa-plus"></i>  <i class="fa fa-minus"></i> Do I need to have done Tae Kwon Do before?
+                  </a>
+                </h4>
+              </div>
+              <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+                <div class="panel-body">
+                  <p class="larger-font">
+                   Absolutely not the club often gets about 20-30 new beginners every year. The club has a range of member all the way from beginners to black belts.
+                  </p>
+                </div>
+              </div>
+            </div> <!-- End of panel -->
+
           </div> <!-- End of panel group -->
         </div> <!-- End of row -->
       </div> <!-- End of container -->
 
-      <div class="tab-panels wow animated delay-2 bounceInUp" role="tabpanel">
+      <div class="tab-panels " role="tabpanel">
         <div class="container">
           <div class="row">
             <!-- Nav tabs -->
