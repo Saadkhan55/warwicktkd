@@ -54,7 +54,7 @@
             <b> Number of moves: 29 </b>
           </p>
 
-          <img src="images/pattern/2nd_kup.png" alt="" width="150px" height="150px">
+          <img src="images/pattern/2nd_kup.png" alt="" width="150px" height="150px" alt="pattern-diagram">
 
           <!-- Table showing off moves for the pattern -->
           <table class="table table-hover">
