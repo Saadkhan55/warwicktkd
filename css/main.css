@@ -720,12 +720,16 @@ body {
 #captcha {
   display: block;
   margin: 20px auto;
+<<<<<<< HEAD
   width: 304px;
 }
 @media (max-width: 767px) {
   #captcha {
     width: 50%;
   }
+=======
+  width: 50%;
+>>>>>>> d17841b04f1a53e9480a777597043658c1d78348
 }
 .news-story {
   margin-bottom: 50px;
