@@ -112,8 +112,14 @@ small {
 .larger-font {
   font-size: 16.5px;
 }
+.large-font {
+  font-size: 22px;
+  text-align: center;
+  padding: 20px 0;
+}
 .btn {
   border-radius: 0;
+  margin-bottom: 30px;
 }
 .btn-danger {
   color: #ffffff;
@@ -164,6 +170,12 @@ small {
   -moz-transition: 0.5s;
   -ms-transition: 0.5s;
   -o-transition: 0.5s;
+}
+.blue-text {
+  color: #367ee9;
+}
+.center {
+  text-align: center;
 }
 .navbar-default .navbar-nav > .active > a,
 .navbar-default .navbar-nav > .active > a:hover,
@@ -694,7 +706,7 @@ body {
   font-size: 2.5em;
 }
 .error {
-  border-color: #d9534f;
+  border: 1px solid #d9534f;
 }
 .error-list {
   text-align: center;
@@ -704,6 +716,16 @@ body {
   color: #449d44;
   text-align: center;
   font-weight: 300;
+}
+#captcha {
+  display: block;
+  margin: 20px auto;
+  width: 304px;
+}
+@media (max-width: 767px) {
+  #captcha {
+    width: 50%;
+  }
 }
 .news-story {
   margin-bottom: 50px;
@@ -756,6 +778,18 @@ body {
 }
 .news-story .row .pagination .active {
   color: #367ee9;
+}
+.fb-comments,
+.fb-comments iframe[style],
+.fb-like-box,
+.fb-like-box iframe[style] {
+  width: 100% !important;
+}
+.fb-comments span,
+.fb-comments iframe span[style],
+.fb-like-box span,
+.fb-like-box iframe span[style] {
+  width: 100% !important;
 }
 #quiz-container {
   margin-bottom: 20px;

@@ -13,12 +13,15 @@ $(document).ready(function() {
     var name = $("#fname").val();
     var email = $("#email").val();
     var message = $("#message").val();
+    var captcha = grecaptcha.getResponse();
+    console.log(captcha);
 
     //r emove all error classes before checking again, 
     // the class will be added again if empty
     $("#fname").removeClass("error");
     $("#email").removeClass("error");
     $("#message").removeClass("error");
+    $("#captcha").removeClass("error");
 
     //check for emptyiness from all 3 fields
     if(name == "") {
@@ -39,6 +42,12 @@ $(document).ready(function() {
     if(message == "") {
       $("#message").addClass("error");
       $("#message").attr("placeholder", "Message is required");
+      e.preventDefault();
+    }
+
+    if(captcha.length == 0) {
+      $("#captcha").addClass("error");
+      console.log("ERROE");
       e.preventDefault();
     }
   

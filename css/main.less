@@ -101,9 +101,16 @@ small {
   font-size: @larger-font;
 }
 
+.large-font {
+  font-size: 22px;
+  text-align: center;
+  padding: 20px 0;
+}
+
 //all buttons
 .btn {
  border-radius: 0; 
+ margin-bottom: 30px;
 }
 
 .btn-danger {
@@ -132,6 +139,15 @@ small {
   }
 }
 
+//blue text
+.blue-text {
+  color: @color-light-blue;
+}
+
+//center align everything in div
+.center {
+    text-align: center;
+}
 //**********************************************************************
 // This file is structured top -> down
 //  -- NAVBAR
@@ -887,7 +903,7 @@ html,body {
 }
 
 .error {
-  border-color: @color-danger;
+  border: 1px solid @color-danger;
 }
 
 .error-list {
@@ -899,6 +915,16 @@ html,body {
   color: @color-success;
   text-align: center;
   font-weight: 300;
+}
+
+#captcha {
+  display: block;
+  margin: 20px auto;
+  width:304px;
+  
+  @media @post-collapse {
+    width: 50%;
+  }
 }
 
 //**********************************************************************
@@ -975,6 +1001,11 @@ html,body {
     }
   }
 }
+
+//Make fb comments on news page responsive
+.fb-comments, .fb-comments iframe[style], .fb-like-box, .fb-like-box iframe[style] {width: 100% !important;}
+.fb-comments span, .fb-comments iframe span[style], .fb-like-box span, .fb-like-box iframe span[style] {width: 100% !important;}
+
 
 //**********************************************************************
 // QUIZ PAGE - jQuery & css quiz, styling each question

@@ -85,7 +85,7 @@
 
                 <div class="col-md-6 animated delay-3 bounceInRight">
                   <div class="carousel-image">
-                    <img class="img-responsive" src="images/carousel/beginners.jpg" width="350px" height="260px">
+                    <img class="img-responsive" src="images/carousel/beginners.jpg" width="350px" height="260px" alt="beginners">
                   </div> <!--End of carousel-image -->
                 </div> <!--End of carousel-image -->
 
@@ -125,7 +125,7 @@
 
                 <div class="col-md-6 animated delay-3 bounceInRight">
                   <div class="carousel-image">
-                    <img class="img-responsive" src="images/carousel/students.jpg" width="350px" height="260px">
+                    <img class="img-responsive" src="images/carousel/students.jpg" width="350px" height="260px" alt="student">
                   </div> <!--End of carousel-image -->
                 </div> <!--End of carousel-image -->
 
@@ -153,7 +153,7 @@
 
                 <div class="col-md-6 animated delay-3 bounceInRight">
                   <div class="carousel-image">
-                    <img class="img-responsive" src="images/carousel/training.jpg" width="350px" height="260px">
+                    <img class="img-responsive" src="images/carousel/training.jpg" width="350px" height="260px" alt="training">
                   </div> <!--End of carousel-image -->
                 </div> <!--End of carousel-image -->
 
