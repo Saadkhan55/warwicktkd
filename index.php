@@ -27,16 +27,16 @@
                 <div class="col-md-6 animated bounceInLeft"> <!-- Each newslider element -->
                   <div class="carousel-caption video-caption"> 
                     <h1 class="title">My First Tae Kwon Do</h1> <!-- Newslider title -->
-                    <p class="carousel-text">Want to know what Tae Kwon Do is. Take a look at our promo footage.</p> <!-- newslider text -->
+                    <p class="carousel-text">Watch this video to get to know a bit more about Tae Kwon Do. This is what your first Tae Kwon Do lesson might well look like. The video goes through the main aspects that you will cover in lessons.</p> <!-- newslider text -->
 
-                    <a href="beginners.php"><button type="button" class="btn btn-danger btn-lg">Learn More</button></a> <!-- newslider button -->
+                    <a href="http://warwicksport.warwick.ac.uk/clubs/taekwondo/" target="_blank"><button type="button" class="btn btn-danger btn-lg">Join Us</button></a> <!-- newslider button -->
                   </div>
                 </div> <!--End of col-md-6 -->
 
                 <div class="col-md-6 animated delay-3 bounceInRight">
                   <div class="carousel-video">
                     <div class="embed-responsive embed-responsive-16by9">
-                      <iframe width="560" height="315" src="https://www.youtube.com/embed/KMyrvgwDUzw" frameborder="0" allowfullscreen></iframe>
+                    <div id="player" name="KMyrvgwDUzw" class="background"></div>
                     </div>
                   </div> <!--End of carousel-image -->
                 </div> <!--End of carousel-image -->
@@ -44,31 +44,6 @@
               </div> <!--End of row -->
             </div> <!--End of container -->
           </div> <!--End of first item-->
-
-          <div class="item">
-            <div class="container">
-              <div class="row">
-
-                <div class="col-md-6 animated bounceInLeft"> <!-- Each newslider element -->
-                  <div class="carousel-caption video-caption"> 
-                    <h1 class="title">Comic Book Promo</h1> <!-- Newslider title -->
-                    <p class="carousel-text">Learn more about the club click here</p> <!-- newslider text -->
-
-                    <a href="training.php"><button type="button" class="btn btn-danger btn-lg">Learn More</button></a> <!-- newslider button -->
-                  </div>
-                </div> <!--End of col-md-6 -->
-
-                <div class="col-md-6 animated delay-3 bounceInRight">
-                  <div class="carousel-video">
-                    <div class="embed-responsive embed-responsive-16by9">
-                      <iframe width="560" height="315" src="https://www.youtube.com/embed/7C8fK7HTbg8" frameborder="0" allowfullscreen></iframe>
-                    </div>
-                  </div> <!--End of carousel-image -->
-                </div> <!--End of carousel-image -->
-
-              </div> <!--End of row -->
-            </div> <!--End of container -->
-          </div> <!--End of second item-->
 
           <div class="item ">
             <div class="container">
@@ -250,6 +225,11 @@
     </div><!--End of wrapper -->
     <!--Add footer, contains 3 columns layout Add footer data, such as jquery, boostrap javascript -->
     <?php include 'php/footer.php' ?>
+    <script src="js/video_play.js"></script>
+    <script>
+    //swipe right
+    $('.carousel').bcSwipe({ threshold: 50 });
+    </script>
   </body>
 </html>
 

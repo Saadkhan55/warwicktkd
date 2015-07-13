@@ -64,6 +64,81 @@
               </div>
             </div> <!-- End of panel -->
 
+            <div class="panel panel-default ">
+              <div class="panel-heading" role="tab" id="headingOne">
+                <h4 class="panel-title">
+                  <a data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
+                    <i class="fa fa-plus"></i>  <i class="fa fa-minus"></i> Do I have to be super fit to join?
+                  </a>
+                </h4>
+              </div>
+              <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+                <div class="panel-body">
+                  <p class="larger-font">
+                    Whilst being physically fit will help you in sport like Tae Kwon Do. It is not necessary to be 'super' fit before joining whilst training your fitness will improve, fitness is an important part of Tae Kwon Do so it worked on in some way during most lessons. 
+                  </p>
+                </div>
+              </div>
+            </div> <!-- End of panel -->
+
+            <div class="panel panel-default ">
+              <div class="panel-heading" role="tab" id="headingOne">
+                <h4 class="panel-title">
+                  <a data-toggle="collapse" data-parent="#accordion" href="#collapseFive" aria-expanded="true" aria-controls="collapseFive">
+                    <i class="fa fa-plus"></i>  <i class="fa fa-minus"></i> When and Where is Training?
+                  </a>
+                </h4>
+              </div>
+              <div id="collapseFive" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+                <div class="panel-body">
+                  <p class="larger-font">
+                    Training is at on <br>
+                      Tuesday 8:30 - 10:00 PM Westwood Games Hall <br>
+                      Thurday 7:00 - 8:30 PM Westwood Games Hall <br>
+                      Saturday 2:00 - 4:00 PM Westwood Games Hall <br>
+                  </p>
+                </div>
+              </div>
+            </div> <!-- End of panel -->
+
+            <div class="panel panel-default ">
+              <div class="panel-heading" role="tab" id="headingOne">
+                <h4 class="panel-title">
+                  <a data-toggle="collapse" data-parent="#accordion" href="#collapseSix" aria-expanded="true" aria-controls="collapseSix">
+                    <i class="fa fa-plus"></i>  <i class="fa fa-minus"></i> What is the cost of training?
+                  </a>
+                </h4>
+              </div>
+              <div id="collapseSix" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+                <div class="panel-body">
+                  <p class="larger-font">
+                  The first THREE lessons are free. Other than that the lessons cost  <br>
+
+                  Per Session: £3 <br>
+                  Per Term: £30 <br>
+                  Per Year: £60 <br>
+                  </p>
+                </div>
+              </div>
+            </div> <!-- End of panel -->
+
+            <div class="panel panel-default ">
+              <div class="panel-heading" role="tab" id="headingOne">
+                <h4 class="panel-title">
+                  <a data-toggle="collapse" data-parent="#accordion" href="#collapseSeven" aria-expanded="true" aria-controls="collapseSeven">
+                    <i class="fa fa-plus"></i>  <i class="fa fa-minus"></i> When do we get our 'special' kit?
+                  </a>
+                </h4>
+              </div>
+              <div id="collapseSeven" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+                <div class="panel-body">
+                  <p class="larger-font">
+                  There is a kit order that does out around week 2-3 of each term, this is where you can order your dobok (training suit) and sparring equipment. It usually with us by week 5.
+                  </p>
+                </div>
+              </div>
+            </div> <!-- End of panel -->
+
           </div> <!-- End of panel group -->
         </div> <!-- End of row -->
       </div> <!-- End of container -->

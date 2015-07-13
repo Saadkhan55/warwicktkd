@@ -16,8 +16,8 @@
 
           <div class="middle">
              <ul class="unlisted">
-                <li><a href="quiz.php">QUIZ</a></li>
-                <li><a href="beginners.php">BEGINNERS</a></li>
+                <li><a href="http://warwicksport.warwick.ac.uk/clubs/taekwondo/" target="_blank">JOIN US</a></li>
+                <li><a href="beginners.php">FAQ</a></li>
                 <li><a href="quiz.php">QUIZ</a></li>
              </ul> 
           </div>  
@@ -101,7 +101,7 @@
             Westwood Games Hall <br>
             University Of Warwick <br>
             CV4 7AL <br>
-            Email: warwick@test.com <br>
+            Email:tkd@warwicksu.com <br>
           </p>
         </div> <!--End of address-->
       </div> <!--End of third col-->
@@ -117,5 +117,6 @@
 <!-- Bootstrap with CDN fallbacks-->
 <script src="js/vendor/bootstrap.min.js"></script>
 <!-- Own Created JS files-->
+<script src="js/vendor/jquery.bcSwipe.min.js"></script>
 <script src="js/active.js"></script> <!-- Change active navbar link depending on page -->
 <script src="js/scroll.js"></script> <!-- Allow smooth scroll to an anchor link using jquery -->
