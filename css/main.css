@@ -256,6 +256,11 @@ body {
 .navbar-default .navbar-brand {
   padding: 15px 0;
 }
+@media (max-width: 767px) {
+  .navbar-default .navbar-brand {
+    padding: 15px;
+  }
+}
 .navbar-default .navbar-brand img {
   height: 80px;
   width: 110px;
@@ -661,6 +666,11 @@ body {
   padding-right: 30px;
   margin-left: 150px;
 }
+@media (max-width: 767px) {
+  .team .section {
+    margin-left: 0;
+  }
+}
 .team .individual {
   margin-top: 90px;
 }
@@ -676,6 +686,11 @@ body {
 }
 .team .individual p {
   margin-left: 195px;
+}
+@media (max-width: 767px) {
+  .team .individual p {
+    margin-left: 0;
+  }
 }
 .syllabus {
   margin-bottom: 40px;

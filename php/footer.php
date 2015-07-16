@@ -24,8 +24,8 @@
 
           <div class="right">
              <ul class="unlisted">
-                <li><a href="team.php">EXEC</a></li>
                 <li><a href="training.php">TRAINING</a></li>
+                <li><a href="gallery.php">GALLERY</a></li>
                 <li><a href="contact.php">CONTACT</a></li>
              </ul> 
           </div>    
@@ -117,6 +117,6 @@
 <!-- Bootstrap with CDN fallbacks-->
 <script src="js/vendor/bootstrap.min.js"></script>
 <!-- Own Created JS files-->
-<script src="js/vendor/jquery.bcSwipe.min.js"></script>
+<script src="js/vendor/jquery.bcSwipe.min.js"></script> <!-- Swipe left /right -->
 <script src="js/active.js"></script> <!-- Change active navbar link depending on page -->
 <script src="js/scroll.js"></script> <!-- Allow smooth scroll to an anchor link using jquery -->

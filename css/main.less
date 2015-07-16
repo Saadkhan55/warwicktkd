@@ -182,7 +182,6 @@ small {
 //    -- PAGINATION
 //
 //  -- GALLERY PAGE
-//    -- LIGHTBOX
 //
 //  -- QUIZ
 //    --JQuery
@@ -284,6 +283,10 @@ html,body {
   //logo (top left)
   .navbar-brand {
     padding: 15px 0;
+
+    @media @post-collapse {
+      padding: 15px;
+    }
     img {
       height: 80px;
       width: 110px;
@@ -830,6 +833,10 @@ html,body {
     .font-weight(300);
     padding-right: 30px;
     margin-left: 150px;
+
+    @media @post-collapse {
+      margin-left: 0;
+    }
   }
 
   //each individual team member
@@ -846,6 +853,10 @@ html,body {
     //paragraph margin -left
     p {
       margin-left: 195px;
+
+      @media @post-collapse {
+        margin-left: 0;
+      }
     }
   }
 }
@@ -1005,7 +1016,9 @@ html,body {
 //Make fb comments on news page responsive
 .fb-comments, .fb-comments iframe[style], .fb-like-box, .fb-like-box iframe[style] {width: 100% !important;}
 .fb-comments span, .fb-comments iframe span[style], .fb-like-box span, .fb-like-box iframe span[style] {width: 100% !important;}
-
+//**********************************************************************
+// GALLERY PAGE 
+//**********************************************************************
 
 //**********************************************************************
 // QUIZ PAGE - jQuery & css quiz, styling each question

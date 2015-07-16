@@ -27,7 +27,7 @@
                 <div class="col-md-6 animated bounceInLeft"> <!-- Each newslider element -->
                   <div class="carousel-caption video-caption"> 
                     <h1 class="title">My First Tae Kwon Do</h1> <!-- Newslider title -->
-                    <p class="carousel-text">Watch this video to get to know a bit more about Tae Kwon Do. This is what your first Tae Kwon Do lesson might well look like. The video goes through the main aspects that you will cover in lessons.</p> <!-- newslider text -->
+                    <p class="carousel-text">Watch this video to get to know a bit more about Tae Kwon Do. This is what your first Tae Kwon Do lesson might look like. The video goes through the main aspects that you will cover in lessons.</p> <!-- newslider text -->
 
                     <a href="http://warwicksport.warwick.ac.uk/clubs/taekwondo/" target="_blank"><button type="button" class="btn btn-danger btn-lg">Join Us</button></a> <!-- newslider button -->
                   </div>
@@ -52,7 +52,7 @@
                 <div class="col-md-6 animated bounceInLeft"> <!-- Each newslider element -->
                   <div class="carousel-caption"> 
                     <h1 class="title">Beginners Guide</h1> <!-- Newslider title -->
-                    <p class="carousel-text">New to the club, or looking to start Tae Kwon Do. Have a look at our beginners guide to help answer some of your questions.</p> <!-- newslider text -->
+                    <p class="carousel-text">New to the club, or looking to start Tae Kwon Do? Have a look at our beginners guide to help answer some of your questions.</p> <!-- newslider text -->
 
                     <a href="beginners.php"><button type="button" class="btn btn-danger btn-lg">Learn More</button></a> <!-- newslider button -->
                   </div>
@@ -75,7 +75,7 @@
                 <div class="col-md-6 animated bounceInLeft">
                   <div class="carousel-caption">
                     <h1 class="title">Students</h1>
-                     <p class="carousel-text">Already a student at the club, want to revise theory or learn your patterns. Has all the information for the grading syllabus. Select appropiate grade in dropdown menu.</p>
+                     <p class="carousel-text">Already a student at the club? want to revise theory or learn your patterns. Has all the information for the grading syllabus. Select appropiate grade in dropdown menu.</p>
 
                     <div class="btn-group dropup"> <!-- Link of kup grades (dropdown menu) -->
                       <button type="button" class="btn btn-danger btn-lg dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
@@ -164,7 +164,7 @@
               <div class="col-md-4 ">
                 <i class="fa fa-info"></i>
                  <h2>About Us</h2>
-                <p>Learn more about what are training times and where we train. Also learn the cost of joining the club</p>
+                <p>Find out our training times and where we train, as well as how much it costs to be a member of our club.</p>
               </div>
             </a> <!-- End of second story -->
 
@@ -172,7 +172,7 @@
               <div class="col-md-4 ">
                 <i class="fa fa-users"></i>
                  <h2>Exec Team</h2>
-                <p>Get to know all the great people that run the club. Learn a bit about them and what they do.</p>
+                <p>Get to know all the great people who run the club. Learn a bit about them and what they do.</p>
               </div>
             </a> <!-- End of third story -->
 

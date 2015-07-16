@@ -97,7 +97,7 @@
                 <img class="img-responsive" src="images/team/Chris.jpg" width="150px" height="150px">
                 <h3 class="title"> Sophie Webster<small>President</small></h3>
                 <p>
-                  Hi, I’m Chris, I’m a 3rd year studying Maths and Physics, I’ve been doing Taekwondo for 11 years now and am a 2nd degree black belt. We're open to all styles of Taekwondo at Warwick, ITF and WTF, and that gives us an incredible array of skills to learn from each other. Training is suitable for anyone whether you want to earn new belts, win medals at competitions or learn self defence and keep fit, our training is very broad and includes traditional patterns, competitive sparring and practical defence. The martial art has a lot to offer and the club even more from its welcoming members and 'engaging' socials; please get in touch if there's anything else you'd like to know about the club, exec or instructor, and feel free to come along to any of our training sessions. 
+                Hi, my name’s Sophie and I’m a 4th year engineer. Having started as a complete novice in freshers, I have somehow managed to progress into a Gold medal winning blue belt. Taekwondo rapidly became my biggest passion and I cannot imagine my life without it! The club is incredibly friendly and welcome to anyone – whether you’re new or at the top of your game. The large variation in class means that no matter whether you want to learn self-defence, participate in competitions, keep fit or just earn belts, there’s a place for you! We’re open to all styles of taekwondo, having sessions for both ITF and WTF style taekwondo as well as a variety of seminars and competitions throughout the year. With a large social calendar, the club is a place for cementing friendships and having fun as well as doing a martial art. There’s so much this martial art has to offer! If you have any questions about anything, don’t hesitate to ask and come along to any of our sessions!
                 </p>
               </div> <!-- End of individual team member -->
             
@@ -105,7 +105,7 @@
                 <img class="img-responsive" src="images/team/Alex.jpg" width="150px" height="150px">
                 <h3 class="title">Tom Hart<small> Treasurer</small></h3>
                 <p>
-                Hi, I’m Alex, a third year Accounting and Finance student and I’m the treasurer. I took up taekwondo when I first joined Warwick after seeing it at the Olympics and am so glad that I did. Through the club I’ve learnt new skills, improved my fitness, got involved in national competitions and met some awesome people. As treasurer it’s my job to look after the finances. This involves collecting training fees and making sure that money is always spent in the interest of the club and its’ members. This club is perfect for people of any ability as everyone can learn something new each week and do so in a great atmosphere. 
+                Hi, I’m Tom and I’m a 2nd year studying Engineering. I have been training in Taekwondo for over 7 years and I am a 2nd Degree black belt. Taekwondo is a huge part of my life and has given me the ability to do things I never expected I would, including competing at national level tournaments, overcome challenging situations and generally be more confident. I would recommend that anyone who thinks about trying out a martial art come to Taekwondo, as it develops fitness, flexibility and self-control. As treasurer, I am responsible for the club’s finances. This consists of collecting training fees and ensuring that everything that we do in the club is in the best interests of the members and the club as a whole. The club is a fantastic way to get fit, gain new experiences and meet fantastic people outside of your course. I hope to see you at the next training session!
                 </p>
               </div> <!-- End of individual team member -->
             </div> <!-- End of row -->
@@ -120,7 +120,7 @@
               </div> <!-- End of individual team member -->
             
               <div class="col-md-6 individual animated bounceInRight ">
-                <img class="img-responsive" src="images/team/Roliver.jpg" width="150px" height="150px">
+                <img class="img-responsive" src="images/team/2015/Dorris.jpg" width="150px" height="150px">
                 <h3 class="title">Lesean Dorris<small> Social Sec</small></h3>
                 <p>
                 Howdy! We’re Liam and Sean, 2nd year Maths and Maths/Physics students who are joining forces to be Warwick TKD’s social secs this year. When we’re not busy debating whose name should go first in self-descriptive passages we’re organising the club’s social gatherings; which range from meals to Wednesday night Pop! to the big one itself - TKD Tour. As a 3rd Dan black belt and total beginner respectively we entered the club from different perspectives but we both felt welcomed with open arms by this wonderful society, which we wholeheartedly recommend to absolutely anyone!
@@ -156,7 +156,7 @@
               </div> <!-- End of individual team member -->
             
               <div class="col-md-6 individual animated bounceInRight ">
-                <img class="img-responsive" src="images/team/Sophie.jpg" width="150px" height="150px">
+                <img class="img-responsive" src="images/team/2015/Danielle.jpg" width="150px" height="150px">
                 <h3 class="title">Danielle O'Sullivan<small>Kit Secretary</small></h3>
                 <p>
 Hey, I’m Danielle and I’m a 2nd year Data Science student who will be your Kit Sec for this year, which means I’ll be sorting out all the equipment and merchandise you could possibly need! I joined Warwick Tae Kwon-Do at the start of last year with no previous martial arts experience at all, but by the end of the year I’d managed to become a green belt and won a few gold medals along the way too, which just goes to show how much I have enjoyed being a part of the club! I encourage you to join no matter what level you are as I’m positive that you’ll find yourself as an integrated member of our club in no time at all. If you have any questions, feel free to ask - we may train to kick and punch properly but we’re not that scary, promise!

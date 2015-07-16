@@ -22,7 +22,7 @@
             </p>
 
             <p class="larger-font">
-            All sessions are at <a href="images/map.jpg">Westwood Games Hall</a>.Try to turn to lessons 10-15 minutes early. Please wear a clean dobok (uniform) to each formal training session. Beginners, please bring some loose-fitting clothing such as a t-shirt and shorts/trousers to provide freedom of movement. As a safety requirement, training is done barefoot and we request that you remove any jewellery. <br>
+            All sessions are at <a href="images/map.jpg">Westwood Games Hall</a>.Try to turn up to lessons 10-15 minutes early. Please wear a clean dobok (uniform) to each formal training session. Beginners, please bring some loose-fitting clothing such as a t-shirt and shorts/trousers to provide freedom of movement. As a safety requirement, training is done barefoot and we request that you remove any jewellery. <br>
             </p>
 
             <h3>Cost</h3><br>

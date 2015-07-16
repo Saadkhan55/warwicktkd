@@ -159,7 +159,7 @@
 
               <div role="tabpanel" class="tab-pane fade in active" id="Patterns">
                 <p class="larger-font">
-                  A memorised sequence of moves, a pattern is a simulated fight against imaginary enemies which trains your muscles to perform techniques in a natural flowing way. Although they may seem impractical, they do condition your body and improve control.
+                  A memorised sequence of moves, a pattern is a simulated fight against imaginary enemies which trains your muscles to perform techniques in a natural flowing way. Although primarily structured around technique,  they can also be ued to condition your body.
                 </p>
               </div> <!-- End of tab panel -->
 
@@ -178,7 +178,7 @@
 
               <div role="tabpanel" class="tab-pane wow animated bounceInLeft" id="Sparring">
                 <p class="larger-font">
-                  Normally consists of 2 minute rounds between two combatants. Two common types of free sparring are point-stop (where the match is paused by a referee whenever a point is scored) or continuous. Competition sparring scoring can vary, but the rules are usually fairly similiar (2 or 3 points for a kick, and 1 for a hand technique). Free sparring is effectively a controlled fight in which clean techniques are rewarding with points.
+                  Normally consists of 2 minute rounds between two combatants. Two common types of free sparring are point-stop (where the match is paused by a referee whenever a point is scored) or continuous. Competition sparring scoring can vary, but the rules are usually fairly similiar (2 or 3 points for a kick, and 1 for a hand technique). Free sparring is effectively a controlled fight in which clean techniques are rewarded with points.
                 </p>
               </div> <!-- End of tab panel -->
 
