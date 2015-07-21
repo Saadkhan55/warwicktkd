@@ -41,7 +41,7 @@
               <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
                 <div class="panel-body">
                   <p class="larger-font">
-                    A dobok is the white training top and bottoms students wear. As you beginner you are not required to wear a dobok to training. Just wear something comfortable where you can kick i.e. track suits with a t-shirt. DOn't forgot to bring a drink aswell.
+                    A dobok is the white training top and bottoms students wear. As a beginner you are not required to wear a dobok to training. Just wear something comfortable where you can kick i.e. track suits with a t-shirt. Don't forgot to bring a drink aswell.
                   </p>
                 </div>
               </div>
@@ -58,7 +58,7 @@
               <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
                 <div class="panel-body">
                   <p class="larger-font">
-                   Absolutely not the club often gets about 20-30 new beginners every year. The club has a range of member all the way from beginners to black belts.
+                  Absolutely not - the club has a range of members from beginners all the way to black belt. We regularly welcome people completely new to Tae Kwon Do every year.
                   </p>
                 </div>
               </div>
@@ -75,7 +75,7 @@
               <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
                 <div class="panel-body">
                   <p class="larger-font">
-                    Whilst being physically fit will help you in sport like Tae Kwon Do. It is not necessary to be 'super' fit before joining whilst training your fitness will improve, fitness is an important part of Tae Kwon Do so it worked on in some way during most lessons. 
+                  Whilst being physically fit will help you train in tkd, it is not necessary to be "super fit" before joining our club. When you start training with us your fitness will rapidly start to improve!
                   </p>
                 </div>
               </div>
@@ -92,7 +92,6 @@
               <div id="collapseFive" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
                 <div class="panel-body">
                   <p class="larger-font">
-                    Training is at on <br>
                       Tuesday 8:30 - 10:00 PM Westwood Games Hall <br>
                       Thurday 7:00 - 8:30 PM Westwood Games Hall <br>
                       Saturday 2:00 - 4:00 PM Westwood Games Hall <br>
@@ -133,7 +132,7 @@
               <div id="collapseSeven" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
                 <div class="panel-body">
                   <p class="larger-font">
-                  There is a kit order that does out around week 2-3 of each term, this is where you can order your dobok (training suit) and sparring equipment. It usually with us by week 5.
+                  There is a kit order that goes out around week 2-3 of each term, this is where you can order your dobok (training suit) and sparring equipment. It is usually with us by week 5.
                   </p>
                 </div>
               </div>

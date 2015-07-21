@@ -58,4 +58,9 @@ $(document).ready(function() {
     //and add active class to clicked pagination
     $(this).addClass("active");
   });
+
+  //hide pictures if video exists
+  if($(".embed-responsive").length) {
+    $(".news-story").find("img").hide();
+  }
 });

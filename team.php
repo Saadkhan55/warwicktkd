@@ -94,7 +94,7 @@
             <div class="row">
             
               <div class="col-md-6 individual animated bounceInLeft ">
-                <img class="img-responsive" src="images/team/Chris.jpg" width="150px" height="150px">
+                <img class="img-responsive" src="images/team/2015/Sophie.jpg" width="150px" height="150px">
                 <h3 class="title"> Sophie Webster<small>President</small></h3>
                 <p>
                 Hi, my name’s Sophie and I’m a 4th year engineer. Having started as a complete novice in freshers, I have somehow managed to progress into a Gold medal winning blue belt. Taekwondo rapidly became my biggest passion and I cannot imagine my life without it! The club is incredibly friendly and welcome to anyone – whether you’re new or at the top of your game. The large variation in class means that no matter whether you want to learn self-defence, participate in competitions, keep fit or just earn belts, there’s a place for you! We’re open to all styles of taekwondo, having sessions for both ITF and WTF style taekwondo as well as a variety of seminars and competitions throughout the year. With a large social calendar, the club is a place for cementing friendships and having fun as well as doing a martial art. There’s so much this martial art has to offer! If you have any questions about anything, don’t hesitate to ask and come along to any of our sessions!
@@ -102,7 +102,7 @@
               </div> <!-- End of individual team member -->
             
               <div class="col-md-6 individual animated bounceInRight ">
-                <img class="img-responsive" src="images/team/Alex.jpg" width="150px" height="150px">
+                <img class="img-responsive" src="images/team/2015/Htom.jpg" width="150px" height="150px">
                 <h3 class="title">Tom Hart<small> Treasurer</small></h3>
                 <p>
                 Hi, I’m Tom and I’m a 2nd year studying Engineering. I have been training in Taekwondo for over 7 years and I am a 2nd Degree black belt. Taekwondo is a huge part of my life and has given me the ability to do things I never expected I would, including competing at national level tournaments, overcome challenging situations and generally be more confident. I would recommend that anyone who thinks about trying out a martial art come to Taekwondo, as it develops fitness, flexibility and self-control. As treasurer, I am responsible for the club’s finances. This consists of collecting training fees and ensuring that everything that we do in the club is in the best interests of the members and the club as a whole. The club is a fantastic way to get fit, gain new experiences and meet fantastic people outside of your course. I hope to see you at the next training session!
@@ -112,7 +112,7 @@
             
             <div class="row"> <!-- New row -->
               <div class="col-md-6 individual animated bounceInLeft ">
-                <img class="img-responsive" src="images/team/Sian.jpg" width="150px" height="150px">
+                <img class="img-responsive" src="images/team/2015/Kaja.jpg" width="150px" height="150px">
                 <h3 class="title">Kaja Milczewska<small> Secretary</small></h3>
                 <p>
                 Hey, I’m Kaja, a third year undergraduate in Maths and Physics. Before joining Taekwon-do at the beginning of my second year at Warwick, I would never have imagined that this club would become such an integral part of my university life! From a grand level of absolute zero knowledge, I have now competed in the British Student Taekwondo nationals, won my first ever medals, done charity fights with the club, met some genuinely incredible people, travelled to new places... the whole lot! My secretary role has also helped me begin to learn about the principles of Taekwon-do nationally within different clubs, and realise what it is that makes us so different from the others: it’s that perseverance, friendliness and staying true to being a student club that makes us special. So if you’re worried that you might be too late in your university career to join a new club, or perhaps you’re a first-year who is unsure which sport to join: fear not. Never too late. Join us. We have plenty of cookies. And nerds.
@@ -138,20 +138,20 @@
               </div> <!-- End of individual team member -->
             
               <div class="col-md-6 individual animated bounceInRight ">
-                <img class="img-responsive" src="images/team/Leigh.jpg" width="150px" height="150px">
+                <img class="img-responsive" src="images/team/2015/Kieran.jpg" width="150px" height="150px">
                 <h3 class="title">Kieran Guffick<small>Captain</small></h3>
                 <p>
-                Hi I'm Leigh and I'm a second year student studying maths. Taekwondo has been such an important part of my life for 10 years now and I am currently a third dan black belt. Having loved my Taekwondo club at home I was really worried that I would have to give up on the sport upon going to uni but I needn't have been concerned - when I arrived I was instantly welcomed into the group, not only as a club member but as a friend. After a year of being Social Sec, I've now stepped up to being your club Captain. Having been British Ladies Black Belt Student Champion for two years running, it's my job to get you all competing to a high standard, whether you're in it to win it or just love the adrenalin burst. So if you just love the sport, want to keep fit and try something new or are just interested in making new friends then Warwick Taekwondo is definitely the sport for you!
+                Hi, I’m Kieran- a second year Economics and Industrial Organization student. I started Taekwondo 15 years ago and am a third degree black belt. I have competed in several top international tournaments around the world and have represented Great Britain. I had only trained in WTF until I joined university, but since, I’ve enjoyed introducing ITF elements into my repertoire. Any nerves that I’d had were instantly dispelled by the welcoming nature of the existing members. As Captain, I hope to pass on as much wisdom as possible and motivate you, helping you to reach your goals no matter how large or small. Whether it is to prepare for that moment you step in the ring, an incredible adrenaline rush or simply to maintain a good level of fitness, everyone has their own reasons. So no matter your past experience of Taekwondo, head down to one of our sessions to try out this dynamic sport.
                 </p>
               </div> <!-- End of individual team member -->
             </div> <!-- End of row -->
             
             <div class="row">
               <div class="col-md-6 individual animated bounceInLeft ">
-                <img class="img-responsive" src="images/team/Jess.jpg" width="150px" height="150px">
+                <img class="img-responsive" src="images/team/2015/Btom.jpg" width="150px" height="150px">
                 <h3 class="title">Thomas Bokros<small>Charity</small></h3>
                 <p>
-                  Hi, I'm Jess and I'm in my second year studying French and History. Before I came to Warwick I had no experience in any form of martial arts, but now I'm a yellow belt and a gold medal winner and I can't imagine my life without Taekwondo. The club has so much to offer - from learning new skills, entering competitions and just bettering your own fitness, it has also been an amazing opportunity socially and abated any fears I had about struggling to make new friends when I came to university. As this year's charity officer I am looking forward to organising the club's charity events, which in the past have included a pub quiz and a sponsored sparathon and have proven to be great successes both in the amount of money raised and the amount of fun had! So whether you're a seasoned student of Taekwondo or a complete beginner like I was, come along to training and see where Warwick Taekwondo will take you.
+                Hello! Im Tom, a second year History student and your Charity and Community Officer for this year. It's my job to sort out all of the charitable activities that Warwick Taekwondo will be doing this year, along with arranging donations to the charity that we are sponsoring (which is yet to be decided!). These events could ranger from pub quizzes to poker nights, but don't hesitate to talk to me if you think you have a great idea. I started Warwick Taekwondo completely new to the martial art, and though I had done Karate for four years before, I found it extremely easy to shift styles because the club is so accommodating. Taekwondo has become such a large part of my university life, and I've made so many new friends at the club that (cliché alert) I seriously couldn't imagine my life without it. If you ever need me, just talk to the guy who looks like Ed Sheeran. Cheers!
                 </p>
               </div> <!-- End of individual team member -->
             

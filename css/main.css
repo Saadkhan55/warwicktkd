@@ -97,6 +97,7 @@ a:hover {
   -o-transition: 0.35s;
   color: #124ea7;
   text-decoration: none;
+  cursor: pointer;
 }
 small {
   padding-left: 10px;
@@ -580,6 +581,8 @@ body {
 }
 .recent-news .container .row .summary-news img {
   margin-bottom: 20px;
+  height: 150px;
+  width: 100%;
 }
 .panel-group .panel-default .panel-heading {
   background: #367ee9;
