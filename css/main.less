@@ -660,6 +660,10 @@ html,body {
 
       .col-sm-9, h2{
         color: lighten(@color-black, 10%);
+
+        @media @medium-collapse {
+          float: none;
+        }
       }
 
       &:hover {
@@ -1023,6 +1027,20 @@ html,body {
 //**********************************************************************
 // GALLERY PAGE 
 //**********************************************************************
+.section {
+  display: block;
+  max-width: 250px;
+  width: 70%;
+  margin-bottom: 10px;
+}
+
+.gallery {
+  margin-bottom: 30px;
+
+  .row {
+    margin-bottom: 20px;
+  }
+}
 
 //**********************************************************************
 // QUIZ PAGE - jQuery & css quiz, styling each question
