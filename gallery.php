@@ -11,7 +11,7 @@
       <?php include 'php/header.php' ?>
 
       <div class="container gallery">
-        <h2 class="section">Fresher 2015</h2>
+        <h2 class="section">Freshers 2015</h2>
 
         <div class="row">
 
@@ -184,7 +184,16 @@
 
 
     <script type="text/javascript">
-    $(".row .col-md-3 a").tosrus({});
+      $(".row .col-md-3 a").tosrus({
+          effect: "fade",
+          pagination : {
+            add: true
+          },
+
+          autoplay : {
+            play: true
+          }
+      });
 
     </script>
 

@@ -133,7 +133,7 @@
                 <img class="img-responsive" src="images/team/2015/Haseeb.jpg" width="150px" height="150px">
                 <h3 class="title">Haseeb Majid<small>Publicity Officer</small></h3>
                 <p>
-                Hi, I'm a third year computer scientist and have been doing taekwondo for about 4 years. Tae Kwon Do has completely changed my life not am I more confident in general. I have far improved my communications skills. As publicity officer I will be in charge of all things publicity, such as keeping the website up to date and creating new videos etc.
+                Hi, I'm a third year computer scientist I will be your publicity officer this year. This involves keeping the website update, making new videos and making sure we get into the boar newspaper. I would like to help grow the club as much as possible. I have been doing Tae Kwon Do for the past 4-5 years. It has completely changed my life, making me more confident in everything I do. Tae Kwon Do is a great martial art for any one to start (at Warwick) because it helps get you fit, meet some really great people and go on tour!!! Infact because of Tae Kwon Do I now have a Guiness world record (Not as impressive as you're thinking ). 
                 </p>
               </div> <!-- End of individual team member -->
             

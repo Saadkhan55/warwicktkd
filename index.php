@@ -75,7 +75,7 @@
                 <div class="col-md-6 animated bounceInLeft">
                   <div class="carousel-caption">
                     <h1 class="title">Students</h1>
-                     <p class="carousel-text">Already a student at the club? want to revise theory or learn your patterns. Has all the information for the grading syllabus. Select appropiate grade in dropdown menu.</p>
+                     <p class="carousel-text">Already a student at the club? Want to revise theory or learn your patterns. Select the appropiate grade in dropdown menu.</p>
 
                     <div class="btn-group dropup"> <!-- Link of kup grades (dropdown menu) -->
                       <button type="button" class="btn btn-danger btn-lg dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
@@ -156,7 +156,7 @@
               <div class="col-md-4 ">
                 <i class="fa fa-user"></i>
                  <h2>Beginner Guide</h2>
-                <p>New to the club, or looking to start Tae Kwon Do. Have a look at our beginners guide to help answer some of your questions.</p>
+                <p>New to the club, or looking to start Tae Kwon Do? Have a look at our beginners guide to help answer some of your questions.</p>
               </div>
             </a> <!-- End of first story -->
 

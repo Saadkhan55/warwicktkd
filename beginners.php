@@ -24,7 +24,8 @@
               <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
                 <div class="panel-body">
                   <p class="larger-font">
-                    Tae Kwon Do is a korean martial art that has a heavy emphasis on kicking. It is a mainly a striking and blocking system, although grabs and throws are introduce to advanced colour belts. This means that classes can be physically intensive and a higher demand is placed on the students fitness as they progress. As a new student, you will be instructed in a way as to improve your fitness to be able to achieve this
+                    "To put it simply, Tae Kwon Do is a version of unarmed combat designed for the purpose of self defence. However, it is more than just that. It is the scientific use of the body in the METHOD of self defence, a body that has gained the ultimate use of its facilities through intensive physical and mental training. Although it is a martial art,it's discipline, technique and mental training are the mortar for building a sense of justice, fortitude, humility and resolve. It is this mental conditioning that separates the true practitioner from the sensationalist, content with the mastering only the fighting aspects of the art." - Tae Kwon Do Encloypedia
+
                   </p>
                 </div>
               </div>
@@ -151,7 +152,7 @@
               <div id="collapseEight" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
                 <div class="panel-body">
                   <p class="larger-font">
-                  At the club we primilarly teach ITF style of Tae Kwon Do and are associated with the GTUK <a href="http://www.gt-uk.net/" target="_blank">(click here for more information) </a>. However we are willing to accept any new members regardless of previous affiliation/background. We are looking to expand the WTF side of the club this year, with one extra training session dedicated to just WTF style sparring. 
+                  At the club we primilarly teach ITF style Tae Kwon Do and are associated with the GTUK <a href="http://www.gt-uk.net/" target="_blank">(click here for more information) </a>.However we welcome members from any affiliation/taekwondo/previous martial arts background. We are looking to expand the WTF side of the club this year, with one extra training session dedicated to just WTF style sparring. 
                   </p>
                 </div>
               </div>
