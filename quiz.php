@@ -19,9 +19,11 @@
               <i class="fa fa-check"></i>
             </label>
             
-            <label class="radio-inline yellow ">
-              <input type="radio" name="option"  class="grade" id="inlineRadio2" value="2"> Yellow Tag
-              <i class="fa fa-check"></i>
+            <label class="radio-inline white tag">
+              <div class="yellow">
+                <input type="radio" name="option"  class="grade" id="inlineRadio2" value="2"> Yellow Tag
+                <i class="fa fa-check"></i>
+              </div>
             </label>
             
             <label class="radio-inline yellow-darker ">
@@ -29,9 +31,11 @@
               <i class="fa fa-check"></i>
             </label>
             
-            <label class="radio-inline green ">
-              <input type="radio" name="option" class="grade" id="inlineRadio4" value="4"> Green Tag
-              <i class="fa fa-check"></i>
+            <label class="radio-inline yellow tag">
+              <div class="green">
+                <input type="radio" name="option" class="grade" id="inlineRadio4" value="4"> Green Tag
+                <i class="fa fa-check"></i>
+              </div>
             </label>
             
             <label class="radio-inline green-darker ">
@@ -41,9 +45,11 @@
           </div> <!-- End of row -->
 
           <div class="row">
-            <label class="radio-inline blue ">
-              <input type="radio" name="option" class="grade" id="inlineRadio6" value="6"> Blue Tag
-              <i class="fa fa-check"></i>
+            <label class="radio-inline green tag">
+              <div class="blue">
+                <input type="radio" name="option" class="grade" id="inlineRadio6" value="6"> Blue Tag
+                <i class="fa fa-check"></i>
+              </div>
             </label>
             
             <label class="radio-inline blue-darker ">
@@ -51,9 +57,11 @@
               <i class="fa fa-check"></i>
             </label>
             
-            <label class="radio-inline red ">
-              <input type="radio" name="option" class="grade" id="inlineRadio8" value="8"> Red Tag
-              <i class="fa fa-check"></i>
+            <label class="radio-inline blue tag">
+              <div class="red">
+                <input type="radio" name="option" class="grade" id="inlineRadio8" value="8"> Red Tag
+                <i class="fa fa-check"></i>
+              </div>
             </label>
             
             <label class="radio-inline red-darker ">
@@ -61,9 +69,11 @@
               <i class="fa fa-check"></i>
             </label>
             
-            <label class="radio-inline black ">
-              <input type="radio" name="option" class="grade" id="inlineRadio10" value="10"> Black Tag
-              <i class="fa fa-check"></i>
+            <label class="radio-inline red tag">
+              <div class="black">
+                <input type="radio" name="option" class="grade" id="inlineRadio10" value="10"> Black Tag
+                <i class="fa fa-check"></i>
+              </div>
             </label>
           </div> <!-- End of row -->
 

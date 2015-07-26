@@ -110,6 +110,68 @@
           </div>
         
         </div> <!-- End of Row --> 
+
+       <div class="row">
+         <div class="col-md-3">
+           <a href="images/gallery/freshers/21.jpg"><img class="img-responsive" src="images/gallery/freshers/21.jpg" alt=""></a>
+         </div>
+
+         <div class="col-md-3">
+           <a href="images/gallery/freshers/22.jpg"><img class="img-responsive" src="images/gallery/freshers/22.jpg" alt=""></a>
+         </div>
+
+         <div class="col-md-3">
+           <a href="images/gallery/freshers/23.jpg"><img class="img-responsive" src="images/gallery/freshers/23.jpg" alt=""></a>
+         </div>
+
+         <div class="col-md-3">
+           <a href="images/gallery/freshers/24.jpg"><img class="img-responsive" src="images/gallery/freshers/24.jpg" alt=""></a>
+         </div>
+       </div> <!-- End of row -->
+
+       <div class="row">
+         <div class="col-md-3">
+           <a href="images/gallery/freshers/25.jpg"><img class="img-responsive" src="images/gallery/freshers/25.jpg" alt=""></a>
+         </div>
+
+         <div class="col-md-3">
+           <a href="images/gallery/freshers/26.jpg"><img class="img-responsive" src="images/gallery/freshers/26.jpg" alt=""></a>
+         </div>
+
+         <div class="col-md-3">
+           <a href="images/gallery/freshers/27.jpg"><img class="img-responsive" src="images/gallery/freshers/27.jpg" alt=""></a>
+         </div>
+
+         <div class="col-md-3">
+           <a href="images/gallery/freshers/28.jpg"><img class="img-responsive" src="images/gallery/freshers/28.jpg" alt=""></a>
+         </div>
+       </div> <!-- End of row -->
+
+       <div class="row">
+         <div class="col-md-3">
+           <a href="images/gallery/freshers/29.jpg"><img class="img-responsive" src="images/gallery/freshers/29.jpg" alt=""></a>
+         </div>
+
+         <div class="col-md-3">
+           <a href="images/gallery/freshers/30.jpg"><img class="img-responsive" src="images/gallery/freshers/30.jpg" alt=""></a>
+         </div>
+
+         <div class="col-md-3">
+           <a href="images/gallery/freshers/31.jpg"><img class="img-responsive" src="images/gallery/freshers/31.jpg" alt=""></a>
+         </div>
+
+         <div class="col-md-3">
+           <a href="images/gallery/freshers/32.MP4"><img class="img-responsive" src="images/gallery/freshers/32.MP4" alt=""></a>
+         </div>
+       </div> <!-- End of row -->
+
+       <div class="row">
+         <div class="col-md-3">
+           <a href="images/gallery/freshers/33.MP4"><img class="img-responsive" src="images/gallery/freshers/33.MP4" alt=""></a>
+         </div>
+
+       </div> <!-- End of row -->
+
       </div>
 
     </div><!--End of wrapper -->

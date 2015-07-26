@@ -26,7 +26,7 @@
 
                 <div class="col-md-6 animated bounceInLeft"> <!-- Each newslider element -->
                   <div class="carousel-caption video-caption"> 
-                    <h1 class="title">My First Tae Kwon Do</h1> <!-- Newslider title -->
+                    <h1 class="title">My First Tae Kwon Do Lesson</h1> <!-- Newslider title -->
                     <p class="carousel-text">Watch this video to get to know a bit more about Tae Kwon Do. This is what your first Tae Kwon Do lesson might look like. The video goes through the main aspects that you will cover in lessons.</p> <!-- newslider text -->
 
                     <a href="http://warwicksport.warwick.ac.uk/clubs/taekwondo/" target="_blank"><button type="button" class="btn btn-danger btn-lg">Join Us</button></a> <!-- newslider button -->

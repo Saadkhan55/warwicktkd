@@ -16,7 +16,7 @@
             <div class="panel panel-default ">
               <div class="panel-heading" role="tab" id="headingOne">
                 <h4 class="panel-title">
-                  <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                  <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseEight">
                     <i class="fa fa-plus"></i>  <i class="fa fa-minus"></i>What Is Tae Kwon Do? 
                   </a>
                 </h4>
@@ -30,18 +30,19 @@
               </div>
             </div> <!-- End of panel -->
 
+
             <div class="panel panel-default ">
               <div class="panel-heading" role="tab" id="headingOne">
                 <h4 class="panel-title">
                   <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
-                    <i class="fa fa-plus"></i>  <i class="fa fa-minus"></i>Do I need to wear a dobok? 
+                    <i class="fa fa-plus"></i>  <i class="fa fa-minus"></i>Do I need to wear to training? 
                   </a>
                 </h4>
               </div>
               <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
                 <div class="panel-body">
                   <p class="larger-font">
-                    A dobok is the white training top and bottoms students wear. As a beginner you are not required to wear a dobok to training. Just wear something comfortable where you can kick i.e. track suits with a t-shirt. Don't forgot to bring a drink aswell.
+                   As a beginner you are not required to wear a dobok(A dobok is the white training top and bottoms students wear) to training. Just wear something comfortable where you can kick i.e. track suits with a t-shirt. Don't forgot to bring a drink aswell.
                   </p>
                 </div>
               </div>
@@ -132,7 +133,25 @@
               <div id="collapseSeven" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
                 <div class="panel-body">
                   <p class="larger-font">
-                  There is a kit order that goes out around week 2-3 of each term, this is where you can order your dobok (training suit) and sparring equipment. It is usually with us by week 5.
+                  There is a kit order that goes out around week 2-3 of each term, this is where you can order your dobok (training suit), sparring equipment and club merchandise. It is usually with us by week 5.
+                  </p>
+                </div>
+              </div>
+            </div> <!-- End of panel -->
+
+            <div class="panel panel-default ">
+              <div class="panel-heading" role="tab" id="headingOne">
+                <h4 class="panel-title">
+                  <a data-toggle="collapse" data-parent="#accordion" href="#collapseEight" aria-expanded="true" aria-controls="collapseEight">
+                    <i class="fa fa-plus"></i>  <i class="fa fa-minus"></i>What style are we/Who are we associated with?
+                  </a>
+                </h4>
+              </div>
+
+              <div id="collapseEight" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+                <div class="panel-body">
+                  <p class="larger-font">
+                  At the club we primilarly teach ITF style of Tae Kwon Do and are associated with the GTUK <a href="http://www.gt-uk.net/" target="_blank">(click here for more information) </a>. However we are willing to accept any new members regardless of previous affiliation/background. We are looking to expand the WTF side of the club this year, with one extra training session dedicated to just WTF style sparring. 
                   </p>
                 </div>
               </div>

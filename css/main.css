@@ -421,11 +421,15 @@ body {
 }
 #footer .social img:hover {
   border-radius: 25px;
-  transition: 0.35s;
-  -webkit-transition: 0.35s;
-  -moz-transition: 0.35s;
-  -ms-transition: 0.35s;
-  -o-transition: 0.35s;
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+  -webkit-transform: rotate(360deg);
+  -moz-transform: rotate(360deg);
+  -ms-transform: rotate(360deg);
+  -o-transform: rotate(360deg);
 }
 #footer .credits {
   border-top: 1px solid #777777;
@@ -448,11 +452,6 @@ body {
 .carousel .container {
   padding-top: 100px;
 }
-@media (max-width: 1023px) {
-  .carousel .container {
-    padding-top: 70px;
-  }
-}
 @media (max-width: 767px) {
   .carousel .container {
     padding-top: 100px;
@@ -468,6 +467,7 @@ body {
 }
 @media (max-width: 1023px) {
   .carousel .container .video-caption {
+    width: 80%;
     display: none;
   }
 }
@@ -856,17 +856,16 @@ body {
   border: 1px solid #ddd;
   padding-right: 20px;
   margin-right: 10px;
-}
-@media (max-width: 860px) {
-  #quiz-container .intro .radio-inline {
-    padding-top: 5px;
-  }
+  margin-bottom: 20px;
 }
 @media (max-width: 767px) {
   #quiz-container .intro .radio-inline {
     display: block;
     width: 100%;
   }
+}
+#quiz-container .intro .radio-inline div {
+  max-height: 25px;
 }
 #quiz-container .intro .radio-inline .fa {
   display: none;
@@ -877,15 +876,15 @@ body {
   color: #ffffff;
 }
 #quiz-container .intro .radio-inline .grade {
-  -webkit-appearance: button;
+  -webkit-appearance: none;
   /* WebKit */
-  -moz-appearance: button;
+  -moz-appearance: none;
   /* Mozilla */
-  -o-appearance: button;
+  -o-appearance: none;
   /* Opera */
-  -ms-appearance: button;
+  -ms-appearance: none;
   /* Internet Explorer */
-  appearance: button;
+  appearance: none;
   /* CSS3 */
 }
 #quiz-container .intro .radio-inline .grade:checked + .fa {
@@ -895,6 +894,10 @@ body {
   -moz-transition: 0.35s;
   -ms-transition: 0.35s;
   -o-transition: 0.35s;
+}
+#quiz-container .intro .tag {
+  padding-left: 0;
+  padding-right: 0;
 }
 #quiz-container .intro .white {
   background: #ffffff;
