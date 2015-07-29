@@ -42,7 +42,7 @@
           
           </p> <!-- End of grading requirement -->
 
-          <h3>Chon-Ji Tul <small>Heaven & Earth</small></h3>
+          <h3>Do San Tul <small>An Chang Ho</small></h3>
 
           <p class="larger-font">
             <b>  Meaning </b> <br> <br>

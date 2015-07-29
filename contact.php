@@ -69,7 +69,7 @@
     // if no errors then sent email to webmaster
     if(!$error) {
 
-      $response=file_get_contents("https://www.google.com/recaptcha/api/siteverify?6LdJqgkTAAAAAAthurmlWpHvr4Orv7cb-vuplALY&response=".$captcha."&remoteip=".$_SERVER['REMOTE_ADDR']);
+      $response=file_get_contents("https://www.google.com/recaptcha/api/siteverify?6LcCdgoTAAAAAHUgkqAQlKXc7dMDCFmnkjrkgFZ2&response=".$captcha."&remoteip=".$_SERVER['REMOTE_ADDR']);
       $to = "me@haseebmajid.com";
       $subject = "contact form ";
       $msgcontent = "Name: $name<br> Email: $email <br>Message: $message";
@@ -149,7 +149,7 @@
                   </div>
 
                   <div id="captcha">
-                    <div name="captcha" class="g-recaptcha" data-sitekey="6LdJqgkTAAAAAJmDxPvwgeBESja5OaFUh8aBS0Vg"></div>
+                    <div name="captcha" class="g-recaptcha" data-sitekey="6LcCdgoTAAAAACpxrWaZ_9eMCNY467dOtVD4OAwW"></div>
                   </div>
 
                   <div class="form-group ">

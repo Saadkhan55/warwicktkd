@@ -95,7 +95,7 @@
                 <div class="panel-body">
                   <p class="larger-font">
                       Tuesday 8:30 - 10:00 PM Westwood Games Hall <br>
-                      Thurday 7:00 - 8:30 PM Westwood Games Hall <br>
+                      Thursday 7:00 - 8:30 PM Westwood Games Hall <br>
                       Saturday 2:00 - 4:00 PM Westwood Games Hall <br>
                   </p>
                 </div>
@@ -152,7 +152,7 @@
               <div id="collapseEight" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
                 <div class="panel-body">
                   <p class="larger-font">
-                  At the club we primilarly teach ITF style Tae Kwon Do and are associated with the GTUK <a href="http://www.gt-uk.net/" target="_blank">(click here for more information) </a>.However we welcome members from any affiliation/taekwondo/previous martial arts background. We are looking to expand the WTF side of the club this year, with one extra training session dedicated to just WTF style sparring. 
+                  We welcome members from any affiliation/taekwondo/previous martial arts background. However At the club we primilarly teach ITF style Tae Kwon Do and are associated with the GTUK <a href="http://www.gt-uk.net/" target="_blank">(click here for more information) </a> We are looking to expand the WTF side of the club this year, with one extra training session dedicated to just WTF style sparring. 
                   </p>
                 </div>
               </div>
@@ -180,6 +180,11 @@
                 <p class="larger-font">
                   A memorised sequence of moves, a pattern is a simulated fight against imaginary enemies which trains your muscles to perform techniques in a natural flowing way. Although primarily structured around technique,  they can also be ued to condition your body.
                 </p>
+
+                <div class="embed-responsive embed-responsive-16by9">
+                  <iframe src="https://drive.google.com/file/d/0B5eKZ8UH44uzcnVEOGtmZUk0VUE/preview" ></iframe>
+                </div>
+
               </div> <!-- End of tab panel -->
 
               <div role="tabpanel" class="tab-pane wow animated bounceInLeft" id="SetSparring">
@@ -199,6 +204,10 @@
                 <p class="larger-font">
                   Normally consists of 2 minute rounds between two combatants. Two common types of free sparring are point-stop (where the match is paused by a referee whenever a point is scored) or continuous. Competition sparring scoring can vary, but the rules are usually fairly similiar (2 or 3 points for a kick, and 1 for a hand technique). Free sparring is effectively a controlled fight in which clean techniques are rewarded with points.
                 </p>
+
+                <div class="embed-responsive embed-responsive-16by9">
+                  <iframe src="https://drive.google.com/file/d/0B3e42kemWuX_TEpCY1FjdTg1dk0/preview" width="640" height="480"></iframe>
+                </div>
               </div> <!-- End of tab panel -->
 
             </div> <!-- End of tab content -->

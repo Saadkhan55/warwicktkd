@@ -160,17 +160,8 @@
            <a href="images/gallery/freshers/31.jpg"><img class="img-responsive" src="images/gallery/freshers/31.jpg" alt=""></a>
          </div>
 
-         <div class="col-md-3">
-           <a href="images/gallery/freshers/32.MP4"><img class="img-responsive" src="images/gallery/freshers/32.MP4" alt=""></a>
-         </div>
-       </div> <!-- End of row -->
+      </div> <!-- End of row -->
 
-       <div class="row">
-         <div class="col-md-3">
-           <a href="images/gallery/freshers/33.MP4"><img class="img-responsive" src="images/gallery/freshers/33.MP4" alt=""></a>
-         </div>
-
-       </div> <!-- End of row -->
 
       </div>
 

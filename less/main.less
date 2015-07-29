@@ -499,7 +499,8 @@ html,body {
       //each image on hover
       &:hover {
         border-radius: 25px;
-        .transition(0.35s);
+        .transition(0.5s);
+        .rotate(360deg);
       }
     }
   } // End of social
@@ -541,10 +542,6 @@ html,body {
       padding-top: 70px;
     }
 
-    @media @post-collapse {
-      padding-top: 100px;
-    }
-
     .col-md-6 {
       @media @medium-collapse {
         width: 100%;
@@ -558,6 +555,7 @@ html,body {
 
     .video-caption {
       @media @medium-collapse {
+        width: 80%;
         display: none;
       }
     }
@@ -660,6 +658,10 @@ html,body {
 
       .col-sm-9, h2{
         color: lighten(@color-black, 10%);
+
+        @media @medium-collapse {
+          float: none;
+        }
       }
 
       &:hover {
@@ -680,6 +682,7 @@ html,body {
       //for each article
       .summary-news {
         padding: 0 20px;
+
 
         h2 {
           text-align: center;
@@ -983,9 +986,13 @@ html,body {
       }
     }
 
-    //for each article
+    //for esm-3
     .summary-news {
       padding: 0 20px;
+
+      .col-sm-3 {
+        float: none;
+      }
 
       h2 {
         text-align: center;
@@ -1023,6 +1030,20 @@ html,body {
 //**********************************************************************
 // GALLERY PAGE 
 //**********************************************************************
+.section {
+  display: block;
+  max-width: 250px;
+  width: 70%;
+  margin-bottom: 10px;
+}
+
+.gallery {
+  margin-bottom: 30px;
+
+  .row {
+    margin-bottom: 20px;
+  }
+}
 
 //**********************************************************************
 // QUIZ PAGE - jQuery & css quiz, styling each question
@@ -1062,14 +1083,16 @@ html,body {
       border: 1px solid #ddd;
       padding-right: 20px;
       margin-right: 10px;
-
-      @media (max-width: 860px) {
-        padding-top: 5px;
-      }
+      margin-bottom: 20px;
 
       @media @post-collapse {
         display: block;
         width: 100%;
+      }
+
+      //div is for tag grades make stripe max height of 25px
+      div {
+        max-height: 25px;
       }
 
       //hide tick icon on all radios that are not selected i.e. showing at most one element.
@@ -1082,8 +1105,9 @@ html,body {
         color: @color-white;
       }
 
+
       .grade {
-        .appearance(button);
+        .appearance(none);
 
         //when checked is changed to another radio button, show tick icon
         &:checked+.fa {
@@ -1091,6 +1115,12 @@ html,body {
           .transition(0.35s);
         }
       }
+    }
+    
+    //for tags (such as yellow tag etc)
+    .tag {
+      padding-left: 0;
+      padding-right: 0;
     }
 
     //colors for different grades lighter for tags and darker for full belts
