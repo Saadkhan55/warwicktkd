@@ -1,0 +1,25 @@
+************************************************
+*** This file shouldn't leave the server.    ***
+*** If they get in here we're fucked anyway. ***
+************************************************
+
+piwik (taekwondo.uwcs.co.uk/piwik):
+	superuser: tkdadmin
+	pw: tkdadminpw
+
+mysql database:
+	$dbname = 'taekwondo';
+	$dbuser = 'taekwondo';
+	$dbpasswd = 'tkdxyfpk';
+
+Google (calendar/YouTube):
+	Email: taekwondo@uwcs.co.uk
+	Password: warwicktkdsu159
+	
+Yahoo (flickr):
+	Email: warwicktkd@yahoo.com
+	Password: SU159photos
+	
+Twitter:
+	Email:su159@sunion.warwick.ac.uk
+	Password: TKDxyfpk

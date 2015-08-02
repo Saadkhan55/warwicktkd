@@ -1,0 +1,1379 @@
+@import "library";
+
+//************************************************************************
+// Variables used in the file (In order)
+// -- Fonts
+// -- Font Size
+// -- Colours
+// -- Media Queries
+//************************************************************************
+
+@header-font: 'Raleway';
+@wrapper-font: 'Open Sans';
+@carousel-font: 'Open Sans';
+@footer-font: 'Open Sans';
+
+@header-size: 16px;
+@carousel-size: 16px;
+@larger-font: 16.5px;
+@footer-size: 14px;
+
+@color-white: #fff; 
+@color-yellow: #ffd600; 
+@color-green: #449d44;
+@color-red: #ff3530;
+@color-black: #000; 
+@color-grey: #ccc;
+@color-light-grey: #ddd;
+@color-light-blue: #367ee9;
+@color-lighter-blue: #4ecff8;
+@color-header-grey: #777;
+@color-lighter-grey: #ededed;
+
+//button colours
+@color-danger: #d9534f;
+@color-success: #449d44;
+
+//Media queries
+@pre-collapse: ~"(min-width: 768px)";
+@post-collapse: ~"(max-width: 767px)";
+@medium-collapse: ~"(max-width: 1023px)";
+@mobile-collapse: ~"(max-width: 501px)";
+
+//**********************************************************************
+// General Styles such as headers etc
+//**********************************************************************
+
+h1 {
+  font-size: 36px;
+}
+
+h2 {
+  font-size: 30px;
+}
+
+h3 {
+  font-size: 26px;
+}
+
+h4 {
+  font-size: 22px
+}
+
+h5 {
+  font-size: 18px;
+}
+
+h6 {
+  font-size: 16px;
+}
+
+//All anchor links
+a {
+  color: @color-light-blue;
+
+  &:hover {
+    .transition(0.35s);
+    color: darken(@color-light-blue, 20%);
+    text-decoration: none;
+    cursor: pointer;
+  }
+}
+
+//small away from heading
+small {
+  padding-left: 10px;
+}
+
+//section for headers
+.section {
+  padding-bottom: 20px;
+  border-bottom: 2px solid @color-light-blue;
+  display: inline;
+}
+
+//No bullets points for lists
+.unlisted {
+  list-style-type: none;
+}
+
+//larger font paragraphs
+.larger-font {
+  font-size: @larger-font;
+}
+
+.large-font {
+  font-size: 22px;
+  text-align: center;
+  padding: 20px 0;
+}
+
+//all buttons
+.btn {
+ border-radius: 0; 
+ margin-bottom: 30px;
+}
+
+.btn-danger {
+  color: @color-white;
+
+  &:hover {
+    .transition(0.25s);
+     background: darken(@color-danger, 10%);
+  }
+}
+
+//form elements general styling
+.form-control  {
+  border-radius: 0;
+
+  //on click of focus
+  &:focus {
+    border-color: @color-light-blue;
+    box-shadow: none;
+
+    .placeholder({
+      color: transparent;
+      .transition(0.5s);
+    });
+
+  }
+}
+
+//blue text
+.blue-text {
+  color: @color-light-blue;
+}
+
+//center align everything in div
+.center {
+    text-align: center;
+}
+//**********************************************************************
+// This file is structured top -> down
+//  -- NAVBAR
+//    -- contains navigation control and logo
+//    -- is the white bar at the top
+//
+//  -- FOOTER
+//    -- contains 3 columns (SITEMAP, SOCIAL)
+//    -- RECENT POSTS, CONTACT US
+//    -- footer at the bottom (black background)
+//
+//  -- INDEX PAGE
+//    -- NEWSLIDER
+//    -- 3 STORIES 
+//    -- RECENT NEWS
+//
+//  -- BEGINNERS
+//    --ACCORDION
+//    --PANEL TABS
+//
+//  -- TRAINING
+//   --TEXT
+//
+//  -- STUDENT
+//   --TABLES
+//
+//  -- CONTACT
+//   --FORMS
+//
+//  -- NEWS PAGE
+//    -- SUMMARIES
+//    -- PAGINATION
+//
+//  -- GALLERY PAGE
+//
+//  -- QUIZ
+//    --JQuery
+//**********************************************************************
+
+//**********************************************************************
+// RANDOM FIXES
+//**********************************************************************
+// Active and hovered over links
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:hover, .navbar-default .navbar-nav>.active>a:focus, #collapse-menu .navbar-nav  li a:hover {
+  color: @color-light-blue;
+  background: transparent;
+  .transition(0.35s);
+}
+
+// No background on dropdown click
+.navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:hover, .navbar-default .navbar-nav>.open>a:focus {
+  color: @color-light-blue;
+  background: transparent;
+}
+
+// Stops color change on click of dropdown-toggle button
+.navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>li>a:focus {
+  color: @color-header-grey;
+  background: transparent;
+}
+
+//before menu has collapsed show dropdown menu on hover
+@media @pre-collapse {
+  //Show dropdown menus on hover
+  ul.nav li.dropdown:hover > ul.dropdown-menu {
+    display: block;    
+  }
+}
+
+//dropdown menu slightly more towards the right
+.navbar-right .dropdown-menu {
+  right: auto;
+}
+//**********************************************************************
+//  WRAPPER -> CONTAINS CONTENT
+//**********************************************************************
+html,body {
+  height: 100%;
+}
+
+#wrapper {
+  background: lighten(#eee, 5%);
+  font-family: @wrapper-font, sans;
+  //for sticky footer 
+  min-height: 100%;
+  margin: 0 auto -370px;
+  padding: 0 0 370px;
+
+  //on collapse of menu bigger footer
+  @media @post-collapse {
+    margin: 0 auto -850px;
+    padding: 0 0 850px;
+    overflow-x: hidden;
+  }
+} // end of wrapper
+
+
+//**********************************************************************
+//  NAVBAR
+//**********************************************************************
+//Navbar is top menu, logo + navigation bar
+//overwriting in bootstrap.min.css
+
+.navbar-default {
+  background: @color-white;
+  font-family: @header-font, sans;
+  height: 100px;
+
+  //on collapse of menu get rid of padding
+  .container {
+    @media @post-collapse {
+      padding: 0;
+    }
+
+    .navbar-collapse {
+      margin: 0;
+    }
+  }
+
+  //navbar show and collapse button (3 bars)
+  .navbar-toggle {
+    border-color: transparent;
+    background: transparent;
+
+    //collapse button on hover
+    &:hover, &:focus {
+      background: transparent;
+      color: @color-light-blue;
+      .transition(0.35s);
+    }
+  }
+
+  //logo (top left)
+  .navbar-brand {
+    padding: 15px 0;
+
+    @media @post-collapse {
+      padding: 15px;
+    }
+    img {
+      height: 80px;
+      width: 110px;
+    }
+  }
+
+  .navbar-nav {
+    padding-top: 40px;
+    //each element of the navbar
+    li {
+      //change color of each navigation element
+      a {
+        //i = icons in navbar
+        i {
+          padding-right: 5px;
+        }
+
+        color: @color-header-grey;
+        font-size: @header-size;
+        font-weight: 500;
+
+        //on hover change color of navbar element
+        &:hover {
+          color: @color-light-blue;
+          .transition(0.35s); // a member in library less take a single parameter which is time of transition
+        }
+
+        //when active (page)change color to blue
+        &.active {
+          color: @color-light-blue
+        }
+      }
+    }
+
+    //Dropdown menu
+    .dropdown {
+      padding-bottom: 5px;
+
+      &:hover {
+        //keep navbar element highlighted even when 
+        //going into dropdown menu
+        .dropdown-toggle {
+          color: @color-light-blue;
+        }
+      }
+
+      //dropdown menu shown on hover
+      .dropdown-menu {
+        background: #000;
+        opacity: 0.75;
+        padding: 0;
+
+        //each element inside the dropdown menu
+        li {
+            padding: 0;
+          a {
+            padding: 10px 10px 10px 20px;
+            color: #fff;
+            border-bottom: 1px solid #2a3034;
+
+            &:hover {
+              color: darken(@color-light-blue, 10%) !important;
+              .transition(0.35s);
+            }
+          }
+        }// end of list element
+      } // end of dropdown menu
+    } // end of dropdown
+  }
+
+  @media @post-collapse {
+    //when menu has collapsed
+    .navbar-collapse {
+      border-color: transparent;
+      width: 100%;
+      background: #fff;
+    }
+  }
+} // end of navbar-default
+
+//**********************************************************************
+//  Footer at the bottom (STICKY)
+//**********************************************************************
+
+//Footer (Sticky at the bottom)
+#footer {
+  background: #333;
+  height: 370px;
+  font-family: @footer-font,sans;
+  font-size: @footer-size;
+  color: #fff;
+  border-top: 5px solid @color-light-blue;
+
+  @media @post-collapse {
+    height: 850px;
+  }
+
+  //on hover of links inside the footer, change color to white
+  a {
+    color: @color-lighter-blue;
+    &:hover {
+      text-decoration: none;
+      color: #fff;
+      .transition(0.25s);
+    }
+  }
+
+  //headers inside the footer (i.e. sitemap, social)
+  h2 {
+    font-weight: 300;
+    padding-bottom: 20px;
+
+    i {
+      font-size: 0.8em;
+    }
+  }
+
+  //back to top page icon
+  .fa-chevron-up {
+    z-index: 1100;
+    color: #fff;
+    font-size: 2em;
+    padding: 20px;
+    position: fixed;
+    bottom: 10px;
+    right: 20px;
+    background: rgba(0,0,0, 0.60);
+
+    &:hover {
+      background: rgba(0,0,0, 0.8);
+      .transition(0.35s);
+      cursor: pointer;
+    }
+  }
+
+  //Site map i.e. left column (TOP)
+  .sitemap {
+    div {
+      width: 33%;
+      display: inline;
+      float: left;
+      padding: 0;
+      margin: 0;
+
+      &:first-child {
+        margin-left: -20px;
+      }
+
+      &:nth-child(2) {
+        margin: 0 15px 0 0;
+      }
+    }
+  } //end of sitemap
+
+  //Recent posts
+  .blog-post {
+    //unordered list -> lists news articles
+    ul {
+      margin-left: -29px;
+    }
+
+    //list element
+    li {
+      margin-bottom: 20px;
+
+      //heading inside blog post
+      .heading {
+        display: inline;
+        float: right;
+        margin-right: 30px;
+        position: absolute;
+
+        //anchor elements (title)
+        a {
+          font-size: 16px;
+        }
+
+        //small for date
+        small {
+          font-style: italic;
+          display: block;
+          font-size: 16px;
+        }
+      } 
+
+      //anchor element inside blog post
+      a {
+        //images inside RECENT POSTS
+        img {
+          width: 50px;
+          height: 50px;
+          margin-right: 15px;
+          display: inline;
+        }
+
+      }
+    } //end of list elements
+  }
+
+  //social buttons
+  .social {
+    margin-bottom: 10px;
+
+    //each social button
+    img {
+      width: 48px;
+      height: 48px;
+
+      //each image on hover
+      &:hover {
+        border-radius: 25px;
+        .transition(0.5s);
+        .rotate(360deg);
+      }
+    }
+  } // End of social
+
+  //credits at button
+  .credits {
+    border-top: 1px solid @color-header-grey;
+    text-align: center;
+    padding: 15px 0 0 0;
+  }
+} // end of footer
+
+//**********************************************************************
+// INDEX PAGE
+//  --CAROUSEL (NEWSLIDER)
+//  --3 COLUMS OF "STORIES"
+//  --3 RECENT NEWS
+//**********************************************************************
+
+//newslider displays 3 "articles"
+.carousel {
+  background: @color-light-blue;
+  width: 100%;
+  height: 500px;
+  margin-bottom: 20px;
+  font-family: @carousel-font, sans;
+  font-size: @carousel-size;
+
+  //after collapse change margin bottom
+  @media @post-collapse {
+    margin-bottom: 0px;
+  }
+
+  //drop all content down by 200 ish pixels
+  .container {
+    padding-top: 100px;
+
+    @media @medium-collapse {
+      padding-top: 70px;
+    }
+
+    .col-md-6 {
+      @media @medium-collapse {
+        width: 100%;
+      }
+    }
+
+    .btn {
+      margin-top: 20px;
+    }
+
+
+    .video-caption {
+      @media @medium-collapse {
+        width: 80%;
+        display: none;
+      }
+    }
+
+    .carousel-caption {
+      position: static;
+
+      //anchor links in carousel
+      .map-link {
+        color: @color-white;
+        font-weight: 700;
+
+        &:hover {
+          color: lighten(@color-red, 10%);
+          .transition(0.35s);
+        }
+      }
+
+      //dropdown menu in carousel 
+      .dropdown-menu {
+        margin: -20px;
+        padding: 0;
+        border-radius: 0;
+        font-size: @larger-font;
+        text-shadow: 0;
+        
+        li {
+          border-top: 1px solid #bbb;
+          
+          a {
+            &:hover {
+              background: @color-light-blue;
+              .transition(0.25s);
+              color: @color-white;
+            }
+          }
+        }
+      }
+
+      .title {
+        margin-bottom: 35px;
+      }
+    }
+
+    .carousel-image {
+      @media @medium-collapse {
+        display: none;
+      }
+    }
+  }
+}
+
+// three 'stories' in a column
+.three-story {
+  margin-bottom: 20px; 
+
+  //each story is an anchor link to another page
+  a {
+    color: lighten(@color-black, 20%);
+    
+    &:hover {
+      text-decoration: none;
+    }
+  }
+
+  //for each 'story'
+  .col-md-4 {
+    padding-top: 20px;
+    text-align: center;
+
+    &:hover {
+      background: @color-light-blue;
+      .transition(0.25s);
+      color: @color-white;
+      cursor: pointer;
+    }
+
+    i {
+      font-size: 4em;
+    }
+
+    h2 {
+      font-weight: 800;
+    }
+  }
+}
+
+/** recent news stories shows 3 most recent news stories 
+ ** Has a title (h2) with a date (small)
+ ** and a summary in a column of size 9 (col-sm-9)
+ ** and a picture on the left (col-sm-3)
+ **/
+.recent-news {
+  margin-bottom: 20px;
+
+  .container {
+
+    //on hover of row change color to blue
+    .row {
+
+      .col-sm-9, h2{
+        color: lighten(@color-black, 10%);
+
+        @media @medium-collapse {
+          float: none;
+        }
+      }
+
+      &:hover {
+        background: @color-light-blue;
+        .transition(0.25s);
+        cursor: pointer;
+
+        //on hover of article change color of small (date)
+        small {
+          color: @color-white;
+        }
+
+        .col-sm-9, h2{
+          color: @color-white;
+        }
+      }
+
+      //for each article
+      .summary-news {
+        padding: 0 20px;
+
+
+        h2 {
+          text-align: center;
+
+          small {
+            padding-left: 20px;
+          }
+        }
+
+        img {
+          margin-bottom: 20px;
+          height: 150px;
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+//**********************************************************************
+// BEGINNERS PAGE
+//  --ACCORDION 
+//  --TAB PANELS
+//**********************************************************************
+// The accordion 
+.panel-group {
+  .panel-default {
+    //panel headings background
+    .panel-heading {
+      background: @color-light-blue;
+      color: @color-white;
+      padding: 0;
+
+      //pad left icons 
+      i {
+        padding-right: 10px;
+      }
+
+      //initially hide fa minus
+      .fa-minus {
+        display: none;
+      }
+
+      //anchor links i.e. (blue background), hide text decoration
+      a {
+        display: block;
+        padding: 20px 15px;
+
+        &:hover, &:focus{
+          background: darken(@color-light-blue, 5%);
+          color: @color-white;
+          text-decoration: none;
+        }
+      }
+
+      //When accordion is open show minus and hide plus
+      .open {
+        a {
+          .fa-minus {
+            display: inline;
+          }
+
+          .fa-plus {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+}
+
+//tab panels each separate part of tae kwon do
+.tab-panels {
+  margin-bottom: 20px;
+  //nav tabs -> navigation for tabs
+  .nav-tabs {
+    border-bottom: none;
+
+    //first element give a border to left
+    &:first-child {
+      border-left: 1px solid #bbb;
+    }
+
+    //each navbar element
+    li {
+      border-right: 1px solid #bbb;
+      border-top: 1px solid #bbb;
+      border-bottom: 1px solid #bbb;
+
+      a {
+        border-radius: 0;
+        padding: 12px 22px;
+        margin-right: 0;
+        background: lighten(#ddd, 5%);
+
+        &:hover {
+          background: lighten(#ddd, 5%);
+        }
+      }
+    }
+
+    //for the active link (opened tabbed)
+    .active {
+      border-right: 3px solid @color-light-blue;
+      border-bottom: none;
+      border-top: none;
+      border-left: none;
+
+      a {
+        background: @color-white;
+
+        &:hover {
+          background: @color-white;
+
+        }
+      }
+    }
+  }
+
+  //tab content
+  .tab-content {
+    border: 1px solid #ddd;
+    padding: 20px;
+
+    //videos margin around them
+    .embed-responsive {
+      margin: 10px;
+    }
+  }
+}
+//
+//**********************************************************************
+// TRAINING PAGE contains all training information such as time 
+// and cost
+//**********************************************************************
+//training section
+.training {
+  .section {
+    .font-weight(300);
+    padding-right: 30px;
+  }
+
+  h3 {
+     margin-top: 50px;
+    .font-weight(300);
+  }
+}
+//**********************************************************************
+// TEAM PAGE contains all the exec team members contains rows of two 
+// team members at a time
+//**********************************************************************o
+.team {
+  margin-bottom: 20px;
+  .section {
+    .font-weight(300);
+    padding-right: 30px;
+    margin-left: 150px;
+
+    @media @post-collapse {
+      margin-left: 0;
+    }
+  }
+
+  //each individual team member
+  .individual {
+    margin-top: 90px;
+
+    //float images left, add border radius
+    img {
+      float: left;
+      margin: 20px;
+      .border-radius(50%);
+    }
+
+    //paragraph margin -left
+    p {
+      margin-left: 195px;
+
+      @media @post-collapse {
+        margin-left: 0;
+      }
+    }
+  }
+}
+
+
+//**********************************************************************
+// SYLLABUS PAGES - Including patterns sparring and theory, for gradings
+// and current students
+//**********************************************************************
+
+.syllabus {
+  margin-bottom: 40px;
+
+  img {
+    margin: 20px;
+  }
+
+  h3 {
+    margin-top:50px;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  h2 {
+    padding-right: 20px;
+  }
+
+  //button margin away from heading/title
+  .btn {
+    margin-left: 10px;
+  }
+
+  //center all theory
+  th,td {
+    text-align: center;
+  }
+
+  
+  .title {
+    td {
+      font-weight: 700;
+    }
+  }
+}
+
+//**********************************************************************
+// CONTACT US PAGE - FORM to sent contact 
+//**********************************************************************
+
+.form-horizontal {
+  i {
+    color: @color-light-blue;
+    font-size: 2.5em;
+  }
+}
+
+.error {
+  border: 1px solid @color-danger;
+}
+
+.error-list {
+  text-align: center;
+  color: @color-danger;
+}
+
+.sucess {
+  color: @color-success;
+  text-align: center;
+  font-weight: 300;
+}
+
+#captcha {
+  display: block;
+  margin: 20px auto;
+  width:304px;
+  
+  @media @post-collapse {
+    width: 50%;
+  }
+}
+
+//**********************************************************************
+// NEWS PAGE - Shows news element from url and also a sidebar to navigate
+// previous articles
+//**********************************************************************
+.news-story {
+  margin-bottom: 50px;
+
+  .title {
+    text-align:center;
+    margin-bottom: 20px;
+  }
+
+  img {
+    max-width: 350px;
+    margin: 30px;
+    float: left;
+  }
+
+  .row {
+    //text columns color
+    .col-sm-9, h2{
+      color: lighten(@color-black, 10%);
+    }
+
+    //on hover of 
+    &:hover {
+      background: @color-light-blue;
+      .transition(0.25s);
+      cursor: pointer;
+
+      //on hover of article change color of small (date)
+      small {
+        color: @color-white;
+      }
+
+      .col-sm-9, h2{
+        color: @color-white;
+
+      }
+    }
+
+    //for esm-3
+    .summary-news {
+      padding: 0 20px;
+
+      .col-sm-3 {
+        float: none;
+      }
+
+      h2 {
+        text-align: center;
+
+        small {
+          padding-left: 20px;
+        }
+      }
+
+      img {
+        margin-bottom: 20px;
+        max-width: 200px;
+      }
+    }
+    //for pagination
+    .pagination {
+      //no border radius for first and last child
+      &:first-child, &:last-child {
+        a {
+          border-radius: 0;
+        }
+      }
+
+      .active {
+
+        color: @color-light-blue;
+      }
+    }
+  }
+}
+
+//Make fb comments on news page responsive
+.fb-comments, .fb-comments iframe[style], .fb-like-box, .fb-like-box iframe[style] {width: 100% !important;}
+.fb-comments span, .fb-comments iframe span[style], .fb-like-box span, .fb-like-box iframe span[style] {width: 100% !important;}
+//**********************************************************************
+// GALLERY PAGE 
+//**********************************************************************
+.section {
+  display: block;
+  max-width: 250px;
+  width: 70%;
+  margin-bottom: 10px;
+}
+
+.gallery {
+  margin-bottom: 30px;
+
+  .row {
+    margin-bottom: 20px;
+  }
+}
+
+//**********************************************************************
+// QUIZ PAGE - jQuery & css quiz, styling each question
+//**********************************************************************
+#quiz-container {
+  margin-bottom: 20px;
+
+  //introduction first page before starting quiz
+  .intro {
+    text-align: center;
+
+    h2 {
+      color: @color-light-blue;
+      margin-bottom: 30px;
+    }
+
+    //start button link to start quiz
+    .start {
+      margin: 20px 0;
+      height: 70px;
+      width: 200px;
+      font-size: 36px;
+      font-weight:100;
+    }
+
+    .radio-inline+.radio-inline {
+       margin-left: 0;
+    }
+
+
+    .radio-inline {
+      height: 70px;
+      width: 15%;
+      text-align: center;
+      padding-top: 20px;
+      font-size: 1.3em;
+      border: 1px solid #ddd;
+      padding-right: 20px;
+      margin-right: 10px;
+      margin-bottom: 20px;
+
+      @media @post-collapse {
+        display: block;
+        width: 100%;
+      }
+
+      //div is for tag grades make stripe max height of 25px
+      div {
+        max-height: 25px;
+      }
+
+      //hide tick icon on all radios that are not selected i.e. showing at most one element.
+      .fa {
+        display: none;
+        font-size: 4em;
+        position: relative;
+        top:-55px;
+        opacity: 0.95;
+        color: @color-white;
+      }
+
+
+      .grade {
+        .appearance(none);
+
+        //when checked is changed to another radio button, show tick icon
+        &:checked+.fa {
+          display: block;
+          .transition(0.35s);
+        }
+      }
+    }
+    
+    //for tags (such as yellow tag etc)
+    .tag {
+      padding-left: 0;
+      padding-right: 0;
+    }
+
+    //colors for different grades lighter for tags and darker for full belts
+    .white {
+      background: @color-white;
+
+      //on hover or iff had active class make darker or lighter
+      &:hover, &.active{
+        .transition(0.25s);
+        background: darken(@color-white, 10%);
+      }
+    }
+
+    .yellow {
+      background: @color-yellow;
+
+      &:hover , &.active{
+        .transition(0.25s);
+        background: lighten(@color-yellow, 10%);
+      }
+    }
+
+    .yellow-darker {
+      background: @color-yellow;
+
+      &:hover , &.active{
+        .transition(0.45s);
+        background:#edB800;
+      }
+    }
+
+    .green {
+      background: @color-green;
+      color: @color-white;
+
+      &:hover , &.active{
+        .transition(0.45s);
+        background: lighten(@color-green, 10%);
+      }
+    }
+
+    .green-darker {
+      background: @color-green;
+      color: @color-white;
+
+      &:hover , &.active{
+        .transition(0.45s);
+        background: darken(@color-green, 15%);
+      }
+    }
+
+    .blue {
+      background: @color-light-blue;
+      color: @color-white;
+
+      &:hover , &.active{
+        .transition(0.45s);
+        background: lighten(@color-light-blue, 10%);
+      }
+    }
+
+    .blue-darker {
+      background: @color-light-blue;
+      color: @color-white;
+
+      &:hover , &.active{
+        .transition(0.45s);
+        background: darken(@color-light-blue, 15%);
+      }
+    }
+
+    .red {
+      background: @color-red;
+      color: @color-white;
+
+      &:hover , &.active{
+        .transition(0.45s);
+        background: lighten(@color-red, 10%);
+      }
+    }
+
+    .red-darker {
+      background: darken(@color-red, 7%);
+      color: @color-white;
+
+      &:hover , &.active{
+        .transition(0.45s);
+        background: darken(@color-red, 20%);
+      }
+    }
+
+    .black {
+      background: lighten(#333, 7%);
+      color: @color-white;
+
+      &:hover , &.active{
+        .transition(0.45s);
+        background: darken(#444, 20%);
+      }
+    }
+
+    .row {
+      margin-bottom: 30px;
+
+      @media @post-collapse {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  //each question in the quiz whole container
+  .question {
+    .row {
+      margin-bottom: 25px;
+
+      @media (max-width: 1024px) {
+        margin-bottom: 0;
+      }
+    }
+
+    //end of quiz page
+    .end {
+      text-align: center;
+
+      .question-no {
+        display: inline-block;
+        margin-right: 20px;
+      }
+    }
+
+    h3 {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    //question number
+    .question-no {
+      height: auto;
+      width: 180px;
+      font-size: 22px;
+      font-weight: 400;
+      text-align: center;
+      .border-radius(5px);
+      margin-bottom: 35px;
+      background: #444;
+      color: @color-white;
+      padding-bottom: 10px;
+
+      .question-title {
+        border-top: 1px solid @color-light-grey;
+        margin-bottom: 10px;
+        background: #333;
+        .border-radius(5px);
+        padding: 5px 0;
+      }
+    }
+
+    //reset button
+    .reset {
+      height: 50px;
+      width: 100px;
+      font-size: 22px;
+    }
+
+    //each number and answers choice
+    .option {
+      color: @color-white;
+      font-size: 22px;
+
+      @media @post-collapse {
+        margin-bottom: 20px;
+      }
+
+      //number with choices
+      .number {
+        .border-radius(5px);
+        padding-top: 20px;
+        padding-left: 20px;
+        margin-top: 10px;
+        height: 90px;
+        width: 80px;
+        background: #333;
+        display: inline-block;
+
+        @media @post-collapse {
+          width: 22%;
+          padding-left: 2%;
+        }
+
+        @media (max-width: 480px) {
+          display: none;
+        }
+      }
+
+      //radio -> label
+      .radio {
+        padding-left: 0;
+        margin-left: -13px;
+        display: inline;
+        font-size: 22px;
+        
+        //each choice inside the question
+        label {
+          .border-radius(5px);
+          height: 90px;
+          min-width: 350px;
+          width: auto;
+          background: lighten( #444, 10%);
+          padding-top: 20px;
+          color: @color-white;
+
+          @media @post-collapse {
+            width: 60%;
+            font-size: 20px;
+            padding-top: 23px;
+          }
+
+          &:hover {
+            background: #333;
+            .transition(0.25s);
+          }
+
+          .choice {
+            .appearance(button);
+          }
+        }
+      }
+    }
+
+
+    //correct answer
+    .correct {
+      color: @color-success;
+      float: left;
+      padding-right: 20px;
+    }
+
+    //correct answer change color
+    .correct-answer {
+      color: @color-success !important;
+    }
+
+    //wrong answer change color 
+    .wrong-answer {
+      color: @color-danger !important;
+    }
+
+    .wrong {
+      color: @color-danger;
+      float: left;
+      padding-right: 20px;
+    }
+  }
+}
+
+
