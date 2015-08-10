@@ -114,9 +114,17 @@
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 <script>window.jQuery || document.write('<script src="js/vendor/jquery.min.js"><\/script>')</script> 
 <script src="js/vendor/Tocca.min.js"></script>
-<!-- Bootstrap with CDN fallbacks-->
 <script src="js/vendor/bootstrap.min.js"></script>
+<script src="js/vendor/lazyload.min.js"></script>
 <!-- Own Created JS files-->
 <script src="js/vendor/jquery.bcSwipe.min.js"></script> <!-- Swipe left /right -->
 <script src="js/active.js"></script> <!-- Change active navbar link depending on page -->
 <script src="js/scroll.js"></script> <!-- Allow smooth scroll to an anchor link using jquery -->
+<script src="js/accordion.js"></script> <!-- Changes class to add plus and minus effect on accordion when open/closed -->
+<script src="js/theory.js"></script>
+<script src="js/contact.js"></script>
+<script src="js/video_play.js"></script>
+<script src="js/quiz.js"></script>
+<script src="js/team.js"></script>
+<script src="js/vendor/lazy_load.js"></script>
+

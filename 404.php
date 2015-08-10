@@ -11,7 +11,7 @@
       <?php include 'php/header.php' ?>
       <div class="container">
         <div class="row">
-          <a href="index.php"><img src="images/404.jpg" alt="404" class="img-responsive"></a>
+          <a href="index.php"><img data-original="images/404.jpg" alt="404" class="img-responsive lazy"></a>
         </div> <!-- End of row -->
       </div> <!-- End of container -->
     </div><!--End of wrapper -->

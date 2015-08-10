@@ -128,7 +128,7 @@
 
                 <div class="col-md-6 animated delay-3 bounceInRight">
                   <div class="carousel-image">
-                    <img class="img-responsive" src="images/carousel/training.jpg" width="350px" height="260px" alt="training">
+                    <img class="img-responsive " src="images/carousel/training.jpg" width="350px" height="260px" alt="training">
                   </div> <!--End of carousel-image -->
                 </div> <!--End of carousel-image -->
 
@@ -225,7 +225,6 @@
     </div><!--End of wrapper -->
     <!--Add footer, contains 3 columns layout Add footer data, such as jquery, boostrap javascript -->
     <?php include 'php/footer.php' ?>
-    <script src="js/video_play.js"></script>
     <script>
     //swipe right
     $('.carousel').bcSwipe({ threshold: 50 });

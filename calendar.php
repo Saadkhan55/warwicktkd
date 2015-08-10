@@ -15,7 +15,6 @@
     </div><!--End of wrapper -->
     <!--Add footer, contains 3 columns layout Add footer data, such as jquery, boostrap javascript -->
     <?php include 'php/footer.php' ?>
-    <script src="js/vendor/jquery-ui.min.js"></script>
   </body>
 </html>
 

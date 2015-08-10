@@ -218,7 +218,7 @@
     </div><!--End of wrapper -->
     <!--Add footer, contains 3 columns layout Add footer data, such as jquery, boostrap javascript -->
     <?php include 'php/footer.php' ?>
-    <script src="js/accordion.js"></script> <!-- Changes class to add plus and minus effect on accordion when open/closed -->
+    
   
   </body>
 </html>

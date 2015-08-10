@@ -168,7 +168,7 @@
     </div><!--End of wrapper -->
     <!--Add footer, contains 3 columns layout Add footer data, such as jquery, boostrap javascript -->
     <?php include 'php/footer.php' ?>
-    <script src="js/contact.js"></script>
+    <script src='https://www.google.com/recaptcha/api.js'></script>
   </body>
 </html>
 

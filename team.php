@@ -176,7 +176,6 @@ Hey, I’m Danielle and I’m a 2nd year Data Science student who will be your K
     </div><!--End of wrapper -->
     <!--Add footer, contains 3 columns layout Add footer data, such as jquery, boostrap javascript -->
     <?php include 'php/footer.php' ?>
-    <script src="js/team.js"></script>
   </body>
 </html>
 

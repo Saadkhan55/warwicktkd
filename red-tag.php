@@ -56,7 +56,7 @@
             <b> Number of moves: 37 </b>
           </p>
 
-          <img src="images/pattern/3rd_kup.png" alt="" width="150px" height="150px" alt="pattern-diagram">
+          <img data-original="images/pattern/3rd_kup.png" class="lazy" width="150px" height="150px" alt="pattern-diagram">
 
           <!-- Table showing off moves for the pattern -->
           <table class="table table-hover">
@@ -540,7 +540,6 @@
     </div><!--End of wrapper -->
     <!--Add footer, contains 3 columns layout Add footer data, such as jquery, boostrap javascript -->
     <?php include 'php/footer.php' ?>
-    <script src="js/theory.js"></script>
   </body>
 </html>
 

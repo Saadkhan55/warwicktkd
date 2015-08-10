@@ -2,8 +2,9 @@ This document goes over each file and its uses,
 
 to minify css: http://cssminifier.com/
 js: http://javascript-minifier.com/
+yuicompressor tutorial: http://www.cyberciti.biz/faq/linux-unix-minify-compress-css-javascript-files-shell-prompt/
 
-when putting website into production, dont put db, js(unminified) and less on server.#
+When uploading only need to upload, css, images, js, php and files.
 
 /*********************** BAREBONES PAGE *************************************/
 
@@ -26,10 +27,18 @@ when putting website into production, dont put db, js(unminified) and less on se
 
 /*********************** BAREBONES PAGE *************************************/
 
+--compressor
+---- yuicompressor-2.4.8.jar: used to compress css and js files
+---- css.sh: compress css-developer files into single css file in css folder 
+---- js.sh: compress js-developer files into single js file in js folder 
 
 -- css
-----main.css: Main style sheet (edit less version)
+----combined.css: main style sheet (minified)
+---- fonts: Leave this folder as is has fonts 
 
+
+-- css (developer)
+----main.css: Main style sheet (edit less version)
 ---- fonts: Leave this folder as is has fonts 
 
 ---- vendor: All items not created by me
@@ -37,6 +46,8 @@ when putting website into production, dont put db, js(unminified) and less on se
 ------- boostrap.min.css: bootstrap css
 ------- font-awesome.min.css: icons css
 ------- jquery.tosrus.all.css: for gallery
+
+
 
 -- db 
 ---- login_details.txt: login details for website and database
@@ -79,6 +90,12 @@ when putting website into production, dont put db, js(unminified) and less on se
 ---- library.less: animations used in main.less
 
 -- php
+---- vendor: for all pagination
+---- footer.php: footer in all files (black bit at bottom)
+---- head.php: html between head tags on files
+---- header.php: navbar header on all files
+
+-- php (developing): Same as above but links to multiple sheets
 ---- vendor: for all pagination
 ---- footer.php: footer in all files (black bit at bottom)
 ---- head.php: html between head tags on files

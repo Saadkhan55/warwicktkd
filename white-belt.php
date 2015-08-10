@@ -48,7 +48,7 @@
           </p> <!-- End of grading requirement -->
 
           <h3>Saju Jirugi <small>Four Directional Punch</small></h3>
-          <img src="images/pattern/10th_kup.png" alt="" width="150px" height="150px" alt="pattern-diagram">
+          <img data-original="images/pattern/10th_kup.png" class="lazy" width="150px" height="150px" alt="pattern-diagram">
 
           <!-- Table showing off moves for the pattern -->
           <table class="table table-hover wow animated bounceInRight">
@@ -673,7 +673,6 @@
     </div><!--End of wrapper -->
     <!--Add footer, contains 3 columns layout Add footer data, such as jquery, boostrap javascript -->
     <?php include 'php/footer.php' ?>
-    <script src="js/theory.js"></script>
   </body>
 </html>
 
