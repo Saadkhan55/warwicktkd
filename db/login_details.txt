@@ -23,3 +23,8 @@ Yahoo (flickr):
 Twitter:
 	Email:su159@sunion.warwick.ac.uk
 	Password: TKDxyfpk
+
+UWCS Server:
+        server: codd.uwcs.co.uk
+        username: taekwondo
+        password: DobokCoddpeice159

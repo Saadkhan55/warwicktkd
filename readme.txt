@@ -32,13 +32,9 @@ When uploading only need to upload, css, images, js, php and files.
 ---- css.sh: compress css-developer files into single css file in css folder 
 ---- js.sh: compress js-developer files into single js file in js folder 
 
+
 -- css
-----combined.css: main style sheet (minified)
----- fonts: Leave this folder as is has fonts 
-
-
--- css (developer)
-----main.css: Main style sheet (edit less version)
+----style.css: Main style sheet (edit less version)
 ---- fonts: Leave this folder as is has fonts 
 
 ---- vendor: All items not created by me
@@ -46,7 +42,6 @@ When uploading only need to upload, css, images, js, php and files.
 ------- boostrap.min.css: bootstrap css
 ------- font-awesome.min.css: icons css
 ------- jquery.tosrus.all.css: for gallery
-
 
 
 -- db 
@@ -66,7 +61,7 @@ When uploading only need to upload, css, images, js, php and files.
 ---- social: social buttons in footer
 ---- team: exec photos split by year
 
---js (unminified) : all unminified js files
+--js: javascript files
 ---- accordion.js: +,- button change
 ---- active.js: changes active page (blue) on navbar
 ---- contact.js: validates contact us page
@@ -84,18 +79,11 @@ When uploading only need to upload, css, images, js, php and files.
 ------ jquery.min.js: needed for all jquery
 ------ jquery.tosrus.min.all: gallery page
 
--- js (minified for production) (look above for minifier) same as other js don't need to put on server
 
 -- less, similiar for css compile from less to css (move css file to css folder) then minify for production, again no need to put on server. (http://lesscss.org/)
 ---- library.less: animations used in main.less
 
 -- php
----- vendor: for all pagination
----- footer.php: footer in all files (black bit at bottom)
----- head.php: html between head tags on files
----- header.php: navbar header on all files
-
--- php (developing): Same as above but links to multiple sheets
 ---- vendor: for all pagination
 ---- footer.php: footer in all files (black bit at bottom)
 ---- head.php: html between head tags on files

@@ -7,7 +7,7 @@
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapse-menu">
             <i class="fa fa-bars fa-2x"></i>
           </button>
-          <a class="navbar-brand" href="index.php"><img src="images/logo.png"></a>
+          <a class="navbar-brand" href="index.php"><img src="images/logo.png" width="110px" height="85px"></a>
         </div><!--End of navbar header -->
         <!--Contains navigation items -->
         <div class="navbar-collapse navbar-right collapse" id="collapse-menu">
