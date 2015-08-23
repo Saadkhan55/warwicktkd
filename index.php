@@ -75,7 +75,7 @@
                 <div class="col-md-6 animated bounceInLeft">
                   <div class="carousel-caption">
                     <h1 class="title">Students</h1>
-                     <p class="carousel-text">Already a student at the club? Want to revise theory or learn your patterns. Select the appropiate grade in dropdown menu.</p>
+                     <p class="carousel-text">Already a student at the club? Want to revise theory or learn your patterns? Select the appropiate grade in dropdown menu.</p>
 
                     <div class="btn-group dropup"> <!-- Link of kup grades (dropdown menu) -->
                       <button type="button" class="btn btn-danger btn-lg dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
@@ -225,9 +225,22 @@
     </div><!--End of wrapper -->
     <!--Add footer, contains 3 columns layout Add footer data, such as jquery, boostrap javascript -->
     <?php include 'php/footer.php' ?>
+
     <script>
-    //swipe right
-    $('.carousel').bcSwipe({ threshold: 50 });
+      //touch events
+      var myElement = document.getElementById('carousel');
+      var touch = new Hammer(myElement);
+
+      touch.on("panright", function() {
+          $("#carousel").carousel('next');
+
+      });
+
+      touch.on("panleft", function() {
+          $("#carousel").carousel('prev');
+
+      });
+
     </script>
   </body>
 </html>

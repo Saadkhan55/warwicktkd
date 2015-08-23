@@ -116,8 +116,8 @@
 <script src="js/vendor/Tocca.min.js"></script>
 <script src="js/vendor/bootstrap.min.js"></script>
 <script src="js/vendor/lazyload.min.js"></script>
+<script src="js/vendor/hammer.min.js"></script>
 <!-- Own Created JS files-->
-<script src="js/vendor/jquery.bcSwipe.min.js"></script> <!-- Swipe left /right -->
 <script src="js/active.js"></script> <!-- Change active navbar link depending on page -->
 <script src="js/scroll.js"></script> <!-- Allow smooth scroll to an anchor link using jquery -->
 <script src="js/accordion.js"></script> <!-- Changes class to add plus and minus effect on accordion when open/closed -->

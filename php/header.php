@@ -20,6 +20,7 @@
               <ul class="dropdown-menu" role="menu">
                 <li><a href="news.php">News</a></li>
                 <li><a href="calendar.php">Calendar</a></li>
+                <li><a href="gallery.php">Gallery</a></li>
               </ul>
             </li> 
 
@@ -27,9 +28,9 @@
             <li class="dropdown">
               <a href="#" class="dropdown-toggle about" data-toggle="dropdown"><i class="fa fa-info"></i>ABOUT US</a>
               <ul class="dropdown-menu" role="menu">
-                <li><a href="gallery.php">Gallery</a></li>
                 <li><a href="beginners.php">FAQ</a></li>
                 <li><a href="training.php">Training</a></li>
+                <li><a href="style.php">ITF or WTF</a></li>
                 <li><a href="team.php">Exec Team</a></li>
               </ul>
             </li>

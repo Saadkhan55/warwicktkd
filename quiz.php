@@ -21,7 +21,7 @@
             
             <label class="radio-inline white tag">
               <div class="yellow">
-                <input type="radio" name="option"  class="grade" id="inlineRadio2" value="2"> Yellow Tag
+                <input type="radio" name="option"  class="grade btn" id="inlineRadio2" value="2"> Yellow Tag
                 <i class="fa fa-check"></i>
               </div>
             </label>

@@ -893,6 +893,7 @@ body {
   /* Internet Explorer */
   appearance: none;
   /* CSS3 */
+  -moz-appearance: -moz-win-borderless-glass;
 }
 #quiz-container .intro .radio-inline .grade:checked + .fa {
   display: block;

@@ -1,8 +1,10 @@
 This document goes over each file and its uses, 
 
-to minify css: http://cssminifier.com/
-js: http://javascript-minifier.com/
+filezilla : FTP client
+workbench: Database connection
 yuicompressor tutorial: http://www.cyberciti.biz/faq/linux-unix-minify-compress-css-javascript-files-shell-prompt/
+
+
 
 When uploading only need to upload, css, images, js, php and files.
 

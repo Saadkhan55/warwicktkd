@@ -9,16 +9,16 @@
 // otherwise shows the second column
 //**********************************************
 $(document).ready(function() {
-  $(".btn").click(function() {
+  $(".btn-primary").click(function() {
     //if button has text show
-    if($(".btn").html() == "Hide") {
+    if($(this).html() == "Hide") {
       //change hide second table
-      $(".btn").html("Show");
+      $(this).html("Show");
       $(".theory tr :nth-child(2)").fadeOut("500");
     }
     else {
       //else do opposite
-      $(".btn").html("Hide");
+      $(this).html("Hide");
       $(".theory tr :nth-child(2)").fadeIn("1000");
     }
   });

@@ -17,7 +17,7 @@
               <div class="panel-heading" role="tab" id="headingOne">
                 <h4 class="panel-title">
                   <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseEight">
-                    <i class="fa fa-plus"></i>  <i class="fa fa-minus"></i>What Is Tae Kwon Do? 
+                    <i class="fa fa-plus"></i>  <i class="fa fa-minus"></i>What is Tae Kwon Do? 
                   </a>
                 </h4>
               </div>
@@ -25,7 +25,6 @@
                 <div class="panel-body">
                   <p class="larger-font">
                     "To put it simply, Tae Kwon Do is a version of unarmed combat designed for the purpose of self defence. However, it is more than just that. It is the scientific use of the body in the METHOD of self defence, a body that has gained the ultimate use of its facilities through intensive physical and mental training. Although it is a martial art,it's discipline, technique and mental training are the mortar for building a sense of justice, fortitude, humility and resolve. It is this mental conditioning that separates the true practitioner from the sensationalist, content with the mastering only the fighting aspects of the art." - Tae Kwon Do Encloypedia
-
                   </p>
                 </div>
               </div>
@@ -36,14 +35,14 @@
               <div class="panel-heading" role="tab" id="headingOne">
                 <h4 class="panel-title">
                   <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
-                    <i class="fa fa-plus"></i>  <i class="fa fa-minus"></i>Do I need to wear to training? 
+                    <i class="fa fa-plus"></i>  <i class="fa fa-minus"></i>What do I need to wear to training? 
                   </a>
                 </h4>
               </div>
               <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
                 <div class="panel-body">
                   <p class="larger-font">
-                   As a beginner you are not required to wear a dobok(A dobok is the white training top and bottoms students wear) to training. Just wear something comfortable where you can kick i.e. track suits with a t-shirt. Don't forgot to bring a drink aswell.
+                   As a beginner you are not required to wear a dobok (a dobok is the white training top and bottoms students wear) to training. Just wear something comfortable where you can kick i.e. track suits with a t-shirt. Don't forgot to bring a drink aswell.
                   </p>
                 </div>
               </div>
@@ -77,7 +76,7 @@
               <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
                 <div class="panel-body">
                   <p class="larger-font">
-                  Whilst being physically fit will help you train in tkd, it is not necessary to be "super fit" before joining our club. When you start training with us your fitness will rapidly start to improve!
+                  Whilst being physically fit will help you train in Tae Kwon Do, it is not necessary to be "super fit" before joining our club. When you start training with us your fitness will rapidly start to improve!
                   </p>
                 </div>
               </div>
@@ -87,7 +86,7 @@
               <div class="panel-heading" role="tab" id="headingOne">
                 <h4 class="panel-title">
                   <a data-toggle="collapse" data-parent="#accordion" href="#collapseFive" aria-expanded="true" aria-controls="collapseFive">
-                    <i class="fa fa-plus"></i>  <i class="fa fa-minus"></i> When and Where is Training?
+                    <i class="fa fa-plus"></i>  <i class="fa fa-minus"></i> When and where is training?
                   </a>
                 </h4>
               </div>
@@ -113,7 +112,7 @@
               <div id="collapseSix" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
                 <div class="panel-body">
                   <p class="larger-font">
-                  The first THREE lessons are free. Other than that the lessons cost  <br>
+                  The first THREE lessons are free. Other than that the lessons cost :<br>
 
                   Per Session: £3 <br>
                   Per Term: £30 <br>
@@ -134,7 +133,7 @@
               <div id="collapseSeven" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
                 <div class="panel-body">
                   <p class="larger-font">
-                  There is a kit order that goes out around week 2-3 of each term, this is where you can order your dobok (training suit), sparring equipment and club merchandise. It is usually with us by week 5.
+                  There is a kit order that goes out around week 2 or 3 of each term, this is where you can order your dobok (training suit), sparring equipment and club merchandise. It is usually with us by week 5.
                   </p>
                 </div>
               </div>
@@ -152,7 +151,7 @@
               <div id="collapseEight" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
                 <div class="panel-body">
                   <p class="larger-font">
-                  We welcome members from any affiliation/taekwondo/previous martial arts background. However At the club we primilarly teach ITF style Tae Kwon Do and are associated with the GTUK <a href="http://www.gt-uk.net/" target="_blank">(click here for more information) </a> We are looking to expand the WTF side of the club this year, with one extra training session dedicated to just WTF style sparring. 
+                  We welcome members from any affiliation/taekwondo/previous martial arts background. However at the club we primilarly teach ITF style Tae Kwon Do and are associated with the GTUK <a href="http://www.gt-uk.net/" target="_blank">(click here for more information) </a>. We are looking to expand the WTF side of the club this year, with one extra training session dedicated to just WTF style sparring. 
                   </p>
                 </div>
               </div>
@@ -178,7 +177,7 @@
 
               <div role="tabpanel" class="tab-pane fade in active" id="Patterns" data-toggle="tab">
                 <p class="larger-font">
-                  A memorised sequence of moves, a pattern is a simulated fight against imaginary enemies which trains your muscles to perform techniques in a natural flowing way. Although primarily structured around technique,  they can also be ued to condition your body.
+                  A memorised sequence of moves, a pattern is a simulated fight against imaginary enemies which trains your muscles to perform techniques in a natural flowing way. Although primarily structured around technique,  they can also be used to condition your body.
                 </p>
 
                 <div class="embed-responsive embed-responsive-16by9">
@@ -189,14 +188,14 @@
 
               <div role="tabpanel" class="tab-pane wow animated bounceInLeft" id="SetSparring">
                 <p class="larger-font">
-                  This is a sequence of pre-arranged moves between two people in which one person attacks whilst the other defends. This is used to practise proper execution of blocks and attacks against an opponent with minimal risk of injury.
+                  This is a sequence of pre-arranged moves between two people in which one person attacks whilst the other defends. This is used to practice proper execution of blocks and attacks against an opponent with minimal risk of injury.
                 </p>
 
             </div> <!-- End of tab panel -->
 
               <div role="tabpanel" class="tab-pane wow animated bounceInLeft" id="LineWork">
                 <p class="larger-font">
-                  A great way to practise specific Tae Kwon Do techniques, usually involves moving fowards and backwards doing a set move or combination attacking 'air'.
+                  A great way to practice specific Tae Kwon Do techniques, usually involves moving fowards and backwards doing a set move or combination attacking 'air'.
                 </p>
                </div> <!-- End of tab panel -->
 
