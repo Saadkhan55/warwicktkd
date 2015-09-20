@@ -226,17 +226,18 @@
     <!--Add footer, contains 3 columns layout Add footer data, such as jquery, boostrap javascript -->
     <?php include 'php/footer.php' ?>
 
+    <!-- Touch events for carousel -->
     <script>
       //touch events
       var myElement = document.getElementById('carousel');
       var touch = new Hammer(myElement);
 
-      touch.on("panright", function() {
+      touch.on("swiperight", function() {
           $("#carousel").carousel('next');
 
       });
 
-      touch.on("panleft", function() {
+      touch.on("swipeleft", function() {
           $("#carousel").carousel('prev');
 
       });

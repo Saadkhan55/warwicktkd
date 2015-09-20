@@ -37,6 +37,10 @@ $(document).ready(function() {
       $(".about").addClass("active");
       break;
 
+    case "ITF or WTF":
+      $(".about").addClass("active");
+      break;
+
     case "Exec Team" :
       $(".about").addClass("active");
       break;

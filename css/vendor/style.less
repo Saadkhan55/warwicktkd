@@ -272,6 +272,7 @@ html,body {
   .navbar-toggle {
     border-color: transparent;
     background: transparent;
+    padding: 20px 10px;
 
     //collapse button on hover
     &:hover, &:focus {
@@ -283,11 +284,7 @@ html,body {
 
   //logo (top left)
   .navbar-brand {
-    padding: 15px 0;
-
-    @media @post-collapse {
-      padding: 15px;
-    }
+    padding-top: 5px;
   }
 
   .navbar-nav {
@@ -1036,10 +1033,17 @@ html,body {
 //**********************************************************************
 .section {
   display: block;
-  max-width: 250px;
   width: 70%;
   margin-bottom: 10px;
 }
+
+.col-md-3 {
+  .img-responsive {
+    cursor: pointer;
+    margin-bottom: 10px;
+  }
+}
+
 
 .gallery {
   margin-bottom: 30px;
@@ -1048,6 +1052,59 @@ html,body {
     margin-bottom: 20px;
   }
 }
+
+#lightbox {
+  display: none;
+  position: fixed;
+  z-index: 2000;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(0,0,0,0.8);
+  text-align: center;
+
+  #content {
+      display: inline-block;
+
+    .light-image {
+      max-width: 1200px;
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  .fa {
+    background: rgba(0,0,0,0.6);
+    padding: 20px;
+    font-size: 1.5em;
+    position: fixed;
+    top: 50%;
+    color: @color-white;
+    z-index: 1500;
+    cursor: pointer;
+
+    @media @mobile-collapse {
+      padding: 10px;
+      font-size: 0.8em;
+    
+    }
+
+    &:hover {
+      background: rgba(0,0,0,0.9);
+    }
+  }
+
+  .fa-chevron-right {
+    right: 0;
+  }
+
+  .fa-chevron-left {
+    left: 0;
+  }
+}
+
+
 
 //**********************************************************************
 // QUIZ PAGE - jQuery & css quiz, styling each question

@@ -243,6 +243,7 @@ body {
 .navbar-default .navbar-toggle {
   border-color: transparent;
   background: transparent;
+  padding: 20px 10px;
 }
 .navbar-default .navbar-toggle:hover,
 .navbar-default .navbar-toggle:focus {
@@ -255,12 +256,7 @@ body {
   -o-transition: 0.35s;
 }
 .navbar-default .navbar-brand {
-  padding: 15px 0;
-}
-@media (max-width: 767px) {
-  .navbar-default .navbar-brand {
-    padding: 15px;
-  }
+  padding-top: 5px;
 }
 .navbar-default .navbar-nav {
   padding-top: 40px;
@@ -824,8 +820,11 @@ body {
 }
 .section {
   display: block;
-  max-width: 250px;
   width: 70%;
+  margin-bottom: 10px;
+}
+.col-md-3 .img-responsive {
+  cursor: pointer;
   margin-bottom: 10px;
 }
 .gallery {
@@ -833,6 +832,50 @@ body {
 }
 .gallery .row {
   margin-bottom: 20px;
+}
+#lightbox {
+  display: none;
+  position: fixed;
+  z-index: 2000;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.8);
+  text-align: center;
+}
+#lightbox #content {
+  display: inline-block;
+}
+#lightbox #content .light-image {
+  max-width: 1200px;
+  width: 100%;
+  height: auto;
+}
+#lightbox .fa {
+  background: rgba(0, 0, 0, 0.6);
+  padding: 20px;
+  font-size: 1.5em;
+  position: fixed;
+  top: 50%;
+  color: #ffffff;
+  z-index: 1500;
+  cursor: pointer;
+}
+@media (max-width: 501px) {
+  #lightbox .fa {
+    padding: 10px;
+    font-size: 0.8em;
+  }
+}
+#lightbox .fa:hover {
+  background: rgba(0, 0, 0, 0.9);
+}
+#lightbox .fa-chevron-right {
+  right: 0;
+}
+#lightbox .fa-chevron-left {
+  left: 0;
 }
 #quiz-container {
   margin-bottom: 20px;
