@@ -11,7 +11,9 @@
       <?php include 'php/header.php' ?>
       <div class="container syllabus">
         <div class="row">
-          <h2 class="section">White Belt</h2>
+          <h2 class="section">White Belt  <a href="syllabus/1.pdf" class="pdf" target="_blank">PDF</a> </h2>
+            
+
 
           <h3>Grading Requirements</h3>
           <p class="larger-font animated bounceInLeft wow">
@@ -44,7 +46,7 @@
 
             <b>Application of Technique</b><br><br>
             Releases from single wrist grab<br>
-          
+
           </p> <!-- End of grading requirement -->
 
           <h3>Saju Jirugi <small>Four Directional Punch</small></h3>
@@ -198,7 +200,7 @@
               <td><p>Left Foot Moves</p></td>
               <td><p></p></td>
             </tr>
-            </tbody> 
+            </tbody>
           </table> <!-- End of sajo jirugi pattern -->
 
           <h3>Saju Magki <small>Four Directional Block</small></h3>
@@ -222,7 +224,7 @@
                 <td><p></p></td>
                 <td><p></p></td>
               </tr>
-              
+
               <tr>
                 <td><p>1</p></td>
                 <td><p>Step Right Foot</p></td>
@@ -230,7 +232,7 @@
                 <td><p>Low</p></td>
                 <td><p>Knifehand Block</p></td>
               </tr>
-              
+
               <tr>
                 <td><p>2</p></td>
                 <td><p>Step to C</p></td>
@@ -238,7 +240,7 @@
                 <td><p>Mid</p></td>
                 <td><p>Inner Forearm Block</p></td>
               </tr>
-              
+
               <tr>
                 <td><p>3</p></td>
                 <td><p>Turn to A</p></td>
@@ -246,7 +248,7 @@
                 <td><p>Low</p></td>
                 <td><p>Knifehand Block</p></td>
               </tr>
-              
+
               <tr>
                 <td><p>4</p></td>
                 <td><p>Step to A</p></td>
@@ -254,7 +256,7 @@
                 <td><p>Mid</p></td>
                 <td><p>Inner Forearm Block</p></td>
               </tr>
-              
+
               <tr>
                 <td><p>5</p></td>
                 <td><p>Turn to D</p></td>
@@ -262,7 +264,7 @@
                 <td><p>Low</p></td>
                 <td><p>Knifehand Block</p></td>
               </tr>
-              
+
               <tr>
                 <td><p>6</p></td>
                 <td><p>Step to D</p></td>
@@ -270,7 +272,7 @@
                 <td><p>Mid</p></td>
                 <td><p>Inner Forearm Block</p></td>
               </tr>
-              
+
               <tr>
                 <td><p>7</p></td>
                 <td><p>Turn to B</p></td>
@@ -278,7 +280,7 @@
                 <td><p>Low</p></td>
                 <td><p>Knifehand Block</p></td>
               </tr>
-              
+
               <tr>
                 <td><p>8</p></td>
                 <td><p>Step to B</p></td>
@@ -286,7 +288,7 @@
                 <td><p>Mid</p></td>
                 <td><p>Inner Forearm Block</p></td>
               </tr>
-              
+
               <tr>
                 <td><p></p></td>
                 <td><p>To End</p></td>
@@ -294,7 +296,7 @@
                 <td><p></p></td>
                 <td><p>Right Foot Moves</p></td>
               </tr>
-              
+
               <tr>
                 <td><p>1</p></td>
                 <td><p>Step Left Foot Back</p></td>
@@ -302,7 +304,7 @@
                 <td><p>Low</p></td>
                 <td ><p>Knifehand Block</p></td>
               </tr>
-              
+
               <tr>
                 <td><p>2</p></td>
                 <td><p>Step to C</p></td>
@@ -310,7 +312,7 @@
                 <td><p>Mid</p></td>
                 <td><p>Inner Forearm Block</p></td>
               </tr>
-              
+
               <tr>
                 <td><p>3</p></td>
                 <td><p>Turn to B</p></td>
@@ -318,7 +320,7 @@
                 <td><p>Low</p></td>
                 <td><p>Knifehand Block</p></td>
               </tr>
-              
+
               <tr>
                 <td><p>4</p></td>
                 <td><p>Step to B</p></td>
@@ -326,7 +328,7 @@
                 <td><p>Mid</p></td>
                 <td><p>Inner Forearm Block</p></td>
               </tr>
-              
+
               <tr>
                 <td><p>5</p></td>
                 <td><p>Turn to D</p></td>
@@ -334,7 +336,7 @@
                 <td><p>Low</p></td>
                 <td><p>Knifehand Block</p></td>
               </tr>
-              
+
               <tr>
                 <td><p>6</p></td>
                 <td><p>Step to D</p></td>
@@ -342,7 +344,7 @@
                 <td><p>Mid</p></td>
                 <td><p>Inner Forearm Block</p></td>
               </tr>
-              
+
               <tr>
                 <td><p>7</p></td>
                 <td><p>Turn to A</p></td>
@@ -350,7 +352,7 @@
                 <td><p>Low</p></td>
                 <td><p>Knifehand Block</p></td>
               </tr>
-              
+
               <tr>
                 <td><p>8</p></td>
                 <td><p>Step to A</p></td>
@@ -358,7 +360,7 @@
                 <td><p>Mid</p></td>
                 <td><p>Inner Forearm Block</p></td>
               </tr>
-              
+
               <tr>
                 <td><p></p></td>
                 <td><p>To End</p></td>
@@ -408,7 +410,7 @@
               lands in forearm guarding block. Kihap on finish.
             </p>
         </div> <!-- End of sparring -->
-      
+
           <div class="theory wow animated bounceInUp">
             <h3>Theory</h3>
             <p class="larger-font">
@@ -418,10 +420,10 @@
 
               <b>GTUK OATH Tenets</b> <br>
               As a member of the GTUK <br>
-              I shall observe the tenets of TaeKwon-Do<br> 
-              I shall respect the instructors & seniors<br> 
-              I shall never misuse TaeKwon-Do<br> 
-              I shall be a champion of freedom and justice<br> 
+              I shall observe the tenets of TaeKwon-Do<br>
+              I shall respect the instructors & seniors<br>
+              I shall never misuse TaeKwon-Do<br>
+              I shall be a champion of freedom and justice<br>
               I shall build a more peaceful world<br><br>
 
               To Hide or show korean click this button to help you study

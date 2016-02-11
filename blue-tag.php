@@ -11,7 +11,7 @@
       <?php include 'php/header.php' ?>
       <div class="container syllabus">
         <div class="row">
-          <h2 class="section">Blue Tag</h2>
+          <h2 class="section">Blue Tag<a href="syllabus/6.pdf" class="pdf" target="_blank">PDF</a> </h2>
 
           <h3>Grading Requirements</h3>
           <p class="larger-font">
@@ -20,7 +20,7 @@
             Gunnun Sogi – Nopunde Doo Palmok Makgi<br><br>
 
             Walking Stance – Middle Hooking Block / Middle Reverse Punch<br>
-            Gunnun Sogi – Kaunde Golcha Makgi / Kaunde Bandae Makgi<br><br>
+            Gunnun Sogi – Kaunde Golcha Makgi / Kaunde Bandae Jirugi<br><br>
 
             Flying Front Kick Twimyo Ap Chagi<br><br>
 

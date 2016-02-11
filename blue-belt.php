@@ -11,7 +11,7 @@
       <?php include 'php/header.php' ?>
       <div class="container syllabus">
         <div class="row">
-          <h2 class="section">Blue Belt</h2>
+          <h2 class="section">Blue Belt<a href="syllabus/7.pdf" class="pdf" target="_blank">PDF</a> </h2>
 
           <h3>Grading Requirements</h3>
           <p class="larger-font">
