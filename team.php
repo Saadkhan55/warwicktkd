@@ -90,7 +90,7 @@
           </div> <!-- End of 2014 exec group -->
 
           <!-- START OF NEW EXEC -->
-          <div id="2015" class="new-exec">
+          <div id="2015" class="new-exec hidden">
             <div class="row">
             
               <div class="col-md-6 individual animated bounceInLeft ">
@@ -165,8 +165,92 @@ Hey, I’m Danielle and I’m a 2nd year Data Science student who will be your K
             </div> <!-- End of row -->
           </div> <!-- End of 2015 exec group -->
 
+          <!-- START OF NEW EXEC -->
+          <div id="2016" class="new-exec">
+            <div class="row">
+            
+              <div class="col-md-6 individual animated bounceInLeft ">
+                <img class="img-responsive" src="images/team/2016/tom.jpg" width="150px" height="150px">
+                <h3 class="title"> Thomas Hart<small>President</small></h3>
+                <p>
+                Hi, my name is Tom and I am a 3rd Year Engineering student. I have been training in Taekwondo for over 8 years and I am currently a 2nd Dan Black Belt. Taekwondo has been a huge part of my life in that time and has given me the ability to do things I never expected I would. These include competing at national level tournaments, overcome challenging situations and generally being a more confident and organised person.
+I would recommend that anyone who thinks about trying out a sport at University come to Taekwondo, as it develops fitness, flexibility and self-control.
+As President, I am in charge of running the Club, with the help of my exec team. This ranges from organising sessions to planning competitions and gradings (tests to reach your next belt), as well as all of our seminars and external activities.
+The Club is open to people from any background, from complete beginners to senior black belts. We won't discriminate against your current Taekwondo association and we have dedicated ITF and WTF sessions, as well as fitness focussed sessions. We compete regularly in both styles around the country. We practise self-defence and applications in real world scenarios, developing self-confidence in a new environment. In addition to all this goodness, we have a really fun social side, with activities ranging from relaxed meet-ups to ice-skating, paintball and international holidays. Basically, no matter your interests, we have something for you!
+This Club is a fantastic way to get fit, gain new experiences and meet fantastic people outside of your course. If you've got any questions, don't hesitate to contact us, we're more than happy to have a chat with you.
+I hope to see you at the next training session!
+                </p>
+              </div> <!-- End of individual team member -->
+            
+              <div class="col-md-6 individual animated bounceInRight ">
+                <img class="img-responsive" src="images/team/2016/danielle.jpg" width="150px" height="150px">
+                <h3 class="title">Danielle O'Sullivan<small> Treasurer</small></h3>
+                <p>
+                I’m Danielle, I’m in my 3rd year studying Data Science and I will be your Treasurer for the next year! Being Treasurer basically means I’m in charge of most payments, fees and other finance related things for the club. I joined in my first year and I’ve found that it’s one of the most friendly and accommodating clubs with regular training sessions as well as a multitude of socials, so whether you’re a black belt or a novice, I’m confident you’ll fit in with us in no time. I myself started as a complete beginner and have attained my blue belt so far so there’s definitely an opportunity for you to progress at pretty much whatever pace you choose. I hope to see you try us out (and hopefully stay!); if you have any questions, ask away!
+                </p>
+              </div> <!-- End of individual team member -->
+            </div> <!-- End of row -->
+            
+            <div class="row"> <!-- New row -->
+              <div class="col-md-6 individual animated bounceInLeft ">
+                <img class="img-responsive" src="images/team/2016/sean.jpg" width="150px" height="150px">
+                <h3 class="title">Sean Donner<small> Secretary</small></h3>
+                <p>
+                Hi, I’m Sean and I’m the club’s secretary. I write weekly emails to members, liaise with any external contacts and generally exist to make sure everyone knows what is going on.
+I joined Warwick TKD in October 2014 as a white belt, and since then I’ve become a green belt, gone on tour to Athens and Rome, won medals at national competitions and met some absolutely incredible people. This club offers so much to its members, who in turn each contribute to the tight-knit community that sees me coming back for a third year as an exec member.
+If you have any questions about the club, about what we do or about Taekwondo itself don’t hesitate to get in touch! This can be done via our Facebook page, or the club’s email address which can be found on this site.
+                </p>
+              </div> <!-- End of individual team member -->
+            
+              <div class="col-md-6 individual animated bounceInRight ">
+                <img class="img-responsive" src="images/team/2016/quangabel.jpg" width="150px" height="150px">
+                <h3 class="title">Quangabel T'rerar <small> Social Sec</small></h3>
+                <p>
+                Yo! We are Quang and Annie, 2nd year students and we shall use our great and different range of skills, acquired through an unholy mix of Engineering and English, to serve all of you as Warwick TKD social secs. Our every waking (and even sleeping) moments are dedicated to planning socials for you lovely people, ranging from humble but albeit heart-warming meal, to drinking at circles before heading to POP! and, towards the end of the year, taking all of you on TOUR! We both entered the club in our last year as freshers and as white-belts; although our stay has only been a short while, we felt welcomed by everybody from the very start and now TKD is like a second home to us. It’d be our pleasure to make you feel the same way. See you aroun!
+               </p>
+              </div> <!-- End of individual team member -->
+            </div> <!-- End of row -->
+            
+            <div class="row">
+              <div class="col-md-6 individual animated bounceInLeft ">
+                <img class="img-responsive" src="images/team/2016/haseeb.jpg" width="150px" height="150px">
+                <h3 class="title">Haseeb Majid<small>Publicity Officer</small></h3>
+                <p>
+                Hi, I'm a fourth year computer scientist I will be your publicity officer this year (for a second year). This involves keeping the website up to date, making new videos (you can view our videos on the home page) and making sure we get into the boar newspaper for all our fantastic acheievement.  I have been doing Tae Kwon Do for the past 5-6 years. It has completely changed my life, making me more confident in everything I do. Tae Kwon Do is a great martial art for any one to start (at Warwick) because it helps get you fit, meet some really great people and go on tour!!! Infact because of Tae Kwon Do I now have a Guiness world record (Not as impressive as you're thinking ). 
+                </p>
+              </div> <!-- End of individual team member -->
+            
+              <div class="col-md-6 individual animated bounceInRight ">
+                <img class="img-responsive" src="images/team/2015/Kieran.jpg" width="150px" height="150px">
+                <h3 class="title">Kieran Guffick<small>Captain</small></h3>
+                <p>
+                Hi, I’m Kieran- a second year Economics and Industrial Organization student. I started Taekwondo 15 years ago and am a third degree black belt. I have competed in several top international tournaments around the world and have represented Great Britain. I had only trained in WTF until I joined university, but since, I’ve enjoyed introducing ITF elements into my repertoire. Any nerves that I’d had were instantly dispelled by the welcoming nature of the existing members. As Captain, I hope to pass on as much wisdom as possible and motivate you, helping you to reach your goals no matter how large or small. Whether it is to prepare for that moment you step in the ring, an incredible adrenaline rush or simply to maintain a good level of fitness, everyone has their own reasons. So no matter your past experience of Taekwondo, head down to one of our sessions to try out this dynamic sport.
+                </p>
+              </div> <!-- End of individual team member -->
+            </div> <!-- End of row -->
+            
+            <div class="row">
+              <div class="col-md-6 individual animated bounceInLeft ">
+                <img class="img-responsive" src="images/team/2015/Btom.jpg" width="150px" height="150px">
+                <h3 class="title">Thomas Bokros<small>Charity</small></h3>
+                <p>
+                Hello! Im Tom, a second year History student and your Charity and Community Officer for this year. It's my job to sort out all of the charitable activities that Warwick Taekwondo will be doing this year, along with arranging donations to the charity that we are sponsoring (which is yet to be decided!). These events could ranger from pub quizzes to poker nights, but don't hesitate to talk to me if you think you have a great idea. I started Warwick Taekwondo completely new to the martial art, and though I had done Karate for four years before, I found it extremely easy to shift styles because the club is so accommodating. Taekwondo has become such a large part of my university life, and I've made so many new friends at the club that (cliché alert) I seriously couldn't imagine my life without it. If you ever need me, just talk to the guy who looks like Ed Sheeran. Cheers!
+                </p>
+              </div> <!-- End of individual team member -->
+            
+              <div class="col-md-6 individual animated bounceInRight ">
+                <img class="img-responsive" src="images/team/2016/heather.jpg" width="150px" height="150px">
+                <h3 class="title">Heather Scott<small> Kit Secretary</small></h3>
+                <p>
+                Hello! I’m Heather and I am a third year chemist. I’m also taekwondo’s kit secretary this year. This means that I am responsible for organising the clubs equipment and providing members with their very own taekwondo gear! I joined taekwondo at the beginning of my second year and have enjoyed being part of the club ever since. As well as being great for fitness, I have found that the club is a great place to make friends and gain confidence too. I’ve even enjoyed some aspects of the sport that I initially didn’t think I would, such as sparring and competitions. I’d thoroughly recommend joining this club, even if you haven’t done any kind of sport before (I hadn’t)!
+                </p>
+              </div> <!-- End of individual team member -->
+            </div> <!-- End of row -->
+          </div> <!-- End of 2016 exec group -->
+
           <ul class="pagination pagination-larger">
-            <li class="active"><a href="" id="2015" class="pagination-css" data-toggle="tooltip" >2015-2016</a></li>
+            <li class="active"><a href="" id="2016" class="pagination-css" data-toggle="tooltip">2016-2017</a></li>
+            <li ><a href="" id="2015" class="pagination-css" data-toggle="tooltip" >2015-2016</a></li>
             <li><a href="" id="2014" class="pagination-css" data-toggle="tooltip" >2014-2015</a></li>
           </ul>
 

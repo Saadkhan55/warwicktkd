@@ -25,6 +25,6 @@ Twitter:
 	Password: TKDxyfpk
 
 UWCS Server:
-        server: codd.uwcs.co.uk
+        server: nodd.uwcs.co.uk
         username: taekwondo
         password: DobokCoddpeice159

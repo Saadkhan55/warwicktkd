@@ -5,7 +5,7 @@
 <link href="css/vendor/bootstrap.min.css" rel="stylesheet" media="all">
 <link href="css/vendor/font-awesome.min.css" rel="stylesheet">
 <link href="css/vendor/animate.css" rel="stylesheet">
-<link href="css/vendor/style.css" rel="stylesheet" media="all">
+<link href="css/style.css" rel="stylesheet" media="all">
 <!--Google fonts-->
 <link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400' rel='stylesheet' type='text/css'>
 <link href='http://fonts.googleapis.com/css?family=Raleway:400,500,700' rel='stylesheet' type='text/css'>
