@@ -221,10 +221,10 @@ If you have any questions about the club, about what we do or about Taekwondo it
               </div> <!-- End of individual team member -->
             
               <div class="col-md-6 individual animated bounceInRight ">
-                <img class="img-responsive" src="images/team/2015/Kieran.jpg" width="150px" height="150px">
-                <h3 class="title">Kieran Guffick<small>Captain</small></h3>
+                <img class="img-responsive" src="images/team/2016/kamal.jpg" width="150px" height="150px">
+                <h3 class="title">Kamal Derris<small>Captain</small></h3>
                 <p>
-                Hi, I’m Kieran- a second year Economics and Industrial Organization student. I started Taekwondo 15 years ago and am a third degree black belt. I have competed in several top international tournaments around the world and have represented Great Britain. I had only trained in WTF until I joined university, but since, I’ve enjoyed introducing ITF elements into my repertoire. Any nerves that I’d had were instantly dispelled by the welcoming nature of the existing members. As Captain, I hope to pass on as much wisdom as possible and motivate you, helping you to reach your goals no matter how large or small. Whether it is to prepare for that moment you step in the ring, an incredible adrenaline rush or simply to maintain a good level of fitness, everyone has their own reasons. So no matter your past experience of Taekwondo, head down to one of our sessions to try out this dynamic sport.
+                Hey, I’m Kam-a first year Engineering student. I originally started Taekwondo around 5 years ago and having instructed WTF before I joined Warwick, I’ve also competed at the Student National, British Nationals and The Internationals. I am excited to say that Warwick Taekwondo provides both an ITF and WTF experience. Besides training WTF, I am having a great time and experience trying ITF for the first time. As Captain, I will pass on as much experience as I have and help to encourage you if needed in order for you to reach your goals and become the best version of yourself in all manners. Whether its increasing or maintaining your fitness level or even stepping into a ring and bringing home the gold medal, I will be there to help and assist you every step of the way. So whether you have had any experience or even none at all you are welcomed to come! And always remember ‘No PAIN, NO GAIN’! That’s enough of me, don’t be shy, come down to one of our session, try it out and you will be amazed by how you will be welcomed to the club and how great you will become!
                 </p>
               </div> <!-- End of individual team member -->
             </div> <!-- End of row -->
