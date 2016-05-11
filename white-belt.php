@@ -50,7 +50,7 @@
           </p> <!-- End of grading requirement -->
 
           <h3>Saju Jirugi <small>Four Directional Punch</small></h3>
-          <img data-original="images/pattern/10th_kup.png" class="lazy" width="150px" height="150px" alt="pattern-diagram">
+          <img data-original="images/pattern/10th_kup.png"  width="150px" height="150px" alt="pattern-diagram">
 
           <!-- Table showing off moves for the pattern -->
           <table class="table table-hover wow animated bounceInRight">

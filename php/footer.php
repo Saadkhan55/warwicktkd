@@ -124,5 +124,4 @@
 <script src="js/quiz.js"></script>
 <script src="js/team.js"></script>
 <script src="js/gallery.js"></script>
-<script src="js/vendor/lazy-load.js"></script>
 

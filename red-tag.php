@@ -56,7 +56,7 @@
             <b> Number of moves: 37 </b>
           </p>
 
-          <img data-original="images/pattern/3rd_kup.png" class="lazy" width="150px" height="150px" alt="pattern-diagram">
+          <img data-original="images/pattern/3rd_kup.png"  width="150px" height="150px" alt="pattern-diagram">
 
           <!-- Table showing off moves for the pattern -->
           <table class="table table-hover">
