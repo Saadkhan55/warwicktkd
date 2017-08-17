@@ -170,7 +170,7 @@ Hey, I’m Danielle and I’m a 2nd year Data Science student who will be your K
             <div class="row">
             
               <div class="col-md-6 individual animated bounceInLeft ">
-                <img class="img-responsive" src="images/team/2016/tom.jpg" width="150px" height="150px">
+                <img class="img-responsive" src="images/team/2016/Htom.jpg" width="150px" height="150px">
                 <h3 class="title"> Thomas Hart<small>President</small></h3>
                 <p>
                 Hi, my name is Tom and I am a 3rd Year Engineering student. I have been training in Taekwondo for over 8 years and I am currently a 2nd Dan Black Belt. Taekwondo has been a huge part of my life in that time and has given me the ability to do things I never expected I would. These include competing at national level tournaments, overcome challenging situations and generally being a more confident and organised person.
