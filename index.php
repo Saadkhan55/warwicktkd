@@ -36,7 +36,8 @@
                 <div class="col-md-6 animated delay-3 bounceInRight">
                   <div class="carousel-video">
                     <div class="embed-responsive embed-responsive-16by9">
-                    <div id="player" name="KMyrvgwDUzw" class="background"></div>
+                    <!-- <div id="player" name="KMyrvgwDUzw" src="https://www.youtube.com/embed/KMyrvgwDUzw" class="background"></div> -->
+                    <div>  <iframe width="560" height="315" src="https://www.youtube.com/embed/KMyrvgwDUzw" frameborder="0" allowfullscreen></iframe> </div>
                     </div>
                   </div> <!--End of carousel-image -->
                 </div> <!--End of carousel-image -->
@@ -117,9 +118,10 @@
                     <h1 class="title">Training Times</h1>
                     <p class="carousel-text">Training times for this year are all at Westwood Games Hall (<a class="map-link" href="http://campus.warwick.ac.uk/?search=Westwood+Games+Hall&slid=41357" target="_blank">Map Link</a>)
                       <br><br>
-                      <br> Tuesday: 8:30 - 10:00 PM
-                      <br> Thursday: 7:00 - 8:30 PM
-                      <br> Saturday: 2:00 - 4:00 PM
+                      <br> Monday (WT) : 19:00 - 20:30
+                      <br> Tuesday(ITF) : 18:00 - 19:30
+                      <br> Thursday (ITF) : 20:30 - 22:00
+                      <br> Saturday (Squad) : 12:00 - 14:00
                       <br>
                     </p>
                     <a href="training.php"><button type="button" class="btn btn-danger btn-lg">Read More</button></a> <!-- newslider button -->
@@ -152,13 +154,13 @@
         <div class="container">
           <div class="row">
 
-            <a href="beginners.php">
+             <a href="beginners.php">
               <div class="col-md-4 ">
                 <i class="fa fa-user"></i>
                  <h2>Beginner Guide</h2>
                 <p>New to the club, or looking to start Tae Kwon Do? Have a look at our beginners guide to help answer some of your questions.</p>
               </div>
-            </a> <!-- End of first story -->
+            </a> <!-- End of first story-->
 
             <a href="training.php">
               <div class="col-md-4 ">
