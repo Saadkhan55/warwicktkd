@@ -36,7 +36,6 @@
                 <div class="col-md-6 animated delay-3 bounceInRight">
                   <div class="carousel-video">
                     <div class="embed-responsive embed-responsive-16by9">
-                    <!-- <div id="player" name="KMyrvgwDUzw" src="https://www.youtube.com/embed/KMyrvgwDUzw" class="background"></div> -->
                     <div>  <iframe width="560" height="315" src="https://www.youtube.com/embed/KMyrvgwDUzw" frameborder="0" allowfullscreen></iframe> </div>
                     </div>
                   </div> <!--End of carousel-image -->
@@ -76,26 +75,17 @@
                 <div class="col-md-6 animated bounceInLeft">
                   <div class="carousel-caption">
                     <h1 class="title">Students</h1>
-                     <p class="carousel-text">Already a student at the club? Want to revise theory or learn your patterns? Select the appropiate grade in dropdown menu.</p>
+                     <p class="carousel-text">Already a student at the club? Find your new PUMA grading syllabus and etiquette guide right here</p>
 
-                    <div class="btn-group dropup"> <!-- Link of kup grades (dropdown menu) -->
+                   <div class="btn-group dropup"> <!-- Links to syllabus pdfs (dropdown menu) -->
                       <button type="button" class="btn btn-danger btn-lg dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
-                        Grade <span class="caret"></span>
+                        Syllabus <span class="caret"></span>
                       </button>
                       <ul class="dropdown-menu scrollable-menu" role="menu">
-                        <li><a href="white-belt.php">10th Kup</a></li>
-                        <li><a href="yellow-tag.php">9th Kup</a></li>
-                        <li><a href="yellow-belt.php">8th Kup</a></li>
-                        <li><a href="green-tag.php">7th Kup</a></li>
-                        <li><a href="green-belt.php">6th Kup</a></li>
-                        <li><a href="blue-tag.php">5th Kup</a></li>
-                        <li><a href="blue-belt.php">4th Kup</a></li>
-                        <li><a href="red-tag.php">3rd Kup</a></li>
-                        <li><a href="red-belt.php">2nd Kup</a></li>
-                        <li><a href="black-tag.php">1st Kup</a></li>
+                        <li><a href = "syllabus.pdf">Practical Syllabus</a></li>
+                        <li><a href = "etiquette.pdf">Etiquette Guide</a></li>
                       </ul>
                     </div> <!-- End of btn group-->
-
                   </div> <!-- End of caption -->
                 </div> <!--End of col-md-6 -->
 
