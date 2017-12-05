@@ -11,40 +11,41 @@
       <?php include 'php/header.php' ?>
       <div class="container syllabus">
         <div class="row">
-          <h2 class="section">Blue Tag<a href="syllabus/6.pdf" class="pdf" target="_blank">PDF</a> </h2>
+          <h2 class="section">Blue Tag </h2>
 
-          <h3>Grading Requirements</h3>
+          <h3>Grading Requirements <a href="syllabus.pdf" class="pdf" target="_blank"><small>Download Practical</small></a></h3>
           <p class="larger-font">
             <b>Techniques</b> <br><br>
-            Walking Stance – High Double Forearm Block<br>
-            Gunnun Sogi – Nopunde Doo Palmok Makgi<br><br>
 
-            Walking Stance – Middle Hooking Block / Middle Reverse Punch<br>
-            Gunnun Sogi – Kaunde Golcha Makgi / Kaunde Bandae Jirugi<br><br>
+            Self Defence <br><br>
 
-            Flying Front Kick Twimyo Ap Chagi<br><br>
+            Low Stance - Palm pressing block <br><br>
+
+            Fixed Stance - U-shaped block <br><br>
+
+            Walking Stance - Reverse angle punch <br><br>
+
+            L-Stance knifehand guarding block, footshift into Walking stance upper elbow strike <br><br>
+
+            Reverse turning kick, L-stance forearm guarding block <br><br>
+
+            Double step L-stance knifehand guarding block <br><br>
+
+            Walking Stance - High arc-hand strike <br><br>
 
             <b>Pattern</b><br><br>
-            Yul-Gok Tul <br><br>
+            Yul Gok <br><br>
+            Won Hyo <br><br>
+            Do San Tul <br><br>
 
             <b>Sparring</b><br><br>
-            One Step sparring No 5 & 6 Ilbo Matsogi<br>
-            Two Step sparring No 1 & 2 Ibo Matsogi<br>
-            One Point Free Sparring Jayu Matsogi<br><br>
+            Two Step sparring No 1 & 2 <br><br>
+            Free Sparring <br><br>
 
-            <b>Destruction</b><br><br>
-            Turning Kick Both Legs - Dollyo Chagi<br><br>
 
-            <b>Theory</b><br><br>
-            Korean Terminology for Your Grade<br><br>
-
-            <b>Application of Technique</b><br><br>
-            Releases from single rear shoulder grab<br>
-            Releases from double front chest grab<br><br>
-          
           </p> <!-- End of grading requirement -->
 
-          <h3>Yul-Gok Tul <small>Yi</small></h3>
+          <h3>Yul-Gok Tul <small>Yi I</small></h3>
 
           <p class="larger-font">
             <b>  Meaning </b> <br> <br>
@@ -54,7 +55,7 @@
             <b> Number of moves: 38 </b>
           </p>
 
-          <img  data-original="images/pattern/5th_kup.png" alt="" width="150px" height="150px" alt="pattern-diagram">
+          <img  src ="images/pattern/5th_kup.png" alt="" width="150px" height="150px" alt="pattern-diagram">
 
           <!-- Table showing off moves for the pattern -->
           <table class="table table-hover">
@@ -392,75 +393,18 @@
             </tbody> 
           </table> <!-- End of Chon-Ji pattern -->
 
-
-          <div class="sparring">
-            <h3>Ilbo Matsogi <small>One Step Sparring</small></h3>
-
-            <p class="larger-font">
-              <b>Number 5</b><br><br>
-              Step back on the left leg to form a left L-stance whilst performing an inward inside
-              outer forearm block with the right hand.<br><br>
-
-              Bring your front (right) foot halfway into the stance (towards the left foot), then pivot
-              on that right foot in an anti-clockwise direction to form a right fixed stance, performing
-              a back elbow thrust with the left elbow to the solar plexus, Kihap on the elbow thrust.<br><br>
-
-              Swap for left attack.<br><br>
-
-              <b>Number 6</b><br><br>
-              Counter by pivoting on the left foot towards the attacker, assuming a sitting stance so
-              that you are inside their stance and attack, while executing a middle outward block
-              with the left outer forearm and a high punch to the side of the jaw with the right hand
-              simultaneously. Kihap.<br><br>
-
-              Swap for a left attack.<br><br>
-            </p>
-
-            <h3>Ibo Matsogi <small>Two Step Sparring</small></h3>
-            <p class="larger-font">
-              The attacker lines up to the defender in the same way as three step sparring, and they
-              go back into a left walking stance low block.<br><br>
-              When he or she is ready to attack, the attacker must shout and wait for the defender
-              to respond with a shout before the attack can begin.<br><br>
-              This is only done on one side, i.e. not like one step sparring with both right and left
-              sides.<br><br>
-
-              <b> Number 1</b> <br><br>
-              <b>Attacker:</b> steps forward into a right walking stance, high obverse punch.<br>
-
-              <b>Defender:</b> step back into left walking stance obverse rising block with the left arm.<br>
-
-              <b>Attacker:</b> step forward performing a low front snap kick from the back leg (left), landing in
-              walking stance, twin low section block. (Note this is not blocking anything, it is just a finishing
-              position while the defender performs their counter attack.)<br>
-
-              <b>Defender:</b> step back into a right walking stance performing an x fist pressing block. Counter
-              by raising the back heel from the floor and landing it as you perform a high twin vertical
-              punch. Kihap on this technique. <br><br>
-
-              <b> Number 2 </b>
-              <b>Attacker:</b> step forward into a right fixed stance while performing a middle forefist side
-              punch.<br>
-
-              <b>Defender:</b> step back assuming a right L stance performing a palm upwards block with the
-              left hand.<br>
-
-              <b>Attacker:</b> Bring the back leg round and perform a middle turning kick landing in a right Lstance.<br>
-
-              <b>Defender:</b> step backwards into a left L-stance performing a waist block. Counter by sliding
-              to the opponent forming a right fixed stance while performing a right back elbow thrust to
-              the solar plexus. Kihap on the elbow.<br><br>
-            </p>
-        </div> <!-- End of sparring -->
-      
           <div class="theory">
-            <h3>Theory</h3>
+            <h3>Theory <a href="theory/Theory5.pdf" class="pdf" target="_blank"><small>Download Theory</small></a></h3>
             <p class="larger-font">
               Note: You may be asked questions on lower grade theory, so make sure you know it.<br> <br>
+            </p>
 
-              To Hide or show korean click this button to help you study
-              <button class="btn btn-primary">Hide</button>
-              </p><br><br>
+            <b> Slow motion: </b> Techniques are performed slowly, but otherwise in the same manner as in normal motion. This motion is designed to demonstrate the elements of the theory of power with the omission of speed. <br><br>
+
+            <b> Connecting motion: </b> Two complementing techniques are performed in a single breath and motion. Breath is inhaled on the first technique which has no tension on impact, and exhaled upon impact of the second technique. <br><br>
+
+            <b> Two-step sparring (Ibo matsoki): </b> Is practised to improve focus, distance, and timing using combinations of different hand and foot techniques. <br><br>
+
 
             <!-- Korean theory with english translation -->
             <table class="table table-hover">
@@ -479,109 +423,145 @@
                 </tr>
 
                 <tr>
-                  <td>Bending Ready Stance</td>
-                  <td>Guburyo Junbi Sogi A</td>
+                  <td>X stance</td>
+                  <td>Kyocha Sogi A</td>
                 </tr>
 
                 <tr>
-                  <td>X Stance</td>
-                  <td>Kyocha Sogi</td>
+                  <td>Low stance</td>
+                  <td>Nachuo Sogi</td>
                 </tr>
 
                 <tr class="title">
-                  <td>Kicks</td>
+                  <td>Hand parts</td>
+                  <td>Hand parts</td>
+                </tr>
+
+                <tr>
+                  <td>Arc-hand</td>
+                  <td>Bandal son</td>
+                </tr>
+
+                <tr>
+                  <td>Reverse knifehand</td>
+                  <td>Sonkal dung</td>
+                </tr>
+
+                <tr class="title">
+                  <td>Foot (Bal) tools</td>
+                  <td>Foot (Bal) tools</td>
+                </tr>
+
+                <tr>
+                  <td>Back heel</td>
+                  <td>Dwitchook</td>
+                </tr>
+
+                <tr>
+                  <td>Back sole</td>
+                  <td>Dwit kumchee</td>
+                </tr>
+
+                <tr>
+                  <td>Ball of the foot</td>
+                  <td>Ap kumchee</td>
+                </tr>
+
+                <tr>
+                  <td>Footsword</td>
+                  <td>Balkal</td>
+                </tr>
+
+                <tr>
+                  <td>Instep</td>
+                  <td>Baldung</td>
+                </tr>
+
+                <tr>
+                  <td>Knee</td>
+                  <td>Moorup</td>
+                </tr>
+
+                <tr>
+                  <td>Reverse footsword</td>
+                  <td>Balkal dung</td>
+                </tr>
+
+                <tr>
+                  <td>Side instep</td>
+                  <td>Yop baldung</td>
+                </tr>
+
+                <tr>
+                  <td>Side sole</td>
+                  <td>Yop bal badak</td>
+                </tr>
+
+                <tr>
+                  <td>Sole</td>
+                  <td>Bal badak</td>
+                </tr>
+
+                <tr>
+                  <td>Toes</td>
+                  <td>Balkut</td>
+                </tr>
+
+                <tr class="title">
+                  <td>Kick</td>
                   <td>Chagi</td>
                 </tr>
 
                 <tr>
-                  <td>Front Flying Kick</td>
-                  <td>Twimyo Ap Chagi</td>
+                  <td>Reverse turning kick</td>
+                  <td>Bandae dollyo chagi</td>
+                </tr>
+
+                <tr>
+                  <td>Downward kick</td>
+                  <td>Naeryo chagi</td>
                 </tr>
 
                 <tr class="title">
-                  <td>Strike</td>
-                  <td>Taerigi</td>
+                  <td>Line work</td>
+                  <td>Line work</td>
                 </tr>
 
                 <tr>
-                  <td>Front Elbow Strike</td>
-                  <td>Ap Palkup Taerigi</td>
+                  <td>Palm pressing block</td>
+                  <td>sonbadak noollo makgi</td>
                 </tr>
 
                 <tr>
-                  <td>Back Fist Side Strike</td>
-                  <td>Yop Dung Joomuk Taerigi</td>
-                </tr>
-
-                <tr class="title">
-                  <td>Block</td>
-                  <td>Makgi</td>
+                  <td>U shaped block</td>
+                  <td>Digutja makgi</td>
                 </tr>
 
                 <tr>
-                  <td>Twin Knifehand Block</td>
-                  <td>Sang Sonkal Makgi</td>
+                  <td>Angle punch</td>
+                  <td>Glockja jirugi </td>
                 </tr>
 
                 <tr>
-                  <td>X-Fist Pressing Block</td>
-                  <td>Kyocha Joomuk Noollo Makgi</td>
+                  <td>Upper elbow strike</td>
+                  <td>Wi palkup taerigi</td>
                 </tr>
 
                 <tr>
-                  <td>Hooking Block</td>
-                  <td>Golcho Makgi</td>
+                  <td>High arc-hand strike</td>
+                  <td>Nopunde bandal son taerigi</td>
                 </tr>
 
                 <tr>
-                  <td>Waist Block</td>
-                  <td>Hori Makgi</td>
-                </tr>
-
-                <tr class="title">
-                  <td>Hand Parts</td>
-                  <td>Hand Parts</td>
+                  <td>Reverse knifehand middle block</td>
+                  <td>Sonkal dung kaunde makgi</td>
                 </tr>
 
                 <tr>
-                  <td>Elbow</td>
-                  <td>Palkup</td>
+                  <td>X fist rising block</td>
+                  <td>Kyocha joomu chookyo makgi</td>
                 </tr>
 
-                <tr>
-                  <td>Back Fist</td>
-                  <td>Dung Joomuk</td>
-                </tr>
-
-                <tr class="title">
-                  <td>Punch</td>
-                  <td>Jirugi</td>
-                </tr>
-
-                <tr>
-                  <td>Twin Vertical Punch</td>
-                  <td>Sang Sewo Jirugi</td>
-                </tr>
-
-                <tr class="title">
-                  <td>Other</td>
-                  <td>Other</td>
-                </tr>
-
-                <tr>
-                  <td>Back Elbow Thrust</td>
-                  <td>Dwit Palkup Tulgi</td>
-                </tr>
-
-                <tr>
-                  <td>Flying</td>
-                  <td>Twimyo</td>
-                </tr>
-
-                <tr>
-                  <td>Jumping</td>
-                  <td>Twigi</td>
-                </tr>
               </tbody>
             </table> <!-- End of table -->
           </div> <!-- End of theory -->

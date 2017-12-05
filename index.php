@@ -82,8 +82,14 @@
                         Syllabus <span class="caret"></span>
                       </button>
                       <ul class="dropdown-menu scrollable-menu" role="menu">
-                        <li><a href = "syllabus.pdf">Practical Syllabus</a></li>
                         <li><a href = "etiquette.pdf">Etiquette Guide</a></li>
+                        <li><a href="white-belt.php">10th Kup</a></li>
+                        <li><a href="yellow-tag.php">9th Kup</a></li>
+                        <li><a href="yellow-belt.php">8th Kup</a></li>
+                        <li><a href="green-tag.php">7th Kup</a></li>
+                        <li><a href="green-belt.php">6th Kup</a></li>
+                        <li><a href="blue-tag.php">5th Kup</a></li>
+                        <li><a href="blue-belt.php">4th Kup</a></li>
                       </ul>
                     </div> <!-- End of btn group-->
                   </div> <!-- End of caption -->

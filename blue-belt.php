@@ -11,38 +11,39 @@
       <?php include 'php/header.php' ?>
       <div class="container syllabus">
         <div class="row">
-          <h2 class="section">Blue Belt<a href="syllabus/7.pdf" class="pdf" target="_blank">PDF</a> </h2>
+          <h2 class="section">Blue Belt</h2>
 
-          <h3>Grading Requirements</h3>
+          <h3>Grading Requirements <a href="syllabus.pdf" class="pdf" target="_blank"><small>Download Practical</small></a></h3>
           <p class="larger-font">
             <b>Techniques</b> <br><br>
 
-            L Stance – Middle Side Reverse Knife Hand Block<br>
-            Niunja Sogi – Kaunde Yop Sonkal Dung Makgi<br><br>
+            Self Defence <br><br>
 
-            Rear Foot Stance – Upward Palm Block<br>
-            Dwitbal Sogi – Ollyo Sombadak Makgi<br><br>
+            Sitting Stance - W shaped block <br><br>
 
-            Low Stance – Pressing Block Nachuo Sogi – Noolo Makgi<br><br>
-            Flying Side Kick Twimyo Yop Chagi<br><br>
+            L-Stance - Low double forearm pushing block <br><br>
 
+            Downward kick, L-Stance guarding block <br><br>
+
+            Walking Stance - Upset fingertip thrust <br><br>
+
+            L-Stance - Side backfist and low outer forearm block (simultaneously) <br><br>
+
+            Side piercing kick, back piercing kick, Walking stance reverse knifehand high reverse strike, footshift to L-stance forearm guarding block <br><br>
+
+            Turning kick, reverse turning kick, Walking stance reverse knifehand high reverse strike, footshift to L-stance forearm guarding block <br><br>
 
             <b>Pattern</b><br><br>
             Joong-Gun Tul <br><br>
+            Yul Gok <br><br>
+            Won Hyo <br><br>
 
             <b>Sparring</b><br><br>
-            One Step sparring No 7 & 8 Ilbo Matsogi<br>
-            Two Step sparring No 3 & 4 Ibo Matsogi<br>
-            One Point Free Sparring Jayu Matsogi<br><br>
+            Two Step sparring No 3 & 4 <br><br>
+            Free Sparring <br><br>
 
             <b>Destruction</b><br><br>
-            Reverse Turning Kick Both Legs - Bandae Dollyo Chagi<br><br>
-
-            <b>Theory</b><br><br>
-            Korean Terminology for Your Grade<br><br>
-
-            <b>Application of Technique</b><br><br>
-            Releases from double rear chest grab<br><br>
+            Choice hand and foot technique<br><br>
           
           </p> <!-- End of grading requirement -->
 
@@ -57,7 +58,7 @@
             <b> Number of moves: 32 </b>
           </p>
 
-          <img  data-original="images/pattern/4th_kup.png" width="150px" height="150px" alt="pattern-diagram">
+          <img  src="images/pattern/4th_kup.png" width="150px" height="150px" alt="pattern-diagram">
 
           <!-- Table showing off moves for the pattern -->
           <table class="table table-hover">
@@ -337,92 +338,76 @@
 
             </tbody> 
           </table> <!-- End of Chon-Ji pattern -->
-
-
-          <div class="sparring">
-            <h3>Ilbo Matsogi <small>One Step Sparring</small></h3>
-
-            <p class="larger-font">
-              <b>Number 7</b><br><br>
-              Counter by pivoting on the left foot towards the attacker, assuming a sitting stance so
-              that you are inside their stance and attack, while executing a middle outward block
-              with the left knifehand, with the right hand inward strike to the side of the jaw
-              simultaneously. Kihap.<br><br>
-
-              Swap for left attack.<br><br>
-
-              <b>Number 8</b><br><br>
-              Slide backwards on the 45 Degree angle to your right assuming a right L-stance
-              forearm guarding block.<br><br>
-
-              Counter with a low front snap kick to the lower abdomen landing in right walking
-              stance. On landing perform obverse then reverse punches to the point of the chin.
-              Kihap on the last punch.<br><br>
-
-              Swap for a left attack.<br><br>
-            </p>
-
-            <h3>Ibo Matsogi <small>Two Step Sparring</small></h3>
-            <p class="larger-font">
-              The attacker lines up to the defender in the same way as three step sparring, and they
-              go back into a left walking stance low block.<br><br>
-
-              When he or she is ready to attack, the attacker must shout and wait for the defender
-              to respond with a shout before the attack can begin.<br><br>
-
-              This is only done on one side, i.e. not like one step sparring with both right and left
-              sides.<br><br>
-
-              <b> Number 3</b> <br><br>
-              <b>Attacker:</b> step forward performing a low front snap kick with the right leg, landing in
-              walking stance twin block.<br><br>
-
-              <b>Defender:</b> step backwards forming a left walking stance whilst performing an x-fist pressing
-              block.<br><br>
-
-              <b>Attacker:</b> step forward into a left walking stance, high twin vertical punch.<br><br>
-
-              <b>Defender:</b> step backwards forming a left L-stance, high wedging block. Counter by slipping
-              the front (right) leg forwards into a walking stance simultaneously grabbing the head with
-              both palms. Then pull the head down as you execute an upward knee. Kihap on the knee.<br><br>
-
-              <b> Number 4 </b>
-              <b>Attacker:</b> step forward into a right walking stance high flat fingertip thrust.<br><br>
-
-              <b>Defender:</b> step back into a left walking stance performing an obverse rising block with the
-              knifehand.<br><br>
-
-              <b>Attacker:</b> step forwards performing a middle side piercing kick from the back leg, to the
-              opponent’s shoulder.<br><br>
-
-              <b>Defender:</b> step back into a left L-stance while performing a right inward outer forearm block
-              to the side piercing kick, knocking the opponent round so that they now face away from you
-              on a 45degree angle. Counter by performing a low front snap kick from the back (left) leg to
-              the base of the spine, the coccyx. Land in a right walking stance performing twin upset punch
-              to the kidneys. Kihap on this, and make sure your head is clear of being elbowed by the
-              attacker<br><br>
-            </p>
-        </div> <!-- End of sparring -->
       
           <div class="theory">
-            <h3>Theory</h3>
+            <h3>Theory <a href="theory/Theory4.pdf" class="pdf" target="_blank"><small>Download Theory</small></a></h3>
             <p class="larger-font">
-              Note: You may be asked questions on lower grade theory, so make sure you know it.<br> <br>
+              Note: You may be asked questions on lower grade theory, so make sure you know it.<br><br>
+            </p>
 
-              To Hide or show korean click this button to help you study
-              <button class="btn btn-primary">Hide</button>
-              </p><br><br>
+            <b> Red: </b> Signifies danger, cautioning the student to exercise control and warning the opponent to stay away. <br><br> 
+
+            <h4> Training secrets of Taekwondo </h4> 
+            <b>1. </b> To study the theory of power thoroughly. <br>
+            <b>2. </b> To clearly understand the purpose and meaning of each movement. <br>
+            <b>3. </b> To bring the movement of eyes, hands, feet, and breath into one coordinated action.<br>
+            <b>4. </b> To choose the appropriate tool for each vital spot.<br>
+            <b>5. </b> To become familiar with the correct angle and distance for attack and defence.<br>
+            <b>6. </b> To keep both arms and legs bent slightly while a movement is in motion.<br>
+            <b>7. </b> All movements must begin with a backwards motion with very few exceptions.<br>
+            <b>8. </b> To create a sine wave during motion by utilising knee spring.<br><br>
+
 
             <!-- Korean theory with english translation -->
             <table class="table table-hover">
               <thead>
                 <tr>
                   <th>Technique</th>
-                  <th>Korean </th>
+                  <th>Korean</th>
                 </tr>
               </thead>
 
               <tbody>
+                
+                <tr class="title">
+                  <td>Line work</td>
+                  <td>Line work</td>
+                </tr>
+
+                <tr>
+                  <td>W shaped block</td>
+                  <td>San makgi</td>
+                </tr>
+
+                <tr>
+                  <td>Low double forearm pushing block</td>
+                  <td> Najunde doo palmok miro makgi</td>
+                </tr>
+
+                <tr>
+                  <td>Upset fingertip thrust</td>
+                  <td>Dwijbun sonkut tulgi</td>
+                </tr>
+
+                <tr>
+                  <td>Waist block</td>
+                  <td>Hori makgi</td>
+                </tr>
+
+                <tr class="title">
+                  <td>Movement</td>
+                  <td>Movement</td>
+                </tr>
+
+                <tr>
+                  <td>Pushing</td>
+                  <td>Milgi</td>
+                </tr>
+
+                <tr>
+                  <td>Sliding</td>
+                  <td>Mikulgi</td>
+                </tr>
 
                 <tr class="title">
                   <td>Stance</td>
@@ -430,94 +415,100 @@
                 </tr>
 
                 <tr>
-                  <td>Closed Ready Stance B</td>
-                  <td>Moa Sogi B</td>
+                  <td>Rear foot stance</td>
+                  <td>Dwit bal sogi</td>
+                </tr>
+              </tbody>
+            </table> <br><br>
+            
+            <!-- Offensive Kicks table -->
+            <table class="table table-hover">
+              <thead>
+                <tr>
+                  <th>Technique</th>
+                  <th>Korean </th>
+                  <th>Suitable Tools</th>
+                </tr>
+              </thead>
+
+              <tbody>
+
+                <tr>
+                  <td>Front snap kick</td>
+                  <td>Ap cha busigi</td>
+                  <td> Ball of the foot/ instep/ toes</td>
                 </tr>
 
                 <tr>
-                  <td>Rear Foot Stance</td>
-                  <td>Dwitbal Sogi</td>
+                  <td>Side piercing kick</td>
+                  <td>Yop cha jirugi</td>
+                  <td>Footsword</td>
                 </tr>
 
                 <tr>
-                  <td>Low Stance</td>
-                  <td>Nachuo Sogi</td>
-                </tr>
-
-                <tr class="title">
-                  <td>Kicks</td>
-                  <td>Chagi</td>
+                  <td>Back piercing kick</td>
+                  <td>Dwit cha jirugi</td>
+                  <td>Footsword</td>
                 </tr>
 
                 <tr>
-                  <td>Flying Side Kick</td>
-                  <td>Twimyo Yop Chagi</td>
-                </tr>
-                </tr>
-
-                <tr>
-                  <td>Side Front Snap Kick</td>
-                  <td>Yop Ap Cha Busigi</td>
-                </tr>
-
-                <tr class="title">
-                  <td>Strike</td>
-                  <td>Taerigi</td>
+                  <td>Stamping kick</td>
+                  <td>Cha bapgi</td>
+                  <td>Back sole</td>
                 </tr>
 
                 <tr>
-                  <td>Upwatd Elbow Strike</td>
-                  <td>Wi Palkup Taerigi</td>
-                </tr>
-
-                <tr class="title">
-                  <td>Block</td>
-                  <td>Makgi</td>
+                  <td>Side thrusting kick</td>
+                  <td>Yop cha tulgi</td>
+                  <td> Ball of the foot</td>
                 </tr>
 
                 <tr>
-                  <td>Reverse Knifehand Block</td>
-                  <td>Sonkal Dung Makgi</td>
+                  <td>Side pushing kick</td>
+                  <td>Yop cha milgi</td>
+                  <td>Footsword</td>
                 </tr>
 
                 <tr>
-                  <td>Pressing Block</td>
-                  <td>Sonbadak Nollo Makgi</td>
+                  <td>Turning kick</td>
+                  <td>Dollyo chagi</td>
+                  <td> Ball of the foot/ instep/ toes</td>
                 </tr>
 
                 <tr>
-                  <td>U Shape Block</td>
-                  <td>Digutja Makgi</td>
-                </tr>
-
-                <tr class="title">
-                  <td>Foot Parts</td>
-                  <td>Foot Parts</td>
+                  <td>Reverse turning kick</td>
+                  <td>Bandae dollyo chagi</td>
+                  <td>Back heel/ ball of the foot</td>
                 </tr>
 
                 <tr>
-                  <td>Toes</td>
-                  <td>Balkut</td>
-                </tr>
-
-                <tr class="title">
-                  <td>Other</td>
-                  <td>Other</td>
+                  <td>Reverse turning hooking kick</td>
+                  <td>Bandae dollyo goro chagi</td>
+                  <td>Back heel</td>
                 </tr>
 
                 <tr>
-                  <td>Flying</td>
-                  <td>Twimyo</td>
+                  <td>Downward kick</td>
+                  <td>Naeryo chagi</td>
+                  <td>Back heel</td>
                 </tr>
 
                 <tr>
-                  <td>Fast Motion</td>
-                  <td>Barun Dongjak</td>
+                  <td>Twisting kick</td>
+                  <td>Bituro chagi</td>
+                  <td> Ball of the foot/ instep/ toes</td>
                 </tr>
 
                 <tr>
-                  <td>Slow Motion</td>
-                  <td>Neunin Dongjak</td>
+                  <td>Vertical kick</td>
+                  <td>Sewo chagi</td>
+                  <td>Footsword/ reverse footsword </td>
+                </tr>
+
+                <tr>
+                  <td>Pressing kick</td>
+                  <td>Noollo chagi</td>
+                  <td>Footsword</td>
                 </tr>
               </tbody>
             </table> <!-- End of table -->

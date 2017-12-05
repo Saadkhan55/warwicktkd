@@ -11,41 +11,32 @@
       <?php include 'php/header.php' ?>
       <div class="container syllabus">
         <div class="row">
-          <h2 class="section">Yellow Tag  <a href="syllabus/2.pdf" class="pdf" target="_blank">PDF</a> </h2>
+          <h2 class="section">Yellow Tag  </h2>
 
-          <h3>Grading Requirements</h3>
+          <h3>Grading Requirements <a href="syllabus.pdf" class="pdf" target="_blank"><small>Download Practical</small></a></h3>
           <p class="larger-font">
             <b>Techniques</b> <br><br>
 
-            Sitting Stance Double Punching – Middle & High (10) <br>
-            Annun Sogi - Doo Jirugi - Nopunde & Kaunde <br><br>
+            Sitting Stance - Double Punches (10)<br><br>
 
-            Walking Stance – Front Snap Kick / Double Punch <br>
-            Gunnun Sogi – Ap Cha Busigi / Doo Jirugi <br><br>
-            L-Stance – Forearm Guarding Block <br>
-            Niunja Sogi –Palmok Daebi Makgi <br><br>
-            L-Stance – Middle Inner Forearm Block <br>
-            Niunja Sogi – Kaunde An Palmok Bandae Makgi <br><br>
+            Self Defence <br><br>
 
-            Side Piercing Kick <br>
-            Yop Cha Jirug <br><br>
+            L-Stance - Knifehand side strike <br><br>
+
+            L-Stance - Knifehand guarding block <br><br>
+
+            Walking Stance - Middle inner forearm block, reverse punch<br><br
+>
+            Walking Stance - Low block, rising block <br><br>
+
+            L-Stance Twin forearm block<br><br>
 
             <b>Pattern</b><br><br>
             Chon Ji Tul <br><br>
 
             <b>Sparring</b><br><br>
-            3 Step sparring No 1 Sambo Matsogi<br>
-            Free Sparring Jayu Matsogi<br><br>
+            Simulated Sparring (Sliding side-kick double punch) <br><br>
 
-            <b>Destruction</b><br><br>
-            No destruction required<br><br>
-
-            <b>Theory</b><br><br>
-            Korean Terminology for Your Grade<br><br>
-
-            <b>Application of Technique</b><br><br>
-            Releases from double font wrist grab<br>
-          
           </p> <!-- End of grading requirement -->
 
           <h3>Chon-Ji Tul <small>Heaven & Earth</small></h3>
@@ -60,7 +51,7 @@
             <b> Number of moves: 19 </b>
           </p>
 
-          <img data-original="images/pattern/10th_kup.png" width="150px" height="150px" alt="pattern-diagram">
+          <img src="images/pattern/10th_kup.png" width="150px" height="150px" alt="pattern-diagram">
 
           <!-- Table showing off moves for the pattern -->
           <table class="table table-hover">
@@ -244,56 +235,28 @@
 
             </tbody> 
           </table> <!-- End of Chon-Ji pattern -->
-
-
-          <div class="sparring">
-            <h3>Sambo Matsogi <small>Three Step Sparring</small></h3>
-
-            <p class="larger-font">
-              <b>General Points <br></b> <br>
-              The attacker steps forward three times in a walking stance. The defender steps back three
-              times in a walking stance. The pattern of the feet should go, attackers foot outside, inside,
-              outside. <br><br>
-
-              <b>Line up by: <br><br></b>
-              Attacker placing front foot of walking stance parallel to defenders foot while in Parallel Ready
-              Stance for partners of the same height. <br>
-
-              If the attacker is taller then the walking stance should be in front of the defender (toes of
-              walking stance next to toes of defenders foot while in Parallel Ready Stance.
-              If the attacker is shorter then the walking stance should be to the back of the defender (heel
-              of front foot in walking stance next to heel of defenders foot while in Parallel Ready Stance.
-              Attacker kihaps when ready to attack, the defender then kihaps when ready.<br> <br>
-
-              <b>Number 1</b><br><br>
-              <b>Attacker:</b> steps forward into right walking stance, obverse middle punch. <br>
-              <b>Defender:</b> steps back into a left walking stance performing middle inside inner forearm block
-              with the left hand. <br>
-              <b>Attacker:</b> steps forward into a left walking stance, middle obverse punch. <br>
-              <b>Defender:</b> steps back into a right walking stance performing middle inside inner forearm
-              block with the right hand.<br>
-              <b>Attacker:</b> steps forward into a right walking stance middle obverse punch.<br>
-              <b>Defender:</b> steps back into a left walking stance performing middle inside inner forearm block
-              with the left hand. Counters with a reverse punch with the right hand to the point of the chin.
-              Kihap on this punch.<br>
-            </p>
-
-            <h3>Jayu Matsogi <small>Free Sparring</small></h3>
-            <p class="larger-font">
-              The sporting side of Taekwon-Do, use of controlled techniques in open combat, with no prearranged
-              format. No or light contact depending on protective pads worn, no attacking to the
-              back or below belt level.
-            </p>
-        </div> <!-- End of sparring -->
       
           <div class="theory">
-            <h3>Theory</h3>
+            <h3>Theory<a href="theory/Theory9.pdf" class="pdf" target="_blank"><small>Download Theory</small></a></h3>
             <p class="larger-font">
               Note: You may be asked questions on lower grade theory, so make sure you know it.<br> <br>
+            </p>
 
-              To Hide or show korean click this button to help you study
-              <button class="btn btn-primary">Hide</button>
-              </p><br><br>
+              <b>Yellow: </b>  Signifies the Earth from which the plant sprouts and takes root as Taekwondo
+              foundation is being laid.<br><br>
+
+              <b>Pattern (Tul): </b>  A combination of full power Taekwondo techniques against an
+              imaginary opponent. <br> 
+              <small>- The pattern name, number of movements, diagrammatic symbol,
+              or meaning refer to heroic figures or historical events in Korean history,
+              often exemplifying use of one or more of the tenets. <br> 
+              - Saju jirugi is not a pattern because it doesn’t have a meaning. </small><br><br> 
+
+              <b>Taekwondo:</b> was introduced to the UK in 1967 <br><br>
+
+              <b> P.U.M.A.:</b>  The Professional Unification of Martial Arts was inaugurated on
+              01/09/2000 and its chairman is Master Ray Gayle (8th Dan)
+
 
             <!-- Korean theory with english translation -->
             <table class="table table-hover">
@@ -306,89 +269,33 @@
 
               <tbody>
                 <tr class="title">
-                  <td>Instructor Commands</td>
-                  <td>Instructor Commands</td>
+                  <td>Direction</td>
+                  <td>Direction</td>
                 </tr>
 
                 <tr>
-                  <td>In Your Own Time</td>
-                  <td>Kooryongopshi</td>
+                  <td>Front</td>
+                  <td>Ap</td>
                 </tr>
 
                 <tr>
-                  <td>In My Time</td>
-                  <td>Kooryongymacho</td>
+                  <td>Side</td>
+                  <td>Yop</td>
                 </tr>
 
                 <tr>
-                  <td>Dismiss</td>
-                  <td>Hae San</td>
-                </tr>
-
-                <tr>
-                  <td>Continue</td>
-                  <td>Gaesok</td>
-                </tr>
-
-
-                <tr class="title">
-                  <td>Stance</td>
-                  <td>Sogi</td>
-                </tr>
-
-                <tr>
-                  <td>L Stance</td>
-                  <td>Niunja Sogi</td>
+                  <td>Back</td>
+                  <td>Dwit</td>
                 </tr>
 
                 <tr class="title">
-                  <td>Kicks</td>
-                  <td>Chagi</td>
+                  <td>Hand</td>
+                  <td>Hand</td>
                 </tr>
 
                 <tr>
-                  <td>Front Snap Kick</td>
-                  <td>Ap Cha Busigi</td>
-                </tr>
-
-                <tr>
-                  <td>Side Piercing Kick</td>
-                  <td>Yop Cha Jirugi</td>
-                </tr>
-
-                <tr class="title">
-                  <td>Block</td>
-                  <td>Makgi</td>
-                </tr>
-
-                <tr>
-                  <td>Guarding Block</td>
-                  <td>Daebi Makgi</td>
-                </tr>
-
-                <tr class="title">
-                  <td>Foot Parts</td>
-                  <td>Foot Parts</td>
-                </tr>
-
-                <tr>
-                  <td>Ball Of The Foot</td>
-                  <td>Ap Kumchi</td>
-                </tr>
-
-                <tr>
-                  <td>Footsword</td>
-                  <td>Balkal</td>
-                </tr>
-
-                <tr class="title">
-                  <td>Hand Parts</td>
-                  <td>Hand Parts</td>
-                </tr>
-
-                <tr>
-                  <td>Fist</td>
-                  <td>Joomuk</td>
+                  <td>Open fist</td>
+                  <td>Pyun joomuk</td>
                 </tr>
 
                 <tr>
@@ -396,60 +303,92 @@
                   <td>Sonkal</td>
                 </tr>
 
+
+                <tr class="title">
+                  <td>Stances</td>
+                  <td>Stances</td>
+                </tr>
+
                 <tr>
-                  <td>Forearm</td>
-                  <td>Palmok</td>
+                  <td>L-Stance</td>
+                  <td>Niunja sogi</td>
                 </tr>
 
                 <tr class="title">
-                  <td>Other</td>
-                  <td>Other</td>
+                  <td>Movement</td>
+                  <td>Movement</td>
                 </tr>
 
                 <tr>
-                  <td>Suit Trousers</td>
-                  <td>Baj-I</td>
+                  <td>Forwards</td>
+                  <td>Appro kaggi</td>
                 </tr>
 
                 <tr>
-                  <td>Dobok Jacket</td>
-                  <td>Jeogori</td>
+                  <td>Backwards</td>
+                  <td>Dwiryo kaggi</td>
                 </tr>
 
                 <tr>
-                  <td>Pattern</td>
-                  <td>Tul</td>
+                  <td>About turn</td>
+                  <td>Dwiryo dora</td>
+                </tr>
+
+                <tr>
+                  <td>Step turning</td>
+                  <td>Omgyo didimyo dolgi</td>
                 </tr>
 
                 <tr class="title">
-                  <td>Numbers</td>
-                  <td>Numbers</td>
+                  <td>Line work</td>
+                  <td>Line work</td>
                 </tr>
 
                 <tr>
-                  <td>6</td>
-                  <td>Yaset</td>
+                  <td>Knifehand side strike</td>
+                  <td>Sonkal yop tarigi</td>
                 </tr>
 
                 <tr>
-                  <td>7</td>
-                  <td>Ilgop</td>
+                  <td>Forearm guarding block</td>
+                  <td>Palmok daebi makgi</td>
                 </tr>
 
                 <tr>
-                  <td>8</td>
-                  <td>Yadul</td>
+                  <td>Knifehand guarding block</td>
+                  <td>Sonkal daebi makgi</td>
                 </tr>
 
                 <tr>
-                  <td>9</td>
-                  <td>Ahop</td>
+                  <td>Twin forearm block</td>
+                  <td>Sang palmok makgi</td>
                 </tr>
 
                 <tr>
-                  <td>10</td>
-                  <td>Yul</td>
+                  <td>Reverse punch</td>
+                  <td>Bandae jirugi</td>
                 </tr>
+
+                <tr>
+                  <td>Rising block</td>
+                  <td>Chookyo makgi</td>
+                </tr>
+
+                <tr>
+                  <td>Double punch</td>
+                  <td>Doo jirugi</td>
+                </tr>
+
+                <tr>
+                  <td>Open fist strike</td>
+                  <td>Pyun joomuk taerigi</td>
+                </tr>
+
+                <tr>
+                  <td>Low Knifehand block</td>
+                  <td>Najunde sonkal makgi</td>
+                </tr>
+
               </tbody>
             </table> <!-- End of table -->
           </div> <!-- End of theory -->

@@ -11,50 +11,48 @@
       <?php include 'php/header.php' ?>
       <div class="container syllabus">
         <div class="row">
-          <h2 class="section">Green Tag<a href="syllabus/4.pdf" class="pdf" target="_blank">PDF</a> </h2>
+          <h2 class="section">Green Tag</h2>
 
-          <h3>Grading Requirements</h3>
+          <h3>Grading Requirements <a href="syllabus.pdf" class="pdf" target="_blank"><small>Download Practical</small></a></h3>
           <p class="larger-font">
             <b>Techniques</b> <br><br>
 
-            Walking Stance – Straight Fingertip Thrust <br>
-            Gunnun Sogi – Sun Sonkut Tulgi <br> <br>
+            Self Defence <br><br>
 
-            Walking Stance – Wedging Block <br> 
-            Gunnun Sogi – Hechyo Makgi <br> <br>
+            Turning kick, L-Stance forearm guarding block <br><br>
 
-            Back Piercing Kick Dwitcha Jirugi <br> <br>
+            Walking Stance - Circular block <br><br>
+
+            Bending ready stance A, side piercing kick, L-Stance forearm gurading block <br><br>
+
+            Bending ready stance B, back piercing kick, L-Stance forearm guarding block <br><br>
+
+            Fixed stance -  side punch <br><br>
+
+            L-Stance - Inward knifehand strike<br><br>
+
             <b>Pattern</b><br><br>
-            Do-San Tul <br><br>
+            Do San Tul <br><br>
+            Dan Gun Tul <br><br>
+            Chon Ji Tul <br><br><br>
 
             <b>Sparring</b><br><br>
-            One Step Ilbo Matsogi No 1 & 2<br>
-            Free Sparring Jayu Matsogi<br><br>
+            Three Step sparring No 3 & 4 <br><br>
+            Simulated Sparring (Step-on 45 kick, reverse backfist, reverse punch) <br><br>
 
-            <b>Destruction</b><br><br>
-            No destruction required<br><br>
-
-            <b>Theory</b><br><br>
-            Korean Terminology for Your Grade<br><br>
-
-            <b>Application of Technique</b><br><br>
-            Releases from single rear  wrist grab<br>
-          
           </p> <!-- End of grading requirement -->
 
           <h3>Do San Tul <small>An Chang Ho</small></h3>
 
           <p class="larger-font">
             <b>  Meaning </b> <br> <br>
-            DO-SAN is the pseudonym of the patriot An Chang Ho (1876-1938) who
-            devoted his entire life to furthering the education of Korea and it’s
-            independent movement.
+            DO-SAN is the pseudonym of the patriot An Chang Ho (1876-1938) who devoted his entire life to furthering the education of Korea and it’s independent movement.
 
 
             <b> Number of moves: 24 </b>
           </p>
 
-          <img  data-original="images/pattern/7th_kup.png" alt="" width="150px" height="150px" alt="pattern-diagram">
+          <img  src ="images/pattern/7th_kup.png" alt="" width="150px" height="150px" alt="pattern-diagram">
 
           <!-- Table showing off moves for the pattern -->
           <table class="table table-hover">
@@ -287,72 +285,22 @@
             </tbody> 
           </table> <!-- End of Chon-Ji pattern -->
 
-
-          <div class="sparring">
-            <h3>Ilbo Matsogi <small>One Step Sparring</small></h3>
-
-            <p class="larger-font">
-              <b>General Points <br></b> <br>
-
-              All the one step sparring starts with both students in the parallel ready stance.<br><br>
-
-              The line up is done by extending the attackers fist with a straight arm to the body of
-              the opponent.<br><br>
-
-              The only attack in one step sparring is to step forward into walking stance, middle
-              obverse punch, therefore it will not be typed out every time.<br><br>
-
-              Each of the one step sparring combinations must be performed with the right and left
-              hand attacking.<br><br>
-
-              When the attacker is ready, he or she shouts, or kihaps. The defender then kihaps
-              when he or she is ready <br><br>
-
-
-              <b>Number 1</b><br><br>
-              Step back with the right leg into a left walking stance whilst performing a left middle
-              inside outer forearm block.<br><br>
-              
-              Counter with a right reverse punch to the point of the chin. Kihap on this technique. <br><br>
-
-              For a left sided attack, i.e. with the left hand, just swap around which leg you move first and
-              which arm blocks and punches. This is the same for all one step sparring. In this instance,
-              defending a left attack would involve:<br><br>
-              Step back with the left leg into a right walking stance whilst performing a right middle
-              inside outer forearm block.<br><br>
-
-              Counter with a left reverse punch to the point of the chin. Kihap on this technique. <br><br>
-
-              <b>Number 2</b><br><br>
-              Step back on your left leg forming a left L-stance whilst performing a right middle
-              outside outer forearm block with the right arm.<br><br>
-              
-              Step your left leg through into walking stance, then bring your right leg forward to
-              form a left L-stance whilst performing an outward knifehand strike to the attacker’s
-              neck / kidney with the right arm. Kihap on this strike.<br><br> 
-
-              Swap for left attack:<br><br>
-
-              Step back on your right leg forming a right L-stance whilst performing a left middle
-              outside outer forearm block with the right arm.<br><br>
-
-              Step your right leg through into walking stance, then bring your left leg forward to
-              form a right L-stance whilst performing an outward knifehand strike to the attacker’s
-              neck / kidney with the right arm. Kihap on this strike.<br><br>
-
-              Note: Knifehand strike to neck on attacker that is shorter or of a similar height, if attacker is
-              taller then knifehand strike to the kidney.
-            </p>
-        </div> <!-- End of sparring -->
-      
           <div class="theory">
-            <h3>Theory</h3>
+            <h3>Theory <a href="theory/Theory7.pdf" class="pdf" target="_blank"><small>Download Theory</small></a></h3>
             <p class="larger-font">
               Note: You may be asked questions on lower grade theory, so make sure you know it.<br> <br>
+            </p>
 
-              To Hide or show korean click this button to help you study
-              <button class="btn btn-primary">Hide</button>
-              </p><br><br>
+            <b> Free sparring (Jayoo matsoki): </b> : Uses Taekwondo as a semi-contact sport. As well as focus, distance, and timing, free sparring improves awareness and reaction speed. <br><br>
+
+            <b> Continuous motion: </b> Two or more techniques performed with no pause in between. Each technique is executed separately in full. Continuous motion always begins with a block and should be performed with grace and beauty. <br><br>
+
+            <b> Fast motion: </b> Two or more techniques performed with urgency. Each exhalation is drawn from a single breath and techniques after the first are performed with a reduced sine wave. <br><br>
+
+            <b> Step turning (omgyo didimyo dolgi): </b> Change direction to face an opponent at any angle, from 0 to 360 degrees. Can be combined with double stepping, shifting, or sliding. <br><br>
+
+            <b> Spot turning (Gujari dolgi): </b>  Change direction 180 degrees to face an opponent directly behind. One foot is moved to the centre line of the stance and used to pivot the body, the other leg then moves to the final position. <br><br>
+
 
             <!-- Korean theory with english translation -->
             <table class="table table-hover">
@@ -365,49 +313,80 @@
 
               <tbody>
                 <tr class="title">
-                  <td>Kicks</td>
-                  <td>Chagi</td>
+                  <td>Direction</td>
+                  <td>Direction</td>
                 </tr>
 
                 <tr>
-                  <td>Back Piercing Kick</td>
-                  <td>Dwitcha Jirugi</td>
+                  <td>Upward</td>
+                  <td>Ollyo</td>
+                </tr>
+
+                <tr>
+                  <td>Downward</td>
+                  <td>Naeryo</td>
                 </tr>
 
                 <tr class="title">
-                  <td>Block</td>
-                  <td>Makgi</td>
+                  <td>Movement</td>
+                  <td>Movement</td>
                 </tr>
 
                 <tr>
-                  <td>Wedging Block</td>
-                  <td>Hechyo Makgi</td>
+                  <td>Grab</td>
+                  <td>Jupgi</td>
+                </tr>
+
+                <tr>
+                  <td>Release from grab</td>
+                  <td>Japyosol tae</td>
                 </tr>
 
                 <tr class="title">
-                  <td>Punch</td>
-                  <td>Jirugi</td>
+                  <td>Stance</td>
+                  <td>Sogi</td>
                 </tr>
 
                 <tr>
-                  <td>Double Punch</td>
-                  <td>Doo Jirugi</td>
+                  <td>Fixed stance</td>
+                  <td>Gojeong sogi</td>
+                </tr>
+
+                <tr>
+                  <td>Bending ready stance A</td>
+                  <td>Guburyo junbi sogi 'A'</td>
                 </tr>
 
                 <tr class="title">
-                  <td>Other</td>
-                  <td>Other</td>
+                  <td>Line work</td>
+                  <td>Line work</td>
                 </tr>
 
                 <tr>
-                  <td>Straight Fingertip Thrust</td>
-                  <td>Sun Sonkut Tulgi</td>
+                  <td>Back piercing kick</td>
+                  <td>Dwit cha jirugi</td>
                 </tr>
 
                 <tr>
-                  <td>Wrist Release Move</td>
-                  <td>Jappyosul Tae</td>
+                  <td>Circular block</td>
+                  <td>Dollimyo makgi</td>
                 </tr>
+
+                <tr>
+                  <td>Turning kick</td>
+                  <td>Dollyo chagi</td>
+                </tr>
+
+                <tr>
+                  <td>Side punch</td>
+                  <td>Yop jirugi</td>
+                </tr>
+
+                <tr>
+                  <td>Inward knifehand strike</td>
+                  <td>Anuro sonkal taerigi</td>
+                </tr>
+
               </tbody>
             </table> <!-- End of table -->
           </div> <!-- End of theory -->
