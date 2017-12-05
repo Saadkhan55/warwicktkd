@@ -18,7 +18,7 @@
             <li class="dropdown"> 
               <a href="#" class="dropdown-toggle news" data-toggle="dropdown"><i class="fa fa-file"></i>NEWS</a>
               <ul class="dropdown-menu" role="menu">
-                <li><a href="news.php">News</a></li>
+                <li><a href="news.php">News</a></li> 
                 <li><a href="calendar.php">Calendar</a></li>
                 <li><a href="gallery.php">Gallery</a></li>
               </ul>
@@ -28,9 +28,8 @@
             <li class="dropdown">
               <a href="#" class="dropdown-toggle about" data-toggle="dropdown"><i class="fa fa-info"></i>ABOUT US</a>
               <ul class="dropdown-menu" role="menu">
-                <li><a href="beginners.php">FAQ</a></li>
+                <li><a href="beginners.php">FAQ</a></li> 
                 <li><a href="training.php">Training</a></li>
-                <li><a href="style.php">ITF or WTF</a></li>
                 <li><a href="team.php">Exec Team</a></li>
               </ul>
             </li>
@@ -39,17 +38,14 @@
             <li class="dropdown"> 
               <a href="#" class="dropdown-toggle students" data-toggle="dropdown"><i class="fa fa-group"></i>STUDENTS</a>
               <ul class="dropdown-menu" role="menu">
-                <li><a href="quiz.php">Theory Quiz</a></li>
-                <li><a href="white-belt.php">White Belt</a></li>
-                <li><a href="yellow-tag.php">Yellow Tag</a></li>
-                <li><a href="yellow-belt.php">Yellow Belt</a></li>
-                <li><a href="green-tag.php">Green Tag</a></li>
-                <li><a href="green-belt.php">Green Belt</a></li>
-                <li><a href="blue-tag.php">Blue Tag</a></li>
-                <li><a href="blue-belt.php">Blue Belt</a></li> 
-                <li><a href="red-tag.php">Red Tag</a></li> 
-                <li><a href="red-belt.php">Red Belt</a></li> 
-                <li><a href="black-tag.php">Black Tag</a></li> 
+                <li><a href = "etiquette.pdf">Etiquette Guide</a></li>
+                <li><a href="white-belt.php">10th Kup</a></li>
+                <li><a href="yellow-tag.php">9th Kup</a></li>
+                <li><a href="yellow-belt.php">8th Kup</a></li>
+                <li><a href="green-tag.php">7th Kup</a></li>
+                <li><a href="green-belt.php">6th Kup</a></li>
+                <li><a href="blue-tag.php">5th Kup</a></li>
+                <li><a href="blue-belt.php">4th Kup</a></li>
               </ul>
             </li> 
             <li><a class = "contact" href="contact.php"><i class="fa fa-comment-o"></i>CONTACT</a></li>
